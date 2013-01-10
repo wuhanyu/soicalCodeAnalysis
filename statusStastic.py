@@ -28,7 +28,7 @@ def statisticsByName(name, key):
 	statistics(statisticsSet[name], key)
 	
 def printStatistics(dict, name):
-	print name
+	print '----%s----' % name
 	file_object = open(name + '.txt', 'w')
 	sum = 0
 	for item in dict:
@@ -53,12 +53,11 @@ def processFile(filepath):
 		#print page('title').text()
 		bug_status = page('span[@title]').eq(0).text()
 		statisticsByName('bug_status_statistics', bug_status)
-		if (cmp(bug_status, 'Fixed') == 0 or cmp(bug_status, 'Verified') == 0):
-			# print bug_status
-			for item in page('a.label'):
-				tmp = page(item).text().split('- ')
-				if (len(tmp) == 2): statisticsByName(tmp[0], tmp[1])
-			items = page('tr.cursor_off')
+		# statics for label
+		for item in page('a.label'):
+			tmp = page(item).text().split('- ')
+			if (len(tmp) == 2): statisticsByName(tmp[0], tmp[1])
+		items = page('tr.cursor_off')
 			# print len(items)
 			
 			# authordiv = page("div.author")
