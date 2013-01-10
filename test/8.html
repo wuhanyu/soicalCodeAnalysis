@@ -1,0 +1,1531 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+ <link rel="icon" type="image/vnd.microsoft.icon" href="http://www.gstatic.com/codesite/ph/images/phosting.ico">
+ 
+ <script type="text/javascript">
+ 
+ 
+ 
+ var codesite_token = null;
+ 
+ 
+ var logged_in_user_email = null;
+ 
+ 
+ var relative_base_url = "";
+ 
+ </script>
+ 
+ 
+ <title>Issue 8 - 
+ chromium -
+ 
+ Chromium fails to isntall - Project Hosting on Google Code</title>
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" >
+ 
+ <link type="text/css" rel="stylesheet" href="http://www.gstatic.com/codesite/ph/9392543809124535420/css/ph_core.css">
+ 
+ <link type="text/css" rel="stylesheet" href="http://www.gstatic.com/codesite/ph/9392543809124535420/css/ph_detail.css" >
+ 
+ 
+ 
+ 
+<!--[if IE]>
+ <link type="text/css" rel="stylesheet" href="http://www.gstatic.com/codesite/ph/9392543809124535420/css/d_ie.css" >
+<![endif]-->
+ <style type="text/css">
+ .menuIcon.off { background: no-repeat url(http://www.gstatic.com/codesite/ph/images/dropdown_sprite.gif) 0 -42px }
+ .menuIcon.on { background: no-repeat url(http://www.gstatic.com/codesite/ph/images/dropdown_sprite.gif) 0 -28px }
+ .menuIcon.down { background: no-repeat url(http://www.gstatic.com/codesite/ph/images/dropdown_sprite.gif) 0 0; }
+ </style>
+</head>
+<body class="t3">
+ <script type="text/javascript">
+ var _gaq = _gaq || [];
+ _gaq.push(
+ ['siteTracker._setAccount', 'UA-18071-1'],
+ ['siteTracker._trackPageview']);
+ 
+ (function() {
+ var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+ (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ga);
+ })();
+ </script>
+ <div id="gaia">
+ 
+ <span>
+ 
+ <a href="#" id="projects-dropdown" onclick="return false;"><u>My favorites</u> <small>&#9660;</small></a>
+ | <a href="https://www.google.com/accounts/ServiceLogin?service=code&amp;ltmpl=phosting&amp;continue=http%3A%2F%2Fcode.google.com%2Fp%2Fchromium%2Fissues%2Fdetail%3Fid%3D8&amp;followup=http%3A%2F%2Fcode.google.com%2Fp%2Fchromium%2Fissues%2Fdetail%3Fid%3D8" onclick="_CS_click('/gb/ph/signin');"><u>Sign in</u></a>
+ 
+ </span>
+
+ </div>
+ <div class="gbh" style="left: 0pt;"></div>
+ <div class="gbh" style="right: 0pt;"></div>
+ 
+ 
+ <div style="height: 1px"></div>
+<!--[if IE 6]>
+<div style="text-align:center;">
+Support browsers that contribute to open source, try <a href="http://www.firefox.com">Firefox</a> or <a href="http://www.google.com/chrome">Google Chrome</a>.
+</div>
+<![endif]-->
+
+ <div style="font-weight:bold; color:#a03; padding:5px; margin-top:10px; margin-bottom:-10px; text-align:center; background:#ffeac0;">
+ Project Hosting will be READ-ONLY <a href='http://www.timeanddate.com/worldclock/fixedtime.html?month=6&day=9&year=2010&hour=7&min=0&sec=0&p1=224'>Wednesday at 7:00am PDT</a> due to brief network maintenance.
+ 
+ </div>
+
+
+
+ <table style="padding:0px; margin: 20px 0px 0px 0px; width:100%" cellpadding="0" cellspacing="0">
+ <tr style="height: 58px;">
+ 
+ <td style="width: 55px; text-align:center;">
+ <a href="/p/chromium/">
+ 
+ 
+ <img src="/p/chromium/logo?cct=1275965165" alt="Logo">
+ 
+ </a>
+ </td>
+ 
+ <td style="padding-left: 0.5em">
+ 
+ <div id="pname" style="margin: 0px 0px -3px 0px">
+ <a href="/p/chromium/" style="text-decoration:none; color:#000">chromium</a>
+ 
+ </div>
+ <div id="psum">
+ <i><a id="project_summary_link" href="/p/chromium/" style="text-decoration:none; color:#000">An open-source browser project to help move the web forward.</a></i>
+ </div>
+ 
+ </td>
+ <td style="white-space:nowrap;text-align:right">
+ 
+ <form action="/hosting/search">
+ <input size="30" name="q" value="">
+ <input type="submit" name="projectsearch" value="Search projects" >
+ </form>
+ 
+ </tr>
+ </table>
+
+
+ 
+<table id="mt" cellspacing="0" cellpadding="0" width="100%" border="0">
+ <tr>
+ <th onclick="if (!cancelBubble) _go('/p/chromium/');">
+ <div class="tab inactive">
+ <div class="round4"></div>
+ <div class="round2"></div>
+ <div class="round1"></div>
+ <div class="box-inner">
+ <a onclick="cancelBubble=true;" href="/p/chromium/">Project&nbsp;Home</a>
+ </div>
+ </div>
+ </th><td>&nbsp;&nbsp;</td>
+ 
+ 
+ 
+ 
+ <th onclick="if (!cancelBubble) _go('/p/chromium/downloads/list');">
+ <div class="tab inactive">
+ <div class="round4"></div>
+ <div class="round2"></div>
+ <div class="round1"></div>
+ <div class="box-inner">
+ <a onclick="cancelBubble=true;" href="/p/chromium/downloads/list">Downloads</a>
+ </div>
+ </div>
+ </th><td>&nbsp;&nbsp;</td>
+ 
+ 
+ 
+ 
+ 
+ <th onclick="if (!cancelBubble) _go('/p/chromium/w/list');">
+ <div class="tab inactive">
+ <div class="round4"></div>
+ <div class="round2"></div>
+ <div class="round1"></div>
+ <div class="box-inner">
+ <a onclick="cancelBubble=true;" href="/p/chromium/w/list">Wiki</a>
+ </div>
+ </div>
+ </th><td>&nbsp;&nbsp;</td>
+ 
+ 
+ 
+ 
+ 
+ <th onclick="if (!cancelBubble) _go('/p/chromium/issues/list');">
+ <div class="tab active">
+ <div class="round4"></div>
+ <div class="round2"></div>
+ <div class="round1"></div>
+ <div class="box-inner">
+ <a onclick="cancelBubble=true;" href="/p/chromium/issues/list">Issues</a>
+ </div>
+ </div>
+ </th><td>&nbsp;&nbsp;</td>
+ 
+ 
+ 
+ 
+ <td width="100%">&nbsp;</td>
+ </tr>
+</table>
+<table cellspacing="0" cellpadding="0" width="100%" align="center" border="0" class="st">
+ <tr>
+ 
+ 
+ 
+ 
+ 
+ <td>
+ <div class="issueDetail">
+<div class="isf">
+ 
+ 
+ <span class="inIssueEntry">
+ <a href="entry">New issue</a>
+ </span> |
+ 
+ <span class="inIssueList">
+ <span>Search</span>
+ <form action="list" method="GET" style="display:inline">
+ <select id="can" name="can" style="font-size:92%">
+ 
+<option disabled="disabled">Search within:</option>
+<option value="1" >&nbsp;All issues</option>
+<option value="2" selected=selected>&nbsp;Open issues</option>
+
+<option value="6" >&nbsp;New issues</option>
+<option value="7" >&nbsp;Issues to verify</option>
+
+ </select>
+ <span>for</span>
+ <span id="qq"><input type="text" size="38" id="q" name="q" value="" style="font-size:92%" ></span>
+ 
+ <span id="search_colspec"><input type="hidden" name="colspec" value="ID Stars Pri Area Feature Type Status Summary Modified Owner Mstone OS" ></span>
+ 
+ 
+ 
+ <input type="hidden" name="cells" value="tiles" >
+ <input type="submit" value="Search" style="font-size:92%" >
+ </form>
+ </span> |
+ <span class="inIssueAdvSearch">
+ <a href="advsearch">Advanced search</a>
+ </span> |
+ <span class="inIssueSearchTips">
+ <a href="searchtips">Search tips</a>
+ </span>
+</div>
+</div>
+
+ </td>
+ 
+ 
+ 
+ 
+ <td height="4" align="right" valign="top" class="bevel-right">
+ <div class="round4"></div>
+ <div class="round2"></div>
+ <div class="round1"></div>
+ </td>
+ </tr>
+</table>
+<script type="text/javascript">
+ var cancelBubble = false;
+ function _go(url) { document.location = url; }
+</script>
+
+
+<div id="maincol"
+ 
+>
+
+ 
+<!-- IE -->
+
+
+
+
+
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+<style type="text/css">
+ .attachments { width:33%; border-top:2px solid #999; padding-top: 3px; margin-left: .7em;}
+ .attachments table { margin-bottom: 0.75em; }
+ .attachments table tr td { padding: 0; margin: 0; font-size: 95%; }
+ .preview { border: 2px solid #c3d9ff; padding: 1px; }
+ .preview:hover { border: 2px solid blue; }
+ .label { white-space: nowrap; }
+ .derived { font-style:italic }
+ tr.cursor_on .author {
+ background: #fff url(http://www.gstatic.com/codesite/ph/images/show-arrow.gif) no-repeat 2px;
+ }
+</style>
+<div id="color_control" class="closed_colors">
+<div id="issueheader">
+<table cellpadding="0" cellspacing="0" width="100%"><tbody>
+ <tr>
+ <td class="vt h3" nowrap="nowrap" style="padding:0 5px">
+ 
+ 
+ Issue <a href="detail?id=8">8</a>:
+ </td>
+ <td width="90%" class="vt">
+ <span class="h3" >Chromium fails to isntall</span>
+ </td>
+ <td>
+ 
+ </td>
+ </tr>
+ <tr>
+ <td></td>
+ <td nowrap="nowrap">
+ 
+ 
+ 2 people starred this issue and may be notified of changes.
+ 
+ 
+ 
+ </td>
+ <td align="center" nowrap="nowrap">
+ 
+ <a href="http://code.google.com/p/chromium/issues/list?cursor=8">Back to list</a>
+ 
+ </td>
+ </tr>
+</tbody></table>
+</div>
+<table width="100%" cellpadding="0" cellspacing="0" border="0" class="issuepage" id="meta-container">
+<tbody id="cursorarea" class="collapse"> 
+ <tr class="cursor_off">
+ <td id="issuemeta" rowspan="24">
+ <div id="meta-float">
+ <table cellspacing="0" cellpadding="0">
+ <tr><th align="left">Status:&nbsp;</th>
+ <td width="100%">
+ 
+ <span title="Work completed, needs verification">Fixed</span>
+ 
+ </td>
+ </tr>
+ 
+ <tr><th align="left">Owner:&nbsp;</th><td>
+ 
+ <a style="white-space: nowrap" href="/u/all-bugs-test@chromium.org/">all-bugs-test@chromium.org</a>
+ 
+ </td>
+ </tr>
+ 
+ <tr><th align="left" valign="top">Closed:&nbsp;</th>
+ <td align="left" valign="top" width="100%">
+ Sep 2008
+ </td>
+ </tr>
+ 
+ 
+ 
+ 
+ <tr><td colspan="2">
+ <a href="list?q=label:Type-Bug"
+ title="Software not working correctly"
+ class="label"><b>Type-</b>Bug</a>
+ </td></tr>
+ 
+ 
+ 
+ <tr><td colspan="2">
+ <a href="list?q=label:Pri-2"
+ title="Normal. Required for specified milestone."
+ class="label"><b>Pri-</b>2</a>
+ </td></tr>
+ 
+ 
+ 
+ <tr><td colspan="2">
+ <a href="list?q=label:OS-All"
+ title="Affects all operating systems"
+ class="label"><b>OS-</b>All</a>
+ </td></tr>
+ 
+ 
+ 
+ <tr><td colspan="2">
+ <a href="list?q=label:Area-Internals"
+ title="Ugly guts, networking, IPC, storage backend, installer, etc"
+ class="label"><b>Area-</b>Internals</a>
+ </td></tr>
+ 
+ 
+ 
+ <tr><td colspan="2">
+ <a href="list?q=label:Internals-Install"
+ title="Install, update, manage"
+ class="label"><b>Internals-</b>Install</a>
+ </td></tr>
+ 
+ 
+ 
+ </table>
+ <br><br>
+ 
+ 
+ 
+ <div style="white-space:nowrap"><a href="https://www.google.com/accounts/ServiceLogin?service=code&amp;ltmpl=phosting&amp;continue=http%3A%2F%2Fcode.google.com%2Fp%2Fchromium%2Fissues%2Fdetail%3Fid%3D8&amp;followup=http%3A%2F%2Fcode.google.com%2Fp%2Fchromium%2Fissues%2Fdetail%3Fid%3D8">Sign in</a> to add a comment</div>
+ 
+ 
+ 
+ <div class="rel_issues">
+ 
+ 
+ 
+ </div>
+ 
+ 
+ </div>&nbsp;
+ </td>
+ <td class="vt issuedescription" width="100%">
+ <div class="author">
+ Reported by <a style="white-space: nowrap" href="/u/louis.monicelli/">louis.monicelli</a>,
+ <span class="date" title="Tue Sep  2 12:09:30 2008">Sep 02, 2008</span>
+ 
+ </div>
+<pre>
+<b>What steps will reproduce the problem?</b>
+
+Downloaded Chrome from Site to install it.
+
+<b>What is the expected result?</b>
+Obtain .exe
+
+Install Software
+
+<b>What happens instead?</b>
+
+
+Software failed to install
+
+
+Please provide any additional information below. Attach a screenshot if
+possible.
+ 
+</pre>
+
+
+ <div class="attachments">
+ 
+ 
+ 
+
+
+
+
+ <table cellspacing="3" cellpadding="2" border="0">
+ <tr><td width="20">
+ <a href="http://chromium.googlecode.com/issues/attachment?aid=-2666733878926718595&amp;name=Error.JPG&amp;token=a429531306febc960090ae15cc227437">
+ <img width="15" height="15" src="/hosting/images/paperclip.gif" border="0" >
+ </a>
+ </td>
+ <td style="min-width:16em" valign="top">
+ 
+ <b >Error.JPG</b>
+ <br>
+ 14.6 KB
+ 
+ 
+ &nbsp; <a href="http://chromium.googlecode.com/issues/attachment?aid=-2666733878926718595&amp;name=Error.JPG&amp;token=a429531306febc960090ae15cc227437&amp;inline=1" target="_blank">View</a>
+ 
+ &nbsp; <a href="http://chromium.googlecode.com/issues/attachment?aid=-2666733878926718595&amp;name=Error.JPG&amp;token=a429531306febc960090ae15cc227437">Download</a>
+ 
+ </td>
+ 
+ </tr>
+ 
+ 
+ <tr>
+ <td colspan="3">
+ <a href="http://chromium.googlecode.com/issues/attachment?aid=-2666733878926718595&amp;name=Error.JPG&amp;token=a429531306febc960090ae15cc227437&amp;inline=1" target="_blank">
+ <img src="http://chromium.googlecode.com/issues/attachment?aid=-2666733878926718595&amp;name=Error.JPG&amp;token=a429531306febc960090ae15cc227437&amp;inline=1&amp;thumb=1" class="preview">
+ </a>
+ </td>
+ </tr>
+ 
+ 
+ </table>
+
+
+ 
+ </div>
+
+ </td>
+ </tr>
+
+ 
+
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c1"
+ href="#c1">1</a>
+ by
+ <a style="white-space: nowrap" href="/u/thijstel/">thijstel</a></span>,
+ <span class="date" title="Tue Sep  2 12:11:03 2008">Sep 02, 2008</span>
+ 
+<pre>
+What browser did you try to install it from?
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c2"
+ href="#c2">2</a>
+ by
+ <a style="white-space: nowrap" href="/u/endaburke/">endaburke</a></span>,
+ <span class="date" title="Tue Sep  2 12:11:37 2008">Sep 02, 2008</span>
+ 
+<pre>
+I have experienced the same problem. I am using firefox 3 to download it...
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c3"
+ href="#c3">3</a>
+ by
+ <a style="white-space: nowrap" href="/u/mattrix/">mattrix</a></span>,
+ <span class="date" title="Tue Sep  2 12:30:24 2008">Sep 02, 2008</span>
+ 
+<pre>
+Make sure you don't have a proxy blocking the installer's connection attempts.
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c4"
+ href="#c4">4</a>
+ by
+ <a style="white-space: nowrap" href="/u/mal.chromium/">mal.chromium</a></span>,
+ <span class="date" title="Tue Sep  2 13:14:49 2008">Sep 02, 2008</span>
+ 
+<pre>
+Do you get an error when you run ChromeSetup.exe? Or after the Google Chrome 
+installer is downloaded and running?
+
+More specifics of the actual error message would help.
+</pre>
+ 
+ 
+ <div class="updates">
+ <div class="round4"></div>
+ <div class="round2"></div>
+ <div class="round1"></div>
+ <div class="box-inner">
+ <b>Labels:</b> -Area-Unknown Area-Installer<br>
+ </div>
+ <div class="round1"></div>
+ <div class="round2"></div>
+ <div class="round4"></div>
+ </div>
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c5"
+ href="#c5">5</a>
+ by
+ <a style="white-space: nowrap" href="/u/rbelden/">rbelden</a></span>,
+ <span class="date" title="Tue Sep  2 13:21:13 2008">Sep 02, 2008</span>
+ 
+<pre>
+Mine appeared to not install, but then it has Google Chrome listed under Start --&gt; 
+All Programs --&gt; Google Chrome but when you click, nothing launches, although it 
+does show up in the Start Button recently launched applications.  Something is 
+happening, but nothing that I can actually see an application running.  Windows Task 
+Manager shows no additional Applications launched nor any additional Processes 
+started.  Very Strange.
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c6"
+ href="#c6">6</a>
+ by
+ <a style="white-space: nowrap" href="/u/korvus/">korvus</a></span>,
+ <span class="date" title="Tue Sep  2 13:36:09 2008">Sep 02, 2008</span>
+ 
+<pre>
+I get error code = 0x800421e0 when trying to install myself, which I suspect is due 
+to being behind a restrictive firewall (specifically, this is when I run 
+ChromeSetup.exe, right after it says something about &quot;Downloading Google Chrome...&quot;).
+
+Is there a way to download everything manually or provide it with proxy information?
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c7"
+ href="#c7">7</a>
+ by
+ <a style="white-space: nowrap" href="/u/jae.sung.kim/">jae.sung.kim</a></span>,
+ <span class="date" title="Tue Sep  2 13:51:14 2008">Sep 02, 2008</span>
+ 
+<pre>
+you can download the actual install files from the buildbot waterfall: 
+
+<a href="http://build.chromium.org/buildbot/snapshots/chromium-rel-xp/">http://build.chromium.org/buildbot/snapshots/chromium-rel-xp/</a>
+
+If you're behind a firewall configured by an automatic configuration script, however,
+Chromium does not seem to use those settings atm. See <a title="Need to support using file:// URLs to specify PAC files." class=closed_ref href="/p/chromium/issues/detail?id=74"> bug 74 </a>. 
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c8"
+ href="#c8">8</a>
+ by
+ <a style="white-space: nowrap" href="/u/ian@chromium.org/">ian@chromium.org</a></span>,
+ <span class="date" title="Tue Sep  2 14:21:02 2008">Sep 02, 2008</span>
+ 
+<pre>
+You should not use the nightly builds. They are not guaranteed to be stable, and you
+won't be getting automatic updates if you install from one of those. We are looking
+into the install problem.
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c9"
+ href="#c9">9</a>
+ by
+ <a style="white-space: nowrap" href="/u/ian@chromium.org/">ian@chromium.org</a></span>,
+ <span class="date" title="Tue Sep  2 14:25:11 2008">Sep 02, 2008</span>
+ 
+<pre>
+We had an issue around noon where the download URL might have been blocked by certain
+proxies. We switched the download URL and think the problem is fixed.
+</pre>
+ 
+ 
+ <div class="updates">
+ <div class="round4"></div>
+ <div class="round2"></div>
+ <div class="round1"></div>
+ <div class="box-inner">
+ <b>Status:</b> Fixed<br>
+ </div>
+ <div class="round1"></div>
+ <div class="round2"></div>
+ <div class="round4"></div>
+ </div>
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c10"
+ href="#c10">10</a>
+ by
+ <a style="white-space: nowrap" href="/u/korvus/">korvus</a></span>,
+ <span class="date" title="Tue Sep  2 15:12:16 2008">Sep 02, 2008</span>
+ 
+<pre>
+My issues are solved now -- presumably the URL fix did the job.  Thanks!
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c11"
+ href="#c11">11</a>
+ by
+ <a style="white-space: nowrap" href="/u/bugdroid1@chromium.org/">bugdroid1@chromium.org</a></span>,
+ <span class="date" title="Wed Jul 15 17:29:31 2009">Jul 15, 2009</span>
+ 
+<pre>
+The following revision refers to this bug:
+    <a href="http://src.chromium.org/viewvc/chrome?view=rev&amp;revision=20827">http://src.chromium.org/viewvc/chrome?view=rev&amp;revision=20827</a> 
+
+------------------------------------------------------------------------
+<a href="/p/chromium/source/detail?r=20827">r20827</a> | jianli@chromium.org | 2009-07-15 17:28:48 -0700 (Wed, 15 Jul 2009) | 6 lines
+Changed paths:
+   M <a href="http://src.chromium.org/viewvc/chrome/trunk/src/chrome/worker/worker_uitest.cc?r1=20827&amp;r2=20826">http://src.chromium.org/viewvc/chrome/trunk/src/chrome/worker/worker_uitest.cc?r1=20827&amp;r2=20826</a>
+
+Disable running layout tests worker-constructor.html and worker-redirect.html in UI test frameworker in preparation to checkin the fix for WebKit <a title="finance.google.com doesn't work correctly in chrome"  href="/p/chromium/issues/detail?id=25151">bug 25151</a> (<a href="https://bugs.webkit.org/show_bug.cgi?id=25151">https://bugs.webkit.org/show_bug.cgi?id=25151</a>). I will reenable the tests once the corresponding V8 change is landed.
+
+BUG=none
+TEST=none
+
+Review URL: <a href="http://codereview.chromium.org/155544">http://codereview.chromium.org/155544</a>
+------------------------------------------------------------------------
+
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c12"
+ href="#c12">12</a>
+ by
+ <a style="white-space: nowrap" href="/u/bugdroid1@chromium.org/">bugdroid1@chromium.org</a></span>,
+ <span class="date" title="Tue Aug 25 17:27:35 2009">Aug 25, 2009</span>
+ 
+<pre>
+The following revision refers to this bug:
+    <a href="http://src.chromium.org/viewvc/chrome?view=rev&amp;revision=24202">http://src.chromium.org/viewvc/chrome?view=rev&amp;revision=24202</a> 
+
+------------------------------------------------------------------------
+<a href="/p/chromium/source/detail?r=24202">r24202</a> | laforge@chromium.org | 2009-08-24 18:06:10 -0700 (Mon, 24 Aug 2009) | 30 lines
+Changed paths:
+   M <a href="http://src.chromium.org/viewvc/chrome/branches/WebKit/195/WebCore/bindings/scripts/CodeGeneratorV8.pm?r1=24202&amp;r2=24201">http://src.chromium.org/viewvc/chrome/branches/WebKit/195/WebCore/bindings/scripts/CodeGeneratorV8.pm?r1=24202&amp;r2=24201</a>
+   M <a href="http://src.chromium.org/viewvc/chrome/branches/WebKit/195/WebCore/bindings/v8/V8AbstractEventListener.h?r1=24202&amp;r2=24201">http://src.chromium.org/viewvc/chrome/branches/WebKit/195/WebCore/bindings/v8/V8AbstractEventListener.h?r1=24202&amp;r2=24201</a>
+   M <a href="http://src.chromium.org/viewvc/chrome/branches/WebKit/195/WebCore/bindings/v8/V8DOMWrapper.cpp?r1=24202&amp;r2=24201">http://src.chromium.org/viewvc/chrome/branches/WebKit/195/WebCore/bindings/v8/V8DOMWrapper.cpp?r1=24202&amp;r2=24201</a>
+   M <a href="http://src.chromium.org/viewvc/chrome/branches/WebKit/195/WebCore/bindings/v8/V8ObjectEventListener.cpp?r1=24202&amp;r2=24201">http://src.chromium.org/viewvc/chrome/branches/WebKit/195/WebCore/bindings/v8/V8ObjectEventListener.cpp?r1=24202&amp;r2=24201</a>
+   M <a href="http://src.chromium.org/viewvc/chrome/branches/WebKit/195/WebCore/bindings/v8/V8ObjectEventListener.h?r1=24202&amp;r2=24201">http://src.chromium.org/viewvc/chrome/branches/WebKit/195/WebCore/bindings/v8/V8ObjectEventListener.h?r1=24202&amp;r2=24201</a>
+   M <a href="http://src.chromium.org/viewvc/chrome/branches/WebKit/195/WebCore/bindings/v8/V8Utilities.cpp?r1=24202&amp;r2=24201">http://src.chromium.org/viewvc/chrome/branches/WebKit/195/WebCore/bindings/v8/V8Utilities.cpp?r1=24202&amp;r2=24201</a>
+   M <a href="http://src.chromium.org/viewvc/chrome/branches/WebKit/195/WebCore/bindings/v8/custom/V8CustomBinding.h?r1=24202&amp;r2=24201">http://src.chromium.org/viewvc/chrome/branches/WebKit/195/WebCore/bindings/v8/custom/V8CustomBinding.h?r1=24202&amp;r2=24201</a>
+   M <a href="http://src.chromium.org/viewvc/chrome/branches/WebKit/195/WebCore/bindings/v8/custom/V8ElementCustom.cpp?r1=24202&amp;r2=24201">http://src.chromium.org/viewvc/chrome/branches/WebKit/195/WebCore/bindings/v8/custom/V8ElementCustom.cpp?r1=24202&amp;r2=24201</a>
+   M <a href="http://src.chromium.org/viewvc/chrome/branches/WebKit/195/WebCore/bindings/v8/custom/V8NodeCustom.cpp?r1=24202&amp;r2=24201">http://src.chromium.org/viewvc/chrome/branches/WebKit/195/WebCore/bindings/v8/custom/V8NodeCustom.cpp?r1=24202&amp;r2=24201</a>
+   M <a href="http://src.chromium.org/viewvc/chrome/branches/WebKit/195/WebCore/bindings/v8/custom/V8XMLHttpRequestCustom.cpp?r1=24202&amp;r2=24201">http://src.chromium.org/viewvc/chrome/branches/WebKit/195/WebCore/bindings/v8/custom/V8XMLHttpRequestCustom.cpp?r1=24202&amp;r2=24201</a>
+
+Merge Webkit 47001 - 20090810  Vitaly Repeshko  &lt;vitalyr@quad.spb.corp.google.com&gt;
+
+        Reviewed by Dimitri Glazkov.
+
+        [V8] Fix memory leak in node event listeners. See <a href="http://crbug.com/17400">http://crbug.com/17400</a>.
+        <a href="https://bugs.webkit.org/show_bug.cgi?id=28156">https://bugs.webkit.org/show_bug.cgi?id=28156</a>
+
+        * bindings/scripts/CodeGeneratorV8.pm: Custom event handler accessors now apply to all Node descendants.
+        * bindings/v8/V8AbstractEventListener.h:
+        (WebCore::V8AbstractEventListener::isObjectListener): Added virtual method to detect listeners that have weak references to JS objects.
+        * bindings/v8/V8DOMWrapper.cpp:
+        (WebCore::V8DOMWrapper::getTemplate):
+        * bindings/v8/V8ObjectEventListener.cpp:
+        * bindings/v8/V8ObjectEventListener.h:
+        (WebCore::V8ObjectEventListener::isObjectListener):
+        * bindings/v8/V8Utilities.cpp:
+        (WebCore::removeHiddenDependency):
+        * bindings/v8/custom/V8CustomBinding.h:
+        * bindings/v8/custom/V8ElementCustom.cpp:
+        * bindings/v8/custom/V8NodeCustom.cpp: Moved custom accessors from V8ElementCustom.cpp.
+        (WebCore::toEventType):
+        (WebCore::getEventListener):
+        (WebCore::ACCESSOR_SETTER):
+        (WebCore::ACCESSOR_GETTER):
+        (WebCore::CALLBACK_FUNC_DECL):
+        * bindings/v8/custom/V8XMLHttpRequestCustom.cpp:
+        (WebCore::getEventListener): Made static.
+
+TBR=dglazkov@chromium.org
+Review URL: <a href="http://codereview.chromium.org/174381">http://codereview.chromium.org/174381</a>
+------------------------------------------------------------------------
+
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c13"
+ href="#c13">13</a>
+ by
+ <a style="white-space: nowrap" href="/u/bugdroid1@chromium.org/">bugdroid1@chromium.org</a></span>,
+ <span class="date" title="Wed Sep 30 16:52:56 2009">Sep 30, 2009</span>
+ 
+<pre>
+The following revision refers to this bug:
+    <a href="http://src.chromium.org/viewvc/chrome?view=rev&amp;revision=27688">http://src.chromium.org/viewvc/chrome?view=rev&amp;revision=27688</a> 
+
+------------------------------------------------------------------------
+<a href="/p/chromium/source/detail?r=27688">r27688</a> | jshin@chromium.org | 2009-09-30 16:52:04 -0700 (Wed, 30 Sep 2009) | 7 lines
+Changed paths:
+   M <a href="http://src.chromium.org/viewvc/chrome/trunk/src/DEPS?r1=27688&amp;r2=27687">http://src.chromium.org/viewvc/chrome/trunk/src/DEPS?r1=27688&amp;r2=27687</a>
+
+Pull in two ICU patches for crashes. (<a href="/p/chromium/source/detail?r=27687">r27687</a>)
+
+BUG=23082,23361
+TEST=1. see <a title="New crash relating to FTP directory listings in 4.0.213.1" class=closed_ref href="/p/chromium/issues/detail?id=23082"> issue 23082 </a> comment 8 (<a href="http://crbug.com/23082#c8">http://crbug.com/23082#c8</a>)
+     2. Connect to a ftp site and try to see the file list.
+TBR=wtc
+Review URL: <a href="http://codereview.chromium.org/258005">http://codereview.chromium.org/258005</a>
+------------------------------------------------------------------------
+
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c14"
+ href="#c14">14</a>
+ by
+ <a style="white-space: nowrap" href="/u/mal.chromium/">mal.chromium</a></span>,
+ <span class="date" title="Fri Dec 18 16:52:27 2009">Dec 18, 2009</span>
+ 
+<pre>
+<i>(No comment was entered for this change.)</i>
+</pre>
+ 
+ 
+ <div class="updates">
+ <div class="round4"></div>
+ <div class="round2"></div>
+ <div class="round1"></div>
+ <div class="box-inner">
+ <b>Labels:</b> -Area-Installer Area-Internals Internals-Install<br>
+ </div>
+ <div class="round1"></div>
+ <div class="round2"></div>
+ <div class="round4"></div>
+ </div>
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c15"
+ href="#c15">15</a>
+ by
+ <a style="white-space: nowrap" href="/u/bugdroid1@chromium.org/">bugdroid1@chromium.org</a></span>,
+ <span class="date" title="Tue Jan 26 10:12:35 2010">Jan 26, 2010</span>
+ 
+<pre>
+The following revision refers to this bug:
+    <a href="http://src.chromium.org/viewvc/chrome?view=rev&amp;revision=37095">http://src.chromium.org/viewvc/chrome?view=rev&amp;revision=37095</a> 
+
+------------------------------------------------------------------------
+<a href="/p/chromium/source/detail?r=37095">r37095</a> | cevans@chromium.org | 2010-01-25 23:36:56 -0800 (Mon, 25 Jan 2010) | 84 lines
+Changed paths:
+   M <a href="http://src.chromium.org/viewvc/chrome/branches/WebKit/249/LayoutTests/ChangeLog?r1=37095&amp;r2=37094">http://src.chromium.org/viewvc/chrome/branches/WebKit/249/LayoutTests/ChangeLog?r1=37095&amp;r2=37094</a>
+   A <a href="http://src.chromium.org/viewvc/chrome/branches/WebKit/249/LayoutTests/fast/ruby/ruby-illegal-1-expected.txt">http://src.chromium.org/viewvc/chrome/branches/WebKit/249/LayoutTests/fast/ruby/ruby-illegal-1-expected.txt</a>
+   A <a href="http://src.chromium.org/viewvc/chrome/branches/WebKit/249/LayoutTests/fast/ruby/ruby-illegal-1.html">http://src.chromium.org/viewvc/chrome/branches/WebKit/249/LayoutTests/fast/ruby/ruby-illegal-1.html</a>
+   A <a href="http://src.chromium.org/viewvc/chrome/branches/WebKit/249/LayoutTests/fast/ruby/ruby-illegal-2-expected.txt">http://src.chromium.org/viewvc/chrome/branches/WebKit/249/LayoutTests/fast/ruby/ruby-illegal-2-expected.txt</a>
+   A <a href="http://src.chromium.org/viewvc/chrome/branches/WebKit/249/LayoutTests/fast/ruby/ruby-illegal-2.html">http://src.chromium.org/viewvc/chrome/branches/WebKit/249/LayoutTests/fast/ruby/ruby-illegal-2.html</a>
+   A <a href="http://src.chromium.org/viewvc/chrome/branches/WebKit/249/LayoutTests/fast/ruby/ruby-illegal-3-expected.txt">http://src.chromium.org/viewvc/chrome/branches/WebKit/249/LayoutTests/fast/ruby/ruby-illegal-3-expected.txt</a>
+   A <a href="http://src.chromium.org/viewvc/chrome/branches/WebKit/249/LayoutTests/fast/ruby/ruby-illegal-3.html">http://src.chromium.org/viewvc/chrome/branches/WebKit/249/LayoutTests/fast/ruby/ruby-illegal-3.html</a>
+   A <a href="http://src.chromium.org/viewvc/chrome/branches/WebKit/249/LayoutTests/fast/ruby/ruby-illegal-4-expected.txt">http://src.chromium.org/viewvc/chrome/branches/WebKit/249/LayoutTests/fast/ruby/ruby-illegal-4-expected.txt</a>
+   A <a href="http://src.chromium.org/viewvc/chrome/branches/WebKit/249/LayoutTests/fast/ruby/ruby-illegal-4.html">http://src.chromium.org/viewvc/chrome/branches/WebKit/249/LayoutTests/fast/ruby/ruby-illegal-4.html</a>
+   A <a href="http://src.chromium.org/viewvc/chrome/branches/WebKit/249/LayoutTests/fast/ruby/ruby-illegal-5-expected.txt">http://src.chromium.org/viewvc/chrome/branches/WebKit/249/LayoutTests/fast/ruby/ruby-illegal-5-expected.txt</a>
+   A <a href="http://src.chromium.org/viewvc/chrome/branches/WebKit/249/LayoutTests/fast/ruby/ruby-illegal-5.html">http://src.chromium.org/viewvc/chrome/branches/WebKit/249/LayoutTests/fast/ruby/ruby-illegal-5.html</a>
+   A <a href="http://src.chromium.org/viewvc/chrome/branches/WebKit/249/LayoutTests/fast/ruby/ruby-illegal-6-expected.txt">http://src.chromium.org/viewvc/chrome/branches/WebKit/249/LayoutTests/fast/ruby/ruby-illegal-6-expected.txt</a>
+   A <a href="http://src.chromium.org/viewvc/chrome/branches/WebKit/249/LayoutTests/fast/ruby/ruby-illegal-6.html">http://src.chromium.org/viewvc/chrome/branches/WebKit/249/LayoutTests/fast/ruby/ruby-illegal-6.html</a>
+   A <a href="http://src.chromium.org/viewvc/chrome/branches/WebKit/249/LayoutTests/fast/ruby/ruby-illegal-7-expected.txt">http://src.chromium.org/viewvc/chrome/branches/WebKit/249/LayoutTests/fast/ruby/ruby-illegal-7-expected.txt</a>
+   A <a href="http://src.chromium.org/viewvc/chrome/branches/WebKit/249/LayoutTests/fast/ruby/ruby-illegal-7.html">http://src.chromium.org/viewvc/chrome/branches/WebKit/249/LayoutTests/fast/ruby/ruby-illegal-7.html</a>
+   A <a href="http://src.chromium.org/viewvc/chrome/branches/WebKit/249/LayoutTests/fast/ruby/ruby-illegal-combined-expected.txt">http://src.chromium.org/viewvc/chrome/branches/WebKit/249/LayoutTests/fast/ruby/ruby-illegal-combined-expected.txt</a>
+   A <a href="http://src.chromium.org/viewvc/chrome/branches/WebKit/249/LayoutTests/fast/ruby/ruby-illegal-combined.html">http://src.chromium.org/viewvc/chrome/branches/WebKit/249/LayoutTests/fast/ruby/ruby-illegal-combined.html</a>
+   D /branches/WebKit/249/LayoutTests/fast/ruby/ruby-illegal-expected.txt
+   D /branches/WebKit/249/LayoutTests/fast/ruby/ruby-illegal.html
+   A <a href="http://src.chromium.org/viewvc/chrome/branches/WebKit/249/LayoutTests/fast/ruby/rubyDOM-insert-rt-block-1-expected.txt">http://src.chromium.org/viewvc/chrome/branches/WebKit/249/LayoutTests/fast/ruby/rubyDOM-insert-rt-block-1-expected.txt</a>
+   A <a href="http://src.chromium.org/viewvc/chrome/branches/WebKit/249/LayoutTests/fast/ruby/rubyDOM-insert-rt-block-1.html">http://src.chromium.org/viewvc/chrome/branches/WebKit/249/LayoutTests/fast/ruby/rubyDOM-insert-rt-block-1.html</a>
+   A <a href="http://src.chromium.org/viewvc/chrome/branches/WebKit/249/LayoutTests/fast/ruby/rubyDOM-insert-rt-block-2-expected.txt">http://src.chromium.org/viewvc/chrome/branches/WebKit/249/LayoutTests/fast/ruby/rubyDOM-insert-rt-block-2-expected.txt</a>
+   A <a href="http://src.chromium.org/viewvc/chrome/branches/WebKit/249/LayoutTests/fast/ruby/rubyDOM-insert-rt-block-2.html">http://src.chromium.org/viewvc/chrome/branches/WebKit/249/LayoutTests/fast/ruby/rubyDOM-insert-rt-block-2.html</a>
+   A <a href="http://src.chromium.org/viewvc/chrome/branches/WebKit/249/LayoutTests/fast/ruby/rubyDOM-insert-rt-block-3-expected.txt">http://src.chromium.org/viewvc/chrome/branches/WebKit/249/LayoutTests/fast/ruby/rubyDOM-insert-rt-block-3-expected.txt</a>
+   A <a href="http://src.chromium.org/viewvc/chrome/branches/WebKit/249/LayoutTests/fast/ruby/rubyDOM-insert-rt-block-3.html">http://src.chromium.org/viewvc/chrome/branches/WebKit/249/LayoutTests/fast/ruby/rubyDOM-insert-rt-block-3.html</a>
+   A <a href="http://src.chromium.org/viewvc/chrome/branches/WebKit/249/LayoutTests/fast/ruby/rubyDOM-remove-rt-block-1-expected.txt">http://src.chromium.org/viewvc/chrome/branches/WebKit/249/LayoutTests/fast/ruby/rubyDOM-remove-rt-block-1-expected.txt</a>
+   A <a href="http://src.chromium.org/viewvc/chrome/branches/WebKit/249/LayoutTests/fast/ruby/rubyDOM-remove-rt-block-1.html">http://src.chromium.org/viewvc/chrome/branches/WebKit/249/LayoutTests/fast/ruby/rubyDOM-remove-rt-block-1.html</a>
+   A <a href="http://src.chromium.org/viewvc/chrome/branches/WebKit/249/LayoutTests/fast/ruby/rubyDOM-remove-rt-block-2-expected.txt">http://src.chromium.org/viewvc/chrome/branches/WebKit/249/LayoutTests/fast/ruby/rubyDOM-remove-rt-block-2-expected.txt</a>
+   A <a href="http://src.chromium.org/viewvc/chrome/branches/WebKit/249/LayoutTests/fast/ruby/rubyDOM-remove-rt-block-2.html">http://src.chromium.org/viewvc/chrome/branches/WebKit/249/LayoutTests/fast/ruby/rubyDOM-remove-rt-block-2.html</a>
+   A <a href="http://src.chromium.org/viewvc/chrome/branches/WebKit/249/LayoutTests/fast/ruby/rubyDOM-remove-rt-block-3-expected.txt">http://src.chromium.org/viewvc/chrome/branches/WebKit/249/LayoutTests/fast/ruby/rubyDOM-remove-rt-block-3-expected.txt</a>
+   A <a href="http://src.chromium.org/viewvc/chrome/branches/WebKit/249/LayoutTests/fast/ruby/rubyDOM-remove-rt-block-3.html">http://src.chromium.org/viewvc/chrome/branches/WebKit/249/LayoutTests/fast/ruby/rubyDOM-remove-rt-block-3.html</a>
+   M <a href="http://src.chromium.org/viewvc/chrome/branches/WebKit/249/WebCore/ChangeLog?r1=37095&amp;r2=37094">http://src.chromium.org/viewvc/chrome/branches/WebKit/249/WebCore/ChangeLog?r1=37095&amp;r2=37094</a>
+   M <a href="http://src.chromium.org/viewvc/chrome/branches/WebKit/249/WebCore/rendering/RenderBlock.cpp?r1=37095&amp;r2=37094">http://src.chromium.org/viewvc/chrome/branches/WebKit/249/WebCore/rendering/RenderBlock.cpp?r1=37095&amp;r2=37094</a>
+   M <a href="http://src.chromium.org/viewvc/chrome/branches/WebKit/249/WebCore/rendering/RenderBlock.h?r1=37095&amp;r2=37094">http://src.chromium.org/viewvc/chrome/branches/WebKit/249/WebCore/rendering/RenderBlock.h?r1=37095&amp;r2=37094</a>
+   M <a href="http://src.chromium.org/viewvc/chrome/branches/WebKit/249/WebCore/rendering/RenderRubyBase.cpp?r1=37095&amp;r2=37094">http://src.chromium.org/viewvc/chrome/branches/WebKit/249/WebCore/rendering/RenderRubyBase.cpp?r1=37095&amp;r2=37094</a>
+   M <a href="http://src.chromium.org/viewvc/chrome/branches/WebKit/249/WebCore/rendering/RenderRubyBase.h?r1=37095&amp;r2=37094">http://src.chromium.org/viewvc/chrome/branches/WebKit/249/WebCore/rendering/RenderRubyBase.h?r1=37095&amp;r2=37094</a>
+   M <a href="http://src.chromium.org/viewvc/chrome/branches/WebKit/249/WebCore/rendering/RenderRubyRun.cpp?r1=37095&amp;r2=37094">http://src.chromium.org/viewvc/chrome/branches/WebKit/249/WebCore/rendering/RenderRubyRun.cpp?r1=37095&amp;r2=37094</a>
+
+Merge 53525 - <a title="issta.co.il: date picker appears off-screen when editing search details" class=closed_ref href="/p/chromium/issues/detail?id=33266"> Bug 33266 </a>  WebCore::InlineFlowBox::determineSpacingForFlowBoxes ReadAV@NULL (43c64e8abbda6766e5f5edbd254c2d57)
+(<a href="https://bugs.webkit.org/show_bug.cgi?id=33266">https://bugs.webkit.org/show_bug.cgi?id=33266</a>)
+        
+Reviewed by Dan Bernstein.
+
+WebCore: 
+
+Ruby did not handle malformed cases correctly when the ruby base was in
+block flow. Changed the code to handle all possible cases.
+Also, added some simplification methods to RenderBlock.
+
+Tests: fast/ruby/rubyillegal1.html
+       fast/ruby/rubyillegal2.html
+       fast/ruby/rubyillegal3.html
+       fast/ruby/rubyillegal4.html
+       fast/ruby/rubyillegal5.html
+       fast/ruby/rubyillegal6.html
+       fast/ruby/rubyillegal7.html
+       fast/ruby/rubyillegalcombined.html
+       fast/ruby/rubyDOMinsertrtblock1.html
+       fast/ruby/rubyDOMinsertrtblock2.html
+       fast/ruby/rubyDOMinsertrtblock3.html
+       fast/ruby/rubyDOMremovertblock1.html
+       fast/ruby/rubyDOMremovertblock2.html
+       fast/ruby/rubyDOMremovertblock3.html
+
+* rendering/RenderBlock.cpp:
+(WebCore::RenderBlock::moveAllChildrenTo): useful for anonymous block manipulation
+(WebCore::RenderBlock::removeChild): making use of moveAllChildrenTo
+* rendering/RenderBlock.h:
+* rendering/RenderRubyBase.cpp:
+(WebCore::RenderRubyBase::hasOnlyWrappedInlineChildren):
+(WebCore::RenderRubyBase::moveChildren):
+(WebCore::RenderRubyBase::moveInlineChildren):
+(WebCore::RenderRubyBase::moveBlockChildren):
+(WebCore::RenderRubyBase::mergeBlockChildren):
+* rendering/RenderRubyBase.h:
+* rendering/RenderRubyRun.cpp:
+(WebCore::RenderRubyRun::addChild):
+(WebCore::RenderRubyRun::removeChild):
+
+LayoutTests: 
+
+Layout tests for ruby with malformed HTML.
+Split up in individual tests, as well ass added a single combined test
+(whose resulting render tree is probably completely different from what
+you'd expect), since that combined test showed additional issues not
+covered by the individual tests.
+
+* fast/ruby/rubyillegal1expected.txt: Added.
+* fast/ruby/rubyillegal1.html: Added.
+* fast/ruby/rubyillegal2expected.txt: Added.
+* fast/ruby/rubyillegal2.html: Added.
+* fast/ruby/rubyillegal3expected.txt: Added.
+* fast/ruby/rubyillegal3.html: Added.
+* fast/ruby/rubyillegal4expected.txt: Added.
+* fast/ruby/rubyillegal4.html: Added.
+* fast/ruby/rubyillegal5expected.txt: Added.
+* fast/ruby/rubyillegal5.html: Added.
+* fast/ruby/rubyillegal6expected.txt: Added.
+* fast/ruby/rubyillegal6.html: Added.
+* fast/ruby/rubyillegal7expected.txt: Added.
+* fast/ruby/rubyillegal7.html: Added.
+* fast/ruby/rubyillegalcombinedexpected.txt: Added.
+* fast/ruby/rubyillegalcombined.html: Added.
+* fast/ruby/rubyillegalexpected.txt: Removed.
+* fast/ruby/rubyillegal.html: Removed.
+* fast/ruby/rubyDOMinsertrtblock1expected.txt: Added.
+* fast/ruby/rubyDOMinsertrtblock1.html: Added.
+* fast/ruby/rubyDOMinsertrtblock2expected.txt: Added.
+* fast/ruby/rubyDOMinsertrtblock2.html: Added.
+* fast/ruby/rubyDOMinsertrtblock3expected.txt: Added.
+* fast/ruby/rubyDOMinsertrtblock3.html: Added.
+* fast/ruby/rubyDOMremovertblock1expected.txt: Added.
+* fast/ruby/rubyDOMremovertblock1.html: Added.
+* fast/ruby/rubyDOMremovertblock2expected.txt: Added.
+* fast/ruby/rubyDOMremovertblock2.html: Added.
+* fast/ruby/rubyDOMremovertblock3expected.txt: Added.
+* fast/ruby/rubyDOMremovertblock3.html: Added.
+
+
+
+TBR=rolandsteiner@chromium.org
+Review URL: <a href="http://codereview.chromium.org/556017">http://codereview.chromium.org/556017</a>
+------------------------------------------------------------------------
+
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c16"
+ href="#c16">16</a>
+ by
+ <a style="white-space: nowrap" href="/u/bugdroid1@chromium.org/">bugdroid1@chromium.org</a></span>,
+ <span class="date" title="Tue Jan 26 10:12:48 2010">Jan 26, 2010</span>
+ 
+<pre>
+The following revision refers to this bug:
+    <a href="http://src.chromium.org/viewvc/chrome?view=rev&amp;revision=37096">http://src.chromium.org/viewvc/chrome?view=rev&amp;revision=37096</a> 
+
+------------------------------------------------------------------------
+<a href="/p/chromium/source/detail?r=37096">r37096</a> | cevans@chromium.org | 2010-01-25 23:47:08 -0800 (Mon, 25 Jan 2010) | 84 lines
+Changed paths:
+   M <a href="http://src.chromium.org/viewvc/chrome/branches/WebKit/249s/LayoutTests/ChangeLog?r1=37096&amp;r2=37095">http://src.chromium.org/viewvc/chrome/branches/WebKit/249s/LayoutTests/ChangeLog?r1=37096&amp;r2=37095</a>
+   A <a href="http://src.chromium.org/viewvc/chrome/branches/WebKit/249s/LayoutTests/fast/ruby/ruby-illegal-1-expected.txt">http://src.chromium.org/viewvc/chrome/branches/WebKit/249s/LayoutTests/fast/ruby/ruby-illegal-1-expected.txt</a>
+   A <a href="http://src.chromium.org/viewvc/chrome/branches/WebKit/249s/LayoutTests/fast/ruby/ruby-illegal-1.html">http://src.chromium.org/viewvc/chrome/branches/WebKit/249s/LayoutTests/fast/ruby/ruby-illegal-1.html</a>
+   A <a href="http://src.chromium.org/viewvc/chrome/branches/WebKit/249s/LayoutTests/fast/ruby/ruby-illegal-2-expected.txt">http://src.chromium.org/viewvc/chrome/branches/WebKit/249s/LayoutTests/fast/ruby/ruby-illegal-2-expected.txt</a>
+   A <a href="http://src.chromium.org/viewvc/chrome/branches/WebKit/249s/LayoutTests/fast/ruby/ruby-illegal-2.html">http://src.chromium.org/viewvc/chrome/branches/WebKit/249s/LayoutTests/fast/ruby/ruby-illegal-2.html</a>
+   A <a href="http://src.chromium.org/viewvc/chrome/branches/WebKit/249s/LayoutTests/fast/ruby/ruby-illegal-3-expected.txt">http://src.chromium.org/viewvc/chrome/branches/WebKit/249s/LayoutTests/fast/ruby/ruby-illegal-3-expected.txt</a>
+   A <a href="http://src.chromium.org/viewvc/chrome/branches/WebKit/249s/LayoutTests/fast/ruby/ruby-illegal-3.html">http://src.chromium.org/viewvc/chrome/branches/WebKit/249s/LayoutTests/fast/ruby/ruby-illegal-3.html</a>
+   A <a href="http://src.chromium.org/viewvc/chrome/branches/WebKit/249s/LayoutTests/fast/ruby/ruby-illegal-4-expected.txt">http://src.chromium.org/viewvc/chrome/branches/WebKit/249s/LayoutTests/fast/ruby/ruby-illegal-4-expected.txt</a>
+   A <a href="http://src.chromium.org/viewvc/chrome/branches/WebKit/249s/LayoutTests/fast/ruby/ruby-illegal-4.html">http://src.chromium.org/viewvc/chrome/branches/WebKit/249s/LayoutTests/fast/ruby/ruby-illegal-4.html</a>
+   A <a href="http://src.chromium.org/viewvc/chrome/branches/WebKit/249s/LayoutTests/fast/ruby/ruby-illegal-5-expected.txt">http://src.chromium.org/viewvc/chrome/branches/WebKit/249s/LayoutTests/fast/ruby/ruby-illegal-5-expected.txt</a>
+   A <a href="http://src.chromium.org/viewvc/chrome/branches/WebKit/249s/LayoutTests/fast/ruby/ruby-illegal-5.html">http://src.chromium.org/viewvc/chrome/branches/WebKit/249s/LayoutTests/fast/ruby/ruby-illegal-5.html</a>
+   A <a href="http://src.chromium.org/viewvc/chrome/branches/WebKit/249s/LayoutTests/fast/ruby/ruby-illegal-6-expected.txt">http://src.chromium.org/viewvc/chrome/branches/WebKit/249s/LayoutTests/fast/ruby/ruby-illegal-6-expected.txt</a>
+   A <a href="http://src.chromium.org/viewvc/chrome/branches/WebKit/249s/LayoutTests/fast/ruby/ruby-illegal-6.html">http://src.chromium.org/viewvc/chrome/branches/WebKit/249s/LayoutTests/fast/ruby/ruby-illegal-6.html</a>
+   A <a href="http://src.chromium.org/viewvc/chrome/branches/WebKit/249s/LayoutTests/fast/ruby/ruby-illegal-7-expected.txt">http://src.chromium.org/viewvc/chrome/branches/WebKit/249s/LayoutTests/fast/ruby/ruby-illegal-7-expected.txt</a>
+   A <a href="http://src.chromium.org/viewvc/chrome/branches/WebKit/249s/LayoutTests/fast/ruby/ruby-illegal-7.html">http://src.chromium.org/viewvc/chrome/branches/WebKit/249s/LayoutTests/fast/ruby/ruby-illegal-7.html</a>
+   A <a href="http://src.chromium.org/viewvc/chrome/branches/WebKit/249s/LayoutTests/fast/ruby/ruby-illegal-combined-expected.txt">http://src.chromium.org/viewvc/chrome/branches/WebKit/249s/LayoutTests/fast/ruby/ruby-illegal-combined-expected.txt</a>
+   A <a href="http://src.chromium.org/viewvc/chrome/branches/WebKit/249s/LayoutTests/fast/ruby/ruby-illegal-combined.html">http://src.chromium.org/viewvc/chrome/branches/WebKit/249s/LayoutTests/fast/ruby/ruby-illegal-combined.html</a>
+   D /branches/WebKit/249s/LayoutTests/fast/ruby/ruby-illegal-expected.txt
+   D /branches/WebKit/249s/LayoutTests/fast/ruby/ruby-illegal.html
+   A <a href="http://src.chromium.org/viewvc/chrome/branches/WebKit/249s/LayoutTests/fast/ruby/rubyDOM-insert-rt-block-1-expected.txt">http://src.chromium.org/viewvc/chrome/branches/WebKit/249s/LayoutTests/fast/ruby/rubyDOM-insert-rt-block-1-expected.txt</a>
+   A <a href="http://src.chromium.org/viewvc/chrome/branches/WebKit/249s/LayoutTests/fast/ruby/rubyDOM-insert-rt-block-1.html">http://src.chromium.org/viewvc/chrome/branches/WebKit/249s/LayoutTests/fast/ruby/rubyDOM-insert-rt-block-1.html</a>
+   A <a href="http://src.chromium.org/viewvc/chrome/branches/WebKit/249s/LayoutTests/fast/ruby/rubyDOM-insert-rt-block-2-expected.txt">http://src.chromium.org/viewvc/chrome/branches/WebKit/249s/LayoutTests/fast/ruby/rubyDOM-insert-rt-block-2-expected.txt</a>
+   A <a href="http://src.chromium.org/viewvc/chrome/branches/WebKit/249s/LayoutTests/fast/ruby/rubyDOM-insert-rt-block-2.html">http://src.chromium.org/viewvc/chrome/branches/WebKit/249s/LayoutTests/fast/ruby/rubyDOM-insert-rt-block-2.html</a>
+   A <a href="http://src.chromium.org/viewvc/chrome/branches/WebKit/249s/LayoutTests/fast/ruby/rubyDOM-insert-rt-block-3-expected.txt">http://src.chromium.org/viewvc/chrome/branches/WebKit/249s/LayoutTests/fast/ruby/rubyDOM-insert-rt-block-3-expected.txt</a>
+   A <a href="http://src.chromium.org/viewvc/chrome/branches/WebKit/249s/LayoutTests/fast/ruby/rubyDOM-insert-rt-block-3.html">http://src.chromium.org/viewvc/chrome/branches/WebKit/249s/LayoutTests/fast/ruby/rubyDOM-insert-rt-block-3.html</a>
+   A <a href="http://src.chromium.org/viewvc/chrome/branches/WebKit/249s/LayoutTests/fast/ruby/rubyDOM-remove-rt-block-1-expected.txt">http://src.chromium.org/viewvc/chrome/branches/WebKit/249s/LayoutTests/fast/ruby/rubyDOM-remove-rt-block-1-expected.txt</a>
+   A <a href="http://src.chromium.org/viewvc/chrome/branches/WebKit/249s/LayoutTests/fast/ruby/rubyDOM-remove-rt-block-1.html">http://src.chromium.org/viewvc/chrome/branches/WebKit/249s/LayoutTests/fast/ruby/rubyDOM-remove-rt-block-1.html</a>
+   A <a href="http://src.chromium.org/viewvc/chrome/branches/WebKit/249s/LayoutTests/fast/ruby/rubyDOM-remove-rt-block-2-expected.txt">http://src.chromium.org/viewvc/chrome/branches/WebKit/249s/LayoutTests/fast/ruby/rubyDOM-remove-rt-block-2-expected.txt</a>
+   A <a href="http://src.chromium.org/viewvc/chrome/branches/WebKit/249s/LayoutTests/fast/ruby/rubyDOM-remove-rt-block-2.html">http://src.chromium.org/viewvc/chrome/branches/WebKit/249s/LayoutTests/fast/ruby/rubyDOM-remove-rt-block-2.html</a>
+   A <a href="http://src.chromium.org/viewvc/chrome/branches/WebKit/249s/LayoutTests/fast/ruby/rubyDOM-remove-rt-block-3-expected.txt">http://src.chromium.org/viewvc/chrome/branches/WebKit/249s/LayoutTests/fast/ruby/rubyDOM-remove-rt-block-3-expected.txt</a>
+   A <a href="http://src.chromium.org/viewvc/chrome/branches/WebKit/249s/LayoutTests/fast/ruby/rubyDOM-remove-rt-block-3.html">http://src.chromium.org/viewvc/chrome/branches/WebKit/249s/LayoutTests/fast/ruby/rubyDOM-remove-rt-block-3.html</a>
+   M <a href="http://src.chromium.org/viewvc/chrome/branches/WebKit/249s/WebCore/ChangeLog?r1=37096&amp;r2=37095">http://src.chromium.org/viewvc/chrome/branches/WebKit/249s/WebCore/ChangeLog?r1=37096&amp;r2=37095</a>
+   M <a href="http://src.chromium.org/viewvc/chrome/branches/WebKit/249s/WebCore/rendering/RenderBlock.cpp?r1=37096&amp;r2=37095">http://src.chromium.org/viewvc/chrome/branches/WebKit/249s/WebCore/rendering/RenderBlock.cpp?r1=37096&amp;r2=37095</a>
+   M <a href="http://src.chromium.org/viewvc/chrome/branches/WebKit/249s/WebCore/rendering/RenderBlock.h?r1=37096&amp;r2=37095">http://src.chromium.org/viewvc/chrome/branches/WebKit/249s/WebCore/rendering/RenderBlock.h?r1=37096&amp;r2=37095</a>
+   M <a href="http://src.chromium.org/viewvc/chrome/branches/WebKit/249s/WebCore/rendering/RenderRubyBase.cpp?r1=37096&amp;r2=37095">http://src.chromium.org/viewvc/chrome/branches/WebKit/249s/WebCore/rendering/RenderRubyBase.cpp?r1=37096&amp;r2=37095</a>
+   M <a href="http://src.chromium.org/viewvc/chrome/branches/WebKit/249s/WebCore/rendering/RenderRubyBase.h?r1=37096&amp;r2=37095">http://src.chromium.org/viewvc/chrome/branches/WebKit/249s/WebCore/rendering/RenderRubyBase.h?r1=37096&amp;r2=37095</a>
+   M <a href="http://src.chromium.org/viewvc/chrome/branches/WebKit/249s/WebCore/rendering/RenderRubyRun.cpp?r1=37096&amp;r2=37095">http://src.chromium.org/viewvc/chrome/branches/WebKit/249s/WebCore/rendering/RenderRubyRun.cpp?r1=37096&amp;r2=37095</a>
+
+Merge 53525 - <a title="issta.co.il: date picker appears off-screen when editing search details" class=closed_ref href="/p/chromium/issues/detail?id=33266"> Bug 33266 </a>  WebCore::InlineFlowBox::determineSpacingForFlowBoxes ReadAV@NULL (43c64e8abbda6766e5f5edbd254c2d57)
+(<a href="https://bugs.webkit.org/show_bug.cgi?id=33266">https://bugs.webkit.org/show_bug.cgi?id=33266</a>)
+        
+Reviewed by Dan Bernstein.
+
+WebCore: 
+
+Ruby did not handle malformed cases correctly when the ruby base was in
+block flow. Changed the code to handle all possible cases.
+Also, added some simplification methods to RenderBlock.
+
+Tests: fast/ruby/rubyillegal1.html
+       fast/ruby/rubyillegal2.html
+       fast/ruby/rubyillegal3.html
+       fast/ruby/rubyillegal4.html
+       fast/ruby/rubyillegal5.html
+       fast/ruby/rubyillegal6.html
+       fast/ruby/rubyillegal7.html
+       fast/ruby/rubyillegalcombined.html
+       fast/ruby/rubyDOMinsertrtblock1.html
+       fast/ruby/rubyDOMinsertrtblock2.html
+       fast/ruby/rubyDOMinsertrtblock3.html
+       fast/ruby/rubyDOMremovertblock1.html
+       fast/ruby/rubyDOMremovertblock2.html
+       fast/ruby/rubyDOMremovertblock3.html
+
+* rendering/RenderBlock.cpp:
+(WebCore::RenderBlock::moveAllChildrenTo): useful for anonymous block manipulation
+(WebCore::RenderBlock::removeChild): making use of moveAllChildrenTo
+* rendering/RenderBlock.h:
+* rendering/RenderRubyBase.cpp:
+(WebCore::RenderRubyBase::hasOnlyWrappedInlineChildren):
+(WebCore::RenderRubyBase::moveChildren):
+(WebCore::RenderRubyBase::moveInlineChildren):
+(WebCore::RenderRubyBase::moveBlockChildren):
+(WebCore::RenderRubyBase::mergeBlockChildren):
+* rendering/RenderRubyBase.h:
+* rendering/RenderRubyRun.cpp:
+(WebCore::RenderRubyRun::addChild):
+(WebCore::RenderRubyRun::removeChild):
+
+LayoutTests: 
+
+Layout tests for ruby with malformed HTML.
+Split up in individual tests, as well ass added a single combined test
+(whose resulting render tree is probably completely different from what
+you'd expect), since that combined test showed additional issues not
+covered by the individual tests.
+
+* fast/ruby/rubyillegal1expected.txt: Added.
+* fast/ruby/rubyillegal1.html: Added.
+* fast/ruby/rubyillegal2expected.txt: Added.
+* fast/ruby/rubyillegal2.html: Added.
+* fast/ruby/rubyillegal3expected.txt: Added.
+* fast/ruby/rubyillegal3.html: Added.
+* fast/ruby/rubyillegal4expected.txt: Added.
+* fast/ruby/rubyillegal4.html: Added.
+* fast/ruby/rubyillegal5expected.txt: Added.
+* fast/ruby/rubyillegal5.html: Added.
+* fast/ruby/rubyillegal6expected.txt: Added.
+* fast/ruby/rubyillegal6.html: Added.
+* fast/ruby/rubyillegal7expected.txt: Added.
+* fast/ruby/rubyillegal7.html: Added.
+* fast/ruby/rubyillegalcombinedexpected.txt: Added.
+* fast/ruby/rubyillegalcombined.html: Added.
+* fast/ruby/rubyillegalexpected.txt: Removed.
+* fast/ruby/rubyillegal.html: Removed.
+* fast/ruby/rubyDOMinsertrtblock1expected.txt: Added.
+* fast/ruby/rubyDOMinsertrtblock1.html: Added.
+* fast/ruby/rubyDOMinsertrtblock2expected.txt: Added.
+* fast/ruby/rubyDOMinsertrtblock2.html: Added.
+* fast/ruby/rubyDOMinsertrtblock3expected.txt: Added.
+* fast/ruby/rubyDOMinsertrtblock3.html: Added.
+* fast/ruby/rubyDOMremovertblock1expected.txt: Added.
+* fast/ruby/rubyDOMremovertblock1.html: Added.
+* fast/ruby/rubyDOMremovertblock2expected.txt: Added.
+* fast/ruby/rubyDOMremovertblock2.html: Added.
+* fast/ruby/rubyDOMremovertblock3expected.txt: Added.
+* fast/ruby/rubyDOMremovertblock3.html: Added.
+
+
+
+TBR=rolandsteiner@chromium.org
+Review URL: <a href="http://codereview.chromium.org/554075">http://codereview.chromium.org/554075</a>
+------------------------------------------------------------------------
+
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c17"
+ href="#c17">17</a>
+ by
+ <a style="white-space: nowrap" href="/u/bugdroid1@chromium.org/">bugdroid1@chromium.org</a></span>,
+ <span class="date" title="Fri Apr 16 00:47:39 2010">Apr 16, 2010</span>
+ 
+<pre>
+The following revision refers to this bug:
+    <a href="http://src.chromium.org/viewvc/chrome?view=rev&amp;revision=44757">http://src.chromium.org/viewvc/chrome?view=rev&amp;revision=44757</a> 
+
+------------------------------------------------------------------------
+<a href="/p/chromium/source/detail?r=44757">r44757</a> | whesse@chromium.org | 2010-04-16 00:47:31 -0700 (Fri, 16 Apr 2010) | 2 lines
+Changed paths:
+   M <a href="http://src.chromium.org/viewvc/chrome/trunk/src/DEPS?r1=44757&amp;r2=44756">http://src.chromium.org/viewvc/chrome/trunk/src/DEPS?r1=44757&amp;r2=44756</a>
+
+Update V8 to version 2.2.3.2.  BUG=40736.
+Review URL: <a href="http://codereview.chromium.org/1618025">http://codereview.chromium.org/1618025</a>
+------------------------------------------------------------------------
+
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c18"
+ href="#c18">18</a>
+ by
+ <a style="white-space: nowrap" href="/u/bugdroid1@chromium.org/">bugdroid1@chromium.org</a></span>,
+ <span class="date" title="Wed Apr 21 23:08:01 2010">Apr 21, 2010</span>
+ 
+<pre>
+The following revision refers to this bug:
+    <a href="http://src.chromium.org/viewvc/chrome?view=rev&amp;revision=45295">http://src.chromium.org/viewvc/chrome?view=rev&amp;revision=45295</a> 
+
+------------------------------------------------------------------------
+<a href="/p/chromium/source/detail?r=45295">r45295</a> | joth@chromium.org | 2010-04-21 23:07:03 -0700 (Wed, 21 Apr 2010) | 6 lines
+Changed paths:
+   M <a href="http://src.chromium.org/viewvc/chrome/trunk/src/chrome/browser/cocoa/infobar_container_controller.mm?r1=45295&amp;r2=45294">http://src.chromium.org/viewvc/chrome/trunk/src/chrome/browser/cocoa/infobar_container_controller.mm?r1=45295&amp;r2=45294</a>
+
+Possible fix / workaround for issue where infobar fails to show
+
+BUG=41712
+TEST=as per bug comment 8 <a href="http://crbug.com/41712#c8">http://crbug.com/41712#c8</a>
+
+Review URL: <a href="http://codereview.chromium.org/1679002">http://codereview.chromium.org/1679002</a>
+------------------------------------------------------------------------
+
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c19"
+ href="#c19">19</a>
+ by
+ <a style="white-space: nowrap" href="/u/bugdroid1@chromium.org/">bugdroid1@chromium.org</a></span>,
+ <span class="date" title="Wed May  5 11:42:38 2010">May 05, 2010</span>
+ 
+<pre>
+The following revision refers to this bug:
+    <a href="http://src.chromium.org/viewvc/chrome?view=rev&amp;revision=46466">http://src.chromium.org/viewvc/chrome?view=rev&amp;revision=46466</a> 
+
+------------------------------------------------------------------------
+<a href="/p/chromium/source/detail?r=46466">r46466</a> | mark@chromium.org | 2010-05-05 11:41:45 -0700 (Wed, 05 May 2010) | 34 lines
+Changed paths:
+   M <a href="http://src.chromium.org/viewvc/chrome/trunk/src/chrome/common/process_watcher_mac.cc?r1=46466&amp;r2=46465">http://src.chromium.org/viewvc/chrome/trunk/src/chrome/common/process_watcher_mac.cc?r1=46466&amp;r2=46465</a>
+
+Kernel zombie death race!
+
+Harden process_watcher_mac against zombie-admitting holes.
+
+A race between the application and the kernel exists in that a process stops
+being kqueueable before it becomes waitable. If
+ProcessWatcher::EnsureProcessTerminated was called within this window, it
+would assume that the process had already been reaped. The process would
+then become waitable, but by then, the application forgot about it, and it
+would be leaked as a zombie until the application as a whole was quit.
+
+In order to kill the undead, this code now detects not-kqueueable not-waitable
+processes and does a blocking wait, with a kill thrown in for good measure.
+
+Other opportunities for this code to return early without making the best
+effort to kill the process have been plugged up too. If any of the kqueue
+operations fail, this will now fall through to kill and wait for the process.
+
+BUG=43150, 43244
+TEST=A. Steps from <a title="Still have zombies" class=closed_ref href="/p/chromium/issues/detail?id=43150"> bug 43150 </a> comment 8:
+        1. Clean profile.
+        2. Launch. The home page, <a href="http://www.google.com/">http://www.google.com/</a>, will load.
+        3. Type (or paste) about:blank into the omnibox.
+        Expect: no zombies.
+        Observe: original renderer process almost always becomes undead.
+        Note: Perform the test multiple times. It's timing-sensitive. I
+              experienced varying degrees of success reproducing zombies when
+              launching the app by double-clicking it, running it from a
+              terminal window with stdout and stderr on the terminal, and
+              running it from a terminal window with stdout and stderr
+              redirected to a file. With this fix, no zombies should be
+           condition.
+     B. zombies.py test from <a title="The zombies return..." class=closed_ref href="/p/chromium/issues/detail?id=43244"> bug 43244 </a>.
+Review URL: <a href="http://codereview.chromium.org/1915003">http://codereview.chromium.org/1915003</a>
+------------------------------------------------------------------------
+
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c20"
+ href="#c20">20</a>
+ by
+ <a style="white-space: nowrap" href="/u/bugdroid1@chromium.org/">bugdroid1@chromium.org</a></span>,
+ <span class="date" title="Wed May  5 11:45:23 2010">May 05, 2010</span>
+ 
+<pre>
+The following revision refers to this bug:
+    <a href="http://src.chromium.org/viewvc/chrome?view=rev&amp;revision=46469">http://src.chromium.org/viewvc/chrome?view=rev&amp;revision=46469</a> 
+
+------------------------------------------------------------------------
+<a href="/p/chromium/source/detail?r=46469">r46469</a> | mark@chromium.org | 2010-05-05 11:44:22 -0700 (Wed, 05 May 2010) | 39 lines
+Changed paths:
+   M <a href="http://src.chromium.org/viewvc/chrome/branches/375/src/chrome/common/process_watcher_mac.cc?r1=46469&amp;r2=46468">http://src.chromium.org/viewvc/chrome/branches/375/src/chrome/common/process_watcher_mac.cc?r1=46469&amp;r2=46468</a>
+
+Merge <a href="/p/chromium/source/detail?r=46466">r46466</a> from the trunk to the 375 branch.
+
+Kernel zombie death race!
+
+Harden process_watcher_mac against zombie-admitting holes.
+
+A race between the application and the kernel exists in that a process stops
+being kqueueable before it becomes waitable. If
+ProcessWatcher::EnsureProcessTerminated was called within this window, it
+would assume that the process had already been reaped. The process would
+then become waitable, but by then, the application forgot about it, and it
+would be leaked as a zombie until the application as a whole was quit.
+
+In order to kill the undead, this code now detects not-kqueueable not-waitable
+processes and does a blocking wait, with a kill thrown in for good measure.
+
+Other opportunities for this code to return early without making the best
+effort to kill the process have been plugged up too. If any of the kqueue
+operations fail, this will now fall through to kill and wait for the process.
+
+BUG=43150, 43244
+TEST=A. Steps from <a title="Still have zombies" class=closed_ref href="/p/chromium/issues/detail?id=43150"> bug 43150 </a> comment 8:
+        1. Clean profile.
+        2. Launch. The home page, <a href="http://www.google.com/">http://www.google.com/</a>, will load.
+        3. Type (or paste) about:blank into the omnibox.
+        Expect: no zombies.
+        Observe: original renderer process almost always becomes undead.
+        Note: Perform the test multiple times. It's timing-sensitive. I
+              experienced varying degrees of success reproducing zombies when
+              launching the app by double-clicking it, running it from a
+              terminal window with stdout and stderr on the terminal, and
+              running it from a terminal window with stdout and stderr
+              redirected to a file. With this fix, no zombies should be
+           condition.
+     B. zombies.py test from <a title="The zombies return..." class=closed_ref href="/p/chromium/issues/detail?id=43244"> bug 43244 </a>.
+Review URL: <a href="http://codereview.chromium.org/1915003">http://codereview.chromium.org/1915003</a>
+
+TBR=mark@chromium.org
+Review URL: <a href="http://codereview.chromium.org/1978001">http://codereview.chromium.org/1978001</a>
+------------------------------------------------------------------------
+
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+
+ 
+
+
+
+ 
+ <tr>
+ <td class="vt issuecomment">
+ <span class="indicator">&#9658;</span> <a href="https://www.google.com/accounts/ServiceLogin?service=code&ltmpl=phosting&continue=http%3A%2F%2Fcode.google.com%2Fp%2Fchromium%2Fissues%2Fdetail%3Fid%3D8&amp;followup=http%3A%2F%2Fcode.google.com%2Fp%2Fchromium%2Fissues%2Fdetail%3Fid%3D8"
+ >Sign in</a> to add a comment
+ </td>
+ </tr>
+ 
+
+
+</tbody>
+</table>
+<br>
+<script type="text/javascript" src="http://www.gstatic.com/codesite/ph/9392543809124535420/js/dit_scripts_20081013.js"></script>
+
+
+
+
+
+ 
+
+
+</div> 
+<form name="delcom" action="delComment.do?q=&amp;can=2&amp;sort=&amp;colspec=ID+Stars+Pri+Area+Feature+Type+Status+Summary+Modified+Owner+Mstone+OS" method="POST">
+ <input type="hidden" name="sequence_num" value="">
+ <input type="hidden" name="mode" value="">
+ <input type="hidden" name="id" value="8">
+ <input type="hidden" name="token" value="">
+</form>
+<div id="helparea"></div>
+<script type="text/javascript">
+ _onload();
+ function delComment(sequence_num, delete_mode) {
+ var f = document.forms["delcom"];
+ f.sequence_num.value = sequence_num;
+ f.mode.value = delete_mode;
+ 
+ f.submit();
+ return false;
+ }
+ _floatMetadata();
+</script>
+<script type="text/javascript" src="http://kibbles.googlecode.com/files/kibbles-1.3.1.comp.js"></script>
+<script type="text/javascript">
+ _setupKibblesOnDetailPage(
+ 'http://code.google.com/p/chromium/issues/list?cursor\x3d8',
+ '/p/chromium/issues/entry',
+ '',
+ '',
+ '', 'chromium', 8,
+ false, false);
+</script>
+ 
+ 
+ <script type="text/javascript" src="http://www.gstatic.com/codesite/ph/9392543809124535420/js/core_scripts_20081103.js"></script>
+ <script type="text/javascript" src="/js/codesite_product_dictionary_ph.pack.04102009.js"></script>
+ </div>
+<div id="footer" dir="ltr">
+ 
+ <div class="text">
+ 
+ &copy;2010 Google -
+ <a href="/projecthosting/terms.html">Terms</a> -
+ <a href="http://www.google.com/privacy.html">Privacy</a> -
+ <a href="/p/support/">Project Hosting Help</a>
+ 
+ </div>
+</div>
+
+ <div class="hostedBy" style="margin-top: -20px;">
+ <span style="vertical-align: top;">Powered by <a href="http://code.google.com/projecthosting/">Google Project Hosting</a></span>
+ </div>
+ 
+ 
+
+
+ 
+ </body>
+</html>
+

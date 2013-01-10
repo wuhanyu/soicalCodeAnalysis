@@ -1,0 +1,2213 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+ <link rel="icon" type="image/vnd.microsoft.icon" href="http://www.gstatic.com/codesite/ph/images/phosting.ico">
+ 
+ <script type="text/javascript">
+ 
+ 
+ 
+ var codesite_token = null;
+ 
+ 
+ var logged_in_user_email = null;
+ 
+ 
+ var relative_base_url = "";
+ 
+ </script>
+ 
+ 
+ <title>Issue 25 - 
+ chromium -
+ 
+ Web inspector button &quot;dock to main window&quot; does nothing - Project Hosting on Google Code</title>
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" >
+ 
+ <link type="text/css" rel="stylesheet" href="http://www.gstatic.com/codesite/ph/9392543809124535420/css/ph_core.css">
+ 
+ <link type="text/css" rel="stylesheet" href="http://www.gstatic.com/codesite/ph/9392543809124535420/css/ph_detail.css" >
+ 
+ 
+ 
+ 
+<!--[if IE]>
+ <link type="text/css" rel="stylesheet" href="http://www.gstatic.com/codesite/ph/9392543809124535420/css/d_ie.css" >
+<![endif]-->
+ <style type="text/css">
+ .menuIcon.off { background: no-repeat url(http://www.gstatic.com/codesite/ph/images/dropdown_sprite.gif) 0 -42px }
+ .menuIcon.on { background: no-repeat url(http://www.gstatic.com/codesite/ph/images/dropdown_sprite.gif) 0 -28px }
+ .menuIcon.down { background: no-repeat url(http://www.gstatic.com/codesite/ph/images/dropdown_sprite.gif) 0 0; }
+ </style>
+</head>
+<body class="t3">
+ <script type="text/javascript">
+ var _gaq = _gaq || [];
+ _gaq.push(
+ ['siteTracker._setAccount', 'UA-18071-1'],
+ ['siteTracker._trackPageview']);
+ 
+ (function() {
+ var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+ (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ga);
+ })();
+ </script>
+ <div id="gaia">
+ 
+ <span>
+ 
+ <a href="#" id="projects-dropdown" onclick="return false;"><u>My favorites</u> <small>&#9660;</small></a>
+ | <a href="https://www.google.com/accounts/ServiceLogin?service=code&amp;ltmpl=phosting&amp;continue=http%3A%2F%2Fcode.google.com%2Fp%2Fchromium%2Fissues%2Fdetail%3Fid%3D25&amp;followup=http%3A%2F%2Fcode.google.com%2Fp%2Fchromium%2Fissues%2Fdetail%3Fid%3D25" onclick="_CS_click('/gb/ph/signin');"><u>Sign in</u></a>
+ 
+ </span>
+
+ </div>
+ <div class="gbh" style="left: 0pt;"></div>
+ <div class="gbh" style="right: 0pt;"></div>
+ 
+ 
+ <div style="height: 1px"></div>
+<!--[if IE 6]>
+<div style="text-align:center;">
+Support browsers that contribute to open source, try <a href="http://www.firefox.com">Firefox</a> or <a href="http://www.google.com/chrome">Google Chrome</a>.
+</div>
+<![endif]-->
+
+ <div style="font-weight:bold; color:#a03; padding:5px; margin-top:10px; margin-bottom:-10px; text-align:center; background:#ffeac0;">
+ Project Hosting will be READ-ONLY <a href='http://www.timeanddate.com/worldclock/fixedtime.html?month=6&day=9&year=2010&hour=7&min=0&sec=0&p1=224'>Wednesday at 7:00am PDT</a> due to brief network maintenance.
+ 
+ </div>
+
+
+
+ <table style="padding:0px; margin: 20px 0px 0px 0px; width:100%" cellpadding="0" cellspacing="0">
+ <tr style="height: 58px;">
+ 
+ <td style="width: 55px; text-align:center;">
+ <a href="/p/chromium/">
+ 
+ 
+ <img src="/p/chromium/logo?cct=1275965165" alt="Logo">
+ 
+ </a>
+ </td>
+ 
+ <td style="padding-left: 0.5em">
+ 
+ <div id="pname" style="margin: 0px 0px -3px 0px">
+ <a href="/p/chromium/" style="text-decoration:none; color:#000">chromium</a>
+ 
+ </div>
+ <div id="psum">
+ <i><a id="project_summary_link" href="/p/chromium/" style="text-decoration:none; color:#000">An open-source browser project to help move the web forward.</a></i>
+ </div>
+ 
+ </td>
+ <td style="white-space:nowrap;text-align:right">
+ 
+ <form action="/hosting/search">
+ <input size="30" name="q" value="">
+ <input type="submit" name="projectsearch" value="Search projects" >
+ </form>
+ 
+ </tr>
+ </table>
+
+
+ 
+<table id="mt" cellspacing="0" cellpadding="0" width="100%" border="0">
+ <tr>
+ <th onclick="if (!cancelBubble) _go('/p/chromium/');">
+ <div class="tab inactive">
+ <div class="round4"></div>
+ <div class="round2"></div>
+ <div class="round1"></div>
+ <div class="box-inner">
+ <a onclick="cancelBubble=true;" href="/p/chromium/">Project&nbsp;Home</a>
+ </div>
+ </div>
+ </th><td>&nbsp;&nbsp;</td>
+ 
+ 
+ 
+ 
+ <th onclick="if (!cancelBubble) _go('/p/chromium/downloads/list');">
+ <div class="tab inactive">
+ <div class="round4"></div>
+ <div class="round2"></div>
+ <div class="round1"></div>
+ <div class="box-inner">
+ <a onclick="cancelBubble=true;" href="/p/chromium/downloads/list">Downloads</a>
+ </div>
+ </div>
+ </th><td>&nbsp;&nbsp;</td>
+ 
+ 
+ 
+ 
+ 
+ <th onclick="if (!cancelBubble) _go('/p/chromium/w/list');">
+ <div class="tab inactive">
+ <div class="round4"></div>
+ <div class="round2"></div>
+ <div class="round1"></div>
+ <div class="box-inner">
+ <a onclick="cancelBubble=true;" href="/p/chromium/w/list">Wiki</a>
+ </div>
+ </div>
+ </th><td>&nbsp;&nbsp;</td>
+ 
+ 
+ 
+ 
+ 
+ <th onclick="if (!cancelBubble) _go('/p/chromium/issues/list');">
+ <div class="tab active">
+ <div class="round4"></div>
+ <div class="round2"></div>
+ <div class="round1"></div>
+ <div class="box-inner">
+ <a onclick="cancelBubble=true;" href="/p/chromium/issues/list">Issues</a>
+ </div>
+ </div>
+ </th><td>&nbsp;&nbsp;</td>
+ 
+ 
+ 
+ 
+ <td width="100%">&nbsp;</td>
+ </tr>
+</table>
+<table cellspacing="0" cellpadding="0" width="100%" align="center" border="0" class="st">
+ <tr>
+ 
+ 
+ 
+ 
+ 
+ <td>
+ <div class="issueDetail">
+<div class="isf">
+ 
+ 
+ <span class="inIssueEntry">
+ <a href="entry">New issue</a>
+ </span> |
+ 
+ <span class="inIssueList">
+ <span>Search</span>
+ <form action="list" method="GET" style="display:inline">
+ <select id="can" name="can" style="font-size:92%">
+ 
+<option disabled="disabled">Search within:</option>
+<option value="1" >&nbsp;All issues</option>
+<option value="2" selected=selected>&nbsp;Open issues</option>
+
+<option value="6" >&nbsp;New issues</option>
+<option value="7" >&nbsp;Issues to verify</option>
+
+ </select>
+ <span>for</span>
+ <span id="qq"><input type="text" size="38" id="q" name="q" value="" style="font-size:92%" ></span>
+ 
+ <span id="search_colspec"><input type="hidden" name="colspec" value="ID Stars Pri Area Feature Type Status Summary Modified Owner Mstone OS" ></span>
+ 
+ 
+ 
+ <input type="hidden" name="cells" value="tiles" >
+ <input type="submit" value="Search" style="font-size:92%" >
+ </form>
+ </span> |
+ <span class="inIssueAdvSearch">
+ <a href="advsearch">Advanced search</a>
+ </span> |
+ <span class="inIssueSearchTips">
+ <a href="searchtips">Search tips</a>
+ </span>
+</div>
+</div>
+
+ </td>
+ 
+ 
+ 
+ 
+ <td height="4" align="right" valign="top" class="bevel-right">
+ <div class="round4"></div>
+ <div class="round2"></div>
+ <div class="round1"></div>
+ </td>
+ </tr>
+</table>
+<script type="text/javascript">
+ var cancelBubble = false;
+ function _go(url) { document.location = url; }
+</script>
+
+
+<div id="maincol"
+ 
+>
+
+ 
+<!-- IE -->
+
+
+
+
+
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+<style type="text/css">
+ .attachments { width:33%; border-top:2px solid #999; padding-top: 3px; margin-left: .7em;}
+ .attachments table { margin-bottom: 0.75em; }
+ .attachments table tr td { padding: 0; margin: 0; font-size: 95%; }
+ .preview { border: 2px solid #c3d9ff; padding: 1px; }
+ .preview:hover { border: 2px solid blue; }
+ .label { white-space: nowrap; }
+ .derived { font-style:italic }
+ tr.cursor_on .author {
+ background: #fff url(http://www.gstatic.com/codesite/ph/images/show-arrow.gif) no-repeat 2px;
+ }
+</style>
+<div id="color_control" class="closed_colors">
+<div id="issueheader">
+<table cellpadding="0" cellspacing="0" width="100%"><tbody>
+ <tr>
+ <td class="vt h3" nowrap="nowrap" style="padding:0 5px">
+ 
+ 
+ Issue <a href="detail?id=25">25</a>:
+ </td>
+ <td width="90%" class="vt">
+ <span class="h3" >Web inspector button &quot;dock to main window&quot; does nothing</span>
+ </td>
+ <td>
+ 
+ </td>
+ </tr>
+ <tr>
+ <td></td>
+ <td nowrap="nowrap">
+ 
+ 
+ 71 people starred this issue and may be notified of changes.
+ 
+ 
+ 
+ </td>
+ <td align="center" nowrap="nowrap">
+ 
+ <a href="http://code.google.com/p/chromium/issues/list?cursor=25">Back to list</a>
+ 
+ </td>
+ </tr>
+</tbody></table>
+</div>
+<table width="100%" cellpadding="0" cellspacing="0" border="0" class="issuepage" id="meta-container">
+<tbody id="cursorarea" class="collapse"> 
+ <tr class="cursor_off">
+ <td id="issuemeta" rowspan="67">
+ <div id="meta-float">
+ <table cellspacing="0" cellpadding="0">
+ <tr><th align="left">Status:&nbsp;</th>
+ <td width="100%">
+ 
+ <span title="Work completed, needs verification">Fixed</span>
+ 
+ </td>
+ </tr>
+ 
+ <tr><th align="left">Owner:&nbsp;</th><td>
+ 
+ <a style="white-space: nowrap" href="/u/@UBJRQFZYBhdHWAJ8/">pfeld...@chromium.org</a>
+ 
+ </td>
+ </tr>
+ 
+ <tr><th align="left" valign="top">Closed:&nbsp;</th>
+ <td align="left" valign="top" width="100%">
+ Jul 2009
+ </td>
+ </tr>
+ 
+ 
+ <tr><th class="vt" align="left">Cc:&nbsp;</th><td>
+ 
+ 
+  <a style="white-space: nowrap" href="/u/dhw@chromium.org/">dhw@chromium.org</a>, 
+  <i title="Derived"><a style="white-space: nowrap" href="/u/@UBJRQFZYBhdHWAJ8/">pfeld...@chromium.org</a></i>,  <i title="Derived"><a style="white-space: nowrap" href="/u/@WBVQS1dQDxJGXgN1/">maste...@chromium.org</a></i> 
+ </td></tr>
+ 
+ 
+ 
+ <tr><td colspan="2">
+ <a href="list?q=label:Type-Bug"
+ title="Software not working correctly"
+ class="label"><b>Type-</b>Bug</a>
+ </td></tr>
+ 
+ 
+ 
+ <tr><td colspan="2">
+ <a href="list?q=label:Pri-2"
+ title="Normal. Required for specified milestone."
+ class="label"><b>Pri-</b>2</a>
+ </td></tr>
+ 
+ 
+ 
+ <tr><td colspan="2">
+ <a href="list?q=label:OS-All"
+ title="Affects all operating systems"
+ class="label"><b>OS-</b>All</a>
+ </td></tr>
+ 
+ 
+ 
+ <tr><td colspan="2">
+ <a href="list?q=label:Mstone-X"
+ title="Not assigned to a milestone release"
+ class="label"><b>Mstone-</b>X</a>
+ </td></tr>
+ 
+ 
+ 
+ <tr><td colspan="2"><a href="list?q=label:Fixit"
+ title="Candidate for inclusion in the next Fixit event"
+ class="label">Fixit</a></td></tr>
+ 
+ 
+ 
+ <tr><td colspan="2">
+ <a href="list?q=label:Area-Feature"
+ title=""
+ class="label"><b>Area-</b>Feature</a>
+ </td></tr>
+ 
+ 
+ 
+ <tr><td colspan="2">
+ <a href="list?q=label:Feature-DevTools"
+ title="Web inspector, JS debugger, profiler"
+ class="label"><b>Feature-</b>DevTools</a>
+ </td></tr>
+ 
+ 
+ 
+ </table>
+ <br><br>
+ 
+ 
+ 
+ <div style="white-space:nowrap"><a href="https://www.google.com/accounts/ServiceLogin?service=code&amp;ltmpl=phosting&amp;continue=http%3A%2F%2Fcode.google.com%2Fp%2Fchromium%2Fissues%2Fdetail%3Fid%3D25&amp;followup=http%3A%2F%2Fcode.google.com%2Fp%2Fchromium%2Fissues%2Fdetail%3Fid%3D25">Sign in</a> to add a comment</div>
+ 
+ 
+ 
+ <div class="rel_issues">
+ 
+ 
+ <br><b>Blocking:</b><br>
+ 
+ 
+ 
+ 
+ 
+ <a href="detail?id=17368" title="There should be a way to dock DevTools window." class="closed_ref"
+ >issue 17368</a><br>
+ 
+ 
+ 
+ 
+ </div>
+ 
+ 
+ </div>&nbsp;
+ </td>
+ <td class="vt issuedescription" width="100%">
+ <div class="author">
+ Reported by <a style="white-space: nowrap" href="/u/evgeny.zislis/">evgeny.zislis</a>,
+ <span class="date" title="Tue Sep  2 12:25:44 2008">Sep 02, 2008</span>
+ 
+ </div>
+<pre>
+Product Version      : chrome beta 1
+<b>URLs (if applicable) :</b>
+<b>Other browsers tested:</b>
+<b>Add OK or FAIL after other browsers where you have tested this issue:</b>
+     Safari 3: OK
+    Firefox 3: irrelevant
+         IE 7: irrelevant
+
+<b>What steps will reproduce the problem?</b>
+1. right-click on a web element
+2. click on &quot;inspect element&quot;
+3. click on &quot;dock to main window&quot;
+
+<b>What is the expected result?</b>
+To have the web-inspector get docked at the bottom of the current tab.
+
+<b>What happens instead?</b>
+Nothing.
+
+Please provide any additional information below. Attach a screenshot if 
+possible.
+
+
+</pre>
+
+
+ </td>
+ </tr>
+
+ 
+
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c1"
+ href="#c1">1</a>
+ by
+ <a style="white-space: nowrap" href="/u/@VhJfQVJTDxFDWgN1/">apostolo...@gmail.com</a></span>,
+ <span class="date" title="Tue Sep  2 14:23:59 2008">Sep 02, 2008</span>
+ 
+<pre>
+[CONFIRMED]
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c2"
+ href="#c2">2</a>
+ by
+ <a style="white-space: nowrap" href="/u/arjun810/">arjun810</a></span>,
+ <span class="date" title="Tue Sep  2 16:33:10 2008">Sep 02, 2008</span>
+ 
+<pre>
+i have the same issue
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c3"
+ href="#c3">3</a>
+ by
+ <a style="white-space: nowrap" href="/u/pawcik/">pawcik</a></span>,
+ <span class="date" title="Wed Sep  3 01:38:03 2008">Sep 03, 2008</span>
+ 
+<pre>
+me too
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c4"
+ href="#c4">4</a>
+ by
+ <a style="white-space: nowrap" href="/u/pastordanwalker/">pastordanwalker</a></span>,
+ <span class="date" title="Wed Sep  3 04:51:14 2008">Sep 03, 2008</span>
+ 
+<pre>
+[CONFIRMED]
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c5"
+ href="#c5">5</a>
+ by
+ <a style="white-space: nowrap" href="/u/NocturnDragon/">NocturnDragon</a></span>,
+ <span class="date" title="Wed Sep  3 06:28:15 2008">Sep 03, 2008</span>
+ 
+<pre>
+[CONFIRMED]
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c6"
+ href="#c6">6</a>
+ by
+ <a style="white-space: nowrap" href="/u/the.apaan/">the.apaan</a></span>,
+ <span class="date" title="Thu Sep  4 02:24:34 2008">Sep 04, 2008</span>
+ 
+<pre>
+[CONFIRMED]
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c7"
+ href="#c7">7</a>
+ by
+ <a style="white-space: nowrap" href="/u/JMoon5FTM/">JMoon5FTM</a></span>,
+ <span class="date" title="Thu Sep  4 02:30:11 2008">Sep 04, 2008</span>
+ 
+<pre>
+[CONFIRMED]
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c8"
+ href="#c8">8</a>
+ by
+ <a style="white-space: nowrap" href="/u/davidjmoberg/">davidjmoberg</a></span>,
+ <span class="date" title="Thu Sep  4 11:52:26 2008">Sep 04, 2008</span>
+ 
+<pre>
+[CONFIRMED]
+
+Windows Vista Home Basic
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c9"
+ href="#c9">9</a>
+ by
+ <a style="white-space: nowrap" href="/u/goocai/">goocai</a></span>,
+ <span class="date" title="Sat Sep  6 12:41:44 2008">Sep 06, 2008</span>
+ 
+<pre>
+[CONFIRMED]
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c10"
+ href="#c10">10</a>
+ by
+ <a style="white-space: nowrap" href="/u/JayPritchard/">JayPritchard</a></span>,
+ <span class="date" title="Sun Sep  7 06:05:28 2008">Sep 07, 2008</span>
+ 
+<pre>
+Me too. Really wish this would be available in the same window.
+
+
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c11"
+ href="#c11">11</a>
+ by
+ <a style="white-space: nowrap" href="/u/lowreg/">lowreg</a></span>,
+ <span class="date" title="Sun Sep  7 09:27:49 2008">Sep 07, 2008</span>
+ 
+<pre>
+[CONFIRMED]
+
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c12"
+ href="#c12">12</a>
+ by
+ <a style="white-space: nowrap" href="/u/ojan@chromium.org/">ojan@chromium.org</a></span>,
+ <span class="date" title="Sun Sep  7 10:25:36 2008">Sep 07, 2008</span>
+ 
+<pre>
+
+
+</pre>
+ 
+ 
+ <div class="updates">
+ <div class="round4"></div>
+ <div class="round2"></div>
+ <div class="round1"></div>
+ <div class="box-inner">
+ <b>Status:</b> Untriaged<br><b>Labels:</b> -Area-Unknown Area-BrowserUI<br>
+ </div>
+ <div class="round1"></div>
+ <div class="round2"></div>
+ <div class="round4"></div>
+ </div>
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c13"
+ href="#c13">13</a>
+ by
+ <a style="white-space: nowrap" href="/u/figaro1111/">figaro1111</a></span>,
+ <span class="date" title="Wed Sep 10 19:31:16 2008">Sep 10, 2008</span>
+ 
+<pre>
+[CONFIRMED]
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c14"
+ href="#c14">14</a>
+ by
+ <a style="white-space: nowrap" href="/u/mal.chromium/">mal.chromium</a></span>,
+ <span class="date" title="Tue Oct 14 15:51:35 2008">Oct 14, 2008</span>
+ 
+<pre>
+<i>(No comment was entered for this change.)</i>
+</pre>
+ 
+ 
+ <div class="updates">
+ <div class="round4"></div>
+ <div class="round2"></div>
+ <div class="round1"></div>
+ <div class="box-inner">
+ <b>Labels:</b> -Area-BrowserUI Area-WebKit Mstone-X<br>
+ </div>
+ <div class="round1"></div>
+ <div class="round2"></div>
+ <div class="round4"></div>
+ </div>
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c15"
+ href="#c15">15</a>
+ by
+ <a style="white-space: nowrap" href="/u/jon@chromium.org/">jon@chromium.org</a></span>,
+ <span class="date" title="Thu Oct 16 11:01:49 2008">Oct 16, 2008</span>
+ 
+<pre>
+<i>(No comment was entered for this change.)</i>
+</pre>
+ 
+ 
+ <div class="updates">
+ <div class="round4"></div>
+ <div class="round2"></div>
+ <div class="round1"></div>
+ <div class="box-inner">
+ <b>Labels:</b> Inspector<br>
+ </div>
+ <div class="round1"></div>
+ <div class="round2"></div>
+ <div class="round4"></div>
+ </div>
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c16"
+ href="#c16">16</a>
+ by
+ <a style="white-space: nowrap" href="/u/ben.at.chromium.org/">ben.at.chromium.org</a></span>,
+ <span class="date" title="Wed Oct 22 14:15:38 2008">Oct 22, 2008</span>
+ 
+<pre>
+<i>(No comment was entered for this change.)</i>
+</pre>
+ 
+ 
+ <div class="updates">
+ <div class="round4"></div>
+ <div class="round2"></div>
+ <div class="round1"></div>
+ <div class="box-inner">
+ <b>Status:</b> Available<br>
+ </div>
+ <div class="round1"></div>
+ <div class="round2"></div>
+ <div class="round4"></div>
+ </div>
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c17"
+ href="#c17">17</a>
+ by
+ <a style="white-space: nowrap" href="/u/wyvernoid/">wyvernoid</a></span>,
+ <span class="date" title="Tue Nov  4 02:07:06 2008">Nov 04, 2008</span>
+ 
+<pre>
+[CONFIRMED]
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c18"
+ href="#c18">18</a>
+ by
+ <a style="white-space: nowrap" href="/u/kachar136/">kachar136</a></span>,
+ <span class="date" title="Fri Dec 12 02:27:13 2008">Dec 12, 2008</span>
+ 
+<pre>
+[CONFIRMED]
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c19"
+ href="#c19">19</a>
+ by
+ <a style="white-space: nowrap" href="/u/ahmed.sobhi/">ahmed.sobhi</a></span>,
+ <span class="date" title="Sat Feb  7 23:15:38 2009">Feb 07, 2009</span>
+ 
+<pre>
+[Confirmed]
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c20"
+ href="#c20">20</a>
+ by
+ <a style="white-space: nowrap" href="/u/phistuck/">phistuck</a></span>,
+ <span class="date" title="Sun Feb  8 01:00:01 2009">Feb 08, 2009</span>
+ 
+<pre>
+Even though this is not a severe issue, there is a redundant button that does nothing. At 
+least hide it.
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c21"
+ href="#c21">21</a>
+ by
+ <a style="white-space: nowrap" href="/u/glen@chromium.org/">glen@chromium.org</a></span>,
+ <span class="date" title="Thu Mar 19 16:53:14 2009">Mar 19, 2009</span>
+ 
+<pre>
+<i>(No comment was entered for this change.)</i>
+</pre>
+ 
+ 
+ <div class="updates">
+ <div class="round4"></div>
+ <div class="round2"></div>
+ <div class="round1"></div>
+ <div class="box-inner">
+ <b>Labels:</b> ui-fixit<br>
+ </div>
+ <div class="round1"></div>
+ <div class="round2"></div>
+ <div class="round4"></div>
+ </div>
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c22"
+ href="#c22">22</a>
+ by
+ <a style="white-space: nowrap" href="/u/jordan@incometaxplus.net/">jordan@incometaxplus.net</a></span>,
+ <span class="date" title="Mon Mar 23 07:49:18 2009">Mar 23, 2009</span>
+ 
+<pre>
+[CONFIRMED]
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c23"
+ href="#c23">23</a>
+ by
+ <a style="white-space: nowrap" href="/u/ninestories/">ninestories</a></span>,
+ <span class="date" title="Wed Mar 25 12:45:59 2009">Mar 25, 2009</span>
+ 
+<pre>
+Confirmed also in Beta 2.
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c24"
+ href="#c24">24</a>
+ by
+ <a style="white-space: nowrap" href="/u/laforge@chromium.org/">laforge@chromium.org</a></span>,
+ <span class="date" title="Thu Mar 26 15:49:36 2009">Mar 26, 2009</span>
+ 
+<pre>
+<i>(No comment was entered for this change.)</i>
+</pre>
+ 
+ 
+ <div class="updates">
+ <div class="round4"></div>
+ <div class="round2"></div>
+ <div class="round1"></div>
+ <div class="box-inner">
+ <b>Labels:</b> Fixit<br>
+ </div>
+ <div class="round1"></div>
+ <div class="round2"></div>
+ <div class="round4"></div>
+ </div>
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c25"
+ href="#c25">25</a>
+ by
+ <a style="white-space: nowrap" href="/u/laforge@chromium.org/">laforge@chromium.org</a></span>,
+ <span class="date" title="Thu Mar 26 15:50:07 2009">Mar 26, 2009</span>
+ 
+<pre>
+<i>(No comment was entered for this change.)</i>
+</pre>
+ 
+ 
+ <div class="updates">
+ <div class="round4"></div>
+ <div class="round2"></div>
+ <div class="round1"></div>
+ <div class="box-inner">
+ <b>Labels:</b> -ui-fixit<br>
+ </div>
+ <div class="round1"></div>
+ <div class="round2"></div>
+ <div class="round4"></div>
+ </div>
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c26"
+ href="#c26">26</a>
+ by
+ <a style="white-space: nowrap" href="/u/@UxZWSlNXBhlAVwN5/">phajdan...@chromium.org</a></span>,
+ <span class="date" title="Fri Mar 27 02:02:02 2009">Mar 27, 2009</span>
+ 
+<pre>
+<a title="Javascript console &quot;Dock to main window&quot; doesn't work" class=closed_ref href="/p/chromium/issues/detail?id=2487"> Issue 2487 </a> has been merged into this issue.
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c27"
+ href="#c27">27</a>
+ by
+ <a style="white-space: nowrap" href="/u/sampablokuper/">sampablokuper</a></span>,
+ <span class="date" title="Tue Mar 31 08:35:55 2009">Mar 31, 2009</span>
+ 
+<pre>
+Confirmed on Win XP SP3 with Windows Classic theme.
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c28"
+ href="#c28">28</a>
+ by
+ <a style="white-space: nowrap" href="/u/macky.r.franklin/">macky.r.franklin</a></span>,
+ <span class="date" title="Mon Apr 13 09:28:29 2009">Apr 13, 2009</span>
+ 
+<pre>
+[CONFIRMED]
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c29"
+ href="#c29">29</a>
+ by
+ <a style="white-space: nowrap" href="/u/CHMelzer/">CHMelzer</a></span>,
+ <span class="date" title="Tue Apr 21 06:46:28 2009">Apr 21, 2009</span>
+ 
+<pre>
+[CONFIRMED]
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c30"
+ href="#c30">30</a>
+ by
+ <a style="white-space: nowrap" href="/u/lossendil/">lossendil</a></span>,
+ <span class="date" title="Tue May  5 04:22:49 2009">May 05, 2009</span>
+ 
+<pre>
+Confirmed on 2.0.172.8
+IMHO, this simple fact ruins Chrome as a developer tool (vs Firebug). 
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c31"
+ href="#c31">31</a>
+ by
+ <a style="white-space: nowrap" href="/u/rkuzmik/">rkuzmik</a></span>,
+ <span class="date" title="Mon May 11 11:48:22 2009">May 11, 2009</span>
+ 
+<pre>
+just ridiculous to have this in 'is not implemented' state for so long
+
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c32"
+ href="#c32">32</a>
+ by
+ <a style="white-space: nowrap" href="/u/gersomvg/">gersomvg</a></span>,
+ <span class="date" title="Tue May 26 10:04:29 2009">May 26, 2009</span>
+ 
+<pre>
+Me too! When are they going to fix it?
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c33"
+ href="#c33">33</a>
+ by
+ <a style="white-space: nowrap" href="/u/meoknet/">meoknet</a></span>,
+ <span class="date" title="Sat May 30 11:16:42 2009">May 30, 2009</span>
+ 
+<pre>
+Yeah, I was wondering what was up with that. Can anyone provide a mockup of how it is supposed to look when it's docked?
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c34"
+ href="#c34">34</a>
+ by
+ <a style="white-space: nowrap" href="/u/pastordanwalker/">pastordanwalker</a></span>,
+ <span class="date" title="Sat May 30 11:26:27 2009">May 30, 2009</span>
+ 
+<pre>
+@meoknet Just look at Safari, it works correctly there. It docks to the bottom of the 
+window like Firebug in Firefox.
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c35"
+ href="#c35">35</a>
+ by
+ <a style="white-space: nowrap" href="/u/missmckenzie1992/">missmckenzie1992</a></span>,
+ <span class="date" title="Sat May 30 15:07:38 2009">May 30, 2009</span>
+ 
+<pre>
+Well my story IS the beginning of the end's story
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c36"
+ href="#c36">36</a>
+ by
+ <a style="white-space: nowrap" href="/u/massimiliano.monaro/">massimiliano.monaro</a></span>,
+ <span class="date" title="Tue Jun  9 08:19:33 2009">Jun 09, 2009</span>
+ 
+<pre>
+Version: 2.0.172.30
+Problem is still there. Please fix it, is very annoying :(
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c37"
+ href="#c37">37</a>
+ by
+ <a style="white-space: nowrap" href="/u/peter.newhook/">peter.newhook</a></span>,
+ <span class="date" title="Fri Jun 12 21:14:46 2009">Jun 12, 2009</span>
+ 
+<pre>
+agreed, either fix it, or remove the button.
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c38"
+ href="#c38">38</a>
+ by
+ <a style="white-space: nowrap" href="/u/sunandt@chromium.org/">sunandt@chromium.org</a></span>,
+ <span class="date" title="Mon Jun 15 17:40:48 2009">Jun 15, 2009</span>
+ 
+<pre>
+<i>(No comment was entered for this change.)</i>
+</pre>
+ 
+ 
+ <div class="updates">
+ <div class="round4"></div>
+ <div class="round2"></div>
+ <div class="round1"></div>
+ <div class="box-inner">
+ <b>Status:</b> Assigned<br><b>Owner:</b> pfeld...@chromium.org<br><b>Labels:</b> -Area-WebKit -Inspector Area-DevTools<br>
+ </div>
+ <div class="round1"></div>
+ <div class="round2"></div>
+ <div class="round4"></div>
+ </div>
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c39"
+ href="#c39">39</a>
+ by
+ <a style="white-space: nowrap" href="/u/bugdroid1@chromium.org/">bugdroid1@chromium.org</a></span>,
+ <span class="date" title="Fri Jun 19 06:33:02 2009">Jun 19, 2009</span>
+ 
+<pre>
+The following revision refers to this bug:
+    <a href="http://src.chromium.org/viewvc/chrome?view=rev&amp;revision=18807">http://src.chromium.org/viewvc/chrome?view=rev&amp;revision=18807</a> 
+
+------------------------------------------------------------------------
+<a href="/p/chromium/source/detail?r=18807">r18807</a> | pfeldman@chromium.org | 2009-06-19 06:32:06 -0700 (Fri, 19 Jun 2009) | 4 lines
+Changed paths:
+   M <a href="http://src.chromium.org/viewvc/chrome/trunk/src/webkit/glue/devtools/js/devtools.css?r1=18807&amp;r2=18806">http://src.chromium.org/viewvc/chrome/trunk/src/webkit/glue/devtools/js/devtools.css?r1=18807&amp;r2=18806</a>
+
+DevTools: remove dock/undock button
+
+BUG=25
+Review URL: <a href="http://codereview.chromium.org/131108">http://codereview.chromium.org/131108</a>
+------------------------------------------------------------------------
+
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c40"
+ href="#c40">40</a>
+ by
+ <a style="white-space: nowrap" href="/u/@UBJRQFZYBhdHWAJ8/">pfeld...@chromium.org</a></span>,
+ <span class="date" title="Fri Jun 19 06:33:49 2009">Jun 19, 2009</span>
+ 
+<pre>
+button removed.
+</pre>
+ 
+ 
+ <div class="updates">
+ <div class="round4"></div>
+ <div class="round2"></div>
+ <div class="round1"></div>
+ <div class="box-inner">
+ <b>Status:</b> Fixed<br>
+ </div>
+ <div class="round1"></div>
+ <div class="round2"></div>
+ <div class="round4"></div>
+ </div>
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c41"
+ href="#c41">41</a>
+ by
+ <a style="white-space: nowrap" href="/u/CAEZARis/">CAEZARis</a></span>,
+ <span class="date" title="Fri Jun 19 06:39:37 2009">Jun 19, 2009</span>
+ 
+<pre>
+hmm. so it will not become dockable? think it's a bad (but of course easier) decision
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c42"
+ href="#c42">42</a>
+ by
+ <a style="white-space: nowrap" href="/u/massimiliano.monaro/">massimiliano.monaro</a></span>,
+ <span class="date" title="Fri Jun 19 06:44:51 2009">Jun 19, 2009</span>
+ 
+<pre>
+Bad decision.
+Safari has the same inspector of Chrome.. and the button works good.
+
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c43"
+ href="#c43">43</a>
+ by
+ <a style="white-space: nowrap" href="/u/phistuck/">phistuck</a></span>,
+ <span class="date" title="Fri Jun 19 08:01:44 2009">Jun 19, 2009</span>
+ 
+<pre>
+The problem is, that the opposite is much, much, much harder, meaning, requires 
+extensive code changes.
+(Or so it seems.)
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c44"
+ href="#c44">44</a>
+ by
+ <a style="white-space: nowrap" href="/u/CAEZARis/">CAEZARis</a></span>,
+ <span class="date" title="Fri Jun 19 08:22:05 2009">Jun 19, 2009</span>
+ 
+<pre>
+I understand this. But if Chrome wants to be the browser for developers, this function 
+is not just 'good to have', it is required, 'must have'. 
+<a href="http://code.google.com/p/chromium/issues/detail?id=14713">http://code.google.com/p/chromium/issues/detail?id=14713</a>
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c45"
+ href="#c45">45</a>
+ by
+ <a style="white-space: nowrap" href="/u/phistuck/">phistuck</a></span>,
+ <span class="date" title="Fri Jun 19 08:26:38 2009">Jun 19, 2009</span>
+ 
+<pre>
+Though, it is for users, more than for developers.
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c46"
+ href="#c46">46</a>
+ by
+ <a style="white-space: nowrap" href="/u/@UBJRQFZYBhdHWAJ8/">pfeld...@chromium.org</a></span>,
+ <span class="date" title="Fri Jun 19 08:27:39 2009">Jun 19, 2009</span>
+ 
+<pre>
+Reopening since the original request is still valid (web developers do want to be
+able to work with both docked and undocked states of Dev Tools window).
+
+</pre>
+ 
+ 
+ <div class="updates">
+ <div class="round4"></div>
+ <div class="round2"></div>
+ <div class="round1"></div>
+ <div class="box-inner">
+ <b>Status:</b> Assigned<br>
+ </div>
+ <div class="round1"></div>
+ <div class="round2"></div>
+ <div class="round4"></div>
+ </div>
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c47"
+ href="#c47">47</a>
+ by
+ <a style="white-space: nowrap" href="/u/pastordanwalker/">pastordanwalker</a></span>,
+ <span class="date" title="Fri Jun 19 08:30:07 2009">Jun 19, 2009</span>
+ 
+<pre>
+Since the button works on Safari, seems very strange no one can figure out how to get 
+it to work on Chrome. I recommend that someone figure out how to do it. Button removed 
+is not a fix.
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c48"
+ href="#c48">48</a>
+ by
+ <a style="white-space: nowrap" href="/u/jaredjacobs/">jaredjacobs</a></span>,
+ <span class="date" title="Sat Jun 20 15:50:07 2009">Jun 20, 2009</span>
+ 
+<pre>
+One more vote for dockable inspector.
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c49"
+ href="#c49">49</a>
+ by
+ <a style="white-space: nowrap" href="/u/@UBFRS1JWABJBWwF6/">phist...@chromium.org</a></span>,
+ <span class="date" title="Mon Jun 22 10:40:10 2009">Jun 22, 2009</span>
+ 
+<pre>
+<a title="Developer tools window should be dockable" class=closed_ref href="/p/chromium/issues/detail?id=14713"> Issue 14713 </a> has been merged into this issue.
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c50"
+ href="#c50">50</a>
+ by
+ <a style="white-space: nowrap" href="/u/blackboxxx/">blackboxxx</a></span>,
+ <span class="date" title="Sat Jul 11 02:28:05 2009">Jul 11, 2009</span>
+ 
+<pre>
+Docking works in dev build 3.0.193.0.
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c51"
+ href="#c51">51</a>
+ by
+ <a style="white-space: nowrap" href="/u/meoknet/">meoknet</a></span>,
+ <span class="date" title="Sat Jul 11 07:23:31 2009">Jul 11, 2009</span>
+ 
+<pre>
+Excellent, now wall they have to do is include the Inspector in the Themes API so that 
+when it's docked it looks uniform with the rest of the browser and it will be perfect. 
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c52"
+ href="#c52">52</a>
+ by
+ <a style="white-space: nowrap" href="/u/execute.it/">execute.it</a></span>,
+ <span class="date" title="Wed Jul 15 01:04:41 2009">Jul 15, 2009</span>
+ 
+<pre>
+Chrome 3.0.194.0 on Linux - the dock button is there and it actually hides the developer tools, but does not dock it - it 
+just disappears. I know Chrome for Linux is still alpha and unstable and for the time being I have no issues with a separate 
+window for the developer tools (I was just messing around) but now I can't even open it. If I inspect an element, the 
+element gets highlighted but the inspector is nowhere to be seen.
+
+I must join other commenters that dockable developer tools is a top requirement for developers.
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c53"
+ href="#c53">53</a>
+ by
+ <a style="white-space: nowrap" href="/u/CAEZARis/">CAEZARis</a></span>,
+ <span class="date" title="Wed Jul 15 04:48:19 2009">Jul 15, 2009</span>
+ 
+<pre>
+On Win Vista it was the same thing, one time. But then I've noticed that it is actually 
+docked, but it's height is about 1-2 pixels. Doing some magic I've put it back.
+
+Other important thing here. As I understand, magnifying glass icon should turn on 
+inspect mode (as in firebug): when mouse is over some element - it is selected in 
+inspector. But currently it does nothing.
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c54"
+ href="#c54">54</a>
+ by
+ <a style="white-space: nowrap" href="/u/CAEZARis/">CAEZARis</a></span>,
+ <span class="date" title="Fri Jul 17 07:50:34 2009">Jul 17, 2009</span>
+ 
+<pre>
+I suppose close button of docked inspector should be placed on the right in Windows 
+version (currently it is on the left)
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c55"
+ href="#c55">55</a>
+ by
+ <a style="white-space: nowrap" href="/u/@UBJRQFZYBhdHWAJ8/">pfeld...@chromium.org</a></span>,
+ <span class="date" title="Mon Jul 20 08:02:18 2009">Jul 20, 2009</span>
+ 
+<pre>
+This general request is fixed, docking implementation is there for Windows and Linux,
+pending Mac OS. Will track Mac OS in a separate issue:
+<a href="http://code.google.com/p/chromium/issues/list?thanks=17240">http://code.google.com/p/chromium/issues/list?thanks=17240</a>
+</pre>
+ 
+ 
+ <div class="updates">
+ <div class="round4"></div>
+ <div class="round2"></div>
+ <div class="round1"></div>
+ <div class="box-inner">
+ <b>Status:</b> Fixed<br>
+ </div>
+ <div class="round1"></div>
+ <div class="round2"></div>
+ <div class="round4"></div>
+ </div>
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c56"
+ href="#c56">56</a>
+ by
+ <a style="white-space: nowrap" href="/u/rkuzmik/">rkuzmik</a></span>,
+ <span class="date" title="Mon Jul 20 08:07:38 2009">Jul 20, 2009</span>
+ 
+<pre>
+Still on Chrome 2.0.172.37 on Windows XP
+
+Developer -&gt; JavaScript Console -&gt; Dock to Main Windows -&gt; Nothing in response
+except tool bar button get smaller
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c57"
+ href="#c57">57</a>
+ by
+ <a style="white-space: nowrap" href="/u/esck21/">esck21</a></span>,
+ <span class="date" title="Wed Aug  5 02:47:19 2009">Aug 05, 2009</span>
+ 
+<pre>
+@rkuzmik
+It works on dev 3.0.196.2, I think stable version doesn't work yet.
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c58"
+ href="#c58">58</a>
+ by
+ <a style="white-space: nowrap" href="/u/dhw@chromium.org/">dhw@chromium.org</a></span>,
+ <span class="date" title="Thu Nov  5 09:41:42 2009">Nov 05, 2009</span>
+ 
+<pre>
+Mac bug is <a title="There should be a way to dock DevTools window." class=closed_ref href="/p/chromium/issues/detail?id=17368"> Issue 17368 </a>
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c59"
+ href="#c59">59</a>
+ by
+ <a style="white-space: nowrap" href="/u/dhw@chromium.org/">dhw@chromium.org</a></span>,
+ <span class="date" title="Thu Nov  5 12:40:02 2009">Nov 05, 2009</span>
+ 
+<pre>
+<a title="Is it possible to attach developers toolbarto the main Chrome window?" class=closed_ref href="/p/chromium/issues/detail?id=26793"> Issue 26793 </a> has been merged into this issue.
+</pre>
+ 
+ 
+ <div class="updates">
+ <div class="round4"></div>
+ <div class="round2"></div>
+ <div class="round1"></div>
+ <div class="box-inner">
+ <b>Cc:</b> d...@chromium.org<br>
+ </div>
+ <div class="round1"></div>
+ <div class="round2"></div>
+ <div class="round4"></div>
+ </div>
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c61"
+ href="#c61">61</a>
+ by
+ <a style="white-space: nowrap" href="/u/aralbalkan/">aralbalkan</a></span>,
+ <span class="date" title="Wed Jan  6 07:38:03 2010">Jan 06, 2010</span>
+ 
+<pre>
+Ah, glad to hear that it's fixed. Tracking the Mac version now...
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c62"
+ href="#c62">62</a>
+ by
+ <a style="white-space: nowrap" href="/u/mal.chromium/">mal.chromium</a></span>,
+ <span class="date" title="Wed Jan 13 19:40:20 2010">Jan 13, 2010</span>
+ 
+<pre>
+<i>(No comment was entered for this change.)</i>
+</pre>
+ 
+ 
+ <div class="updates">
+ <div class="round4"></div>
+ <div class="round2"></div>
+ <div class="round1"></div>
+ <div class="box-inner">
+ <b>Labels:</b> -Area-DevTools Area-Feature Feature-DevTools<br>
+ </div>
+ <div class="round1"></div>
+ <div class="round2"></div>
+ <div class="round4"></div>
+ </div>
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c63"
+ href="#c63">63</a>
+ by
+ <a style="white-space: nowrap" href="/u/ye.xu.hdm/">ye.xu.hdm</a></span>,
+ <span class="date" title="Wed Mar  3 07:30:50 2010">Mar 03, 2010</span>
+ 
+<pre>
+5.0.329.0 (39037) on linux has the bug, too, inspector won't dock to main window.
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c64"
+ href="#c64">64</a>
+ by
+ <a style="white-space: nowrap" href="/u/krtulmay/">krtulmay</a></span>,
+ <span class="date" title="Sat Mar  6 06:28:46 2010">Mar 06, 2010</span>
+ 
+<pre>
+Works fine for me in Linux Chrome 5.0.342.1 (Official Build 40461) dev; the &quot;Dock to 
+main window&quot; button works properly.
+
+@ye.xu.hdm, you may wish to file a new bug report if you continue to have problems.
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+
+ 
+
+
+
+ 
+ <tr>
+ <td class="vt issuecomment">
+ <span class="indicator">&#9658;</span> <a href="https://www.google.com/accounts/ServiceLogin?service=code&ltmpl=phosting&continue=http%3A%2F%2Fcode.google.com%2Fp%2Fchromium%2Fissues%2Fdetail%3Fid%3D25&amp;followup=http%3A%2F%2Fcode.google.com%2Fp%2Fchromium%2Fissues%2Fdetail%3Fid%3D25"
+ >Sign in</a> to add a comment
+ </td>
+ </tr>
+ 
+
+
+</tbody>
+</table>
+<br>
+<script type="text/javascript" src="http://www.gstatic.com/codesite/ph/9392543809124535420/js/dit_scripts_20081013.js"></script>
+
+
+
+
+
+ 
+
+
+</div> 
+<form name="delcom" action="delComment.do?q=&amp;can=2&amp;sort=&amp;colspec=ID+Stars+Pri+Area+Feature+Type+Status+Summary+Modified+Owner+Mstone+OS" method="POST">
+ <input type="hidden" name="sequence_num" value="">
+ <input type="hidden" name="mode" value="">
+ <input type="hidden" name="id" value="25">
+ <input type="hidden" name="token" value="">
+</form>
+<div id="helparea"></div>
+<script type="text/javascript">
+ _onload();
+ function delComment(sequence_num, delete_mode) {
+ var f = document.forms["delcom"];
+ f.sequence_num.value = sequence_num;
+ f.mode.value = delete_mode;
+ 
+ f.submit();
+ return false;
+ }
+ _floatMetadata();
+</script>
+<script type="text/javascript" src="http://kibbles.googlecode.com/files/kibbles-1.3.1.comp.js"></script>
+<script type="text/javascript">
+ _setupKibblesOnDetailPage(
+ 'http://code.google.com/p/chromium/issues/list?cursor\x3d25',
+ '/p/chromium/issues/entry',
+ '',
+ '',
+ '', 'chromium', 25,
+ false, false);
+</script>
+ 
+ 
+ <script type="text/javascript" src="http://www.gstatic.com/codesite/ph/9392543809124535420/js/core_scripts_20081103.js"></script>
+ <script type="text/javascript" src="/js/codesite_product_dictionary_ph.pack.04102009.js"></script>
+ </div>
+<div id="footer" dir="ltr">
+ 
+ <div class="text">
+ 
+ &copy;2010 Google -
+ <a href="/projecthosting/terms.html">Terms</a> -
+ <a href="http://www.google.com/privacy.html">Privacy</a> -
+ <a href="/p/support/">Project Hosting Help</a>
+ 
+ </div>
+</div>
+
+ <div class="hostedBy" style="margin-top: -20px;">
+ <span style="vertical-align: top;">Powered by <a href="http://code.google.com/projecthosting/">Google Project Hosting</a></span>
+ </div>
+ 
+ 
+
+
+ 
+ </body>
+</html>
+

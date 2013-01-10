@@ -1,0 +1,1147 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+ <link rel="icon" type="image/vnd.microsoft.icon" href="http://www.gstatic.com/codesite/ph/images/phosting.ico">
+ 
+ <script type="text/javascript">
+ 
+ 
+ 
+ var codesite_token = null;
+ 
+ 
+ var logged_in_user_email = null;
+ 
+ 
+ var relative_base_url = "";
+ 
+ </script>
+ 
+ 
+ <title>Issue 15 - 
+ chromium -
+ 
+ Chrome(ium?) is not fully Open Source - Project Hosting on Google Code</title>
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" >
+ 
+ <link type="text/css" rel="stylesheet" href="http://www.gstatic.com/codesite/ph/9392543809124535420/css/ph_core.css">
+ 
+ <link type="text/css" rel="stylesheet" href="http://www.gstatic.com/codesite/ph/9392543809124535420/css/ph_detail.css" >
+ 
+ 
+ 
+ 
+<!--[if IE]>
+ <link type="text/css" rel="stylesheet" href="http://www.gstatic.com/codesite/ph/9392543809124535420/css/d_ie.css" >
+<![endif]-->
+ <style type="text/css">
+ .menuIcon.off { background: no-repeat url(http://www.gstatic.com/codesite/ph/images/dropdown_sprite.gif) 0 -42px }
+ .menuIcon.on { background: no-repeat url(http://www.gstatic.com/codesite/ph/images/dropdown_sprite.gif) 0 -28px }
+ .menuIcon.down { background: no-repeat url(http://www.gstatic.com/codesite/ph/images/dropdown_sprite.gif) 0 0; }
+ </style>
+</head>
+<body class="t3">
+ <script type="text/javascript">
+ var _gaq = _gaq || [];
+ _gaq.push(
+ ['siteTracker._setAccount', 'UA-18071-1'],
+ ['siteTracker._trackPageview']);
+ 
+ (function() {
+ var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+ (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ga);
+ })();
+ </script>
+ <div id="gaia">
+ 
+ <span>
+ 
+ <a href="#" id="projects-dropdown" onclick="return false;"><u>My favorites</u> <small>&#9660;</small></a>
+ | <a href="https://www.google.com/accounts/ServiceLogin?service=code&amp;ltmpl=phosting&amp;continue=http%3A%2F%2Fcode.google.com%2Fp%2Fchromium%2Fissues%2Fdetail%3Fid%3D15&amp;followup=http%3A%2F%2Fcode.google.com%2Fp%2Fchromium%2Fissues%2Fdetail%3Fid%3D15" onclick="_CS_click('/gb/ph/signin');"><u>Sign in</u></a>
+ 
+ </span>
+
+ </div>
+ <div class="gbh" style="left: 0pt;"></div>
+ <div class="gbh" style="right: 0pt;"></div>
+ 
+ 
+ <div style="height: 1px"></div>
+<!--[if IE 6]>
+<div style="text-align:center;">
+Support browsers that contribute to open source, try <a href="http://www.firefox.com">Firefox</a> or <a href="http://www.google.com/chrome">Google Chrome</a>.
+</div>
+<![endif]-->
+
+ <div style="font-weight:bold; color:#a03; padding:5px; margin-top:10px; margin-bottom:-10px; text-align:center; background:#ffeac0;">
+ Project Hosting will be READ-ONLY <a href='http://www.timeanddate.com/worldclock/fixedtime.html?month=6&day=9&year=2010&hour=7&min=0&sec=0&p1=224'>Wednesday at 7:00am PDT</a> due to brief network maintenance.
+ 
+ </div>
+
+
+
+ <table style="padding:0px; margin: 20px 0px 0px 0px; width:100%" cellpadding="0" cellspacing="0">
+ <tr style="height: 58px;">
+ 
+ <td style="width: 55px; text-align:center;">
+ <a href="/p/chromium/">
+ 
+ 
+ <img src="/p/chromium/logo?cct=1275965165" alt="Logo">
+ 
+ </a>
+ </td>
+ 
+ <td style="padding-left: 0.5em">
+ 
+ <div id="pname" style="margin: 0px 0px -3px 0px">
+ <a href="/p/chromium/" style="text-decoration:none; color:#000">chromium</a>
+ 
+ </div>
+ <div id="psum">
+ <i><a id="project_summary_link" href="/p/chromium/" style="text-decoration:none; color:#000">An open-source browser project to help move the web forward.</a></i>
+ </div>
+ 
+ </td>
+ <td style="white-space:nowrap;text-align:right">
+ 
+ <form action="/hosting/search">
+ <input size="30" name="q" value="">
+ <input type="submit" name="projectsearch" value="Search projects" >
+ </form>
+ 
+ </tr>
+ </table>
+
+
+ 
+<table id="mt" cellspacing="0" cellpadding="0" width="100%" border="0">
+ <tr>
+ <th onclick="if (!cancelBubble) _go('/p/chromium/');">
+ <div class="tab inactive">
+ <div class="round4"></div>
+ <div class="round2"></div>
+ <div class="round1"></div>
+ <div class="box-inner">
+ <a onclick="cancelBubble=true;" href="/p/chromium/">Project&nbsp;Home</a>
+ </div>
+ </div>
+ </th><td>&nbsp;&nbsp;</td>
+ 
+ 
+ 
+ 
+ <th onclick="if (!cancelBubble) _go('/p/chromium/downloads/list');">
+ <div class="tab inactive">
+ <div class="round4"></div>
+ <div class="round2"></div>
+ <div class="round1"></div>
+ <div class="box-inner">
+ <a onclick="cancelBubble=true;" href="/p/chromium/downloads/list">Downloads</a>
+ </div>
+ </div>
+ </th><td>&nbsp;&nbsp;</td>
+ 
+ 
+ 
+ 
+ 
+ <th onclick="if (!cancelBubble) _go('/p/chromium/w/list');">
+ <div class="tab inactive">
+ <div class="round4"></div>
+ <div class="round2"></div>
+ <div class="round1"></div>
+ <div class="box-inner">
+ <a onclick="cancelBubble=true;" href="/p/chromium/w/list">Wiki</a>
+ </div>
+ </div>
+ </th><td>&nbsp;&nbsp;</td>
+ 
+ 
+ 
+ 
+ 
+ <th onclick="if (!cancelBubble) _go('/p/chromium/issues/list');">
+ <div class="tab active">
+ <div class="round4"></div>
+ <div class="round2"></div>
+ <div class="round1"></div>
+ <div class="box-inner">
+ <a onclick="cancelBubble=true;" href="/p/chromium/issues/list">Issues</a>
+ </div>
+ </div>
+ </th><td>&nbsp;&nbsp;</td>
+ 
+ 
+ 
+ 
+ <td width="100%">&nbsp;</td>
+ </tr>
+</table>
+<table cellspacing="0" cellpadding="0" width="100%" align="center" border="0" class="st">
+ <tr>
+ 
+ 
+ 
+ 
+ 
+ <td>
+ <div class="issueDetail">
+<div class="isf">
+ 
+ 
+ <span class="inIssueEntry">
+ <a href="entry">New issue</a>
+ </span> |
+ 
+ <span class="inIssueList">
+ <span>Search</span>
+ <form action="list" method="GET" style="display:inline">
+ <select id="can" name="can" style="font-size:92%">
+ 
+<option disabled="disabled">Search within:</option>
+<option value="1" >&nbsp;All issues</option>
+<option value="2" selected=selected>&nbsp;Open issues</option>
+
+<option value="6" >&nbsp;New issues</option>
+<option value="7" >&nbsp;Issues to verify</option>
+
+ </select>
+ <span>for</span>
+ <span id="qq"><input type="text" size="38" id="q" name="q" value="" style="font-size:92%" ></span>
+ 
+ <span id="search_colspec"><input type="hidden" name="colspec" value="ID Stars Pri Area Feature Type Status Summary Modified Owner Mstone OS" ></span>
+ 
+ 
+ 
+ <input type="hidden" name="cells" value="tiles" >
+ <input type="submit" value="Search" style="font-size:92%" >
+ </form>
+ </span> |
+ <span class="inIssueAdvSearch">
+ <a href="advsearch">Advanced search</a>
+ </span> |
+ <span class="inIssueSearchTips">
+ <a href="searchtips">Search tips</a>
+ </span>
+</div>
+</div>
+
+ </td>
+ 
+ 
+ 
+ 
+ <td height="4" align="right" valign="top" class="bevel-right">
+ <div class="round4"></div>
+ <div class="round2"></div>
+ <div class="round1"></div>
+ </td>
+ </tr>
+</table>
+<script type="text/javascript">
+ var cancelBubble = false;
+ function _go(url) { document.location = url; }
+</script>
+
+
+<div id="maincol"
+ 
+>
+
+ 
+<!-- IE -->
+
+
+
+
+
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+<style type="text/css">
+ .attachments { width:33%; border-top:2px solid #999; padding-top: 3px; margin-left: .7em;}
+ .attachments table { margin-bottom: 0.75em; }
+ .attachments table tr td { padding: 0; margin: 0; font-size: 95%; }
+ .preview { border: 2px solid #c3d9ff; padding: 1px; }
+ .preview:hover { border: 2px solid blue; }
+ .label { white-space: nowrap; }
+ .derived { font-style:italic }
+ tr.cursor_on .author {
+ background: #fff url(http://www.gstatic.com/codesite/ph/images/show-arrow.gif) no-repeat 2px;
+ }
+</style>
+<div id="color_control" class="closed_colors">
+<div id="issueheader">
+<table cellpadding="0" cellspacing="0" width="100%"><tbody>
+ <tr>
+ <td class="vt h3" nowrap="nowrap" style="padding:0 5px">
+ 
+ 
+ Issue <a href="detail?id=15">15</a>:
+ </td>
+ <td width="90%" class="vt">
+ <span class="h3" >Chrome(ium?) is not fully Open Source</span>
+ </td>
+ <td>
+ 
+ </td>
+ </tr>
+ <tr>
+ <td></td>
+ <td nowrap="nowrap">
+ 
+ 
+ 10 people starred this issue and may be notified of changes.
+ 
+ 
+ 
+ </td>
+ <td align="center" nowrap="nowrap">
+ 
+ <a href="http://code.google.com/p/chromium/issues/list?cursor=15">Back to list</a>
+ 
+ </td>
+ </tr>
+</tbody></table>
+</div>
+<table width="100%" cellpadding="0" cellspacing="0" border="0" class="issuepage" id="meta-container">
+<tbody id="cursorarea" class="collapse"> 
+ <tr class="cursor_off">
+ <td id="issuemeta" rowspan="25">
+ <div id="meta-float">
+ <table cellspacing="0" cellpadding="0">
+ <tr><th align="left">Status:&nbsp;</th>
+ <td width="100%">
+ 
+ <span title="Cannot reproduce, works as intended, or obsolete">WontFix</span>
+ 
+ </td>
+ </tr>
+ 
+ <tr><th align="left">Owner:&nbsp;</th><td>
+ 
+ <a style="white-space: nowrap" href="/u/all-bugs-test@chromium.org/">all-bugs-test@chromium.org</a>
+ 
+ </td>
+ </tr>
+ 
+ <tr><th align="left" valign="top">Closed:&nbsp;</th>
+ <td align="left" valign="top" width="100%">
+ Sep 2008
+ </td>
+ </tr>
+ 
+ 
+ 
+ 
+ <tr><td colspan="2">
+ <a href="list?q=label:Type-Feature"
+ title="Request for new or improved features"
+ class="label"><b>Type-</b>Feature</a>
+ </td></tr>
+ 
+ 
+ 
+ <tr><td colspan="2">
+ <a href="list?q=label:Pri-2"
+ title="Normal. Required for specified milestone."
+ class="label"><b>Pri-</b>2</a>
+ </td></tr>
+ 
+ 
+ 
+ <tr><td colspan="2">
+ <a href="list?q=label:OS-Windows"
+ title="Affects Windows users"
+ class="label"><b>OS-</b>Windows</a>
+ </td></tr>
+ 
+ 
+ 
+ <tr><td colspan="2">
+ <a href="list?q=label:Area-BuildTools"
+ title="Gyp, gclient, gcl, buildbots, trybots, test framework issues"
+ class="label"><b>Area-</b>BuildTools</a>
+ </td></tr>
+ 
+ 
+ 
+ </table>
+ <br><br>
+ 
+ 
+ 
+ <div style="white-space:nowrap"><a href="https://www.google.com/accounts/ServiceLogin?service=code&amp;ltmpl=phosting&amp;continue=http%3A%2F%2Fcode.google.com%2Fp%2Fchromium%2Fissues%2Fdetail%3Fid%3D15&amp;followup=http%3A%2F%2Fcode.google.com%2Fp%2Fchromium%2Fissues%2Fdetail%3Fid%3D15">Sign in</a> to add a comment</div>
+ 
+ 
+ 
+ <div class="rel_issues">
+ 
+ 
+ 
+ </div>
+ 
+ 
+ </div>&nbsp;
+ </td>
+ <td class="vt issuedescription" width="100%">
+ <div class="author">
+ Reported by <a style="white-space: nowrap" href="/u/florian.haas/">florian.haas</a>,
+ <span class="date" title="Tue Sep  2 12:19:34 2008">Sep 02, 2008</span>
+ 
+ </div>
+<pre>
+Product Version      : all
+<b>URLs (if applicable) :</b>
+Other browsers tested: not applicable
+<b>Add OK or FAIL after other browsers where you have tested this issue:</b>
+     Safari 3: not applicable
+    Firefox 3: not applicable
+         IE 7: not applicable
+
+<b>What steps will reproduce the problem?</b>
+1. Download the sourcecode
+
+<b>What is the expected result?</b>
+
+Sourcecode is compilable using nothing but Open Source software.
+
+<b>What happens instead?</b>
+
+One of the build-requirements is Microsoft Visual Studio 2005. The usage of
+the free (as in beer) Visual Studio Express (i don't even know if the
+express version is enough) requires acceptance of the EULA and the creation
+of a MS-Windows Live ID(formerly known as Passport), which also requires
+the acceptance of an EULA.
+While the license does conform to the letter of the Open Source Definition,
+it certainly does not conform to the spirit of point 5 (No Discrimination
+Against Persons or Groups), as acceptance of hundreds of pages of
+Microsoft-legalese without the backing of a lawyer is plain stupid.
+
+Please provide any additional information below. Attach a screenshot if
+possible.
+Not applicable.
+</pre>
+
+
+ </td>
+ </tr>
+
+ 
+
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c1"
+ href="#c1">1</a>
+ by
+ <a style="white-space: nowrap" href="/u/haykinson/">haykinson</a></span>,
+ <span class="date" title="Tue Sep  2 12:32:06 2008">Sep 02, 2008</span>
+ 
+<pre>
+I disagree that this is an issue. Usage of the source code also requires a CPU, which 
+is not open-source; and a video card, which is not open source.  I think that this is 
+not a bug -- instead, file an issue with Microsoft to produce an open-source basic 
+compiler.
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c2"
+ href="#c2">2</a>
+ by
+ <a style="white-space: nowrap" href="/u/superfox436/">superfox436</a></span>,
+ <span class="date" title="Tue Sep  2 12:36:15 2008">Sep 02, 2008</span>
+ 
+<pre>
+Also, I found it weird that although it contains language you'd find for a BSD 
+license (eg. all rights reserved), about:version does not mention it is open source. 
+Should say something like &quot;Google Chrome - (VERSION NUMBER) - Compiled (DATE)&quot; and 
+maybe list plugins loaded under it and nothing else.
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c3"
+ href="#c3">3</a>
+ by
+ <a style="white-space: nowrap" href="/u/amorken/">amorken</a></span>,
+ <span class="date" title="Tue Sep  2 12:49:27 2008">Sep 02, 2008</span>
+ 
+<pre>
+Florian, if you want to help Chromium/Chrome build and run using a completely open 
+source toolstack, feel free to hit <a href="http://dev.chromium.org/developers/how-tos/build-">http://dev.chromium.org/developers/how-tos/build-</a>
+instructions-linux and join the porting effort! =)
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c4"
+ href="#c4">4</a>
+ by
+ <a style="white-space: nowrap" href="/u/RicardoJorgeMacas/">RicardoJorgeMacas</a></span>,
+ <span class="date" title="Tue Sep  2 13:52:32 2008">Sep 02, 2008</span>
+ 
+<pre>
+CPU does not have source (as far as i know) but most times its NOT OPEN hardware so 
+haykinson is quite true. (not correcting, just giving more arguments to him :p )
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c5"
+ href="#c5">5</a>
+ by
+ <a style="white-space: nowrap" href="/u/huttarl/">huttarl</a></span>,
+ <span class="date" title="Tue Sep  2 13:59:13 2008">Sep 02, 2008</span>
+ 
+<pre>
+@amorken
+It's fine to encourage bug submitters to contribute patches, but I hope the implied 
+message is not Google's view... namely that Google doesn't really care whether people are 
+able to modify Chrome without dependencies on arguably non-free software.
+
+That does raise a high bar for Google though. The sad fact is that unwieldy EULAs are the 
+norm, and many pieces of software are called &quot;free&quot; even though they are legally 
+encumbered.
+
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c6"
+ href="#c6">6</a>
+ by
+ <a style="white-space: nowrap" href="/u/someman7/">someman7</a></span>,
+ <span class="date" title="Tue Sep  2 15:25:49 2008">Sep 02, 2008</span>
+ 
+<pre>
+Yes, this is a problem if florian.haas is correct.
+
+Why Haykinson's analogy stinks:
+* CPU &amp; Graphic cards are hardware, and doesn't have a source code, which, being
+non-existant cannot be free.
+* There's a difference between not having a choice and being robbed of it. This is
+the latter.
+* Actually, there are open processor architectures (UltraSPARC), as well as graphic
+cards (OGD1). So the only thing that's not really free here is the software.
+
+We shouldn't pretend it's free, it should be free.
+This is a serious bug, you should fix it.
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c7"
+ href="#c7">7</a>
+ by
+ <a style="white-space: nowrap" href="/u/guido.iodice/">guido.iodice</a></span>,
+ <span class="date" title="Tue Sep  2 15:58:33 2008">Sep 02, 2008</span>
+ 
+<pre>
+It is a corret issue.
+The code is free (as in freedom) but it needs a proprietary compiler. So it is free
+at half.
+THere are similar examples: the java trap, the old linux kernel version control, .net
+framework-trap and ohers.
+But: java-trap is solved, the linux kernel devs use now a open-source version control
+program (git) and .net can be replaced by mono.
+So, I hope Google developers solve this issue, too.
+
+
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c8"
+ href="#c8">8</a>
+ by
+ <a style="white-space: nowrap" href="/u/lpcustom/">lpcustom</a></span>,
+ <span class="date" title="Tue Sep  2 19:27:06 2008">Sep 02, 2008</span>
+ 
+<pre>
+It also requires a proprietary OS to build the Windows version. How many pieces of 
+OSS do you have on your Windows machine. This is a very silly claim and should be 
+deleted.
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c9"
+ href="#c9">9</a>
+ by
+ <a style="white-space: nowrap" href="/u/eatnumber1/">eatnumber1</a></span>,
+ <span class="date" title="Tue Sep  2 19:28:45 2008">Sep 02, 2008</span>
+ 
+<pre>
+I wonder how hard it would be to port it to mingw
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c10"
+ href="#c10">10</a>
+ by
+ <a style="white-space: nowrap" href="/u/chris.upchurch/">chris.upchurch</a></span>,
+ <span class="date" title="Tue Sep  2 21:31:46 2008">Sep 02, 2008</span>
+ 
+<pre>
+If you're trying to run the Windows version of Chrome, you are already running a non-
+free system.  I don't really see the problem in requiring another piece of non-free 
+software to do the build.  I just don't see the sense in being absolutist about free 
+build tools while running a non-free OS.
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c11"
+ href="#c11">11</a>
+ by
+ <a style="white-space: nowrap" href="/u/uahgekido/">uahgekido</a></span>,
+ <span class="date" title="Tue Sep  2 21:57:13 2008">Sep 02, 2008</span>
+ 
+<pre>
+Rather than post what I had originally typed out, which mirrored many opinions 
+already posted, I'll offer a little note to keep in mind.
+
+Mozilla specifies a nearly identical set of build requirements for Firefox 
+(difference: they do support VS2008 in the Firefox 3 branch) as Google. Does this 
+settle the argument? No, not at all. But Firefox is one of the most well-known OSS 
+projects in the world, and they seem to have gotten along fine with this requirement.  
+Even though Google (and Mozilla) may specify build instructions that require VS, a 
+developer is not *required* to use that. The developer is more than welcome to 
+attempt to adapt the code base into something that is compilable in an open-source 
+environment on Windows.
+
+However, there could be numerous reasons why VS and the Windows SDK to develop on 
+Windows. These would likely be the exact same reasons that Xcode is required for the 
+Mac build. (sure, Xcode is free, but you do still go through the EULAs, which is the 
+argument after all)
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c12"
+ href="#c12">12</a>
+ by
+ <a style="white-space: nowrap" href="/u/deanm@chromium.org/">deanm@chromium.org</a></span>,
+ <span class="date" title="Wed Sep  3 01:00:33 2008">Sep 03, 2008</span>
+ 
+<pre>
+
+
+</pre>
+ 
+ 
+ <div class="updates">
+ <div class="round4"></div>
+ <div class="round2"></div>
+ <div class="round1"></div>
+ <div class="box-inner">
+ <b>Labels:</b> -Type-Bug -OS-All -Area-Unknown Type-Feature OS-Windows Area-Tools<br>
+ </div>
+ <div class="round1"></div>
+ <div class="round2"></div>
+ <div class="round4"></div>
+ </div>
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c13"
+ href="#c13">13</a>
+ by
+ <a style="white-space: nowrap" href="/u/pkasting@chromium.org/">pkasting@chromium.org</a></span>,
+ <span class="date" title="Wed Sep  3 01:23:33 2008">Sep 03, 2008</span>
+ 
+<pre>
+Needing to use a non-open-source compiler to build Chromium does not make Chromium 
+non-open-source.  Sorry.
+</pre>
+ 
+ 
+ <div class="updates">
+ <div class="round4"></div>
+ <div class="round2"></div>
+ <div class="round1"></div>
+ <div class="box-inner">
+ <b>Status:</b> WontFix<br>
+ </div>
+ <div class="round1"></div>
+ <div class="round2"></div>
+ <div class="round4"></div>
+ </div>
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c14"
+ href="#c14">14</a>
+ by
+ <a style="white-space: nowrap" href="/u/someman7/">someman7</a></span>,
+ <span class="date" title="Wed Sep  3 07:05:48 2008">Sep 03, 2008</span>
+ 
+<pre>
+Chromium is (at this point) bull. Thank you.
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c15"
+ href="#c15">15</a>
+ by
+ <a style="white-space: nowrap" href="/u/jaypipes/">jaypipes</a></span>,
+ <span class="date" title="Wed Sep  3 12:10:14 2008">Sep 03, 2008</span>
+ 
+<pre>
+Looks like Chromium was built with only Windows developers and users in mind.  It
+doesn't come remotely close to being cross-platform (as is acknowledged by Google). 
+That said, after looking at the code, it's fairly clear free software platforms like
+Linux are not the target.  The code is non-portable and targeted to the Win API.  It
+would be a gargantuan effort to try to build this on non-Windows platforms.  Have fun
+with the port.  I'll just use and support Firefox instead.
+
+-jay
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c16"
+ href="#c16">16</a>
+ by
+ <a style="white-space: nowrap" href="/u/jaypipes/">jaypipes</a></span>,
+ <span class="date" title="Wed Sep  3 12:22:35 2008">Sep 03, 2008</span>
+ 
+<pre>
+After reading some of the commentary from the chromium developers, it seems that
+Linux and Mac are indeed targeted, so I take back the above comment.  However, my
+comment still stands that the existing code is extremely Windows-oriented (looking in
+src/chrom/common/*.cc) and will require a big porting effort.  I wonder why Google's
+developers didn't just start with an existing cross-platform base like XPCOM from
+Mozilla and go from there...?
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c17"
+ href="#c17">17</a>
+ by
+ <a style="white-space: nowrap" href="/u/russell.jones/">russell.jones</a></span>,
+ <span class="date" title="Sun Sep  7 01:55:02 2008">Sep 07, 2008</span>
+ 
+<pre>
+&quot;Needing to use a non-open-source compiler to build Chromium does not make Chromium 
+non-open-source.  Sorry.&quot;
+This is correct.
+
+The question of whether it is desirable to use an OSS compiler on Windows is another
+issue. Whilst I think the OSS development process is superior, morally and very often
+practically especially over the longer term, I believe the compilers' use is not
+desirable here, as it makes it too easy for MS to introduce incompatibilities (via
+Windows Update or new OS versions) and then dismiss breakage by pointing out that the
+compiler is unsupported. I strongly suspect one reason they have experts in competing
+technologies to facilitate exactly this. In contrast, if they break their own
+compiler their customers (the ones they care about, I mean) will not be happy and
+they will be under strong pressure to fix it.
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c18"
+ href="#c18">18</a>
+ by
+ <a style="white-space: nowrap" href="/u/mal.chromium/">mal.chromium</a></span>,
+ <span class="date" title="Mon Sep 29 22:13:04 2008">Sep 29, 2008</span>
+ 
+<pre>
+<i>(No comment was entered for this change.)</i>
+</pre>
+ 
+ 
+ <div class="updates">
+ <div class="round4"></div>
+ <div class="round2"></div>
+ <div class="round1"></div>
+ <div class="box-inner">
+ <b>Labels:</b> -area-tools Area-DevTools<br>
+ </div>
+ <div class="round1"></div>
+ <div class="round2"></div>
+ <div class="round4"></div>
+ </div>
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c19"
+ href="#c19">19</a>
+ by
+ <a style="white-space: nowrap" href="/u/jon@chromium.org/">jon@chromium.org</a></span>,
+ <span class="date" title="Thu Apr  9 13:19:50 2009">Apr 09, 2009</span>
+ 
+<pre>
+<i>(No comment was entered for this change.)</i>
+</pre>
+ 
+ 
+ <div class="updates">
+ <div class="round4"></div>
+ <div class="round2"></div>
+ <div class="round1"></div>
+ <div class="box-inner">
+ <b>Labels:</b> -Area-DevTools Area-Infrastructure<br>
+ </div>
+ <div class="round1"></div>
+ <div class="round2"></div>
+ <div class="round4"></div>
+ </div>
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c20"
+ href="#c20">20</a>
+ by
+ <a style="white-space: nowrap" href="/u/cdibona/">cdibona</a></span>,
+ <span class="date" title="Thu Apr  9 13:24:23 2009">Apr 09, 2009</span>
+ 
+<pre>
+The comment stream of a bug is a ridiculous place to discuss this issue. PAtches that 
+would allow building other environments are interesting, though. 
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c21"
+ href="#c21">21</a>
+ by
+ <a style="white-space: nowrap" href="/u/mal.chromium/">mal.chromium</a></span>,
+ <span class="date" title="Fri Dec 18 00:17:02 2009">Dec 18, 2009</span>
+ 
+<pre>
+<i>(No comment was entered for this change.)</i>
+</pre>
+ 
+ 
+ <div class="updates">
+ <div class="round4"></div>
+ <div class="round2"></div>
+ <div class="round1"></div>
+ <div class="box-inner">
+ <b>Labels:</b> -Area-Infrastructure Area-BuildTools<br>
+ </div>
+ <div class="round1"></div>
+ <div class="round2"></div>
+ <div class="round4"></div>
+ </div>
+ 
+ </td>
+ </tr>
+ 
+ 
+
+ 
+
+
+
+ 
+ <tr>
+ <td class="vt issuecomment">
+ <span class="indicator">&#9658;</span> <a href="https://www.google.com/accounts/ServiceLogin?service=code&ltmpl=phosting&continue=http%3A%2F%2Fcode.google.com%2Fp%2Fchromium%2Fissues%2Fdetail%3Fid%3D15&amp;followup=http%3A%2F%2Fcode.google.com%2Fp%2Fchromium%2Fissues%2Fdetail%3Fid%3D15"
+ >Sign in</a> to add a comment
+ </td>
+ </tr>
+ 
+
+
+</tbody>
+</table>
+<br>
+<script type="text/javascript" src="http://www.gstatic.com/codesite/ph/9392543809124535420/js/dit_scripts_20081013.js"></script>
+
+
+
+
+
+ 
+
+
+</div> 
+<form name="delcom" action="delComment.do?q=&amp;can=2&amp;sort=&amp;colspec=ID+Stars+Pri+Area+Feature+Type+Status+Summary+Modified+Owner+Mstone+OS" method="POST">
+ <input type="hidden" name="sequence_num" value="">
+ <input type="hidden" name="mode" value="">
+ <input type="hidden" name="id" value="15">
+ <input type="hidden" name="token" value="">
+</form>
+<div id="helparea"></div>
+<script type="text/javascript">
+ _onload();
+ function delComment(sequence_num, delete_mode) {
+ var f = document.forms["delcom"];
+ f.sequence_num.value = sequence_num;
+ f.mode.value = delete_mode;
+ 
+ f.submit();
+ return false;
+ }
+ _floatMetadata();
+</script>
+<script type="text/javascript" src="http://kibbles.googlecode.com/files/kibbles-1.3.1.comp.js"></script>
+<script type="text/javascript">
+ _setupKibblesOnDetailPage(
+ 'http://code.google.com/p/chromium/issues/list?cursor\x3d15',
+ '/p/chromium/issues/entry',
+ '',
+ '',
+ '', 'chromium', 15,
+ false, false);
+</script>
+ 
+ 
+ <script type="text/javascript" src="http://www.gstatic.com/codesite/ph/9392543809124535420/js/core_scripts_20081103.js"></script>
+ <script type="text/javascript" src="/js/codesite_product_dictionary_ph.pack.04102009.js"></script>
+ </div>
+<div id="footer" dir="ltr">
+ 
+ <div class="text">
+ 
+ &copy;2010 Google -
+ <a href="/projecthosting/terms.html">Terms</a> -
+ <a href="http://www.google.com/privacy.html">Privacy</a> -
+ <a href="/p/support/">Project Hosting Help</a>
+ 
+ </div>
+</div>
+
+ <div class="hostedBy" style="margin-top: -20px;">
+ <span style="vertical-align: top;">Powered by <a href="http://code.google.com/projecthosting/">Google Project Hosting</a></span>
+ </div>
+ 
+ 
+
+
+ 
+ </body>
+</html>
+

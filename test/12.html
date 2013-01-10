@@ -1,0 +1,714 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+ <link rel="icon" type="image/vnd.microsoft.icon" href="http://www.gstatic.com/codesite/ph/images/phosting.ico">
+ 
+ <script type="text/javascript">
+ 
+ 
+ 
+ var codesite_token = null;
+ 
+ 
+ var logged_in_user_email = null;
+ 
+ 
+ var relative_base_url = "";
+ 
+ </script>
+ 
+ 
+ <title>Issue 12 - 
+ chromium -
+ 
+ Can't get Zimbra web mail into Advanced state when using Chrome - Project Hosting on Google Code</title>
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" >
+ 
+ <link type="text/css" rel="stylesheet" href="http://www.gstatic.com/codesite/ph/9392543809124535420/css/ph_core.css">
+ 
+ <link type="text/css" rel="stylesheet" href="http://www.gstatic.com/codesite/ph/9392543809124535420/css/ph_detail.css" >
+ 
+ 
+ 
+ 
+<!--[if IE]>
+ <link type="text/css" rel="stylesheet" href="http://www.gstatic.com/codesite/ph/9392543809124535420/css/d_ie.css" >
+<![endif]-->
+ <style type="text/css">
+ .menuIcon.off { background: no-repeat url(http://www.gstatic.com/codesite/ph/images/dropdown_sprite.gif) 0 -42px }
+ .menuIcon.on { background: no-repeat url(http://www.gstatic.com/codesite/ph/images/dropdown_sprite.gif) 0 -28px }
+ .menuIcon.down { background: no-repeat url(http://www.gstatic.com/codesite/ph/images/dropdown_sprite.gif) 0 0; }
+ </style>
+</head>
+<body class="t3">
+ <script type="text/javascript">
+ var _gaq = _gaq || [];
+ _gaq.push(
+ ['siteTracker._setAccount', 'UA-18071-1'],
+ ['siteTracker._trackPageview']);
+ 
+ (function() {
+ var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+ (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ga);
+ })();
+ </script>
+ <div id="gaia">
+ 
+ <span>
+ 
+ <a href="#" id="projects-dropdown" onclick="return false;"><u>My favorites</u> <small>&#9660;</small></a>
+ | <a href="https://www.google.com/accounts/ServiceLogin?service=code&amp;ltmpl=phosting&amp;continue=http%3A%2F%2Fcode.google.com%2Fp%2Fchromium%2Fissues%2Fdetail%3Fid%3D12&amp;followup=http%3A%2F%2Fcode.google.com%2Fp%2Fchromium%2Fissues%2Fdetail%3Fid%3D12" onclick="_CS_click('/gb/ph/signin');"><u>Sign in</u></a>
+ 
+ </span>
+
+ </div>
+ <div class="gbh" style="left: 0pt;"></div>
+ <div class="gbh" style="right: 0pt;"></div>
+ 
+ 
+ <div style="height: 1px"></div>
+<!--[if IE 6]>
+<div style="text-align:center;">
+Support browsers that contribute to open source, try <a href="http://www.firefox.com">Firefox</a> or <a href="http://www.google.com/chrome">Google Chrome</a>.
+</div>
+<![endif]-->
+
+ <div style="font-weight:bold; color:#a03; padding:5px; margin-top:10px; margin-bottom:-10px; text-align:center; background:#ffeac0;">
+ Project Hosting will be READ-ONLY <a href='http://www.timeanddate.com/worldclock/fixedtime.html?month=6&day=9&year=2010&hour=7&min=0&sec=0&p1=224'>Wednesday at 7:00am PDT</a> due to brief network maintenance.
+ 
+ </div>
+
+
+
+ <table style="padding:0px; margin: 20px 0px 0px 0px; width:100%" cellpadding="0" cellspacing="0">
+ <tr style="height: 58px;">
+ 
+ <td style="width: 55px; text-align:center;">
+ <a href="/p/chromium/">
+ 
+ 
+ <img src="/p/chromium/logo?cct=1275965165" alt="Logo">
+ 
+ </a>
+ </td>
+ 
+ <td style="padding-left: 0.5em">
+ 
+ <div id="pname" style="margin: 0px 0px -3px 0px">
+ <a href="/p/chromium/" style="text-decoration:none; color:#000">chromium</a>
+ 
+ </div>
+ <div id="psum">
+ <i><a id="project_summary_link" href="/p/chromium/" style="text-decoration:none; color:#000">An open-source browser project to help move the web forward.</a></i>
+ </div>
+ 
+ </td>
+ <td style="white-space:nowrap;text-align:right">
+ 
+ <form action="/hosting/search">
+ <input size="30" name="q" value="">
+ <input type="submit" name="projectsearch" value="Search projects" >
+ </form>
+ 
+ </tr>
+ </table>
+
+
+ 
+<table id="mt" cellspacing="0" cellpadding="0" width="100%" border="0">
+ <tr>
+ <th onclick="if (!cancelBubble) _go('/p/chromium/');">
+ <div class="tab inactive">
+ <div class="round4"></div>
+ <div class="round2"></div>
+ <div class="round1"></div>
+ <div class="box-inner">
+ <a onclick="cancelBubble=true;" href="/p/chromium/">Project&nbsp;Home</a>
+ </div>
+ </div>
+ </th><td>&nbsp;&nbsp;</td>
+ 
+ 
+ 
+ 
+ <th onclick="if (!cancelBubble) _go('/p/chromium/downloads/list');">
+ <div class="tab inactive">
+ <div class="round4"></div>
+ <div class="round2"></div>
+ <div class="round1"></div>
+ <div class="box-inner">
+ <a onclick="cancelBubble=true;" href="/p/chromium/downloads/list">Downloads</a>
+ </div>
+ </div>
+ </th><td>&nbsp;&nbsp;</td>
+ 
+ 
+ 
+ 
+ 
+ <th onclick="if (!cancelBubble) _go('/p/chromium/w/list');">
+ <div class="tab inactive">
+ <div class="round4"></div>
+ <div class="round2"></div>
+ <div class="round1"></div>
+ <div class="box-inner">
+ <a onclick="cancelBubble=true;" href="/p/chromium/w/list">Wiki</a>
+ </div>
+ </div>
+ </th><td>&nbsp;&nbsp;</td>
+ 
+ 
+ 
+ 
+ 
+ <th onclick="if (!cancelBubble) _go('/p/chromium/issues/list');">
+ <div class="tab active">
+ <div class="round4"></div>
+ <div class="round2"></div>
+ <div class="round1"></div>
+ <div class="box-inner">
+ <a onclick="cancelBubble=true;" href="/p/chromium/issues/list">Issues</a>
+ </div>
+ </div>
+ </th><td>&nbsp;&nbsp;</td>
+ 
+ 
+ 
+ 
+ <td width="100%">&nbsp;</td>
+ </tr>
+</table>
+<table cellspacing="0" cellpadding="0" width="100%" align="center" border="0" class="st">
+ <tr>
+ 
+ 
+ 
+ 
+ 
+ <td>
+ <div class="issueDetail">
+<div class="isf">
+ 
+ 
+ <span class="inIssueEntry">
+ <a href="entry">New issue</a>
+ </span> |
+ 
+ <span class="inIssueList">
+ <span>Search</span>
+ <form action="list" method="GET" style="display:inline">
+ <select id="can" name="can" style="font-size:92%">
+ 
+<option disabled="disabled">Search within:</option>
+<option value="1" >&nbsp;All issues</option>
+<option value="2" selected=selected>&nbsp;Open issues</option>
+
+<option value="6" >&nbsp;New issues</option>
+<option value="7" >&nbsp;Issues to verify</option>
+
+ </select>
+ <span>for</span>
+ <span id="qq"><input type="text" size="38" id="q" name="q" value="" style="font-size:92%" ></span>
+ 
+ <span id="search_colspec"><input type="hidden" name="colspec" value="ID Stars Pri Area Feature Type Status Summary Modified Owner Mstone OS" ></span>
+ 
+ 
+ 
+ <input type="hidden" name="cells" value="tiles" >
+ <input type="submit" value="Search" style="font-size:92%" >
+ </form>
+ </span> |
+ <span class="inIssueAdvSearch">
+ <a href="advsearch">Advanced search</a>
+ </span> |
+ <span class="inIssueSearchTips">
+ <a href="searchtips">Search tips</a>
+ </span>
+</div>
+</div>
+
+ </td>
+ 
+ 
+ 
+ 
+ <td height="4" align="right" valign="top" class="bevel-right">
+ <div class="round4"></div>
+ <div class="round2"></div>
+ <div class="round1"></div>
+ </td>
+ </tr>
+</table>
+<script type="text/javascript">
+ var cancelBubble = false;
+ function _go(url) { document.location = url; }
+</script>
+
+
+<div id="maincol"
+ 
+>
+
+ 
+<!-- IE -->
+
+
+
+
+
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+<style type="text/css">
+ .attachments { width:33%; border-top:2px solid #999; padding-top: 3px; margin-left: .7em;}
+ .attachments table { margin-bottom: 0.75em; }
+ .attachments table tr td { padding: 0; margin: 0; font-size: 95%; }
+ .preview { border: 2px solid #c3d9ff; padding: 1px; }
+ .preview:hover { border: 2px solid blue; }
+ .label { white-space: nowrap; }
+ .derived { font-style:italic }
+ tr.cursor_on .author {
+ background: #fff url(http://www.gstatic.com/codesite/ph/images/show-arrow.gif) no-repeat 2px;
+ }
+</style>
+<div id="color_control" class="closed_colors">
+<div id="issueheader">
+<table cellpadding="0" cellspacing="0" width="100%"><tbody>
+ <tr>
+ <td class="vt h3" nowrap="nowrap" style="padding:0 5px">
+ 
+ 
+ Issue <a href="detail?id=12">12</a>:
+ </td>
+ <td width="90%" class="vt">
+ <span class="h3" >Can't get Zimbra web mail into Advanced state when using Chrome</span>
+ </td>
+ <td>
+ 
+ </td>
+ </tr>
+ <tr>
+ <td></td>
+ <td nowrap="nowrap">
+ 
+ 
+ 5 people starred this issue and may be notified of changes.
+ 
+ 
+ 
+ </td>
+ <td align="center" nowrap="nowrap">
+ 
+ <a href="http://code.google.com/p/chromium/issues/list?cursor=12">Back to list</a>
+ 
+ </td>
+ </tr>
+</tbody></table>
+</div>
+<table width="100%" cellpadding="0" cellspacing="0" border="0" class="issuepage" id="meta-container">
+<tbody id="cursorarea" class="collapse"> 
+ <tr class="cursor_off">
+ <td id="issuemeta" rowspan="11">
+ <div id="meta-float">
+ <table cellspacing="0" cellpadding="0">
+ <tr><th align="left">Status:&nbsp;</th>
+ <td width="100%">
+ 
+ <span title="Cannot reproduce, works as intended, or obsolete">WontFix</span>
+ 
+ </td>
+ </tr>
+ 
+ <tr><th align="left">Owner:&nbsp;</th><td>
+ 
+ <a style="white-space: nowrap" href="/u/all-bugs-test@chromium.org/">all-bugs-test@chromium.org</a>
+ 
+ </td>
+ </tr>
+ 
+ <tr><th align="left" valign="top">Closed:&nbsp;</th>
+ <td align="left" valign="top" width="100%">
+ Sep 2008
+ </td>
+ </tr>
+ 
+ 
+ 
+ 
+ <tr><td colspan="2">
+ <a href="list?q=label:Type-Bug"
+ title="Software not working correctly"
+ class="label"><b>Type-</b>Bug</a>
+ </td></tr>
+ 
+ 
+ 
+ <tr><td colspan="2">
+ <a href="list?q=label:Pri-2"
+ title="Normal. Required for specified milestone."
+ class="label"><b>Pri-</b>2</a>
+ </td></tr>
+ 
+ 
+ 
+ <tr><td colspan="2">
+ <a href="list?q=label:OS-All"
+ title="Affects all operating systems"
+ class="label"><b>OS-</b>All</a>
+ </td></tr>
+ 
+ 
+ 
+ <tr><td colspan="2">
+ <a href="list?q=label:Area-Unknown"
+ title=""
+ class="label"><b>Area-</b>Unknown</a>
+ </td></tr>
+ 
+ 
+ 
+ </table>
+ <br><br>
+ 
+ 
+ 
+ <div style="white-space:nowrap"><a href="https://www.google.com/accounts/ServiceLogin?service=code&amp;ltmpl=phosting&amp;continue=http%3A%2F%2Fcode.google.com%2Fp%2Fchromium%2Fissues%2Fdetail%3Fid%3D12&amp;followup=http%3A%2F%2Fcode.google.com%2Fp%2Fchromium%2Fissues%2Fdetail%3Fid%3D12">Sign in</a> to add a comment</div>
+ 
+ 
+ 
+ <div class="rel_issues">
+ 
+ 
+ 
+ </div>
+ 
+ 
+ </div>&nbsp;
+ </td>
+ <td class="vt issuedescription" width="100%">
+ <div class="author">
+ Reported by <a style="white-space: nowrap" href="/u/charles.crouch/">charles.crouch</a>,
+ <span class="date" title="Tue Sep  2 12:15:22 2008">Sep 02, 2008</span>
+ 
+ </div>
+<pre>
+Product Version      : Official Build 1583
+URLs (if applicable) :N/A
+<b>Other browsers tested:</b>
+<b>Add OK or FAIL after other browsers where you have tested this issue:</b>
+     Safari 3: N/A
+    Firefox 3: OK
+         IE 7: N/A
+
+<b>What steps will reproduce the problem?</b>
+1. Log into Zimbra web mail interface
+2. Click on the Advanced version link in the top right hand corner
+
+
+<b>What is the expected result?</b>
+Should go to Advanced mode
+
+<b>What happens instead?</b>
+Instead you get a message saying you are now in Standard Mode.
+
+
+Please provide any additional information below. Attach a screenshot if 
+possible.
+ 
+</pre>
+
+
+ </td>
+ </tr>
+
+ 
+
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c2"
+ href="#c2">2</a>
+ by
+ <a style="white-space: nowrap" href="/u/foolswisdom/">foolswisdom</a></span>,
+ <span class="date" title="Wed Sep  3 11:21:44 2008">Sep 03, 2008</span>
+ 
+<pre>
+Why would testing in Safari 3 be N/A? Chrome shares the same rending engine as Safari.
+
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c3"
+ href="#c3">3</a>
+ by
+ <a style="white-space: nowrap" href="/u/christopherdelgigante/">christopherdelgigante</a></span>,
+ <span class="date" title="Wed Sep  3 12:09:13 2008">Sep 03, 2008</span>
+ 
+<pre>
+Please consider providing a url to Zimbra so this has a chance of being evaluated.   
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c4"
+ href="#c4">4</a>
+ by
+ <a style="white-space: nowrap" href="/u/ronnylindner/">ronnylindner</a></span>,
+ <span class="date" title="Wed Sep  3 12:38:00 2008">Sep 03, 2008</span>
+ 
+<pre>
+I think I know why it doesn't go into advanced mode:
+Every browser needs other commands to show the same dynamic web page (ajax), I have 
+the same &quot;problem&quot; with the WYSIWYG editor in a Woltlab Burning Board 3 (wbb3).
+Zimbra needs to put out an update to support Google Chrome (if safari is already 
+supported they just need to change if(safari) to if(safari or chrome) - or check for 
+webkit instead!
+Short answer: To me it is a &quot;won't fix&quot;
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c5"
+ href="#c5">5</a>
+ by
+ <a style="white-space: nowrap" href="/u/charles.crouch/">charles.crouch</a></span>,
+ <span class="date" title="Wed Sep  3 12:40:29 2008">Sep 03, 2008</span>
+ 
+<pre>
+&quot;Why would testing in Safari 3 be N/A? Chrome shares the same rending engine as 
+Safari.&quot;
+I meant N/A as in Not Available, i.e. I haven't tried accessing it with Safari. I'll 
+see if I can do that.
+
+&quot;Please consider providing a url to Zimbra so this has a chance of being evaluated.&quot;
+Unfortunately the version of Zimbra I'm using is behind a VPN. If its any help 
+entering &quot;$set:get version&quot; in the search bar, then hitting ENTER I get:
+
+Client Version: 5.0.7_GA_2450.RHEL4_64
+Client Release: 20080630182541
+    Build Date: 20080630-1831
+
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c6"
+ href="#c6">6</a>
+ by
+ <a style="white-space: nowrap" href="/u/john.mora/">john.mora</a></span>,
+ <span class="date" title="Wed Sep  3 14:51:13 2008">Sep 03, 2008</span>
+ 
+<pre>
+Zimbra offers a demo where the issue can be reproduced:
+
+<a href="http://www.testzimbra.com/zimbraDemo/public/ValidateDemoCreation.jsp">http://www.testzimbra.com/zimbraDemo/public/ValidateDemoCreation.jsp</a>
+
+It appears to be a Zimbra issue:
+
+<a href="http://bugzilla.zimbra.com/show_bug.cgi?id=31254">http://bugzilla.zimbra.com/show_bug.cgi?id=31254</a>
+
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c7"
+ href="#c7">7</a>
+ by
+ <a style="white-space: nowrap" href="/u/john.mora/">john.mora</a></span>,
+ <span class="date" title="Wed Sep  3 15:17:13 2008">Sep 03, 2008</span>
+ 
+<pre>
+Fix noted in zimbra bugzilla entry appears to work.
+
+<a href="http://www.zimbra.com/forums/administrators/21908-google-chrome-browser.html">http://www.zimbra.com/forums/administrators/21908-google-chrome-browser.html</a>
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c8"
+ href="#c8">8</a>
+ by
+ <a style="white-space: nowrap" href="/u/patrick@chromium.org/">patrick@chromium.org</a></span>,
+ <span class="date" title="Wed Sep  3 16:01:32 2008">Sep 03, 2008</span>
+ 
+<pre>
+Looks fixed by Zimbra.
+</pre>
+ 
+ 
+ <div class="updates">
+ <div class="round4"></div>
+ <div class="round2"></div>
+ <div class="round1"></div>
+ <div class="box-inner">
+ <b>Status:</b> WontFix<br>
+ </div>
+ <div class="round1"></div>
+ <div class="round2"></div>
+ <div class="round4"></div>
+ </div>
+ 
+ </td>
+ </tr>
+ 
+ 
+
+ 
+
+
+
+ 
+ <tr>
+ <td class="vt issuecomment">
+ <span class="indicator">&#9658;</span> <a href="https://www.google.com/accounts/ServiceLogin?service=code&ltmpl=phosting&continue=http%3A%2F%2Fcode.google.com%2Fp%2Fchromium%2Fissues%2Fdetail%3Fid%3D12&amp;followup=http%3A%2F%2Fcode.google.com%2Fp%2Fchromium%2Fissues%2Fdetail%3Fid%3D12"
+ >Sign in</a> to add a comment
+ </td>
+ </tr>
+ 
+
+
+</tbody>
+</table>
+<br>
+<script type="text/javascript" src="http://www.gstatic.com/codesite/ph/9392543809124535420/js/dit_scripts_20081013.js"></script>
+
+
+
+
+
+ 
+
+
+</div> 
+<form name="delcom" action="delComment.do?q=&amp;can=2&amp;sort=&amp;colspec=ID+Stars+Pri+Area+Feature+Type+Status+Summary+Modified+Owner+Mstone+OS" method="POST">
+ <input type="hidden" name="sequence_num" value="">
+ <input type="hidden" name="mode" value="">
+ <input type="hidden" name="id" value="12">
+ <input type="hidden" name="token" value="">
+</form>
+<div id="helparea"></div>
+<script type="text/javascript">
+ _onload();
+ function delComment(sequence_num, delete_mode) {
+ var f = document.forms["delcom"];
+ f.sequence_num.value = sequence_num;
+ f.mode.value = delete_mode;
+ 
+ f.submit();
+ return false;
+ }
+ _floatMetadata();
+</script>
+<script type="text/javascript" src="http://kibbles.googlecode.com/files/kibbles-1.3.1.comp.js"></script>
+<script type="text/javascript">
+ _setupKibblesOnDetailPage(
+ 'http://code.google.com/p/chromium/issues/list?cursor\x3d12',
+ '/p/chromium/issues/entry',
+ '',
+ '',
+ '', 'chromium', 12,
+ false, false);
+</script>
+ 
+ 
+ <script type="text/javascript" src="http://www.gstatic.com/codesite/ph/9392543809124535420/js/core_scripts_20081103.js"></script>
+ <script type="text/javascript" src="/js/codesite_product_dictionary_ph.pack.04102009.js"></script>
+ </div>
+<div id="footer" dir="ltr">
+ 
+ <div class="text">
+ 
+ &copy;2010 Google -
+ <a href="/projecthosting/terms.html">Terms</a> -
+ <a href="http://www.google.com/privacy.html">Privacy</a> -
+ <a href="/p/support/">Project Hosting Help</a>
+ 
+ </div>
+</div>
+
+ <div class="hostedBy" style="margin-top: -20px;">
+ <span style="vertical-align: top;">Powered by <a href="http://code.google.com/projecthosting/">Google Project Hosting</a></span>
+ </div>
+ 
+ 
+
+
+ 
+ </body>
+</html>
+

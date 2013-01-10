@@ -1,0 +1,1111 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+ <link rel="icon" type="image/vnd.microsoft.icon" href="http://www.gstatic.com/codesite/ph/images/phosting.ico">
+ 
+ <script type="text/javascript">
+ 
+ 
+ 
+ var codesite_token = null;
+ 
+ 
+ var logged_in_user_email = null;
+ 
+ 
+ var relative_base_url = "";
+ 
+ </script>
+ 
+ 
+ <title>Issue 21 - 
+ chromium -
+ 
+ Facebook: Commenting on Status not working - Project Hosting on Google Code</title>
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" >
+ 
+ <link type="text/css" rel="stylesheet" href="http://www.gstatic.com/codesite/ph/9392543809124535420/css/ph_core.css">
+ 
+ <link type="text/css" rel="stylesheet" href="http://www.gstatic.com/codesite/ph/9392543809124535420/css/ph_detail.css" >
+ 
+ 
+ 
+ 
+<!--[if IE]>
+ <link type="text/css" rel="stylesheet" href="http://www.gstatic.com/codesite/ph/9392543809124535420/css/d_ie.css" >
+<![endif]-->
+ <style type="text/css">
+ .menuIcon.off { background: no-repeat url(http://www.gstatic.com/codesite/ph/images/dropdown_sprite.gif) 0 -42px }
+ .menuIcon.on { background: no-repeat url(http://www.gstatic.com/codesite/ph/images/dropdown_sprite.gif) 0 -28px }
+ .menuIcon.down { background: no-repeat url(http://www.gstatic.com/codesite/ph/images/dropdown_sprite.gif) 0 0; }
+ </style>
+</head>
+<body class="t3">
+ <script type="text/javascript">
+ var _gaq = _gaq || [];
+ _gaq.push(
+ ['siteTracker._setAccount', 'UA-18071-1'],
+ ['siteTracker._trackPageview']);
+ 
+ (function() {
+ var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+ (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ga);
+ })();
+ </script>
+ <div id="gaia">
+ 
+ <span>
+ 
+ <a href="#" id="projects-dropdown" onclick="return false;"><u>My favorites</u> <small>&#9660;</small></a>
+ | <a href="https://www.google.com/accounts/ServiceLogin?service=code&amp;ltmpl=phosting&amp;continue=http%3A%2F%2Fcode.google.com%2Fp%2Fchromium%2Fissues%2Fdetail%3Fid%3D21&amp;followup=http%3A%2F%2Fcode.google.com%2Fp%2Fchromium%2Fissues%2Fdetail%3Fid%3D21" onclick="_CS_click('/gb/ph/signin');"><u>Sign in</u></a>
+ 
+ </span>
+
+ </div>
+ <div class="gbh" style="left: 0pt;"></div>
+ <div class="gbh" style="right: 0pt;"></div>
+ 
+ 
+ <div style="height: 1px"></div>
+<!--[if IE 6]>
+<div style="text-align:center;">
+Support browsers that contribute to open source, try <a href="http://www.firefox.com">Firefox</a> or <a href="http://www.google.com/chrome">Google Chrome</a>.
+</div>
+<![endif]-->
+
+ <div style="font-weight:bold; color:#a03; padding:5px; margin-top:10px; margin-bottom:-10px; text-align:center; background:#ffeac0;">
+ Project Hosting will be READ-ONLY <a href='http://www.timeanddate.com/worldclock/fixedtime.html?month=6&day=9&year=2010&hour=7&min=0&sec=0&p1=224'>Wednesday at 7:00am PDT</a> due to brief network maintenance.
+ 
+ </div>
+
+
+
+ <table style="padding:0px; margin: 20px 0px 0px 0px; width:100%" cellpadding="0" cellspacing="0">
+ <tr style="height: 58px;">
+ 
+ <td style="width: 55px; text-align:center;">
+ <a href="/p/chromium/">
+ 
+ 
+ <img src="/p/chromium/logo?cct=1275965165" alt="Logo">
+ 
+ </a>
+ </td>
+ 
+ <td style="padding-left: 0.5em">
+ 
+ <div id="pname" style="margin: 0px 0px -3px 0px">
+ <a href="/p/chromium/" style="text-decoration:none; color:#000">chromium</a>
+ 
+ </div>
+ <div id="psum">
+ <i><a id="project_summary_link" href="/p/chromium/" style="text-decoration:none; color:#000">An open-source browser project to help move the web forward.</a></i>
+ </div>
+ 
+ </td>
+ <td style="white-space:nowrap;text-align:right">
+ 
+ <form action="/hosting/search">
+ <input size="30" name="q" value="">
+ <input type="submit" name="projectsearch" value="Search projects" >
+ </form>
+ 
+ </tr>
+ </table>
+
+
+ 
+<table id="mt" cellspacing="0" cellpadding="0" width="100%" border="0">
+ <tr>
+ <th onclick="if (!cancelBubble) _go('/p/chromium/');">
+ <div class="tab inactive">
+ <div class="round4"></div>
+ <div class="round2"></div>
+ <div class="round1"></div>
+ <div class="box-inner">
+ <a onclick="cancelBubble=true;" href="/p/chromium/">Project&nbsp;Home</a>
+ </div>
+ </div>
+ </th><td>&nbsp;&nbsp;</td>
+ 
+ 
+ 
+ 
+ <th onclick="if (!cancelBubble) _go('/p/chromium/downloads/list');">
+ <div class="tab inactive">
+ <div class="round4"></div>
+ <div class="round2"></div>
+ <div class="round1"></div>
+ <div class="box-inner">
+ <a onclick="cancelBubble=true;" href="/p/chromium/downloads/list">Downloads</a>
+ </div>
+ </div>
+ </th><td>&nbsp;&nbsp;</td>
+ 
+ 
+ 
+ 
+ 
+ <th onclick="if (!cancelBubble) _go('/p/chromium/w/list');">
+ <div class="tab inactive">
+ <div class="round4"></div>
+ <div class="round2"></div>
+ <div class="round1"></div>
+ <div class="box-inner">
+ <a onclick="cancelBubble=true;" href="/p/chromium/w/list">Wiki</a>
+ </div>
+ </div>
+ </th><td>&nbsp;&nbsp;</td>
+ 
+ 
+ 
+ 
+ 
+ <th onclick="if (!cancelBubble) _go('/p/chromium/issues/list');">
+ <div class="tab active">
+ <div class="round4"></div>
+ <div class="round2"></div>
+ <div class="round1"></div>
+ <div class="box-inner">
+ <a onclick="cancelBubble=true;" href="/p/chromium/issues/list">Issues</a>
+ </div>
+ </div>
+ </th><td>&nbsp;&nbsp;</td>
+ 
+ 
+ 
+ 
+ <td width="100%">&nbsp;</td>
+ </tr>
+</table>
+<table cellspacing="0" cellpadding="0" width="100%" align="center" border="0" class="st">
+ <tr>
+ 
+ 
+ 
+ 
+ 
+ <td>
+ <div class="issueDetail">
+<div class="isf">
+ 
+ 
+ <span class="inIssueEntry">
+ <a href="entry">New issue</a>
+ </span> |
+ 
+ <span class="inIssueList">
+ <span>Search</span>
+ <form action="list" method="GET" style="display:inline">
+ <select id="can" name="can" style="font-size:92%">
+ 
+<option disabled="disabled">Search within:</option>
+<option value="1" >&nbsp;All issues</option>
+<option value="2" selected=selected>&nbsp;Open issues</option>
+
+<option value="6" >&nbsp;New issues</option>
+<option value="7" >&nbsp;Issues to verify</option>
+
+ </select>
+ <span>for</span>
+ <span id="qq"><input type="text" size="38" id="q" name="q" value="" style="font-size:92%" ></span>
+ 
+ <span id="search_colspec"><input type="hidden" name="colspec" value="ID Stars Pri Area Feature Type Status Summary Modified Owner Mstone OS" ></span>
+ 
+ 
+ 
+ <input type="hidden" name="cells" value="tiles" >
+ <input type="submit" value="Search" style="font-size:92%" >
+ </form>
+ </span> |
+ <span class="inIssueAdvSearch">
+ <a href="advsearch">Advanced search</a>
+ </span> |
+ <span class="inIssueSearchTips">
+ <a href="searchtips">Search tips</a>
+ </span>
+</div>
+</div>
+
+ </td>
+ 
+ 
+ 
+ 
+ <td height="4" align="right" valign="top" class="bevel-right">
+ <div class="round4"></div>
+ <div class="round2"></div>
+ <div class="round1"></div>
+ </td>
+ </tr>
+</table>
+<script type="text/javascript">
+ var cancelBubble = false;
+ function _go(url) { document.location = url; }
+</script>
+
+
+<div id="maincol"
+ 
+>
+
+ 
+<!-- IE -->
+
+
+
+
+
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+<style type="text/css">
+ .attachments { width:33%; border-top:2px solid #999; padding-top: 3px; margin-left: .7em;}
+ .attachments table { margin-bottom: 0.75em; }
+ .attachments table tr td { padding: 0; margin: 0; font-size: 95%; }
+ .preview { border: 2px solid #c3d9ff; padding: 1px; }
+ .preview:hover { border: 2px solid blue; }
+ .label { white-space: nowrap; }
+ .derived { font-style:italic }
+ tr.cursor_on .author {
+ background: #fff url(http://www.gstatic.com/codesite/ph/images/show-arrow.gif) no-repeat 2px;
+ }
+</style>
+<div id="color_control" class="closed_colors">
+<div id="issueheader">
+<table cellpadding="0" cellspacing="0" width="100%"><tbody>
+ <tr>
+ <td class="vt h3" nowrap="nowrap" style="padding:0 5px">
+ 
+ 
+ Issue <a href="detail?id=21">21</a>:
+ </td>
+ <td width="90%" class="vt">
+ <span class="h3" >Facebook: Commenting on Status not working</span>
+ </td>
+ <td>
+ 
+ </td>
+ </tr>
+ <tr>
+ <td></td>
+ <td nowrap="nowrap">
+ 
+ 
+ 7 people starred this issue and may be notified of changes.
+ 
+ 
+ 
+ </td>
+ <td align="center" nowrap="nowrap">
+ 
+ <a href="http://code.google.com/p/chromium/issues/list?cursor=21">Back to list</a>
+ 
+ </td>
+ </tr>
+</tbody></table>
+</div>
+<table width="100%" cellpadding="0" cellspacing="0" border="0" class="issuepage" id="meta-container">
+<tbody id="cursorarea" class="collapse"> 
+ <tr class="cursor_off">
+ <td id="issuemeta" rowspan="25">
+ <div id="meta-float">
+ <table cellspacing="0" cellpadding="0">
+ <tr><th align="left">Status:&nbsp;</th>
+ <td width="100%">
+ 
+ <span title="Same root cause as another issue">Duplicate</span>
+ 
+ </td>
+ </tr>
+ 
+ <tr><th align="left">Owner:&nbsp;</th><td>
+ 
+ <a style="white-space: nowrap" href="/u/eroman@chromium.org/">eroman@chromium.org</a>
+ 
+ </td>
+ </tr>
+ 
+ <tr><th align="left" valign="top">Closed:&nbsp;</th>
+ <td align="left" valign="top" width="100%">
+ Sep 2008
+ </td>
+ </tr>
+ 
+ 
+ <tr><th class="vt" align="left">Cc:&nbsp;</th><td>
+ 
+ 
+ 
+  <i title="Derived"><a style="white-space: nowrap" href="/u/karen@chromium.org/">karen@chromium.org</a></i> 
+ </td></tr>
+ 
+ 
+ 
+ <tr><td colspan="2">
+ <a href="list?q=label:Type-Bug"
+ title="Software not working correctly"
+ class="label"><b>Type-</b>Bug</a>
+ </td></tr>
+ 
+ 
+ 
+ <tr><td colspan="2">
+ <a href="list?q=label:Pri-2"
+ title="Normal. Required for specified milestone."
+ class="label"><b>Pri-</b>2</a>
+ </td></tr>
+ 
+ 
+ 
+ <tr><td colspan="2">
+ <a href="list?q=label:OS-All"
+ title="Affects all operating systems"
+ class="label"><b>OS-</b>All</a>
+ </td></tr>
+ 
+ 
+ 
+ <tr><td colspan="2">
+ <a href="list?q=label:Area-Compat"
+ title=""
+ class="label"><b>Area-</b>Compat</a>
+ </td></tr>
+ 
+ 
+ 
+ </table>
+ <br><br>
+ 
+ 
+ 
+ <div style="white-space:nowrap"><a href="https://www.google.com/accounts/ServiceLogin?service=code&amp;ltmpl=phosting&amp;continue=http%3A%2F%2Fcode.google.com%2Fp%2Fchromium%2Fissues%2Fdetail%3Fid%3D21&amp;followup=http%3A%2F%2Fcode.google.com%2Fp%2Fchromium%2Fissues%2Fdetail%3Fid%3D21">Sign in</a> to add a comment</div>
+ 
+ 
+ 
+ <div class="rel_issues">
+ 
+ 
+ 
+ </div>
+ 
+ 
+ </div>&nbsp;
+ </td>
+ <td class="vt issuedescription" width="100%">
+ <div class="author">
+ Reported by <a style="white-space: nowrap" href="/u/syvelior/">syvelior</a>,
+ <span class="date" title="Tue Sep  2 12:24:29 2008">Sep 02, 2008</span>
+ 
+ </div>
+<pre>
+Product Version      : &lt;see about:version&gt;
+URLs (if applicable) : <a href="http://facebook.com">http://facebook.com</a>
+<b>Other browsers tested:</b>
+<b>Add OK or FAIL after other browsers where you have tested this issue:</b>
+     Safari 3: N/A
+    Firefox 3: OK
+         IE 7: OK
+
+<b>What steps will reproduce the problem?</b>
+1. Log on to facebook
+2. Try to comment on any user's status, including your own
+3. Regular comments on walls, etc seem to work.
+
+<b>What is the expected result?</b>
+
+
+<b>What happens instead?</b>
+
+
+Please provide any additional information below. Attach a screenshot if 
+possible.
+ 
+</pre>
+
+
+ </td>
+ </tr>
+
+ 
+
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c1"
+ href="#c1">1</a>
+ by
+ <a style="white-space: nowrap" href="/u/tadclub/">tadclub</a></span>,
+ <span class="date" title="Tue Sep  2 13:37:11 2008">Sep 02, 2008</span>
+ 
+<pre>
+Many of the links in facebook do not work. There is an active discussion board 
+speaking of this on the Google - Chrome fan page. 
+
+It's comical. You have to switch to another browser in order to become a fan of 
+Chrome on Facebook.
+
+Here is a link to the discussion:
+<a href="http://www.new.facebook.com/topic.php?uid=33154583085&amp;topic=5497">http://www.new.facebook.com/topic.php?uid=33154583085&amp;topic=5497</a>
+
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c2"
+ href="#c2">2</a>
+ by
+ <a style="white-space: nowrap" href="/u/loxxwb/">loxxwb</a></span>,
+ <span class="date" title="Tue Sep  2 13:47:56 2008">Sep 02, 2008</span>
+ 
+<pre>
+receiving the same problem
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c3"
+ href="#c3">3</a>
+ by
+ <a style="white-space: nowrap" href="/u/hanpusukun/">hanpusukun</a></span>,
+ <span class="date" title="Tue Sep  2 13:55:25 2008">Sep 02, 2008</span>
+ 
+<pre>
+Same problem here also.
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c4"
+ href="#c4">4</a>
+ by
+ <a style="white-space: nowrap" href="/u/aaron.lake/">aaron.lake</a></span>,
+ <span class="date" title="Tue Sep  2 14:26:35 2008">Sep 02, 2008</span>
+ 
+<pre>
+I'm also able to duplicate the problem on Windows Vista x32.
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c5"
+ href="#c5">5</a>
+ by
+ <a style="white-space: nowrap" href="/u/allixsenos/">allixsenos</a></span>,
+ <span class="date" title="Tue Sep  2 14:41:53 2008">Sep 02, 2008</span>
+ 
+<pre>
+confirm everything works in Safari 3, the issue is specific to Chrome
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c6"
+ href="#c6">6</a>
+ by
+ <a style="white-space: nowrap" href="/u/Mr.Dooman/">Mr.Dooman</a></span>,
+ <span class="date" title="Tue Sep  2 15:23:03 2008">Sep 02, 2008</span>
+ 
+<pre>
+Confirmed, and switching the status to true doesnt help.
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c7"
+ href="#c7">7</a>
+ by
+ <a style="white-space: nowrap" href="/u/ZMannon/">ZMannon</a></span>,
+ <span class="date" title="Tue Sep  2 15:30:18 2008">Sep 02, 2008</span>
+ 
+<pre>
+Same problem, a ton of links don't work on Facebook.
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c8"
+ href="#c8">8</a>
+ by
+ <a style="white-space: nowrap" href="/u/exdeusmachine/">exdeusmachine</a></span>,
+ <span class="date" title="Tue Sep  2 15:40:55 2008">Sep 02, 2008</span>
+ 
+<pre>
++1
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c9"
+ href="#c9">9</a>
+ by
+ <a style="white-space: nowrap" href="/u/Tim.Destan/">Tim.Destan</a></span>,
+ <span class="date" title="Tue Sep  2 15:51:37 2008">Sep 02, 2008</span>
+ 
+<pre>
+Confirmed, glad it's not just me.  Using XP Pro 32 bit.
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c10"
+ href="#c10">10</a>
+ by
+ <a style="white-space: nowrap" href="/u/phs.philip/">phs.philip</a></span>,
+ <span class="date" title="Tue Sep  2 16:05:57 2008">Sep 02, 2008</span>
+ 
+<pre>
+(Sorry if this double posts, Chrome's not playing nice with this page either)
+
+I'm having the same issue (although it's not new to me; I've had a similar one on my 
+mac in FF3). Using Windows XP.
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c11"
+ href="#c11">11</a>
+ by
+ <a style="white-space: nowrap" href="/u/@UBBRQlNYBRJEXAN0Eg%3D%3D/">chenze...@yahoo.com</a></span>,
+ <span class="date" title="Tue Sep  2 17:21:01 2008">Sep 02, 2008</span>
+ 
+<pre>
+Confirmed here! Some liinks work, others do nothing and others will randomly jump me
+to the middle of the page. I'm sticking with Firefox.
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c12"
+ href="#c12">12</a>
+ by
+ <a style="white-space: nowrap" href="/u/jmh010/">jmh010</a></span>,
+ <span class="date" title="Tue Sep  2 19:00:09 2008">Sep 02, 2008</span>
+ 
+<pre>
+Confirmed once more.  I have Vista SP1 32-bit, FF3, IE8 beta 2, and Chrome beta.  All 
+browsers but Chrome work for the links, IE has had some problem with the facebook 
+instant messaging before though.
+
+I however, will probably be sticking with Chrome.  They got me.
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c13"
+ href="#c13">13</a>
+ by
+ <a style="white-space: nowrap" href="/u/denver.root/">denver.root</a></span>,
+ <span class="date" title="Tue Sep  2 20:25:12 2008">Sep 02, 2008</span>
+ 
+<pre>
+Same problem. Very likely a V8 issue, since FaceBook (the new UI version) is HEAVILY 
+JavaScript.  I tried clicking the &quot;Back to the old Facebook&quot; link in the top-right 
+corner to test out the old version, but that link too isn't working correctly in 
+Chrome.  I'm running Build 1583
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c14"
+ href="#c14">14</a>
+ by
+ <a style="white-space: nowrap" href="/u/sanat.gersappa/">sanat.gersappa</a></span>,
+ <span class="date" title="Tue Sep  2 21:28:55 2008">Sep 02, 2008</span>
+ 
+<pre>
+same here...
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c15"
+ href="#c15">15</a>
+ by
+ <a style="white-space: nowrap" href="/u/niranjan@chromium.org/">niranjan@chromium.org</a></span>,
+ <span class="date" title="Tue Sep  2 21:31:08 2008">Sep 02, 2008</span>
+ 
+<pre>
+Assigning all facebook.com bugs to eroman who is looking at it.
+</pre>
+ 
+ 
+ <div class="updates">
+ <div class="round4"></div>
+ <div class="round2"></div>
+ <div class="round1"></div>
+ <div class="box-inner">
+ <b>Status:</b> Assigned<br><b>Owner:</b> ero...@chromium.org<br><b>Labels:</b> -Area-Unknown Area-Compat<br>
+ </div>
+ <div class="round1"></div>
+ <div class="round2"></div>
+ <div class="round4"></div>
+ </div>
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c16"
+ href="#c16">16</a>
+ by
+ <a style="white-space: nowrap" href="/u/mysticus.22/">mysticus.22</a></span>,
+ <span class="date" title="Tue Sep  2 23:13:22 2008">Sep 02, 2008</span>
+ 
+<pre>
+same here.
+And when importing bookmarks from firefox it seems to loose half of them.
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c17"
+ href="#c17">17</a>
+ by
+ <a style="white-space: nowrap" href="/u/eroman@chromium.org/">eroman@chromium.org</a></span>,
+ <span class="date" title="Wed Sep  3 00:17:30 2008">Sep 03, 2008</span>
+ 
+<pre>
+Fix in progress. See <a title="Lots of links on facebook.com don't work, including friends display" class=closed_ref href="/p/chromium/issues/detail?id=131"> issue 131 </a>.
+</pre>
+ 
+ 
+ <div class="updates">
+ <div class="round4"></div>
+ <div class="round2"></div>
+ <div class="round1"></div>
+ <div class="box-inner">
+ <b>Status:</b> Duplicate<br>
+ </div>
+ <div class="round1"></div>
+ <div class="round2"></div>
+ <div class="round4"></div>
+ </div>
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c18"
+ href="#c18">18</a>
+ by
+ <a style="white-space: nowrap" href="/u/dom.stapleton/">dom.stapleton</a></span>,
+ <span class="date" title="Wed Sep  3 14:13:51 2008">Sep 03, 2008</span>
+ 
+<pre>
+I think we can safely say that it's happening for everyone. It doesn't seem to be
+based on a specific configuration.
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c19"
+ href="#c19">19</a>
+ by
+ <a style="white-space: nowrap" href="/u/ted.ussr/">ted.ussr</a></span>,
+ <span class="date" title="Thu Jun 18 08:35:43 2009">Jun 18, 2009</span>
+ 
+<pre>
+Confirmed here, it's getting really annoying..
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c20"
+ href="#c20">20</a>
+ by
+ <a style="white-space: nowrap" href="/u/dom.stapleton/">dom.stapleton</a></span>,
+ <span class="date" title="Thu Jun 18 08:39:39 2009">Jun 18, 2009</span>
+ 
+<pre>
+This was resolved months ago. If you update your version of Chrome it should be 
+resolved. It's fixed on the stable, beta and dev versions.
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c21"
+ href="#c21">21</a>
+ by
+ <a style="white-space: nowrap" href="/u/bugdroid1@chromium.org/">bugdroid1@chromium.org</a></span>,
+ <span class="date" title="Tue Aug 11 17:25:38 2009">Aug 11, 2009</span>
+ 
+<pre>
+The following revision refers to this bug:
+    <a href="http://src.chromium.org/viewvc/chrome?view=rev&amp;revision=23127">http://src.chromium.org/viewvc/chrome?view=rev&amp;revision=23127</a> 
+
+------------------------------------------------------------------------
+<a href="/p/chromium/source/detail?r=23127">r23127</a> | ericroman@google.com | 2009-08-11 17:25:12 -0700 (Tue, 11 Aug 2009) | 2 lines
+Changed paths:
+   M <a href="http://src.chromium.org/viewvc/chrome/trunk/src/chrome/browser/net/dns_master.cc?r1=23127&amp;r2=23126">http://src.chromium.org/viewvc/chrome/trunk/src/chrome/browser/net/dns_master.cc?r1=23127&amp;r2=23126</a>
+   M <a href="http://src.chromium.org/viewvc/chrome/trunk/src/chrome/browser/net/dns_master_unittest.cc?r1=23127&amp;r2=23126">http://src.chromium.org/viewvc/chrome/trunk/src/chrome/browser/net/dns_master_unittest.cc?r1=23127&amp;r2=23126</a>
+   M <a href="http://src.chromium.org/viewvc/chrome/trunk/src/chrome/browser/net/resolve_proxy_msg_helper.cc?r1=23127&amp;r2=23126">http://src.chromium.org/viewvc/chrome/trunk/src/chrome/browser/net/resolve_proxy_msg_helper.cc?r1=23127&amp;r2=23126</a>
+   M <a href="http://src.chromium.org/viewvc/chrome/trunk/src/chrome/browser/net/resolve_proxy_msg_helper.h?r1=23127&amp;r2=23126">http://src.chromium.org/viewvc/chrome/trunk/src/chrome/browser/net/resolve_proxy_msg_helper.h?r1=23127&amp;r2=23126</a>
+   M <a href="http://src.chromium.org/viewvc/chrome/trunk/src/net/base/host_resolver.cc?r1=23127&amp;r2=23126">http://src.chromium.org/viewvc/chrome/trunk/src/net/base/host_resolver.cc?r1=23127&amp;r2=23126</a>
+   M <a href="http://src.chromium.org/viewvc/chrome/trunk/src/net/base/host_resolver.h?r1=23127&amp;r2=23126">http://src.chromium.org/viewvc/chrome/trunk/src/net/base/host_resolver.h?r1=23127&amp;r2=23126</a>
+   M <a href="http://src.chromium.org/viewvc/chrome/trunk/src/net/base/host_resolver_impl.cc?r1=23127&amp;r2=23126">http://src.chromium.org/viewvc/chrome/trunk/src/net/base/host_resolver_impl.cc?r1=23127&amp;r2=23126</a>
+   M <a href="http://src.chromium.org/viewvc/chrome/trunk/src/net/base/host_resolver_impl.h?r1=23127&amp;r2=23126">http://src.chromium.org/viewvc/chrome/trunk/src/net/base/host_resolver_impl.h?r1=23127&amp;r2=23126</a>
+   M <a href="http://src.chromium.org/viewvc/chrome/trunk/src/net/base/host_resolver_impl_unittest.cc?r1=23127&amp;r2=23126">http://src.chromium.org/viewvc/chrome/trunk/src/net/base/host_resolver_impl_unittest.cc?r1=23127&amp;r2=23126</a>
+   A <a href="http://src.chromium.org/viewvc/chrome/trunk/src/net/base/load_log.h">http://src.chromium.org/viewvc/chrome/trunk/src/net/base/load_log.h</a>
+   M <a href="http://src.chromium.org/viewvc/chrome/trunk/src/net/base/mock_host_resolver.cc?r1=23127&amp;r2=23126">http://src.chromium.org/viewvc/chrome/trunk/src/net/base/mock_host_resolver.cc?r1=23127&amp;r2=23126</a>
+   M <a href="http://src.chromium.org/viewvc/chrome/trunk/src/net/base/mock_host_resolver.h?r1=23127&amp;r2=23126">http://src.chromium.org/viewvc/chrome/trunk/src/net/base/mock_host_resolver.h?r1=23127&amp;r2=23126</a>
+   M <a href="http://src.chromium.org/viewvc/chrome/trunk/src/net/ftp/ftp_network_transaction.cc?r1=23127&amp;r2=23126">http://src.chromium.org/viewvc/chrome/trunk/src/net/ftp/ftp_network_transaction.cc?r1=23127&amp;r2=23126</a>
+   M <a href="http://src.chromium.org/viewvc/chrome/trunk/src/net/ftp/ftp_network_transaction.h?r1=23127&amp;r2=23126">http://src.chromium.org/viewvc/chrome/trunk/src/net/ftp/ftp_network_transaction.h?r1=23127&amp;r2=23126</a>
+   M <a href="http://src.chromium.org/viewvc/chrome/trunk/src/net/ftp/ftp_network_transaction_unittest.cc?r1=23127&amp;r2=23126">http://src.chromium.org/viewvc/chrome/trunk/src/net/ftp/ftp_network_transaction_unittest.cc?r1=23127&amp;r2=23126</a>
+   M <a href="http://src.chromium.org/viewvc/chrome/trunk/src/net/ftp/ftp_transaction.h?r1=23127&amp;r2=23126">http://src.chromium.org/viewvc/chrome/trunk/src/net/ftp/ftp_transaction.h?r1=23127&amp;r2=23126</a>
+   M <a href="http://src.chromium.org/viewvc/chrome/trunk/src/net/http/http_cache.cc?r1=23127&amp;r2=23126">http://src.chromium.org/viewvc/chrome/trunk/src/net/http/http_cache.cc?r1=23127&amp;r2=23126</a>
+   M <a href="http://src.chromium.org/viewvc/chrome/trunk/src/net/http/http_cache_unittest.cc?r1=23127&amp;r2=23126">http://src.chromium.org/viewvc/chrome/trunk/src/net/http/http_cache_unittest.cc?r1=23127&amp;r2=23126</a>
+   M <a href="http://src.chromium.org/viewvc/chrome/trunk/src/net/http/http_network_layer_unittest.cc?r1=23127&amp;r2=23126">http://src.chromium.org/viewvc/chrome/trunk/src/net/http/http_network_layer_unittest.cc?r1=23127&amp;r2=23126</a>
+   M <a href="http://src.chromium.org/viewvc/chrome/trunk/src/net/http/http_network_transaction.cc?r1=23127&amp;r2=23126">http://src.chromium.org/viewvc/chrome/trunk/src/net/http/http_network_transaction.cc?r1=23127&amp;r2=23126</a>
+   M <a href="http://src.chromium.org/viewvc/chrome/trunk/src/net/http/http_network_transaction.h?r1=23127&amp;r2=23126">http://src.chromium.org/viewvc/chrome/trunk/src/net/http/http_network_transaction.h?r1=23127&amp;r2=23126</a>
+   M <a href="http://src.chromium.org/viewvc/chrome/trunk/src/net/http/http_network_transaction_unittest.cc?r1=23127&amp;r2=23126">http://src.chromium.org/viewvc/chrome/trunk/src/net/http/http_network_transaction_unittest.cc?r1=23127&amp;r2=23126</a>
+   M <a href="http://src.chromium.org/viewvc/chrome/trunk/src/net/http/http_transaction.h?r1=23127&amp;r2=23126">http://src.chromium.org/viewvc/chrome/trunk/src/net/http/http_transaction.h?r1=23127&amp;r2=23126</a>
+   M <a href="http://src.chromium.org/viewvc/chrome/trunk/src/net/http/http_transaction_unittest.h?r1=23127&amp;r2=23126">http://src.chromium.org/viewvc/chrome/trunk/src/net/http/http_transaction_unittest.h?r1=23127&amp;r2=23126</a>
+   M <a href="http://src.chromium.org/viewvc/chrome/trunk/src/net/net.gyp?r1=23127&amp;r2=23126">http://src.chromium.org/viewvc/chrome/trunk/src/net/net.gyp?r1=23127&amp;r2=23126</a>
+   M <a href="http://src.chromium.org/viewvc/chrome/trunk/src/net/proxy/proxy_resolver_js_bindings.cc?r1=23127&amp;r2=23126">http://src.chromium.org/viewvc/chrome/trunk/src/net/proxy/proxy_resolver_js_bindings.cc?r1=23127&amp;r2=23126</a>
+   M <a href="http://src.chromium.org/viewvc/chrome/trunk/src/net/proxy/proxy_service.cc?r1=23127&amp;r2=23126">http://src.chromium.org/viewvc/chrome/trunk/src/net/proxy/proxy_service.cc?r1=23127&amp;r2=23126</a>
+   M <a href="http://src.chromium.org/viewvc/chrome/trunk/src/net/proxy/proxy_service.h?r1=23127&amp;r2=23126">http://src.chromium.org/viewvc/chrome/trunk/src/net/proxy/proxy_service.h?r1=23127&amp;r2=23126</a>
+   M <a href="http://src.chromium.org/viewvc/chrome/trunk/src/net/proxy/proxy_service_unittest.cc?r1=23127&amp;r2=23126">http://src.chromium.org/viewvc/chrome/trunk/src/net/proxy/proxy_service_unittest.cc?r1=23127&amp;r2=23126</a>
+   M <a href="http://src.chromium.org/viewvc/chrome/trunk/src/net/socket/client_socket_handle.cc?r1=23127&amp;r2=23126">http://src.chromium.org/viewvc/chrome/trunk/src/net/socket/client_socket_handle.cc?r1=23127&amp;r2=23126</a>
+   M <a href="http://src.chromium.org/viewvc/chrome/trunk/src/net/socket/client_socket_handle.h?r1=23127&amp;r2=23126">http://src.chromium.org/viewvc/chrome/trunk/src/net/socket/client_socket_handle.h?r1=23127&amp;r2=23126</a>
+   M <a href="http://src.chromium.org/viewvc/chrome/trunk/src/net/socket/client_socket_pool.h?r1=23127&amp;r2=23126">http://src.chromium.org/viewvc/chrome/trunk/src/net/socket/client_socket_pool.h?r1=23127&amp;r2=23126</a>
+   M <a href="http://src.chromium.org/viewvc/chrome/trunk/src/net/socket/client_socket_pool_base.cc?r1=23127&amp;r2=23126">http://src.chromium.org/viewvc/chrome/trunk/src/net/socket/client_socket_pool_base.cc?r1=23127&amp;r2=23126</a>
+   M <a href="http://src.chromium.org/viewvc/chrome/trunk/src/net/socket/client_socket_pool_base.h?r1=23127&amp;r2=23126">http://src.chromium.org/viewvc/chrome/trunk/src/net/socket/client_socket_pool_base.h?r1=23127&amp;r2=23126</a>
+   M <a href="http://src.chromium.org/viewvc/chrome/trunk/src/net/socket/client_socket_pool_base_unittest.cc?r1=23127&amp;r2=23126">http://src.chromium.org/viewvc/chrome/trunk/src/net/socket/client_socket_pool_base_unittest.cc?r1=23127&amp;r2=23126</a>
+   M <a href="http://src.chromium.org/viewvc/chrome/trunk/src/net/socket/socket_test_util.cc?r1=23127&amp;r2=23126">http://src.chromium.org/viewvc/chrome/trunk/src/net/socket/socket_test_util.cc?r1=23127&amp;r2=23126</a>
+   M <a href="http://src.chromium.org/viewvc/chrome/trunk/src/net/socket/socks5_client_socket.cc?r1=23127&amp;r2=23126">http://src.chromium.org/viewvc/chrome/trunk/src/net/socket/socks5_client_socket.cc?r1=23127&amp;r2=23126</a>
+   M <a href="http://src.chromium.org/viewvc/chrome/trunk/src/net/socket/socks5_client_socket_unittest.cc?r1=23127&amp;r2=23126">http://src.chromium.org/viewvc/chrome/trunk/src/net/socket/socks5_client_socket_unittest.cc?r1=23127&amp;r2=23126</a>
+   M <a href="http://src.chromium.org/viewvc/chrome/trunk/src/net/socket/socks_client_socket.cc?r1=23127&amp;r2=23126">http://src.chromium.org/viewvc/chrome/trunk/src/net/socket/socks_client_socket.cc?r1=23127&amp;r2=23126</a>
+   M <a href="http://src.chromium.org/viewvc/chrome/trunk/src/net/socket/socks_client_socket_unittest.cc?r1=23127&amp;r2=23126">http://src.chromium.org/viewvc/chrome/trunk/src/net/socket/socks_client_socket_unittest.cc?r1=23127&amp;r2=23126</a>
+   M <a href="http://src.chromium.org/viewvc/chrome/trunk/src/net/socket/ssl_client_socket_unittest.cc?r1=23127&amp;r2=23126">http://src.chromium.org/viewvc/chrome/trunk/src/net/socket/ssl_client_socket_unittest.cc?r1=23127&amp;r2=23126</a>
+   M <a href="http://src.chromium.org/viewvc/chrome/trunk/src/net/socket/ssl_test_util.cc?r1=23127&amp;r2=23126">http://src.chromium.org/viewvc/chrome/trunk/src/net/socket/ssl_test_util.cc?r1=23127&amp;r2=23126</a>
+   M <a href="http://src.chromium.org/viewvc/chrome/trunk/src/net/socket/tcp_client_socket_pool.cc?r1=23127&amp;r2=23126">http://src.chromium.org/viewvc/chrome/trunk/src/net/socket/tcp_client_socket_pool.cc?r1=23127&amp;r2=23126</a>
+   M <a href="http://src.chromium.org/viewvc/chrome/trunk/src/net/socket/tcp_client_socket_pool.h?r1=23127&amp;r2=23126">http://src.chromium.org/viewvc/chrome/trunk/src/net/socket/tcp_client_socket_pool.h?r1=23127&amp;r2=23126</a>
+   M <a href="http://src.chromium.org/viewvc/chrome/trunk/src/net/socket/tcp_client_socket_pool_unittest.cc?r1=23127&amp;r2=23126">http://src.chromium.org/viewvc/chrome/trunk/src/net/socket/tcp_client_socket_pool_unittest.cc?r1=23127&amp;r2=23126</a>
+   M <a href="http://src.chromium.org/viewvc/chrome/trunk/src/net/socket/tcp_client_socket_unittest.cc?r1=23127&amp;r2=23126">http://src.chromium.org/viewvc/chrome/trunk/src/net/socket/tcp_client_socket_unittest.cc?r1=23127&amp;r2=23126</a>
+   M <a href="http://src.chromium.org/viewvc/chrome/trunk/src/net/socket/tcp_pinger_unittest.cc?r1=23127&amp;r2=23126">http://src.chromium.org/viewvc/chrome/trunk/src/net/socket/tcp_pinger_unittest.cc?r1=23127&amp;r2=23126</a>
+   M <a href="http://src.chromium.org/viewvc/chrome/trunk/src/net/tools/fetch/fetch_client.cc?r1=23127&amp;r2=23126">http://src.chromium.org/viewvc/chrome/trunk/src/net/tools/fetch/fetch_client.cc?r1=23127&amp;r2=23126</a>
+   M <a href="http://src.chromium.org/viewvc/chrome/trunk/src/net/url_request/url_request.cc?r1=23127&amp;r2=23126">http://src.chromium.org/viewvc/chrome/trunk/src/net/url_request/url_request.cc?r1=23127&amp;r2=23126</a>
+   M <a href="http://src.chromium.org/viewvc/chrome/trunk/src/net/url_request/url_request.h?r1=23127&amp;r2=23126">http://src.chromium.org/viewvc/chrome/trunk/src/net/url_request/url_request.h?r1=23127&amp;r2=23126</a>
+   M <a href="http://src.chromium.org/viewvc/chrome/trunk/src/net/url_request/url_request_http_job.cc?r1=23127&amp;r2=23126">http://src.chromium.org/viewvc/chrome/trunk/src/net/url_request/url_request_http_job.cc?r1=23127&amp;r2=23126</a>
+   M <a href="http://src.chromium.org/viewvc/chrome/trunk/src/net/url_request/url_request_new_ftp_job.cc?r1=23127&amp;r2=23126">http://src.chromium.org/viewvc/chrome/trunk/src/net/url_request/url_request_new_ftp_job.cc?r1=23127&amp;r2=23126</a>
+   M <a href="http://src.chromium.org/viewvc/chrome/trunk/src/webkit/tools/test_shell/simple_resource_loader_bridge.cc?r1=23127&amp;r2=23126">http://src.chromium.org/viewvc/chrome/trunk/src/webkit/tools/test_shell/simple_resource_loader_bridge.cc?r1=23127&amp;r2=23126</a>
+
+Add a &quot;LoadLog&quot; parameter to transactions, hostresolver, clientsocketpool and proyxservice.This dependency comes from the parent URLRequest, and is used as a container for per-request profiling data.This change is strictly a no-op refactor -- the parameter is unused, and LoadLog does nothing.BUG=<a href="http://crbug.com/14478TEST=none">http://crbug.com/14478TEST=none</a> -- just needs to compile and pass existing tests.DESIGN=&lt;<a href="http://docs.google.com/Doc?id=dfhcnb2v_21gbtrcpr3&amp;hl=en">http://docs.google.com/Doc?id=dfhcnb2v_21gbtrcpr3&amp;hl=en</a>&gt;
+Review URL: <a href="http://codereview.chromium.org/126303">http://codereview.chromium.org/126303</a>
+------------------------------------------------------------------------
+
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+
+ 
+
+
+
+ 
+ <tr>
+ <td class="vt issuecomment">
+ <span class="indicator">&#9658;</span> <a href="https://www.google.com/accounts/ServiceLogin?service=code&ltmpl=phosting&continue=http%3A%2F%2Fcode.google.com%2Fp%2Fchromium%2Fissues%2Fdetail%3Fid%3D21&amp;followup=http%3A%2F%2Fcode.google.com%2Fp%2Fchromium%2Fissues%2Fdetail%3Fid%3D21"
+ >Sign in</a> to add a comment
+ </td>
+ </tr>
+ 
+
+
+</tbody>
+</table>
+<br>
+<script type="text/javascript" src="http://www.gstatic.com/codesite/ph/9392543809124535420/js/dit_scripts_20081013.js"></script>
+
+
+
+
+
+ 
+
+
+</div> 
+<form name="delcom" action="delComment.do?q=&amp;can=2&amp;sort=&amp;colspec=ID+Stars+Pri+Area+Feature+Type+Status+Summary+Modified+Owner+Mstone+OS" method="POST">
+ <input type="hidden" name="sequence_num" value="">
+ <input type="hidden" name="mode" value="">
+ <input type="hidden" name="id" value="21">
+ <input type="hidden" name="token" value="">
+</form>
+<div id="helparea"></div>
+<script type="text/javascript">
+ _onload();
+ function delComment(sequence_num, delete_mode) {
+ var f = document.forms["delcom"];
+ f.sequence_num.value = sequence_num;
+ f.mode.value = delete_mode;
+ 
+ f.submit();
+ return false;
+ }
+ _floatMetadata();
+</script>
+<script type="text/javascript" src="http://kibbles.googlecode.com/files/kibbles-1.3.1.comp.js"></script>
+<script type="text/javascript">
+ _setupKibblesOnDetailPage(
+ 'http://code.google.com/p/chromium/issues/list?cursor\x3d21',
+ '/p/chromium/issues/entry',
+ '',
+ '',
+ '', 'chromium', 21,
+ false, false);
+</script>
+ 
+ 
+ <script type="text/javascript" src="http://www.gstatic.com/codesite/ph/9392543809124535420/js/core_scripts_20081103.js"></script>
+ <script type="text/javascript" src="/js/codesite_product_dictionary_ph.pack.04102009.js"></script>
+ </div>
+<div id="footer" dir="ltr">
+ 
+ <div class="text">
+ 
+ &copy;2010 Google -
+ <a href="/projecthosting/terms.html">Terms</a> -
+ <a href="http://www.google.com/privacy.html">Privacy</a> -
+ <a href="/p/support/">Project Hosting Help</a>
+ 
+ </div>
+</div>
+
+ <div class="hostedBy" style="margin-top: -20px;">
+ <span style="vertical-align: top;">Powered by <a href="http://code.google.com/projecthosting/">Google Project Hosting</a></span>
+ </div>
+ 
+ 
+
+
+ 
+ </body>
+</html>
+

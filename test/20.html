@@ -1,0 +1,8082 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+ <link rel="icon" type="image/vnd.microsoft.icon" href="http://www.gstatic.com/codesite/ph/images/phosting.ico">
+ 
+ <script type="text/javascript">
+ 
+ 
+ 
+ var codesite_token = null;
+ 
+ 
+ var logged_in_user_email = null;
+ 
+ 
+ var relative_base_url = "";
+ 
+ </script>
+ 
+ 
+ <title>Issue 20 - 
+ chromium -
+ 
+ Chrome windows hide autohide taskbars - Project Hosting on Google Code</title>
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" >
+ 
+ <link type="text/css" rel="stylesheet" href="http://www.gstatic.com/codesite/ph/9392543809124535420/css/ph_core.css">
+ 
+ <link type="text/css" rel="stylesheet" href="http://www.gstatic.com/codesite/ph/9392543809124535420/css/ph_detail.css" >
+ 
+ 
+ 
+ 
+<!--[if IE]>
+ <link type="text/css" rel="stylesheet" href="http://www.gstatic.com/codesite/ph/9392543809124535420/css/d_ie.css" >
+<![endif]-->
+ <style type="text/css">
+ .menuIcon.off { background: no-repeat url(http://www.gstatic.com/codesite/ph/images/dropdown_sprite.gif) 0 -42px }
+ .menuIcon.on { background: no-repeat url(http://www.gstatic.com/codesite/ph/images/dropdown_sprite.gif) 0 -28px }
+ .menuIcon.down { background: no-repeat url(http://www.gstatic.com/codesite/ph/images/dropdown_sprite.gif) 0 0; }
+ </style>
+</head>
+<body class="t3">
+ <script type="text/javascript">
+ var _gaq = _gaq || [];
+ _gaq.push(
+ ['siteTracker._setAccount', 'UA-18071-1'],
+ ['siteTracker._trackPageview']);
+ 
+ (function() {
+ var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+ (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ga);
+ })();
+ </script>
+ <div id="gaia">
+ 
+ <span>
+ 
+ <a href="#" id="projects-dropdown" onclick="return false;"><u>My favorites</u> <small>&#9660;</small></a>
+ | <a href="https://www.google.com/accounts/ServiceLogin?service=code&amp;ltmpl=phosting&amp;continue=http%3A%2F%2Fcode.google.com%2Fp%2Fchromium%2Fissues%2Fdetail%3Fid%3D20&amp;followup=http%3A%2F%2Fcode.google.com%2Fp%2Fchromium%2Fissues%2Fdetail%3Fid%3D20" onclick="_CS_click('/gb/ph/signin');"><u>Sign in</u></a>
+ 
+ </span>
+
+ </div>
+ <div class="gbh" style="left: 0pt;"></div>
+ <div class="gbh" style="right: 0pt;"></div>
+ 
+ 
+ <div style="height: 1px"></div>
+<!--[if IE 6]>
+<div style="text-align:center;">
+Support browsers that contribute to open source, try <a href="http://www.firefox.com">Firefox</a> or <a href="http://www.google.com/chrome">Google Chrome</a>.
+</div>
+<![endif]-->
+
+ <div style="font-weight:bold; color:#a03; padding:5px; margin-top:10px; margin-bottom:-10px; text-align:center; background:#ffeac0;">
+ Project Hosting will be READ-ONLY <a href='http://www.timeanddate.com/worldclock/fixedtime.html?month=6&day=9&year=2010&hour=7&min=0&sec=0&p1=224'>Wednesday at 7:00am PDT</a> due to brief network maintenance.
+ 
+ </div>
+
+
+
+ <table style="padding:0px; margin: 20px 0px 0px 0px; width:100%" cellpadding="0" cellspacing="0">
+ <tr style="height: 58px;">
+ 
+ <td style="width: 55px; text-align:center;">
+ <a href="/p/chromium/">
+ 
+ 
+ <img src="/p/chromium/logo?cct=1275965165" alt="Logo">
+ 
+ </a>
+ </td>
+ 
+ <td style="padding-left: 0.5em">
+ 
+ <div id="pname" style="margin: 0px 0px -3px 0px">
+ <a href="/p/chromium/" style="text-decoration:none; color:#000">chromium</a>
+ 
+ </div>
+ <div id="psum">
+ <i><a id="project_summary_link" href="/p/chromium/" style="text-decoration:none; color:#000">An open-source browser project to help move the web forward.</a></i>
+ </div>
+ 
+ </td>
+ <td style="white-space:nowrap;text-align:right">
+ 
+ <form action="/hosting/search">
+ <input size="30" name="q" value="">
+ <input type="submit" name="projectsearch" value="Search projects" >
+ </form>
+ 
+ </tr>
+ </table>
+
+
+ 
+<table id="mt" cellspacing="0" cellpadding="0" width="100%" border="0">
+ <tr>
+ <th onclick="if (!cancelBubble) _go('/p/chromium/');">
+ <div class="tab inactive">
+ <div class="round4"></div>
+ <div class="round2"></div>
+ <div class="round1"></div>
+ <div class="box-inner">
+ <a onclick="cancelBubble=true;" href="/p/chromium/">Project&nbsp;Home</a>
+ </div>
+ </div>
+ </th><td>&nbsp;&nbsp;</td>
+ 
+ 
+ 
+ 
+ <th onclick="if (!cancelBubble) _go('/p/chromium/downloads/list');">
+ <div class="tab inactive">
+ <div class="round4"></div>
+ <div class="round2"></div>
+ <div class="round1"></div>
+ <div class="box-inner">
+ <a onclick="cancelBubble=true;" href="/p/chromium/downloads/list">Downloads</a>
+ </div>
+ </div>
+ </th><td>&nbsp;&nbsp;</td>
+ 
+ 
+ 
+ 
+ 
+ <th onclick="if (!cancelBubble) _go('/p/chromium/w/list');">
+ <div class="tab inactive">
+ <div class="round4"></div>
+ <div class="round2"></div>
+ <div class="round1"></div>
+ <div class="box-inner">
+ <a onclick="cancelBubble=true;" href="/p/chromium/w/list">Wiki</a>
+ </div>
+ </div>
+ </th><td>&nbsp;&nbsp;</td>
+ 
+ 
+ 
+ 
+ 
+ <th onclick="if (!cancelBubble) _go('/p/chromium/issues/list');">
+ <div class="tab active">
+ <div class="round4"></div>
+ <div class="round2"></div>
+ <div class="round1"></div>
+ <div class="box-inner">
+ <a onclick="cancelBubble=true;" href="/p/chromium/issues/list">Issues</a>
+ </div>
+ </div>
+ </th><td>&nbsp;&nbsp;</td>
+ 
+ 
+ 
+ 
+ <td width="100%">&nbsp;</td>
+ </tr>
+</table>
+<table cellspacing="0" cellpadding="0" width="100%" align="center" border="0" class="st">
+ <tr>
+ 
+ 
+ 
+ 
+ 
+ <td>
+ <div class="issueDetail">
+<div class="isf">
+ 
+ 
+ <span class="inIssueEntry">
+ <a href="entry">New issue</a>
+ </span> |
+ 
+ <span class="inIssueList">
+ <span>Search</span>
+ <form action="list" method="GET" style="display:inline">
+ <select id="can" name="can" style="font-size:92%">
+ 
+<option disabled="disabled">Search within:</option>
+<option value="1" >&nbsp;All issues</option>
+<option value="2" selected=selected>&nbsp;Open issues</option>
+
+<option value="6" >&nbsp;New issues</option>
+<option value="7" >&nbsp;Issues to verify</option>
+
+ </select>
+ <span>for</span>
+ <span id="qq"><input type="text" size="38" id="q" name="q" value="" style="font-size:92%" ></span>
+ 
+ <span id="search_colspec"><input type="hidden" name="colspec" value="ID Stars Pri Area Feature Type Status Summary Modified Owner Mstone OS" ></span>
+ 
+ 
+ 
+ <input type="hidden" name="cells" value="tiles" >
+ <input type="submit" value="Search" style="font-size:92%" >
+ </form>
+ </span> |
+ <span class="inIssueAdvSearch">
+ <a href="advsearch">Advanced search</a>
+ </span> |
+ <span class="inIssueSearchTips">
+ <a href="searchtips">Search tips</a>
+ </span>
+</div>
+</div>
+
+ </td>
+ 
+ 
+ 
+ 
+ <td height="4" align="right" valign="top" class="bevel-right">
+ <div class="round4"></div>
+ <div class="round2"></div>
+ <div class="round1"></div>
+ </td>
+ </tr>
+</table>
+<script type="text/javascript">
+ var cancelBubble = false;
+ function _go(url) { document.location = url; }
+</script>
+
+
+<div id="maincol"
+ 
+>
+
+ 
+<!-- IE -->
+
+
+
+
+
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+<style type="text/css">
+ .attachments { width:33%; border-top:2px solid #999; padding-top: 3px; margin-left: .7em;}
+ .attachments table { margin-bottom: 0.75em; }
+ .attachments table tr td { padding: 0; margin: 0; font-size: 95%; }
+ .preview { border: 2px solid #c3d9ff; padding: 1px; }
+ .preview:hover { border: 2px solid blue; }
+ .label { white-space: nowrap; }
+ .derived { font-style:italic }
+ tr.cursor_on .author {
+ background: #fff url(http://www.gstatic.com/codesite/ph/images/show-arrow.gif) no-repeat 2px;
+ }
+</style>
+<div id="color_control" class="closed_colors">
+<div id="issueheader">
+<table cellpadding="0" cellspacing="0" width="100%"><tbody>
+ <tr>
+ <td class="vt h3" nowrap="nowrap" style="padding:0 5px">
+ 
+ 
+ Issue <a href="detail?id=20">20</a>:
+ </td>
+ <td width="90%" class="vt">
+ <span class="h3" >Chrome windows hide autohide taskbars</span>
+ </td>
+ <td>
+ 
+ </td>
+ </tr>
+ <tr>
+ <td></td>
+ <td nowrap="nowrap">
+ 
+ 
+ 145 people starred this issue.
+ 
+ 
+ 
+ <br>
+ Comments by non-members will not trigger notification emails to users who starred this issue.
+ 
+ </td>
+ <td align="center" nowrap="nowrap">
+ 
+ <a href="http://code.google.com/p/chromium/issues/list?cursor=20">Back to list</a>
+ 
+ </td>
+ </tr>
+</tbody></table>
+</div>
+<table width="100%" cellpadding="0" cellspacing="0" border="0" class="issuepage" id="meta-container">
+<tbody id="cursorarea" class="collapse"> 
+ <tr class="cursor_off">
+ <td id="issuemeta" rowspan="285">
+ <div id="meta-float">
+ <table cellspacing="0" cellpadding="0">
+ <tr><th align="left">Status:&nbsp;</th>
+ <td width="100%">
+ 
+ <span title="Test or reporter verified that the fix works">Verified</span>
+ 
+ </td>
+ </tr>
+ 
+ <tr><th align="left">Owner:&nbsp;</th><td>
+ 
+ 
+ ----
+ 
+ 
+ </td>
+ </tr>
+ 
+ <tr><th align="left" valign="top">Closed:&nbsp;</th>
+ <td align="left" valign="top" width="100%">
+ Mar 2009
+ </td>
+ </tr>
+ 
+ 
+ 
+ 
+ <tr><td colspan="2">
+ <a href="list?q=label:Type-Bug"
+ title="Software not working correctly"
+ class="label"><b>Type-</b>Bug</a>
+ </td></tr>
+ 
+ 
+ 
+ <tr><td colspan="2">
+ <a href="list?q=label:Pri-2"
+ title="Normal. Required for specified milestone."
+ class="label"><b>Pri-</b>2</a>
+ </td></tr>
+ 
+ 
+ 
+ <tr><td colspan="2">
+ <a href="list?q=label:OS-All"
+ title="Affects all operating systems"
+ class="label"><b>OS-</b>All</a>
+ </td></tr>
+ 
+ 
+ 
+ <tr><td colspan="2">
+ <a href="list?q=label:Area-BrowserUI"
+ title=""
+ class="label"><b>Area-</b>BrowserUI</a>
+ </td></tr>
+ 
+ 
+ 
+ <tr><td colspan="2">
+ <a href="list?q=label:Mstone-2.0"
+ title=""
+ class="label"><b>Mstone-</b>2.0</a>
+ </td></tr>
+ 
+ 
+ 
+ <tr><td colspan="2"><a href="list?q=label:Regression"
+ title="Used to work, now broken"
+ class="label">Regression</a></td></tr>
+ 
+ 
+ 
+ </table>
+ <br><br>
+ 
+ 
+ 
+ <div style="white-space:nowrap"><a href="https://www.google.com/accounts/ServiceLogin?service=code&amp;ltmpl=phosting&amp;continue=http%3A%2F%2Fcode.google.com%2Fp%2Fchromium%2Fissues%2Fdetail%3Fid%3D20&amp;followup=http%3A%2F%2Fcode.google.com%2Fp%2Fchromium%2Fissues%2Fdetail%3Fid%3D20">Sign in</a> to add a comment</div>
+ 
+ 
+ 
+ <div class="rel_issues">
+ 
+ 
+ 
+ </div>
+ 
+ 
+ </div>&nbsp;
+ </td>
+ <td class="vt issuedescription" width="100%">
+ <div class="author">
+ Reported by <a style="white-space: nowrap" href="/u/boytje/">boytje</a>,
+ <span class="date" title="Tue Sep  2 12:23:43 2008">Sep 02, 2008</span>
+ 
+ </div>
+<pre>
+Product Version      : 0.2.149.27 (1583)
+<b>URLs (if applicable) :</b>
+<b>Other browsers tested:</b>
+<b>Add OK or FAIL after other browsers where you have tested this issue:</b>
+<b>Safari 3:</b>
+    Firefox 3:OK
+         IE 7:OK
+
+<b>What steps will reproduce the problem?</b>
+1. Rightclick the taskbar to get to the properties and enable auto-hide
+2. Maximize chrome
+3. Move your mouse to where your taskbar usually pops up. Nothing happens.
+
+<b>What is the expected result?</b>
+
+
+<b>What happens instead?</b>
+
+
+Please provide any additional information below. Attach a screenshot if 
+possible.
+ 
+</pre>
+
+
+ </td>
+ </tr>
+
+ 
+
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c1"
+ href="#c1">1</a>
+ by
+ <a style="white-space: nowrap" href="/u/RicardoJorgeMacas/">RicardoJorgeMacas</a></span>,
+ <span class="date" title="Tue Sep  2 13:53:47 2008">Sep 02, 2008</span>
+ 
+<pre>
+I confirm the bug. I actually have the same problem with Safari beta.
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c2"
+ href="#c2">2</a>
+ by
+ <a style="white-space: nowrap" href="/u/@UxVURVRWARRFXwZ9/">br...@bryanenglish.com</a></span>,
+ <span class="date" title="Tue Sep  2 14:35:57 2008">Sep 02, 2008</span>
+ 
+<pre>
+Following the steps above, in Windows Vista, sometimes I get the same result,
+sometimes the taskbar pops up but then immediately disappears.  The later result only
+happens if (but doesn't always happen when) the mouse is moved to the bottom of the
+screen very quickly (like &lt; 1s).
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c3"
+ href="#c3">3</a>
+ by
+ <a style="white-space: nowrap" href="/u/kitsuta/">kitsuta</a></span>,
+ <span class="date" title="Tue Sep  2 17:28:28 2008">Sep 02, 2008</span>
+ 
+<pre>
+Confirmed in Windows Vista with an Acer Aspire 5610Z.  Task bar does not come up at 
+all with window maximized; it comes up BEHIND the Chrome window when it is not 
+maximized.
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c4"
+ href="#c4">4</a>
+ by
+ <a style="white-space: nowrap" href="/u/bacher/">bacher</a></span>,
+ <span class="date" title="Tue Sep  2 23:44:03 2008">Sep 02, 2008</span>
+ 
+<pre>
+Confirmed in Windows XP SP3 on a Dell Vostro 1500.
+On my main computer with a dual monitor setup, i can get the taskbar to pop up on the 
+main monitor, however on the second monitor i experience this problem  
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c5"
+ href="#c5">5</a>
+ by
+ <a style="white-space: nowrap" href="/u/boytje/">boytje</a></span>,
+ <span class="date" title="Wed Sep  3 00:02:53 2008">Sep 03, 2008</span>
+ 
+<pre>
+I'm on my pc at work running Windows XP SP3 and I can get the taskbar to pop-up like 
+it normally even when Chrome is running maxed.
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c6"
+ href="#c6">6</a>
+ by
+ <a style="white-space: nowrap" href="/u/gianpiero.vecchi/">gianpiero.vecchi</a></span>,
+ <span class="date" title="Wed Sep  3 00:22:12 2008">Sep 03, 2008</span>
+ 
+<pre>
+Confirmed on my XP SP3 dual monitor. Chrome maximized hides the task bar only in the 
+second monitor.
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c7"
+ href="#c7">7</a>
+ by
+ <a style="white-space: nowrap" href="/u/NicoPeters.NP/">NicoPeters.NP</a></span>,
+ <span class="date" title="Wed Sep  3 01:15:42 2008">Sep 03, 2008</span>
+ 
+<pre>
+I can also confirm this bug with chrome 0.2.149.27 on vista home premium
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c8"
+ href="#c8">8</a>
+ by
+ <a style="white-space: nowrap" href="/u/dumamahesh/">dumamahesh</a></span>,
+ <span class="date" title="Wed Sep  3 01:39:40 2008">Sep 03, 2008</span>
+ 
+<pre>
+I am using Vista Home Premium with SP1 on HP Pavillion dv6500 Notebook. The issue 
+will only appearing when auto hide enabled after opening chromium and it works as 
+expected when once you minimized and used hided task bar it appears then after with 
+chromium also
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c9"
+ href="#c9">9</a>
+ by
+ <a style="white-space: nowrap" href="/u/skullkillk/">skullkillk</a></span>,
+ <span class="date" title="Wed Sep  3 07:14:54 2008">Sep 03, 2008</span>
+ 
+<pre>
+Confirmed and it is very anoying, i have to use the &quot;windows key&quot; everytime i want to 
+get my taskbar.
+
+confirmed on 2 vista machine
+1) Vista Ultimate (Dual Screen)
+2) Toshiba <a href="/p/chromium/source/detail?r=400">R400</a>, Vista Business
+
+
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c10"
+ href="#c10">10</a>
+ by
+ <a style="white-space: nowrap" href="/u/gofolder/">gofolder</a></span>,
+ <span class="date" title="Thu Sep  4 03:23:04 2008">Sep 04, 2008</span>
+ 
+<pre>
+I confirmed. It's very uncomfortable. My machine is Lenovo R61i, and uses Vista 
+Ultimate.
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c11"
+ href="#c11">11</a>
+ by
+ <a style="white-space: nowrap" href="/u/oppifjellet/">oppifjellet</a></span>,
+ <span class="date" title="Thu Sep  4 06:39:58 2008">Sep 04, 2008</span>
+ 
+<pre>
+I confirm this issue but I'm using RocketDock instead of the windows taskbar.
+
+RocketDock is supposed to stay always on top, but not enough to beat the Chrome-on-
+Top :/
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c12"
+ href="#c12">12</a>
+ by
+ <a style="white-space: nowrap" href="/u/delirium.nocturnum/">delirium.nocturnum</a></span>,
+ <span class="date" title="Thu Sep  4 10:03:40 2008">Sep 04, 2008</span>
+ 
+<pre>
+I confirm this issue using a DELL Dimension with Vista Home.  Frustrating.
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c13"
+ href="#c13">13</a>
+ by
+ <a style="white-space: nowrap" href="/u/girard.sylvain/">girard.sylvain</a></span>,
+ <span class="date" title="Thu Sep  4 11:57:59 2008">Sep 04, 2008</span>
+ 
+<pre>
+Same problem here...
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c14"
+ href="#c14">14</a>
+ by
+ <a style="white-space: nowrap" href="/u/maxisoft.it/">maxisoft.it</a></span>,
+ <span class="date" title="Thu Sep  4 22:55:06 2008">Sep 04, 2008</span>
+ 
+<pre>
+Yes, there is same problem. So annoying...
+
+Toshiba A200, Vista Home Premium SP1.
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c15"
+ href="#c15">15</a>
+ by
+ <a style="white-space: nowrap" href="/u/@VhZTRV1WBxJCWAR9/">abr...@sympatico.ca</a></span>,
+ <span class="date" title="Fri Sep  5 20:29:09 2008">Sep 05, 2008</span>
+ 
+<pre>
+Confirmed as an issue on a Dell Dimension running Vista Home.
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c16"
+ href="#c16">16</a>
+ by
+ <a style="white-space: nowrap" href="/u/ben.at.chromium.org/">ben.at.chromium.org</a></span>,
+ <span class="date" title="Fri Sep  5 23:07:32 2008">Sep 05, 2008</span>
+ 
+<pre>
+<i>(No comment was entered for this change.)</i>
+</pre>
+ 
+ 
+ <div class="updates">
+ <div class="round4"></div>
+ <div class="round2"></div>
+ <div class="round1"></div>
+ <div class="box-inner">
+ <b>Labels:</b> -Area-Unknown Area-BrowserUI<br>
+ </div>
+ <div class="round1"></div>
+ <div class="round2"></div>
+ <div class="round4"></div>
+ </div>
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c17"
+ href="#c17">17</a>
+ by
+ <a style="white-space: nowrap" href="/u/Treefor/">Treefor</a></span>,
+ <span class="date" title="Sat Sep  6 07:52:08 2008">Sep 06, 2008</span>
+ 
+<pre>
+I have the same problem - Vista Ultimate on a Dell Inspiron 1501 - need to use 
+windows key to pop up taskbar.
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c18"
+ href="#c18">18</a>
+ by
+ <a style="white-space: nowrap" href="/u/kitsuta/">kitsuta</a></span>,
+ <span class="date" title="Sat Sep  6 13:51:28 2008">Sep 06, 2008</span>
+ 
+<pre>
+I have also noticed that when alert comes up in the taskbar - i.e., an IM window is 
+updated - the taskbar comes up but does not display until you unfocus the Chrome 
+window.
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c19"
+ href="#c19">19</a>
+ by
+ <a style="white-space: nowrap" href="/u/jrcampos21/">jrcampos21</a></span>,
+ <span class="date" title="Sat Sep  6 15:49:18 2008">Sep 06, 2008</span>
+ 
+<pre>
+F11 is not working to Full Size Screen.
+ 
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c20"
+ href="#c20">20</a>
+ by
+ <a style="white-space: nowrap" href="/u/kitsuta/">kitsuta</a></span>,
+ <span class="date" title="Sat Sep  6 16:07:19 2008">Sep 06, 2008</span>
+ 
+<pre>
+&quot;F11 is not working to Full Size Screen.&quot;
+
+Same here, but this should be filed under the proper report (or a new one if there 
+isn't one existing).  F11 is a different type of command than maximizing the screen.
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c21"
+ href="#c21">21</a>
+ by
+ <a style="white-space: nowrap" href="/u/delfinof/">delfinof</a></span>,
+ <span class="date" title="Sun Sep  7 01:16:32 2008">Sep 07, 2008</span>
+ 
+<pre>
+The same problem happens also with the &quot;onscreen&quot; keyboard when you have a tablet PC.
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c22"
+ href="#c22">22</a>
+ by
+ <a style="white-space: nowrap" href="/u/SuperSpy00bob/">SuperSpy00bob</a></span>,
+ <span class="date" title="Wed Sep 10 09:31:33 2008">Sep 10, 2008</span>
+ 
+<pre>
+I can also confirm on Vista SP1 (x86).  Chrome also seems to misbehave when always-
+on-top windows (such as Trillian message windows) are placed over the browser window.  
+Many times Chrome will simply appear over them even though they are set to always-on-
+top, or will appear over the window when it has focus, then operate properly when it 
+loses focus.
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c23"
+ href="#c23">23</a>
+ by
+ <a style="white-space: nowrap" href="/u/gabrielwhite/">gabrielwhite</a></span>,
+ <span class="date" title="Wed Sep 10 12:56:26 2008">Sep 10, 2008</span>
+ 
+<pre>
+Same problem.
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c24"
+ href="#c24">24</a>
+ by
+ <a style="white-space: nowrap" href="/u/wolfergiga/">wolfergiga</a></span>,
+ <span class="date" title="Thu Sep 11 08:52:07 2008">Sep 11, 2008</span>
+ 
+<pre>
+I have Vista SP1 on an x86 system, and this happens to me.  Happened before I 
+installed SP1 as well (just recently installed it).
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c25"
+ href="#c25">25</a>
+ by
+ <a style="white-space: nowrap" href="/u/gufiak/">gufiak</a></span>,
+ <span class="date" title="Sun Sep 14 08:05:36 2008">Sep 14, 2008</span>
+ 
+<pre>
+The same situation here on Vista SP1. I need to press &quot;windows + T&quot; keys get a 
+taskbar visible.
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c26"
+ href="#c26">26</a>
+ by
+ <a style="white-space: nowrap" href="/u/@WBRVQFNWBxdDWgV9/">pa3...@hetnet.nl</a></span>,
+ <span class="date" title="Thu Sep 18 02:55:12 2008">Sep 18, 2008</span>
+ 
+<pre>
+Confirmed on vista SP1 (Dutch version)!
+
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c27"
+ href="#c27">27</a>
+ by
+ <a style="white-space: nowrap" href="/u/mikekoser/">mikekoser</a></span>,
+ <span class="date" title="Thu Sep 18 18:18:44 2008">Sep 18, 2008</span>
+ 
+<pre>
+I am running Vista Ultimate SP one.  I have my task bar (on auto hide)on the top of 
+my screen and more than 75% of the time when chrome is maximized, it takes precedence 
+over the task bar. 
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c28"
+ href="#c28">28</a>
+ by
+ <a style="white-space: nowrap" href="/u/jccoelho99/">jccoelho99</a></span>,
+ <span class="date" title="Fri Sep 19 08:11:52 2008">Sep 19, 2008</span>
+ 
+<pre>
+Confirmed on XP 32 SP3
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c29"
+ href="#c29">29</a>
+ by
+ <a style="white-space: nowrap" href="/u/tomba4/">tomba4</a></span>,
+ <span class="date" title="Tue Sep 23 13:15:20 2008">Sep 23, 2008</span>
+ 
+<pre>
+This is IMO the most annoying problem in the Chromium so far... Is it going to be 
+fixed in 0.3?
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c30"
+ href="#c30">30</a>
+ by
+ <a style="white-space: nowrap" href="/u/adamforbes/">adamforbes</a></span>,
+ <span class="date" title="Wed Sep 24 17:36:39 2008">Sep 24, 2008</span>
+ 
+<pre>
+Vista Business 32bit, same problem here. 
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c31"
+ href="#c31">31</a>
+ by
+ <a style="white-space: nowrap" href="/u/jccoelho99/">jccoelho99</a></span>,
+ <span class="date" title="Wed Oct  1 09:30:49 2008">Oct 01, 2008</span>
+ 
+<pre>
+[magic_browzR] XP Pro SP3 32-bit confirmed here.
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c32"
+ href="#c32">32</a>
+ by
+ <a style="white-space: nowrap" href="/u/@VxJfQ1RWABBAXQE%3D/">thatan...@google.com</a></span>,
+ <span class="date" title="Fri Oct  3 02:18:18 2008">Oct 03, 2008</span>
+ 
+<pre>
+<i>(No comment was entered for this change.)</i>
+</pre>
+ 
+ 
+ <div class="updates">
+ <div class="round4"></div>
+ <div class="round2"></div>
+ <div class="round1"></div>
+ <div class="box-inner">
+ <b>Cc:</b> thatan...@google.com<br>
+ </div>
+ <div class="round1"></div>
+ <div class="round2"></div>
+ <div class="round4"></div>
+ </div>
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c33"
+ href="#c33">33</a>
+ by
+ <a style="white-space: nowrap" href="/u/digitald410/">digitald410</a></span>,
+ <span class="date" title="Wed Oct  8 22:01:11 2008">Oct 08, 2008</span>
+ 
+<pre>
+also confirmed here on vista sp1
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c34"
+ href="#c34">34</a>
+ by
+ <a style="white-space: nowrap" href="/u/malicious.kendall/">malicious.kendall</a></span>,
+ <span class="date" title="Thu Oct  9 09:34:03 2008">Oct 09, 2008</span>
+ 
+<pre>
+I confirm this on XP Pro SP3. It also ignores Winamp auto-hide. A very annoying bug, 
+especially if you have a large taskbar. It also messes with my Messenger, as I often 
+miss messages since MSN apparently gets Chrome as a fullscreen window.
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c35"
+ href="#c35">35</a>
+ by
+ <a style="white-space: nowrap" href="/u/loyukfai/">loyukfai</a></span>,
+ <span class="date" title="Fri Oct 10 16:13:19 2008">Oct 10, 2008</span>
+ 
+<pre>
+Just tested on 0.3.154.0, still has the same problem.
+</pre>
+ 
+ <div class="attachments">
+ 
+ 
+ 
+
+
+
+
+ <table cellspacing="3" cellpadding="2" border="0">
+ <tr><td width="20">
+ <a href="http://chromium.googlecode.com/issues/attachment?aid=6885821801855594162&amp;name=Chrome+Covering+Taskbar.WMV&amp;token=126e10994145d6d507c87850913bb13a">
+ <img width="15" height="15" src="/hosting/images/paperclip.gif" border="0" >
+ </a>
+ </td>
+ <td style="min-width:16em" valign="top">
+ 
+ <b >Chrome Covering Taskbar.WMV</b>
+ <br>
+ 2.0 MB
+ 
+ 
+ &nbsp; <a href="http://chromium.googlecode.com/issues/attachment?aid=6885821801855594162&amp;name=Chrome+Covering+Taskbar.WMV&amp;token=126e10994145d6d507c87850913bb13a">Download</a>
+ 
+ </td>
+ 
+ </tr>
+ 
+ </table>
+
+
+ 
+ </div>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c36"
+ href="#c36">36</a>
+ by
+ <a style="white-space: nowrap" href="/u/digitald410/">digitald410</a></span>,
+ <span class="date" title="Sat Oct 11 13:26:20 2008">Oct 11, 2008</span>
+ 
+<pre>
+hey everyone, dont know if this is the right forum to put this in but not being able 
+to use taskbar authide and chrome together has really been bothering me, and i think 
+this will help a lot of people in a similar situation. if you download desktopcoral, 
+place the dock at the bottom, and set the dock height to 1, taskbar autohide and 
+chrome can be used together. desktopcoral essentially reframes the limits of a 
+maximized window on one side, and using it like this keeps chrome from taking up the 
+tiny bit of an autohidden toolbar at the bottom of the screen. enjoy.
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c37"
+ href="#c37">37</a>
+ by
+ <a style="white-space: nowrap" href="/u/bksening/">bksening</a></span>,
+ <span class="date" title="Wed Oct 15 17:00:45 2008">Oct 15, 2008</span>
+ 
+<pre>
+Make this the main tracking bug or <a title="Chrome window not truly maximized with Taskbar on Auto-hide mode" class=closed_ref href="/p/chromium/issues/detail?id=200"> issue 200 </a> instead?
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c38"
+ href="#c38">38</a>
+ by
+ <a style="white-space: nowrap" href="/u/gunjan.modi/">gunjan.modi</a></span>,
+ <span class="date" title="Thu Oct 16 17:09:20 2008">Oct 16, 2008</span>
+ 
+<pre>
+I have the same problem. Using latest Chrome as of 10/16/2008, Vista SP1
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c39"
+ href="#c39">39</a>
+ by
+ <a style="white-space: nowrap" href="/u/Birukov.Sergey/">Birukov.Sergey</a></span>,
+ <span class="date" title="Fri Oct 17 00:12:27 2008">Oct 17, 2008</span>
+ 
+<pre>
+Confirmed on my Vista SP1 Buisnes.
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c40"
+ href="#c40">40</a>
+ by
+ <a style="white-space: nowrap" href="/u/KennethNHicks/">KennethNHicks</a></span>,
+ <span class="date" title="Sat Oct 18 20:46:17 2008">Oct 18, 2008</span>
+ 
+<pre>
+Ditto, same here Vista Home SP1. Very annoying!
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c41"
+ href="#c41">41</a>
+ by
+ <a style="white-space: nowrap" href="/u/jacek.stepniewski/">jacek.stepniewski</a></span>,
+ <span class="date" title="Fri Oct 24 09:06:04 2008">Oct 24, 2008</span>
+ 
+<pre>
+<i>(No comment was entered for this change.)</i>
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c42"
+ href="#c42">42</a>
+ by
+ <a style="white-space: nowrap" href="/u/mal.chromium/">mal.chromium</a></span>,
+ <span class="date" title="Mon Oct 27 13:23:44 2008">Oct 27, 2008</span>
+ 
+<pre>
+<i>(No comment was entered for this change.)</i>
+</pre>
+ 
+ 
+ <div class="updates">
+ <div class="round4"></div>
+ <div class="round2"></div>
+ <div class="round1"></div>
+ <div class="box-inner">
+ <b>Status:</b> Assigned<br><b>Owner:</b> a...@chromium.org<br><b>Labels:</b> Mstone-1.0<br>
+ </div>
+ <div class="round1"></div>
+ <div class="round2"></div>
+ <div class="round4"></div>
+ </div>
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c43"
+ href="#c43">43</a>
+ by
+ <a style="white-space: nowrap" href="/u/NoelHibbard/">NoelHibbard</a></span>,
+ <span class="date" title="Wed Oct 29 06:45:07 2008">Oct 29, 2008</span>
+ 
+<pre>
+This problem has been fixed in the hourly builds:
+<a href="http://build.chromium.org/buildbot/continuous/LATEST/">http://build.chromium.org/buildbot/continuous/LATEST/</a>
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c44"
+ href="#c44">44</a>
+ by
+ <a style="white-space: nowrap" href="/u/loyukfai/">loyukfai</a></span>,
+ <span class="date" title="Wed Oct 29 08:06:52 2008">Oct 29, 2008</span>
+ 
+<pre>
+Just tried but the problem still persist for me.
+
+I used the mini_installer.exe
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c45"
+ href="#c45">45</a>
+ by
+ <a style="white-space: nowrap" href="/u/liaoheping/">liaoheping</a></span>,
+ <span class="date" title="Thu Oct 30 08:36:20 2008">Oct 30, 2008</span>
+ 
+<pre>
+same problem, hope for fixing
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c46"
+ href="#c46">46</a>
+ by
+ <a style="white-space: nowrap" href="/u/Bretthodel/">Bretthodel</a></span>,
+ <span class="date" title="Thu Oct 30 17:37:30 2008">Oct 30, 2008</span>
+ 
+<pre>
+I found it works when I am only using my laptops screen, but when I am also using
+another external screen, I cant un-hide the sidebar or taskbar.
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c47"
+ href="#c47">47</a>
+ by
+ <a style="white-space: nowrap" href="/u/loyukfai/">loyukfai</a></span>,
+ <span class="date" title="Thu Oct 30 18:01:11 2008">Oct 30, 2008</span>
+ 
+<pre>
+I use only the laptop screen. It's a Vista tablet, if that matters.
+
+However, it works fine on another tablet, though that is a XP. But according to some 
+of the above comments both XP and Vista is affected.
+
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c48"
+ href="#c48">48</a>
+ by
+ <a style="white-space: nowrap" href="/u/@WRZfRlFTABJCXgZ6/">cody.ber...@gmail.com</a></span>,
+ <span class="date" title="Thu Oct 30 19:45:21 2008">Oct 30, 2008</span>
+ 
+<pre>
+confirmed with Windows Vista Ultimate on my Dell Precision Workstation 490
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c49"
+ href="#c49">49</a>
+ by
+ <a style="white-space: nowrap" href="/u/drke51/">drke51</a></span>,
+ <span class="date" title="Fri Oct 31 11:26:34 2008">Oct 31, 2008</span>
+ 
+<pre>
+Problem persists after installing Chromium latest
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c50"
+ href="#c50">50</a>
+ by
+ <a style="white-space: nowrap" href="/u/@WRZfRlFTABJCXgZ6/">cody.ber...@gmail.com</a></span>,
+ <span class="date" title="Fri Oct 31 15:42:46 2008">Oct 31, 2008</span>
+ 
+<pre>
+&quot;Problem persists after installing Chromium latest&quot;
+I second that
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c51"
+ href="#c51">51</a>
+ by
+ <a style="white-space: nowrap" href="/u/dashworks/">dashworks</a></span>,
+ <span class="date" title="Sun Nov  2 21:02:23 2008">Nov 02, 2008</span>
+ 
+<pre>
+Confirmed Bug. Windows Vista Business Edition on Toshiba Satellite A215.
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c52"
+ href="#c52">52</a>
+ by
+ <a style="white-space: nowrap" href="/u/Cummings.William/">Cummings.William</a></span>,
+ <span class="date" title="Mon Nov  3 14:59:30 2008">Nov 03, 2008</span>
+ 
+<pre>
+Confirmed on hp dv6258se notebook running Windows Vista Ultimate and Chrome 
+0.3.154.9. Task bar refuses to come up with Chrome maximized bumping the bottom of 
+the screen with the cursor. When not maximized, the task bar pops up behind the 
+Chrome window.
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c53"
+ href="#c53">53</a>
+ by
+ <a style="white-space: nowrap" href="/u/amit@chromium.org/">amit@chromium.org</a></span>,
+ <span class="date" title="Wed Nov  5 16:00:05 2008">Nov 05, 2008</span>
+ 
+<pre>
+Fixed in trunk <a href="/p/chromium/source/detail?r=4825">r4825</a>.
+
+Assigning to mal if this needs to be part of 1.0
+
+
+
+</pre>
+ 
+ 
+ <div class="updates">
+ <div class="round4"></div>
+ <div class="round2"></div>
+ <div class="round1"></div>
+ <div class="box-inner">
+ <b>Owner:</b> m...@chromium.org<br>
+ </div>
+ <div class="round1"></div>
+ <div class="round2"></div>
+ <div class="round4"></div>
+ </div>
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c54"
+ href="#c54">54</a>
+ by
+ <a style="white-space: nowrap" href="/u/mal.chromium/">mal.chromium</a></span>,
+ <span class="date" title="Wed Nov  5 21:13:52 2008">Nov 05, 2008</span>
+ 
+<pre>
+Merged into the release branch at <a href="/p/chromium/source/detail?r=4859">r4859</a>. Will be released in 154.11 and later.
+</pre>
+ 
+ 
+ <div class="updates">
+ <div class="round4"></div>
+ <div class="round2"></div>
+ <div class="round1"></div>
+ <div class="box-inner">
+ <b>Status:</b> Fixed<br>
+ </div>
+ <div class="round1"></div>
+ <div class="round2"></div>
+ <div class="round4"></div>
+ </div>
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c55"
+ href="#c55">55</a>
+ by
+ <a style="white-space: nowrap" href="/u/venkataramana@chromium.org/">venkataramana@chromium.org</a></span>,
+ <span class="date" title="Fri Nov  7 15:07:05 2008">Nov 07, 2008</span>
+ 
+<pre>
+Build: 0.3.154.12 (Official Build 4978)
+Opps, I can still reproduce this bug with following tricky repro steps :)
+
+-Launch Chorme browser window 'n' maximize it.
+-Right click on Taskbar and select properities.
+-Check &quot;Auto-hide&quot; the taskbar to ON and apply changes
+-Click on Chrome Button on Taskbar.
+-Mouse hover over the taskbar position. 
+You don't see the taskbar pops up.
+I can reproduce this consistenly on Vista Enterprise SP1.
+
+Please note, once I un-maximise and maximize Chrome window, then I can't reproduce 
+the issue. 
+-Venkat.
+
+
+</pre>
+ 
+ 
+ <div class="updates">
+ <div class="round4"></div>
+ <div class="round2"></div>
+ <div class="round1"></div>
+ <div class="box-inner">
+ <b>Status:</b> Available<br>
+ </div>
+ <div class="round1"></div>
+ <div class="round2"></div>
+ <div class="round4"></div>
+ </div>
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c56"
+ href="#c56">56</a>
+ by
+ <a style="white-space: nowrap" href="/u/venkataramana@chromium.org/">venkataramana@chromium.org</a></span>,
+ <span class="date" title="Fri Nov  7 15:15:54 2008">Nov 07, 2008</span>
+ 
+<pre>
+For me, it looks like new issue with those repro steps (?).
+
+It happens for me on both Vista/XP SP3 consistently.
+
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c57"
+ href="#c57">57</a>
+ by
+ <a style="white-space: nowrap" href="/u/mal.chromium/">mal.chromium</a></span>,
+ <span class="date" title="Fri Nov  7 15:20:02 2008">Nov 07, 2008</span>
+ 
+<pre>
+This is really a new bug (task bar autohide doesn't work while Chrome is maximized 
+IFF you enable it when Chrome is maximized).
+
+I say this is not worth fixing. What do you think Amit?
+</pre>
+ 
+ 
+ <div class="updates">
+ <div class="round4"></div>
+ <div class="round2"></div>
+ <div class="round1"></div>
+ <div class="box-inner">
+ <b>Summary:</b> Taskbar autohide doesn't work if you enable it while Chrome is maximized<br><b>Status:</b> Assigned<br><b>Owner:</b> a...@chromium.org<br><b>Labels:</b> -Pri-2 -Mstone-1.0 Pri-3 Mstone-X<br>
+ </div>
+ <div class="round1"></div>
+ <div class="round2"></div>
+ <div class="round4"></div>
+ </div>
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c58"
+ href="#c58">58</a>
+ by
+ <a style="white-space: nowrap" href="/u/amit@chromium.org/">amit@chromium.org</a></span>,
+ <span class="date" title="Fri Nov  7 15:37:04 2008">Nov 07, 2008</span>
+ 
+<pre>
+Yeah this is a temporary fix anyway, this should be fixed when we have a proper fix 
+for the original issue.
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c59"
+ href="#c59">59</a>
+ by
+ <a style="white-space: nowrap" href="/u/ru8ikscu8er/">ru8ikscu8er</a></span>,
+ <span class="date" title="Tue Nov 11 20:21:47 2008">Nov 11, 2008</span>
+ 
+<pre>
+def needs to be fixed, very annoying, I love chrome, but this and the pdf problem is 
+really putting me off
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c60"
+ href="#c60">60</a>
+ by
+ <a style="white-space: nowrap" href="/u/matthias.vanneste/">matthias.vanneste</a></span>,
+ <span class="date" title="Thu Nov 13 04:08:45 2008">Nov 13, 2008</span>
+ 
+<pre>
+Indeed, definitely needs to be fixed. If there is a reason why I will stop using 
+Chrome it will be because of this. This a small but nevertheless very annoying 
+problem.
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c61"
+ href="#c61">61</a>
+ by
+ <a style="white-space: nowrap" href="/u/loyukfai/">loyukfai</a></span>,
+ <span class="date" title="Thu Nov 13 06:46:26 2008">Nov 13, 2008</span>
+ 
+<pre>
+Is this not yet in the main? Just tried the build at <a href="http://build.chromium.org/buildbot/continuous/LATEST/">http://build.chromium.org/buildbot/continuous/LATEST/</a> but the problem persists.
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c62"
+ href="#c62">62</a>
+ by
+ <a style="white-space: nowrap" href="/u/loyukfai/">loyukfai</a></span>,
+ <span class="date" title="Thu Nov 13 11:16:12 2008">Nov 13, 2008</span>
+ 
+<pre>
+Confirmed (partially) fixed on 0.4.154.18
+
+Taskbar now stays at front after Chrome is &quot;maximized&quot;... However Chrome is not 
+really &quot;maximized&quot;, there are some blank spaces to the bottom and to the right...
+
+Normal...?
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c63"
+ href="#c63">63</a>
+ by
+ <a style="white-space: nowrap" href="/u/amit@chromium.org/">amit@chromium.org</a></span>,
+ <span class="date" title="Thu Nov 13 11:34:49 2008">Nov 13, 2008</span>
+ 
+<pre>
+Yeah, that's the expected behavior. Well, this is a quick (and less risky) work 
+around for this issue. Once we enable new frames we should have a better solution for 
+this issue.
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c64"
+ href="#c64">64</a>
+ by
+ <a style="white-space: nowrap" href="/u/Crikker/">Crikker</a></span>,
+ <span class="date" title="Tue Nov 18 07:50:42 2008">Nov 18, 2008</span>
+ 
+<pre>
+Now its been over 2 months since the first discover about this bug. Any fix on the 
+way?!
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c65"
+ href="#c65">65</a>
+ by
+ <a style="white-space: nowrap" href="/u/amit@chromium.org/">amit@chromium.org</a></span>,
+ <span class="date" title="Tue Nov 18 08:29:19 2008">Nov 18, 2008</span>
+ 
+<pre>
+A work around for task bar auto-hide is already part of the latest builds (might take 
+some time to appear in the Beta builds though). 
+
+This issue now happens only (once) when the task bar auto-hide is enabled while 
+Chrome is maximized.
+
+Better fix for this will be available in future.
+
+
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c66"
+ href="#c66">66</a>
+ by
+ <a style="white-space: nowrap" href="/u/loyukfai/">loyukfai</a></span>,
+ <span class="date" title="Tue Nov 18 20:11:58 2008">Nov 18, 2008</span>
+ 
+<pre>
+Crikker: The dev-channel build 0.4.154.18 has the partial fix implemented.
+
+amit: Any timeframe that the &quot;better fix&quot; will be available...? I'm asking because this 
+partial fix doesn't seem (to me) to be good enough to be included in the Beta builds.
+
+If it's so, &quot;when the 'better fix' will be available&quot; warrants more attention then.
+
+With respect and thanks for your work, I would rather run a Beta build than a dev-build, 
+the latter being less stable.
+
+
+
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c67"
+ href="#c67">67</a>
+ by
+ <a style="white-space: nowrap" href="/u/amit@chromium.org/">amit@chromium.org</a></span>,
+ <span class="date" title="Wed Nov 19 05:04:23 2008">Nov 19, 2008</span>
+ 
+<pre>
+Dev builds are only meant for the audience that want a peek at the latest features 
+but can tolerate instability (like testers and web developers). Beta builds are are 
+for normal everyday usage so you are right in staying with the beta build.
+
+About the time line for better fix: it depends on a number of factors and can't make 
+a good guess at this time.
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c68"
+ href="#c68">68</a>
+ by
+ <a style="white-space: nowrap" href="/u/drke51/">drke51</a></span>,
+ <span class="date" title="Tue Nov 25 20:33:23 2008">Nov 25, 2008</span>
+ 
+<pre>
+Looks like this is a dead topic - I would add that sometimes the audience turns to 
+dev builds because there are faults in the beta builds that we see as intolerable 
+instability such as not being able to access the taskbar.
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c69"
+ href="#c69">69</a>
+ by
+ <a style="white-space: nowrap" href="/u/loyukfai/">loyukfai</a></span>,
+ <span class="date" title="Tue Nov 25 22:07:38 2008">Nov 25, 2008</span>
+ 
+<pre>
+Update: The partial fix has been pushed to the latest beta build (0.4.154.25) as far 
+as I can tell.
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c70"
+ href="#c70">70</a>
+ by
+ <a style="white-space: nowrap" href="/u/Cummings.William/">Cummings.William</a></span>,
+ <span class="date" title="Tue Nov 25 22:46:40 2008">Nov 25, 2008</span>
+ 
+<pre>
+The taskbar issue appears to be worked around in 0.4.154.25 but now there is a large 
+bottom border on the Chrome window when maximized. It is double the size of the 
+normal border (see red oval in attachment &quot;Chrome maximized.jpg&quot;).
+</pre>
+ 
+ <div class="attachments">
+ 
+ 
+ 
+
+
+
+
+ <table cellspacing="3" cellpadding="2" border="0">
+ <tr><td width="20">
+ <a href="http://chromium.googlecode.com/issues/attachment?aid=1354507312897740229&amp;name=Chrome+maximized.jpg&amp;token=a0b893758e55b63e5171ee058d0f9df4">
+ <img width="15" height="15" src="/hosting/images/paperclip.gif" border="0" >
+ </a>
+ </td>
+ <td style="min-width:16em" valign="top">
+ 
+ <b >Chrome maximized.jpg</b>
+ <br>
+ 112 KB
+ 
+ 
+ &nbsp; <a href="http://chromium.googlecode.com/issues/attachment?aid=1354507312897740229&amp;name=Chrome+maximized.jpg&amp;token=a0b893758e55b63e5171ee058d0f9df4&amp;inline=1" target="_blank">View</a>
+ 
+ &nbsp; <a href="http://chromium.googlecode.com/issues/attachment?aid=1354507312897740229&amp;name=Chrome+maximized.jpg&amp;token=a0b893758e55b63e5171ee058d0f9df4">Download</a>
+ 
+ </td>
+ 
+ </tr>
+ 
+ 
+ <tr>
+ <td colspan="3">
+ <a href="http://chromium.googlecode.com/issues/attachment?aid=1354507312897740229&amp;name=Chrome+maximized.jpg&amp;token=a0b893758e55b63e5171ee058d0f9df4&amp;inline=1" target="_blank">
+ <img src="http://chromium.googlecode.com/issues/attachment?aid=1354507312897740229&amp;name=Chrome+maximized.jpg&amp;token=a0b893758e55b63e5171ee058d0f9df4&amp;inline=1&amp;thumb=1" class="preview">
+ </a>
+ </td>
+ </tr>
+ 
+ 
+ </table>
+
+
+ 
+ </div>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c71"
+ href="#c71">71</a>
+ by
+ <a style="white-space: nowrap" href="/u/Cummings.William/">Cummings.William</a></span>,
+ <span class="date" title="Tue Nov 25 22:50:37 2008">Nov 25, 2008</span>
+ 
+<pre>
+It is also important to note that the &quot;Taskbar autohide doesn't work if you enable it 
+while Chrome is maximized&quot; is not the only issue... this problem occurs anytime 
+Chrome is maximized.
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c72"
+ href="#c72">72</a>
+ by
+ <a style="white-space: nowrap" href="/u/loyukfai/">loyukfai</a></span>,
+ <span class="date" title="Tue Nov 25 23:04:36 2008">Nov 25, 2008</span>
+ 
+<pre>
+To Cummings.William: The large bottom border is supposed to be there with the partial 
+fix. The better/complete fix is not available yet.
+
+Besides, can you elaborate what you said in comment #71...?
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c73"
+ href="#c73">73</a>
+ by
+ <a style="white-space: nowrap" href="/u/Cummings.William/">Cummings.William</a></span>,
+ <span class="date" title="Tue Nov 25 23:09:22 2008">Nov 25, 2008</span>
+ 
+<pre>
+In comment 71, I meant to make sure the development team knows the issue occurs 
+anytime autohide is enabled; not just when it is enabled while Chrome is running as 
+the bug statement implies. Before the work around was introduced, my taskbar was 
+buried anytime Chrome was maximized.
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c74"
+ href="#c74">74</a>
+ by
+ <a style="white-space: nowrap" href="/u/jon@chromium.org/">jon@chromium.org</a></span>,
+ <span class="date" title="Mon Dec  1 15:55:11 2008">Dec 01, 2008</span>
+ 
+<pre>
+<a title="auto-hide taskbar doesn't activate in vista" class=closed_ref href="/p/chromium/issues/detail?id=1595"> Issue 1595 </a> has been merged into this issue.
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c75"
+ href="#c75">75</a>
+ by
+ <a style="white-space: nowrap" href="/u/woland783/">woland783</a></span>,
+ <span class="date" title="Fri Jan  9 12:26:03 2009">Jan 09, 2009</span>
+ 
+<pre>
+I Confirm. Windows XP sp3 and chrome 2.0.156.1
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c76"
+ href="#c76">76</a>
+ by
+ <a style="white-space: nowrap" href="/u/bespinhal/">bespinhal</a></span>,
+ <span class="date" title="Tue Jan 13 12:05:56 2009">Jan 13, 2009</span>
+ 
+<pre>
+Same here! Vista Home P with chrome 2.0.156.1 on Toshiba X200.
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c77"
+ href="#c77">77</a>
+ by
+ <a style="white-space: nowrap" href="/u/laforge@chromium.org/">laforge@chromium.org</a></span>,
+ <span class="date" title="Tue Jan 13 14:53:10 2009">Jan 13, 2009</span>
+ 
+<pre>
+<a title="Windows taskbar no longer pop-ups if Chrome is maximized" class=closed_ref href="/p/chromium/issues/detail?id=6190"> Issue 6190 </a> has been merged into this issue.
+</pre>
+ 
+ 
+ <div class="updates">
+ <div class="round4"></div>
+ <div class="round2"></div>
+ <div class="round1"></div>
+ <div class="box-inner">
+ <b>Cc:</b> anan...@chromium.org<br>
+ </div>
+ <div class="round1"></div>
+ <div class="round2"></div>
+ <div class="round4"></div>
+ </div>
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c78"
+ href="#c78">78</a>
+ by
+ <a style="white-space: nowrap" href="/u/rwherr/">rwherr</a></span>,
+ <span class="date" title="Tue Jan 13 14:58:39 2009">Jan 13, 2009</span>
+ 
+<pre>
+Same issue to report here with XP SP2 and Chrome 2.0.156.1.
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c79"
+ href="#c79">79</a>
+ by
+ <a style="white-space: nowrap" href="/u/venkataramana@chromium.org/">venkataramana@chromium.org</a></span>,
+ <span class="date" title="Wed Jan 14 11:31:17 2009">Jan 14, 2009</span>
+ 
+<pre>
+<a title="taskbar autohide" class=closed_ref href="/p/chromium/issues/detail?id=6411"> Issue 6411 </a> has been merged into this issue.
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c80"
+ href="#c80">80</a>
+ by
+ <a style="white-space: nowrap" href="/u/scatterkeir/">scatterkeir</a></span>,
+ <span class="date" title="Wed Jan 14 14:14:22 2009">Jan 14, 2009</span>
+ 
+<pre>
+It seems a tiny bit fixed for me on 2.0.5.170.  Two pages I have spun off to
+'application shortcuts' I can get to work with auto-hide taskbar - on one (a Google
+Docs spreadsheet) by making that chrome window smaller, clicking another window,
+clicking that chrome window again, moving the mouse to where it triggers the taskbar,
+then maximising the chrome window again and the auto-hide taskbar works fine after
+that.  On the other (BBC iPlayer) it works fine from the start.  But on the standard
+Google Chrome app itself I still haven't been able to coax the auto-hidden taskbar to
+unhide itself.
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c81"
+ href="#c81">81</a>
+ by
+ <a style="white-space: nowrap" href="/u/boorachetino/">boorachetino</a></span>,
+ <span class="date" title="Wed Jan 14 23:47:33 2009">Jan 14, 2009</span>
+ 
+<pre>
+Confirmed with Windows 7 and Chrome 2.0.157.0
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c82"
+ href="#c82">82</a>
+ by
+ <a style="white-space: nowrap" href="/u/marcus.registradus/">marcus.registradus</a></span>,
+ <span class="date" title="Wed Jan 14 23:51:50 2009">Jan 14, 2009</span>
+ 
+<pre>
+I just filed a bug for this too... I also have the same problem with Songbird... 
+XPSP3
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c83"
+ href="#c83">83</a>
+ by
+ <a style="white-space: nowrap" href="/u/scatterkeir/">scatterkeir</a></span>,
+ <span class="date" title="Thu Jan 15 09:56:28 2009">Jan 15, 2009</span>
+ 
+<pre>
+As a follow-up to my comment 80 about the application shortcuts for which the either
+the auto-hide taskbar unhide worked or could be made to work with some fiddling
+about, neither are reproduceable by me today, they both completely fail to play nice
+with that auto-hide taskbar like the main Chrome app!  Maybe if I fiddled about
+turning the taskbar auto-hide off and on... no, just tried that, didn't help.  Maybe
+if I closed Chrome and then... no, I'm not trying that, I could spend forever trying
+to reproduce exactly the combination of things that got it slightly working
+yesterday!  And I forgot to mention, I'm on XP Pro SP3.
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c84"
+ href="#c84">84</a>
+ by
+ <a style="white-space: nowrap" href="/u/mdu@chromium.org/">mdu@chromium.org</a></span>,
+ <span class="date" title="Thu Jan 15 15:16:16 2009">Jan 15, 2009</span>
+ 
+<pre>
+<a title="Not Playing well with taskbar on autohide..." class=closed_ref href="/p/chromium/issues/detail?id=6453"> Issue 6453 </a> has been merged into this issue.
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c85"
+ href="#c85">85</a>
+ by
+ <a style="white-space: nowrap" href="/u/scatterkeir/">scatterkeir</a></span>,
+ <span class="date" title="Fri Jan 16 08:51:50 2009">Jan 16, 2009</span>
+ 
+<pre>
+Confirmed on 2.0.157.2 with XP Pro SP3
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c86"
+ href="#c86">86</a>
+ by
+ <a style="white-space: nowrap" href="/u/jordonwii/">jordonwii</a></span>,
+ <span class="date" title="Fri Jan 16 17:03:42 2009">Jan 16, 2009</span>
+ 
+<pre>
+Confirmed on  2.0.157.2 with Windows XP Home SP3.
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c88"
+ href="#c88">88</a>
+ by
+ <a style="white-space: nowrap" href="/u/@UxZWSlNXBhlAVwN5/">phajdan...@chromium.org</a></span>,
+ <span class="date" title="Mon Jan 19 07:01:55 2009">Jan 19, 2009</span>
+ 
+<pre>
+<a title="windows task bar goes under chrome when auto hide is used" class=closed_ref href="/p/chromium/issues/detail?id=6623"> Issue 6623 </a> has been merged into this issue.
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c89"
+ href="#c89">89</a>
+ by
+ <a style="white-space: nowrap" href="/u/venkataramana@chromium.org/">venkataramana@chromium.org</a></span>,
+ <span class="date" title="Wed Jan 21 10:17:58 2009">Jan 21, 2009</span>
+ 
+<pre>
+<a title="Taskbar Not Surfacing" class=closed_ref href="/p/chromium/issues/detail?id=6706"> Issue 6706 </a> has been merged into this issue.
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c90"
+ href="#c90">90</a>
+ by
+ <a style="white-space: nowrap" href="/u/anantha@chromium.org/">anantha@chromium.org</a></span>,
+ <span class="date" title="Wed Jan 21 15:08:55 2009">Jan 21, 2009</span>
+ 
+<pre>
+<a title="Chrome window not truly maximized with Taskbar on Auto-hide mode" class=closed_ref href="/p/chromium/issues/detail?id=200"> Issue 200 </a> has been merged into this issue.
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c91"
+ href="#c91">91</a>
+ by
+ <a style="white-space: nowrap" href="/u/pranav.koli/">pranav.koli</a></span>,
+ <span class="date" title="Fri Jan 23 05:09:25 2009">Jan 23, 2009</span>
+ 
+<pre>
+this does happen sometimes, but not always.
+If you get this problem, just restore and re-maximize the window, and every thing 
+shoyld work fine, even with thee window maximized...
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c92"
+ href="#c92">92</a>
+ by
+ <a style="white-space: nowrap" href="/u/scatterkeir/">scatterkeir</a></span>,
+ <span class="date" title="Fri Jan 23 10:50:28 2009">Jan 23, 2009</span>
+ 
+<pre>
+Confirmed on 2.0.158.0 with Windows XP Pro SP3.  Unable to reproduce workaround
+suggested in comment 91.
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c93"
+ href="#c93">93</a>
+ by
+ <a style="white-space: nowrap" href="/u/scatterkeir/">scatterkeir</a></span>,
+ <span class="date" title="Thu Jan 29 12:22:34 2009">Jan 29, 2009</span>
+ 
+<pre>
+Confirmed on 2.0.159.0 with Windows XP Pro SP3.
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c94"
+ href="#c94">94</a>
+ by
+ <a style="white-space: nowrap" href="/u/@VBhfRlJTDxhCWgA%3D/">mge...@gentiweb.com</a></span>,
+ <span class="date" title="Thu Jan 29 19:44:31 2009">Jan 29, 2009</span>
+ 
+<pre>
+Confirmed on 2.0.159.0 with XP SP3 and comment 91 doesn't fix it.
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c95"
+ href="#c95">95</a>
+ by
+ <a style="white-space: nowrap" href="/u/Robert.L.Oliver/">Robert.L.Oliver</a></span>,
+ <span class="date" title="Sat Jan 31 08:03:35 2009">Jan 31, 2009</span>
+ 
+<pre>
+Confirmed on XP Tablet PC Edition 2005 Version 2002 SP3
+Chrome 2.0.159.0
+Definitely the most annoying bug now that virtual mouse scrolling has been fixed 
+(thanks!).
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c96"
+ href="#c96">96</a>
+ by
+ <a style="white-space: nowrap" href="/u/majklicek@volny.cz/">majklicek@volny.cz</a></span>,
+ <span class="date" title="Mon Feb  2 09:04:41 2009">Feb 02, 2009</span>
+ 
+<pre>
+Win XP SP3, Chrome 2.0.159.0. I have the same problem with maximalized Chrome. Other 
+applications are without problems in the same time, but when Chrome window is activ, 
+the taskbar doesnt appear. Its big problem for working with chrome...
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c97"
+ href="#c97">97</a>
+ by
+ <a style="white-space: nowrap" href="/u/aaajeetee/">aaajeetee</a></span>,
+ <span class="date" title="Thu Feb  5 07:23:19 2009">Feb 05, 2009</span>
+ 
+<pre>
+Same problem here.
+
+Does anyone know if (and when) this bug is fixed? :)
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c98"
+ href="#c98">98</a>
+ by
+ <a style="white-space: nowrap" href="/u/loyukfai/">loyukfai</a></span>,
+ <span class="date" title="Thu Feb  5 07:43:16 2009">Feb 05, 2009</span>
+ 
+<pre>
+The 1.0 release used to have this problem until a temporary fix was implemented. See 
+comments around #60-#70.
+
+With the 2.0 release, &quot;new window frames on Windows XP and Vista, supporting windows 
+cascading and tiling, and other window-management add-in programs.&quot; So it seems that 
+this problem isn't addressed with the new window frames.
+
+Please, coders, fix it before 2.0 becomes stable and is automatically pushed out. : )
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c99"
+ href="#c99">99</a>
+ by
+ <a style="white-space: nowrap" href="/u/amit@chromium.org/">amit@chromium.org</a></span>,
+ <span class="date" title="Thu Feb  5 10:07:40 2009">Feb 05, 2009</span>
+ 
+<pre>
++cc deanm, he has volunteered to investigate. 
+
+Thanks!
+</pre>
+ 
+ 
+ <div class="updates">
+ <div class="round4"></div>
+ <div class="round2"></div>
+ <div class="round1"></div>
+ <div class="box-inner">
+ <b>Cc:</b> de...@chromium.org<br>
+ </div>
+ <div class="round1"></div>
+ <div class="round2"></div>
+ <div class="round4"></div>
+ </div>
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c100"
+ href="#c100">100</a>
+ by
+ <a style="white-space: nowrap" href="/u/venkataramana@chromium.org/">venkataramana@chromium.org</a></span>,
+ <span class="date" title="Sun Feb  8 09:14:40 2009">Feb 08, 2009</span>
+ 
+<pre>
+<a title="Taskbar not accessible (auto-hide) when Chrome is maximized." class=closed_ref href="/p/chromium/issues/detail?id=7510"> Issue 7510 </a> has been merged into this issue.
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c101"
+ href="#c101">101</a>
+ by
+ <a style="white-space: nowrap" href="/u/deanm@chromium.org/">deanm@chromium.org</a></span>,
+ <span class="date" title="Mon Feb  9 09:17:28 2009">Feb 09, 2009</span>
+ 
+<pre>
+I can't reproduce this on my machine, I guess it sounds like mostly a problem on 
+Vista.  It will be a ton of work for me to setup a Vista VM, so I'm not sure it's 
+logical for me to work on it, sorry.
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c102"
+ href="#c102">102</a>
+ by
+ <a style="white-space: nowrap" href="/u/badpazzword/">badpazzword</a></span>,
+ <span class="date" title="Mon Feb  9 09:25:09 2009">Feb 09, 2009</span>
+ 
+<pre>
+I confirm the bug on Windows XP, however.
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c103"
+ href="#c103">103</a>
+ by
+ <a style="white-space: nowrap" href="/u/deanm@chromium.org/">deanm@chromium.org</a></span>,
+ <span class="date" title="Mon Feb  9 09:31:58 2009">Feb 09, 2009</span>
+ 
+<pre>
+Alright, reproduced it when a different version of trunk (on XP).  Looking at it.
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c104"
+ href="#c104">104</a>
+ by
+ <a style="white-space: nowrap" href="/u/deanm@chromium.org/">deanm@chromium.org</a></span>,
+ <span class="date" title="Mon Feb  9 10:04:15 2009">Feb 09, 2009</span>
+ 
+<pre>
+Adding Peter, as he worked on some of the maximization stuff.  It's worth noting that 
+I'm running the Classic theme, I didn't try it with the standard XP theme.
+
+I think it's possible we're just over maximizing?  It seems like stable chrome leaves 
+2 pixels beneath the scrollbar, where you can access the start menu autohide.
+
+The current trunk code looks like it's on top of those two pixels.
+
+See attached screenshot (stable on left, trunk on right).  I put a piece of the 
+scrollbars on top of a black patch, and you can see the additional two pixels.
+</pre>
+ 
+ <div class="attachments">
+ 
+ 
+ 
+
+
+
+
+ <table cellspacing="3" cellpadding="2" border="0">
+ <tr><td width="20">
+ <a href="http://chromium.googlecode.com/issues/attachment?aid=-1553455473635702230&amp;name=max.bmp&amp;token=5011ccb9f1ac5eb094491d41cb507ec0">
+ <img width="15" height="15" src="/hosting/images/paperclip.gif" border="0" >
+ </a>
+ </td>
+ <td style="min-width:16em" valign="top">
+ 
+ <b >max.bmp</b>
+ <br>
+ 399 KB
+ 
+ 
+ &nbsp; <a href="http://chromium.googlecode.com/issues/attachment?aid=-1553455473635702230&amp;name=max.bmp&amp;token=5011ccb9f1ac5eb094491d41cb507ec0">Download</a>
+ 
+ </td>
+ 
+ </tr>
+ 
+ </table>
+
+
+ 
+ </div>
+ 
+ 
+ <div class="updates">
+ <div class="round4"></div>
+ <div class="round2"></div>
+ <div class="round1"></div>
+ <div class="box-inner">
+ <b>Cc:</b> pkast...@chromium.org<br>
+ </div>
+ <div class="round1"></div>
+ <div class="round2"></div>
+ <div class="round4"></div>
+ </div>
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c105"
+ href="#c105">105</a>
+ by
+ <a style="white-space: nowrap" href="/u/pkasting@chromium.org/">pkasting@chromium.org</a></span>,
+ <span class="date" title="Mon Feb  9 10:10:27 2009">Feb 09, 2009</span>
+ 
+<pre>
+Stable and trunk are hard to compare.  We did everything ourselves in the old frame 
+code, including a somewhat broken hack to try and not maximize atop the taskbar (as 
+you describe -- somewhat broken because it didn't work right on second monitors, 
+etc.).  In the new frame code, Window takes care of maximizing us, and we aren't 
+supposed to need this hack anymore.  And indeed, if taskbar auto-hide is already 
+enabled when you maximize, it seems to basically work right.  I'm not sure what 
+causes this particular bug since AFAIK we aren't doing something special here.
+
+Auto-hiding is not something I really understand, which is bad since I will need to 
+for fullscreen mode :(
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c106"
+ href="#c106">106</a>
+ by
+ <a style="white-space: nowrap" href="/u/badpazzword/">badpazzword</a></span>,
+ <span class="date" title="Mon Feb  9 10:18:01 2009">Feb 09, 2009</span>
+ 
+<pre>
+Hmm, my bug may be a totally different bug then. I have my taskbar /already/ set up
+for autohiding on the right. When I (then) launch Chrome, the taskbar does not appear.
+
+I think this is consistent behaviour, but I'm running Ubuntu right now so I can't be
+100% certain.
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c107"
+ href="#c107">107</a>
+ by
+ <a style="white-space: nowrap" href="/u/stijnsanders/">stijnsanders</a></span>,
+ <span class="date" title="Mon Feb  9 12:05:51 2009">Feb 09, 2009</span>
+ 
+<pre>
+I haven't had a look at the code (yet), but are you guys using GetSystemMetrics (and SM_CYFULLSCREEN in particular)?
+<a href="http://msdn.microsoft.com/en-us/library/ms724385(VS.85).aspx">http://msdn.microsoft.com/en-us/library/ms724385(VS.85).aspx</a>
+
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c108"
+ href="#c108">108</a>
+ by
+ <a style="white-space: nowrap" href="/u/amit@chromium.org/">amit@chromium.org</a></span>,
+ <span class="date" title="Mon Feb  9 14:09:06 2009">Feb 09, 2009</span>
+ 
+<pre>
+Here's some background:
+
+Basic problem here is that chrome top level windows don't have any non-client area 
+except borders. When such window is maximized (even using DefWindowProc), the task 
+bar performs a check to see if the currently maximized window is a 'full screen' app. 
+
+A 'full screen app' is something that has its entire client area stretched to the 
+screen. A normal window usually has some non-client elements like a title bar or menu 
+so the client area doesn't stretch the entire screen. Since that's not the case for 
+chrome, the taskbar detects that it's a full screen application and hides itself 
+behind maximized chrome window. 
+
+Previous fixes have been workarounds to reduce the client area by 1 pixel so that we 
+don't get marked as full screen apps. This is done by handling WM_GETMINMAXINFO and 
+reducing the size of the client area. However, things work little differently on 
+Vista and even if we return the reduced client area, the subsequent handling of 
+WM_SYSCOMMAND of SC_MAXIMIZE reverts it. The right thing to do here is probably 
+implement WM_SYSCOMMAND for SC_MAXIMIZE. This implementation is non-trivial. 
+
+On vista, I added another hack to reduce the client area by a larger amount so that 
+the DefWindowProc of WM_SYSCOMMAND for SC_MAXIMIZE would honor the new size. This 
+hack has its own set of drawbacks.
+
+
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c109"
+ href="#c109">109</a>
+ by
+ <a style="white-space: nowrap" href="/u/stijnsanders/">stijnsanders</a></span>,
+ <span class="date" title="Tue Feb 10 00:45:50 2009">Feb 10, 2009</span>
+ 
+<pre>
+Sounds like it would almost be a good idea to have a pixel or two of non-client area 
+at the bottom...
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c110"
+ href="#c110">110</a>
+ by
+ <a style="white-space: nowrap" href="/u/nabeelburney/">nabeelburney</a></span>,
+ <span class="date" title="Tue Feb 10 02:28:58 2009">Feb 10, 2009</span>
+ 
+<pre>
+I thought that was exactly what already happens - I posted <a title="Chrome window not truly maximized with Taskbar on Auto-hide mode" class=closed_ref href="/p/chromium/issues/detail?id=200"> issue 200 </a> (merged into
+this one), which was about finding a &quot;hole&quot; at the bottom of the screen which would
+end up bringing up any windows underneath Chrome if I clicked there. Apologies if
+this isn't what you meant.
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c111"
+ href="#c111">111</a>
+ by
+ <a style="white-space: nowrap" href="/u/venkataramana@chromium.org/">venkataramana@chromium.org</a></span>,
+ <span class="date" title="Tue Feb 10 10:30:05 2009">Feb 10, 2009</span>
+ 
+<pre>
+<a title=" Lack of Windows Autohide Taskbar Support" class=closed_ref href="/p/chromium/issues/detail?id=7548"> Issue 7548 </a> has been merged into this issue.
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c112"
+ href="#c112">112</a>
+ by
+ <a style="white-space: nowrap" href="/u/paul.php/">paul.php</a></span>,
+ <span class="date" title="Tue Feb 10 15:40:30 2009">Feb 10, 2009</span>
+ 
+<pre>
+Confirmed with Windows 7 and Chrome 2.0.160.0
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c113"
+ href="#c113">113</a>
+ by
+ <a style="white-space: nowrap" href="/u/@VhRUSlZUAxhAXAh%2B/">sbccente...@hotmail.com</a></span>,
+ <span class="date" title="Wed Feb 11 10:33:05 2009">Feb 11, 2009</span>
+ 
+<pre>
+Well, for me it doesnt work with ie7, but it does with chrome :D (1.0.154.48 @ Vista 
+with Aero skin)
+But, there is a gap (about 5 pixels high) between the bottom of the chrome window and 
+the bottom of the screen. It's quite irritating sometimes.
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c114"
+ href="#c114">114</a>
+ by
+ <a style="white-space: nowrap" href="/u/@WRZfRlFTABJCXgZ6/">cody.ber...@gmail.com</a></span>,
+ <span class="date" title="Wed Feb 11 12:32:57 2009">Feb 11, 2009</span>
+ 
+<pre>
+This &quot;gap&quot; that you're talking about is adressed here:
+
+<a title="[magic_browzr] Window frame drawn incorrectly" class=closed_ref href="/p/chromium/issues/detail?id=5054"> Issue 5054 </a>: [magic_browzr] Window frame drawn incorrectly
+
+<a href="http://code.google.com/p/chromium/issues/detail?id=5054&amp;can=7&amp;sort=-">http://code.google.com/p/chromium/issues/detail?id=5054&amp;can=7&amp;sort=-</a>
+stars&amp;colspec=ID%20Stars%20Pri%20Area%20Type%20Status%20Summary%20Modified%20Owner
+
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c115"
+ href="#c115">115</a>
+ by
+ <a style="white-space: nowrap" href="/u/mal.chromium/">mal.chromium</a></span>,
+ <span class="date" title="Sat Feb 14 14:16:08 2009">Feb 14, 2009</span>
+ 
+<pre>
+This is a regression we need to fix before a Beta update.
+
+It works on Stable --albeit with a cosmetic hack. We should either fix the core issue 
+or put in the same hack we have in 1.0 (a gutter of a few pixels between the 
+'maximized' window and the taskbar's edge of the screen).
+
+</pre>
+ 
+ 
+ <div class="updates">
+ <div class="round4"></div>
+ <div class="round2"></div>
+ <div class="round1"></div>
+ <div class="box-inner">
+ <b>Owner:</b> pkast...@chromium.org<br><b>Labels:</b> -Pri-3 -Mstone-X Pri-1 Mstone-2.0 Regression<br>
+ </div>
+ <div class="round1"></div>
+ <div class="round2"></div>
+ <div class="round4"></div>
+ </div>
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c116"
+ href="#c116">116</a>
+ by
+ <a style="white-space: nowrap" href="/u/pkasting@chromium.org/">pkasting@chromium.org</a></span>,
+ <span class="date" title="Sat Feb 14 15:03:12 2009">Feb 14, 2009</span>
+ 
+<pre>
+Unfortunately our stable hack breaks maximizing on multi-monitor systems, which IMO 
+is far worse.
+
+Amit and I discussed this a bit and realized that we don't fully understand the 
+conditions that trigger taskbar hiding, since WMP seems to be avoiding it even with a 
+larger-than-screen client rect.  He's in a better position than I am to figure this 
+out.
+</pre>
+ 
+ 
+ <div class="updates">
+ <div class="round4"></div>
+ <div class="round2"></div>
+ <div class="round1"></div>
+ <div class="box-inner">
+ <b>Owner:</b> a...@chromium.org<br>
+ </div>
+ <div class="round1"></div>
+ <div class="round2"></div>
+ <div class="round4"></div>
+ </div>
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c117"
+ href="#c117">117</a>
+ by
+ <a style="white-space: nowrap" href="/u/olyerickson/">olyerickson</a></span>,
+ <span class="date" title="Mon Feb 23 08:29:59 2009">Feb 23, 2009</span>
+ 
+<pre>
+On 2.0.164.0, Windoze XP SP3 the taskbar hides and then is not visible while Chrome 
+maximized. Minimizing Chrome shows that it is there; maybe it is a forward/backward 
+issue and not a hiding issue?
+
+
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c118"
+ href="#c118">118</a>
+ by
+ <a style="white-space: nowrap" href="/u/jon@chromium.org/">jon@chromium.org</a></span>,
+ <span class="date" title="Thu Feb 26 14:36:01 2009">Feb 26, 2009</span>
+ 
+<pre>
+Looking at:
+1.  <a href="http://stackoverflow.com/questions/137005/auto-hide-taskbar-not-appearing-when-">http://stackoverflow.com/questions/137005/auto-hide-taskbar-not-appearing-when-</a>
+my-application-is-maximized
+2.  <a href="http://blogs.msdn.com/llobo/archive/2008/02/07/maximizing-borderless-window-">http://blogs.msdn.com/llobo/archive/2008/02/07/maximizing-borderless-window-</a>
+using-sysparameter-values.aspx
+3.  <a href="http://blogs.msdn.com/llobo/archive/2006/08/01/Maximizing-window-_2800_with-">http://blogs.msdn.com/llobo/archive/2006/08/01/Maximizing-window-_2800_with-</a>
+WindowStyle_3D00_None_2900_-considering-Taskbar.aspx
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c119"
+ href="#c119">119</a>
+ by
+ <a style="white-space: nowrap" href="/u/pkasting@chromium.org/">pkasting@chromium.org</a></span>,
+ <span class="date" title="Thu Feb 26 18:19:45 2009">Feb 26, 2009</span>
+ 
+<pre>
+Goofing with WM_GETMINMAXINFO results as in comment 118 item (3) does not seem to 
+help.
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c120"
+ href="#c120">120</a>
+ by
+ <a style="white-space: nowrap" href="/u/pkasting@chromium.org/">pkasting@chromium.org</a></span>,
+ <span class="date" title="Thu Feb 26 18:36:45 2009">Feb 26, 2009</span>
+ 
+<pre>
+Maybe we can use SHAppBarMessage() with ABM_GETSTATE and 
+ABM_GETTASKBARPOS/ABM_GETAUTOHIDEBAR to figure out where the taskbar is and just hack 
+the work rect based on that.
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c121"
+ href="#c121">121</a>
+ by
+ <a style="white-space: nowrap" href="/u/pkasting@chromium.org/">pkasting@chromium.org</a></span>,
+ <span class="date" title="Thu Feb 26 18:42:51 2009">Feb 26, 2009</span>
+ 
+<pre>
+Yeah, I think we'll have to do that.  <a href="http://www.microsoft.com/msj/archive/s274.aspx">http://www.microsoft.com/msj/archive/s274.aspx</a> 
+says &quot;The ABN_FULLSCREENAPP notification is sent when a fullscreen application window 
+is opened or closed. A window is fullscreen when its client area occupies the entire 
+screen. Always-on-top appbars should take themselves out of the topmost z-order so 
+that they do not cover the fullscreen window. lParam contains TRUE if a fullscreen 
+window is opening and FALSE if one is closing.&quot;  It seems like we could probably fake 
+a notification of &quot;fullscreen app closing&quot;, but hacking the work rect is safer.
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c122"
+ href="#c122">122</a>
+ by
+ <a style="white-space: nowrap" href="/u/jon@chromium.org/">jon@chromium.org</a></span>,
+ <span class="date" title="Mon Mar  2 11:11:00 2009">Mar 02, 2009</span>
+ 
+<pre>
+Changing owner to Peter.
+</pre>
+ 
+ 
+ <div class="updates">
+ <div class="round4"></div>
+ <div class="round2"></div>
+ <div class="round1"></div>
+ <div class="box-inner">
+ <b>Owner:</b> pkast...@chromium.org<br><b>Cc:</b> -pkast...@chromium.org a...@chromium.org<br>
+ </div>
+ <div class="round1"></div>
+ <div class="round2"></div>
+ <div class="round4"></div>
+ </div>
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c123"
+ href="#c123">123</a>
+ by
+ <a style="white-space: nowrap" href="/u/pkasting@chromium.org/">pkasting@chromium.org</a></span>,
+ <span class="date" title="Mon Mar  2 15:48:57 2009">Mar 02, 2009</span>
+ 
+<pre>
+Patch in review.
+</pre>
+ 
+ 
+ <div class="updates">
+ <div class="round4"></div>
+ <div class="round2"></div>
+ <div class="round1"></div>
+ <div class="box-inner">
+ <b>Status:</b> Started<br>
+ </div>
+ <div class="round1"></div>
+ <div class="round2"></div>
+ <div class="round4"></div>
+ </div>
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c124"
+ href="#c124">124</a>
+ by
+ <a style="white-space: nowrap" href="/u/bugdroid1@chromium.org/">bugdroid1@chromium.org</a></span>,
+ <span class="date" title="Tue Mar  3 16:37:36 2009">Mar 03, 2009</span>
+ 
+<pre>
+The following revision refers to this bug:
+    <a href="http://src.chromium.org/viewvc/chrome?view=rev&amp;revision=10845">http://src.chromium.org/viewvc/chrome?view=rev&amp;revision=10845</a> 
+
+------------------------------------------------------------------------
+<a href="/p/chromium/source/detail?r=10845">r10845</a> | pkasting@chromium.org | 2009-03-03 16:36:48 -0800 (Tue, 03 Mar 2009) | 12 lines
+Changed paths:
+   M <a href="http://src.chromium.org/viewvc/chrome/trunk/src/chrome/browser/views/frame/browser_frame.cc?r1=10845&amp;r2=10844">http://src.chromium.org/viewvc/chrome/trunk/src/chrome/browser/views/frame/browser_frame.cc?r1=10845&amp;r2=10844</a>
+   M <a href="http://src.chromium.org/viewvc/chrome/trunk/src/chrome/browser/views/frame/browser_frame.h?r1=10845&amp;r2=10844">http://src.chromium.org/viewvc/chrome/trunk/src/chrome/browser/views/frame/browser_frame.h?r1=10845&amp;r2=10844</a>
+   M <a href="http://src.chromium.org/viewvc/chrome/trunk/src/chrome/browser/views/frame/glass_browser_frame_view.cc?r1=10845&amp;r2=10844">http://src.chromium.org/viewvc/chrome/trunk/src/chrome/browser/views/frame/glass_browser_frame_view.cc?r1=10845&amp;r2=10844</a>
+   M <a href="http://src.chromium.org/viewvc/chrome/trunk/src/chrome/browser/views/frame/glass_browser_frame_view.h?r1=10845&amp;r2=10844">http://src.chromium.org/viewvc/chrome/trunk/src/chrome/browser/views/frame/glass_browser_frame_view.h?r1=10845&amp;r2=10844</a>
+   M <a href="http://src.chromium.org/viewvc/chrome/trunk/src/chrome/browser/views/frame/opaque_browser_frame_view.cc?r1=10845&amp;r2=10844">http://src.chromium.org/viewvc/chrome/trunk/src/chrome/browser/views/frame/opaque_browser_frame_view.cc?r1=10845&amp;r2=10844</a>
+   M <a href="http://src.chromium.org/viewvc/chrome/trunk/src/chrome/common/win_util.cc?r1=10845&amp;r2=10844">http://src.chromium.org/viewvc/chrome/trunk/src/chrome/common/win_util.cc?r1=10845&amp;r2=10844</a>
+   M <a href="http://src.chromium.org/viewvc/chrome/trunk/src/chrome/common/win_util.h?r1=10845&amp;r2=10844">http://src.chromium.org/viewvc/chrome/trunk/src/chrome/common/win_util.h?r1=10845&amp;r2=10844</a>
+   M <a href="http://src.chromium.org/viewvc/chrome/trunk/src/chrome/views/window.cc?r1=10845&amp;r2=10844">http://src.chromium.org/viewvc/chrome/trunk/src/chrome/views/window.cc?r1=10845&amp;r2=10844</a>
+
+Make Chromium windows not hide auto-hide taskbars.
+
+There are a few caveats here:
+
+* On Aero glass, if the auto-hide taskbar is at the top of the screen, we get one row of nonclient pixels along the bottom of the screen (not too noticeable for light-colored pages, looks a bit odd with a dark page).  I can't find a way around this.
+
+* Switching between fullscreen and normal mode can leave things a bit confused until you click another app and then reactivate Chromium.  This seems to happen with other applications too (e.g. Firefox fullscreen mode) so I'm not too worried.
+
+* Chromium does not deal well with toggling the taskbar's auto-hide setting (or, I think, its position?) unless you restore and remaximize the window.  I tried to fix this via modified handling of WM_SETTINGCHANGE but only made things worse and so gave up.
+
+BUG=20
+Review URL: <a href="http://codereview.chromium.org/28338">http://codereview.chromium.org/28338</a>
+------------------------------------------------------------------------
+
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c125"
+ href="#c125">125</a>
+ by
+ <a style="white-space: nowrap" href="/u/pkasting@chromium.org/">pkasting@chromium.org</a></span>,
+ <span class="date" title="Tue Mar  3 16:41:14 2009">Mar 03, 2009</span>
+ 
+<pre>
+The fix I checked in should make Chrome play nicely with autohide taskbars.  Note the 
+caveats on the patch: in particular, if you toggle a taskbar between autohide and 
+not, you need to resize the Chrome window before it picks the change up.
+</pre>
+ 
+ 
+ <div class="updates">
+ <div class="round4"></div>
+ <div class="round2"></div>
+ <div class="round1"></div>
+ <div class="box-inner">
+ <b>Summary:</b> Chrome windows hide autohide taskbars<br><b>Status:</b> Fixed<br>
+ </div>
+ <div class="round1"></div>
+ <div class="round2"></div>
+ <div class="round4"></div>
+ </div>
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c126"
+ href="#c126">126</a>
+ by
+ <a style="white-space: nowrap" href="/u/jordonwii/">jordonwii</a></span>,
+ <span class="date" title="Wed Mar  4 15:41:10 2009">Mar 04, 2009</span>
+ 
+<pre>
+When will this be implemented?
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c127"
+ href="#c127">127</a>
+ by
+ <a style="white-space: nowrap" href="/u/pkasting@chromium.org/">pkasting@chromium.org</a></span>,
+ <span class="date" title="Mon Mar  9 13:42:36 2009">Mar 09, 2009</span>
+ 
+<pre>
+This change caused <a title="Omnibox editable area floats after returning from a locked screen." class=closed_ref href="/p/chromium/issues/detail?id=8410"> issue 8410 </a>, <a title="Glass screwed up when returning from other resolution" class=closed_ref href="/p/chromium/issues/detail?id=8526"> issue 8526 </a>, and (I think) <a title="REGRESSION: Distributor logo misplaced on glass" class=closed_ref href="/p/chromium/issues/detail?id=8511"> issue 8511 </a>, so it was backed 
+out in <a href="/p/chromium/source/detail?r=11284">r11284</a> and is thus reopened.
+</pre>
+ 
+ 
+ <div class="updates">
+ <div class="round4"></div>
+ <div class="round2"></div>
+ <div class="round1"></div>
+ <div class="box-inner">
+ <b>Status:</b> Assigned<br>
+ </div>
+ <div class="round1"></div>
+ <div class="round2"></div>
+ <div class="round4"></div>
+ </div>
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c128"
+ href="#c128">128</a>
+ by
+ <a style="white-space: nowrap" href="/u/pkasting@chromium.org/">pkasting@chromium.org</a></span>,
+ <span class="date" title="Mon Mar  9 13:43:41 2009">Mar 09, 2009</span>
+ 
+<pre>
+Does not block beta but will block stable (I think).
+</pre>
+ 
+ 
+ <div class="updates">
+ <div class="round4"></div>
+ <div class="round2"></div>
+ <div class="round1"></div>
+ <div class="box-inner">
+ <b>Labels:</b> -Pri-1 Pri-2<br>
+ </div>
+ <div class="round1"></div>
+ <div class="round2"></div>
+ <div class="round4"></div>
+ </div>
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c129"
+ href="#c129">129</a>
+ by
+ <a style="white-space: nowrap" href="/u/bugdroid1@chromium.org/">bugdroid1@chromium.org</a></span>,
+ <span class="date" title="Tue Mar 10 12:09:18 2009">Mar 10, 2009</span>
+ 
+<pre>
+The following revision refers to this bug:
+    <a href="http://src.chromium.org/viewvc/chrome?view=rev&amp;revision=11355">http://src.chromium.org/viewvc/chrome?view=rev&amp;revision=11355</a> 
+
+------------------------------------------------------------------------
+<a href="/p/chromium/source/detail?r=11355">r11355</a> | pkasting@chromium.org | 2009-03-10 12:09:07 -0700 (Tue, 10 Mar 2009) | 7 lines
+Changed paths:
+   M <a href="http://src.chromium.org/viewvc/chrome/trunk/src/chrome/browser/views/frame/browser_frame.cc?r1=11355&amp;r2=11354">http://src.chromium.org/viewvc/chrome/trunk/src/chrome/browser/views/frame/browser_frame.cc?r1=11355&amp;r2=11354</a>
+   M <a href="http://src.chromium.org/viewvc/chrome/trunk/src/chrome/browser/views/frame/browser_frame.h?r1=11355&amp;r2=11354">http://src.chromium.org/viewvc/chrome/trunk/src/chrome/browser/views/frame/browser_frame.h?r1=11355&amp;r2=11354</a>
+   M <a href="http://src.chromium.org/viewvc/chrome/trunk/src/chrome/browser/views/frame/glass_browser_frame_view.cc?r1=11355&amp;r2=11354">http://src.chromium.org/viewvc/chrome/trunk/src/chrome/browser/views/frame/glass_browser_frame_view.cc?r1=11355&amp;r2=11354</a>
+   M <a href="http://src.chromium.org/viewvc/chrome/trunk/src/chrome/browser/views/frame/glass_browser_frame_view.h?r1=11355&amp;r2=11354">http://src.chromium.org/viewvc/chrome/trunk/src/chrome/browser/views/frame/glass_browser_frame_view.h?r1=11355&amp;r2=11354</a>
+   M <a href="http://src.chromium.org/viewvc/chrome/trunk/src/chrome/browser/views/frame/opaque_browser_frame_view.cc?r1=11355&amp;r2=11354">http://src.chromium.org/viewvc/chrome/trunk/src/chrome/browser/views/frame/opaque_browser_frame_view.cc?r1=11355&amp;r2=11354</a>
+   M <a href="http://src.chromium.org/viewvc/chrome/trunk/src/chrome/common/win_util.cc?r1=11355&amp;r2=11354">http://src.chromium.org/viewvc/chrome/trunk/src/chrome/common/win_util.cc?r1=11355&amp;r2=11354</a>
+   M <a href="http://src.chromium.org/viewvc/chrome/trunk/src/chrome/common/win_util.h?r1=11355&amp;r2=11354">http://src.chromium.org/viewvc/chrome/trunk/src/chrome/common/win_util.h?r1=11355&amp;r2=11354</a>
+   M <a href="http://src.chromium.org/viewvc/chrome/trunk/src/chrome/views/window.cc?r1=11355&amp;r2=11354">http://src.chromium.org/viewvc/chrome/trunk/src/chrome/views/window.cc?r1=11355&amp;r2=11354</a>
+
+Make Chromium windows not hide auto-hide taskbars, take 2.
+
+This is very similar to <a href="/p/chromium/source/detail?r=10845">r10845</a>, but also includes a regression fix for <a title="Omnibox editable area floats after returning from a locked screen." class=closed_ref href="/p/chromium/issues/detail?id=8410"> issue 8410 </a>, where locking and unlocking the screen would cause mispositioning of child content.
+
+BUG=20,8410
+
+Review URL: <a href="http://codereview.chromium.org/42027">http://codereview.chromium.org/42027</a>
+------------------------------------------------------------------------
+
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c130"
+ href="#c130">130</a>
+ by
+ <a style="white-space: nowrap" href="/u/pkasting@chromium.org/">pkasting@chromium.org</a></span>,
+ <span class="date" title="Tue Mar 10 12:12:01 2009">Mar 10, 2009</span>
+ 
+<pre>
+Fixed (again) in <a href="/p/chromium/source/detail?r=11355">r11355</a>.
+</pre>
+ 
+ 
+ <div class="updates">
+ <div class="round4"></div>
+ <div class="round2"></div>
+ <div class="round1"></div>
+ <div class="box-inner">
+ <b>Status:</b> Fixed<br>
+ </div>
+ <div class="round1"></div>
+ <div class="round2"></div>
+ <div class="round4"></div>
+ </div>
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c131"
+ href="#c131">131</a>
+ by
+ <a style="white-space: nowrap" href="/u/bugdroid1@chromium.org/">bugdroid1@chromium.org</a></span>,
+ <span class="date" title="Tue Mar 10 20:12:57 2009">Mar 10, 2009</span>
+ 
+<pre>
+The following revision refers to this bug:
+    <a href="http://src.chromium.org/viewvc/chrome?view=rev&amp;revision=11416">http://src.chromium.org/viewvc/chrome?view=rev&amp;revision=11416</a> 
+
+------------------------------------------------------------------------
+<a href="/p/chromium/source/detail?r=11416">r11416</a> | mal@chromium.org | 2009-03-10 20:12:28 -0700 (Tue, 10 Mar 2009) | 11 lines
+Changed paths:
+   M <a href="http://src.chromium.org/viewvc/chrome/branches/169/src/chrome/browser/views/frame/browser_frame.cc?r1=11416&amp;r2=11415">http://src.chromium.org/viewvc/chrome/branches/169/src/chrome/browser/views/frame/browser_frame.cc?r1=11416&amp;r2=11415</a>
+   M <a href="http://src.chromium.org/viewvc/chrome/branches/169/src/chrome/browser/views/frame/browser_frame.h?r1=11416&amp;r2=11415">http://src.chromium.org/viewvc/chrome/branches/169/src/chrome/browser/views/frame/browser_frame.h?r1=11416&amp;r2=11415</a>
+   M <a href="http://src.chromium.org/viewvc/chrome/branches/169/src/chrome/browser/views/frame/glass_browser_frame_view.cc?r1=11416&amp;r2=11415">http://src.chromium.org/viewvc/chrome/branches/169/src/chrome/browser/views/frame/glass_browser_frame_view.cc?r1=11416&amp;r2=11415</a>
+   M <a href="http://src.chromium.org/viewvc/chrome/branches/169/src/chrome/browser/views/frame/glass_browser_frame_view.h?r1=11416&amp;r2=11415">http://src.chromium.org/viewvc/chrome/branches/169/src/chrome/browser/views/frame/glass_browser_frame_view.h?r1=11416&amp;r2=11415</a>
+   M <a href="http://src.chromium.org/viewvc/chrome/branches/169/src/chrome/browser/views/frame/opaque_browser_frame_view.cc?r1=11416&amp;r2=11415">http://src.chromium.org/viewvc/chrome/branches/169/src/chrome/browser/views/frame/opaque_browser_frame_view.cc?r1=11416&amp;r2=11415</a>
+   M <a href="http://src.chromium.org/viewvc/chrome/branches/169/src/chrome/common/win_util.cc?r1=11416&amp;r2=11415">http://src.chromium.org/viewvc/chrome/branches/169/src/chrome/common/win_util.cc?r1=11416&amp;r2=11415</a>
+   M <a href="http://src.chromium.org/viewvc/chrome/branches/169/src/chrome/common/win_util.h?r1=11416&amp;r2=11415">http://src.chromium.org/viewvc/chrome/branches/169/src/chrome/common/win_util.h?r1=11416&amp;r2=11415</a>
+   M <a href="http://src.chromium.org/viewvc/chrome/branches/169/src/chrome/views/window.cc?r1=11416&amp;r2=11415">http://src.chromium.org/viewvc/chrome/branches/169/src/chrome/views/window.cc?r1=11416&amp;r2=11415</a>
+
+Merge <a href="/p/chromium/source/detail?r=11355">r11355</a>
+
+Make Chromium windows not hide auto-hide taskbars, take 2.
+
+This is very similar to <a href="/p/chromium/source/detail?r=10845">r10845</a>, but also includes a regression fix for <a title="Omnibox editable area floats after returning from a locked screen." class=closed_ref href="/p/chromium/issues/detail?id=8410"> issue 8410 </a>, where locking and unlocking the screen would cause mispositioning of child content.
+
+Original Review URL: <a href="http://codereview.chromium.org/42027">http://codereview.chromium.org/42027</a>
+
+BUG=20,8410
+TBR= pkasting
+Review URL: <a href="http://codereview.chromium.org/43066">http://codereview.chromium.org/43066</a>
+------------------------------------------------------------------------
+
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c132"
+ href="#c132">132</a>
+ by
+ <a style="white-space: nowrap" href="/u/loyukfai/">loyukfai</a></span>,
+ <span class="date" title="Tue Mar 10 22:44:30 2009">Mar 10, 2009</span>
+ 
+<pre>
+Typing this on the latest trunk build, so far so good.
+
+Besides, the window is properly maximized after screen rotation as well. Hoorah!
+
+Thanks!
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c133"
+ href="#c133">133</a>
+ by
+ <a style="white-space: nowrap" href="/u/mdu@chromium.org/">mdu@chromium.org</a></span>,
+ <span class="date" title="Wed Mar 11 10:13:34 2009">Mar 11, 2009</span>
+ 
+<pre>
+Verified in build 2.0.170.0 (Developer Build 11440), works fine now.
+</pre>
+ 
+ 
+ <div class="updates">
+ <div class="round4"></div>
+ <div class="round2"></div>
+ <div class="round1"></div>
+ <div class="box-inner">
+ <b>Status:</b> Verified<br>
+ </div>
+ <div class="round1"></div>
+ <div class="round2"></div>
+ <div class="round4"></div>
+ </div>
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c134"
+ href="#c134">134</a>
+ by
+ <a style="white-space: nowrap" href="/u/loyukfai/">loyukfai</a></span>,
+ <span class="date" title="Thu Mar 12 23:13:18 2009">Mar 12, 2009</span>
+ 
+<pre>
+I ventured to the Dev channel again with this fix included in the latest build. There 
+is still a little unused space on the right when maximized, but much less than the 
+latest Stable build.
+
+Don't seem to notice unused space at the bottom, at least on this particular box.
+
+Good job. : )
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c135"
+ href="#c135">135</a>
+ by
+ <a style="white-space: nowrap" href="/u/stijnsanders/">stijnsanders</a></span>,
+ <span class="date" title="Fri Mar 13 01:27:38 2009">Mar 13, 2009</span>
+ 
+<pre>
+I've checked in winxpsp3 with the lastest from <a href="http://build.chromium.org/buildbot/snapshots/chromium-rel-xp/">http://build.chromium.org/buildbot/snapshots/chromium-rel-xp/</a> (is that correct?).
+I have the startbar on the left, with autohide, without stayontop, and now I get 
+'unused pixels' on the right, see attached.
+</pre>
+ 
+ <div class="attachments">
+ 
+ 
+ 
+
+
+
+
+ <table cellspacing="3" cellpadding="2" border="0">
+ <tr><td width="20">
+ <a href="http://chromium.googlecode.com/issues/attachment?aid=-7878550757254715124&amp;name=20090313chromiummax.PNG&amp;token=85710d1ef0a6014627e9bc01e41b22cd">
+ <img width="15" height="15" src="/hosting/images/paperclip.gif" border="0" >
+ </a>
+ </td>
+ <td style="min-width:16em" valign="top">
+ 
+ <b >20090313chromiummax.PNG</b>
+ <br>
+ 6.1 KB
+ 
+ 
+ &nbsp; <a href="http://chromium.googlecode.com/issues/attachment?aid=-7878550757254715124&amp;name=20090313chromiummax.PNG&amp;token=85710d1ef0a6014627e9bc01e41b22cd&amp;inline=1" target="_blank">View</a>
+ 
+ &nbsp; <a href="http://chromium.googlecode.com/issues/attachment?aid=-7878550757254715124&amp;name=20090313chromiummax.PNG&amp;token=85710d1ef0a6014627e9bc01e41b22cd">Download</a>
+ 
+ </td>
+ 
+ </tr>
+ 
+ 
+ <tr>
+ <td colspan="3">
+ <a href="http://chromium.googlecode.com/issues/attachment?aid=-7878550757254715124&amp;name=20090313chromiummax.PNG&amp;token=85710d1ef0a6014627e9bc01e41b22cd&amp;inline=1" target="_blank">
+ <img src="http://chromium.googlecode.com/issues/attachment?aid=-7878550757254715124&amp;name=20090313chromiummax.PNG&amp;token=85710d1ef0a6014627e9bc01e41b22cd&amp;inline=1&amp;thumb=1" class="preview">
+ </a>
+ </td>
+ </tr>
+ 
+ 
+ </table>
+
+
+ 
+ </div>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c136"
+ href="#c136">136</a>
+ by
+ <a style="white-space: nowrap" href="/u/pkasting@chromium.org/">pkasting@chromium.org</a></span>,
+ <span class="date" title="Fri Mar 13 09:32:53 2009">Mar 13, 2009</span>
+ 
+<pre>
+Autohide + no always-on-top will result in a single row of unpainted pixels on each 
+screen edge where an autohide bar exists.  This is about the best we can do right 
+now.
+
+I suggest using always-on-top, or not autohiding the taskbar :)
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c137"
+ href="#c137">137</a>
+ by
+ <a style="white-space: nowrap" href="/u/loyukfai/">loyukfai</a></span>,
+ <span class="date" title="Fri Mar 13 09:57:58 2009">Mar 13, 2009</span>
+ 
+<pre>
+Ooops... Upon reading Peter's comments, I looked at the right edge again, and there 
+isn't any unused space, but actually my always-on-top+auto-hide taskbar.
+
+Cheers and have a nice weekend.
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c138"
+ href="#c138">138</a>
+ by
+ <a style="white-space: nowrap" href="/u/stijnsanders/">stijnsanders</a></span>,
+ <span class="date" title="Fri Mar 13 15:56:34 2009">Mar 13, 2009</span>
+ 
+<pre>
+&quot;I suggest using always-on-top&quot;?! I suggest you learn about alt-tab. With the taskbar 
+not always-on-top, it would be nice to have Chrome maximized use all of the screen, 
+like any other application.
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c139"
+ href="#c139">139</a>
+ by
+ <a style="white-space: nowrap" href="/u/venkataramana@chromium.org/">venkataramana@chromium.org</a></span>,
+ <span class="date" title="Tue Mar 17 15:36:01 2009">Mar 17, 2009</span>
+ 
+<pre>
+as per the comment 55, this works fine in 2.0.170.0 (Official Build 11755).
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c140"
+ href="#c140">140</a>
+ by
+ <a style="white-space: nowrap" href="/u/jonathanparkeremail/">jonathanparkeremail</a></span>,
+ <span class="date" title="Sun Apr  5 23:37:39 2009">Apr 05, 2009</span>
+ 
+<pre>
+This is broken when using UltraMon to extend the taskbar to a second monitor. It works 
+fine with UltraMon on the primary monitor but not on the secondary monitor. I.E. If 
+Chrome is running on the first monitor everything works fine but if Chrome is running 
+on the second monitor then the extended taskbar won't show under any known conditions. 
+This is not the taskbar from the primary monitor but the extended taskbar which is 
+enabled by UltraMon.
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c141"
+ href="#c141">141</a>
+ by
+ <a style="white-space: nowrap" href="/u/jonathanparkeremail/">jonathanparkeremail</a></span>,
+ <span class="date" title="Sun Apr  5 23:39:06 2009">Apr 05, 2009</span>
+ 
+<pre>
+I forgot to mention that I'm running build 2.0.172.2 from the Dev channel.
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c142"
+ href="#c142">142</a>
+ by
+ <a style="white-space: nowrap" href="/u/stijnsanders/">stijnsanders</a></span>,
+ <span class="date" title="Fri Apr 10 01:08:49 2009">Apr 10, 2009</span>
+ 
+<pre>
+I've had a look at
+<a href="http://src.chromium.org/viewvc/chrome?view=rev&amp;revision=11416">http://src.chromium.org/viewvc/chrome?view=rev&amp;revision=11416</a>
+and I notice, in win_util.cc, bool EdgeHasAutoHideTaskbar is checking 
+IsWindow(taskbar).
+Shouldn't it check GetWindowLong(taskbar,GWL_STYLE)&amp;&amp;WS_EX_TOPMOST also?
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c143"
+ href="#c143">143</a>
+ by
+ <a style="white-space: nowrap" href="/u/jonathanparkeremail/">jonathanparkeremail</a></span>,
+ <span class="date" title="Fri Apr 10 05:54:54 2009">Apr 10, 2009</span>
+ 
+<pre>
+I don't know as I have no knowledge of win32 programming
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c144"
+ href="#c144">144</a>
+ by
+ <a style="white-space: nowrap" href="/u/pkasting@chromium.org/">pkasting@chromium.org</a></span>,
+ <span class="date" title="Fri Apr 10 09:30:20 2009">Apr 10, 2009</span>
+ 
+<pre>
+Filed that as <a title="Only worry about always-on-top autohide taskbars" class=closed_ref href="/p/chromium/issues/detail?id=9976"> issue 9976 </a>.
+
+Please don't comment more on this bug.  File followup bugs as needed.  The original 
+issue here is closed.
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c145"
+ href="#c145">145</a>
+ by
+ <a style="white-space: nowrap" href="/u/jordonwii/">jordonwii</a></span>,
+ <span class="date" title="Wed May  6 17:48:37 2009">May 06, 2009</span>
+ 
+<pre>
+I'm noticing this bug again on Windows 7 on 2.0.177.1
+Anyone else?
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c146"
+ href="#c146">146</a>
+ by
+ <a style="white-space: nowrap" href="/u/mario.volarevic/">mario.volarevic</a></span>,
+ <span class="date" title="Thu May  7 00:13:12 2009">May 07, 2009</span>
+ 
+<pre>
+Me too, on Vista Home Premium 2.0.177.1 but not always, and when it happens I go to 
+fullscreen and back again, and than it works ok for some time.
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c147"
+ href="#c147">147</a>
+ by
+ <a style="white-space: nowrap" href="/u/mikaheiska/">mikaheiska</a></span>,
+ <span class="date" title="Thu May  7 06:58:03 2009">May 07, 2009</span>
+ 
+<pre>
+Nope, still works for me in 32bit WinXP.
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c148"
+ href="#c148">148</a>
+ by
+ <a style="white-space: nowrap" href="/u/jordonwii/">jordonwii</a></span>,
+ <span class="date" title="Thu May  7 20:35:07 2009">May 07, 2009</span>
+ 
+<pre>
+Ya, it started working again for me.
+
+Musta been a Windows 7 bug...
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c149"
+ href="#c149">149</a>
+ by
+ <a style="white-space: nowrap" href="/u/cbruscato/">cbruscato</a></span>,
+ <span class="date" title="Thu May  7 20:48:45 2009">May 07, 2009</span>
+ 
+<pre>
+Just to kind of summarize for the less techie in the group what is going on here:
+
+Vista\7 are treating Chrome as if it is a Full Screen Application. They are doing
+this, because Chrome does not use a standard window, because of the way it is, we'll
+say &quot;Skinned.&quot; The way around this, is chrome can never take up 100% of your screen
+even when it is maximized, we have to somehow get the window to redraw based on 1-2px
+short of your max HeightxWidth. It is one of the drawbacks of not using the built in
+window management\title bar that Firefox\Safari use on Win Vista\7. You can verify
+this because Windows Messenger will set your status to &quot;Busy&quot; whenever Chrome is
+maximized, which indicates that you are running a full screen application; Similar to
+when you watch a flash video in full screen. What needs to be done is someone needs
+to sit down and really weigh with the Mac and Linux versions how the skinning should
+be applied, and whether it is worth re-working Chrome to support Native Windows Look
+and Feel, to offset these problems; or if we really want to live with a 1-2px hole in
+one side of the application so that we pay our price for having our Taskbar Hide.
+Just some food for thought; I hope this helped you to understand why this is a very
+important issue.
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c150"
+ href="#c150">150</a>
+ by
+ <a style="white-space: nowrap" href="/u/cbruscato/">cbruscato</a></span>,
+ <span class="date" title="Thu May  7 20:50:49 2009">May 07, 2009</span>
+ 
+<pre>
+I would like to add that I for one, do not dislike how Safari 4 got around this; and
+think that it supports tabs at the top in the best possible way; while maintaining
+the look and feel of the platform.
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c151"
+ href="#c151">151</a>
+ by
+ <a style="white-space: nowrap" href="/u/ra4king/">ra4king</a></span>,
+ <span class="date" title="Sat May  9 14:42:00 2009">May 09, 2009</span>
+ 
+<pre>
+same problem here. this bug and other issues made me hate google chrome and i don't 
+like that. please fix it!
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c152"
+ href="#c152">152</a>
+ by
+ <a style="white-space: nowrap" href="/u/jordonwii/">jordonwii</a></span>,
+ <span class="date" title="Sat May  9 16:42:58 2009">May 09, 2009</span>
+ 
+<pre>
+ra4king, what's the problem?
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c153"
+ href="#c153">153</a>
+ by
+ <a style="white-space: nowrap" href="/u/ra4king/">ra4king</a></span>,
+ <span class="date" title="Sat May  9 18:34:16 2009">May 09, 2009</span>
+ 
+<pre>
+plugins don't work, google desktop also doesn't want to show up, most online games
+don't work with Chrome are all problems i had and made me switch to Firefox. If
+Google Chrome could be as prominent as firefox and internet explorer are, i would use
+it forever but sadly no.
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c154"
+ href="#c154">154</a>
+ by
+ <a style="white-space: nowrap" href="/u/stijnsanders/">stijnsanders</a></span>,
+ <span class="date" title="Sun May 10 11:40:02 2009">May 10, 2009</span>
+ 
+<pre>
+in reply to comments 108 and 149: would it be an idea to set the window size to more 
+than the monitor resolution? I would have a go to set up a proof of concept but I'm 
+not able to for the moment. If this is able to trick windows to now have the 
+maximized-app-side-effects, it might be an issue on multiple monitor systems, but 
+perhaps that's easier to treat. (e.g. SetWindowRegion?)
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c155"
+ href="#c155">155</a>
+ by
+ <a style="white-space: nowrap" href="/u/whatrisktotake/">whatrisktotake</a></span>,
+ <span class="date" title="Sun May 17 06:17:49 2009">May 17, 2009</span>
+ 
+<pre>
+So has this issue been fixed or not - i'm having this problem sometimes. 
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c156"
+ href="#c156">156</a>
+ by
+ <a style="white-space: nowrap" href="/u/gunitgenius/">gunitgenius</a></span>,
+ <span class="date" title="Sun May 17 14:43:36 2009">May 17, 2009</span>
+ 
+<pre>
+149 makes a valid point, I can confirm vista does treat chrome as a full screen 
+application. But that doesn't change the fact that it needs to be fixed. Its really 
+annoying, scrolling down to the bottom just to see that nothing happens. It really does 
+need to be addressed.
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c157"
+ href="#c157">157</a>
+ by
+ <a style="white-space: nowrap" href="/u/Cairbre/">Cairbre</a></span>,
+ <span class="date" title="Mon May 18 10:04:50 2009">May 18, 2009</span>
+ 
+<pre>
+This issue just started up again for me a few days back. Seems to have happened on both 
+my XP box and Vista box at the same time.
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c158"
+ href="#c158">158</a>
+ by
+ <a style="white-space: nowrap" href="/u/gunitgenius/">gunitgenius</a></span>,
+ <span class="date" title="Mon May 18 12:13:58 2009">May 18, 2009</span>
+ 
+<pre>
+For a second I thought it was fixed, I could access my beloved hidden task bar, but it 
+turned out that it was just a one off. Back to &quot;full screen&quot; mode...
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c159"
+ href="#c159">159</a>
+ by
+ <a style="white-space: nowrap" href="/u/ra4king/">ra4king</a></span>,
+ <span class="date" title="Tue May 19 14:25:28 2009">May 19, 2009</span>
+ 
+<pre>
+i sadly cannot use Google Chrome even if this problem has been fixed. Not many of the
+plugins i use work with Google Chrome or even have a Google Chrome version.
+Oh Google, I will still love your Gmail, Picasa, and Google Docs (even though I
+prefer Microsoft Office Live Workspace, SORRY!!!).
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c160"
+ href="#c160">160</a>
+ by
+ <a style="white-space: nowrap" href="/u/gfxfr.fr/">gfxfr.fr</a></span>,
+ <span class="date" title="Thu May 21 15:42:35 2009">May 21, 2009</span>
+ 
+<pre>
+I just install new 2.0.172.28 and this very anoying problem has reapeared.
+I had no problem with 1.** version of chrome (but i remember having it with some 0.** 
+version)
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c161"
+ href="#c161">161</a>
+ by
+ <a style="white-space: nowrap" href="/u/loyukfai/">loyukfai</a></span>,
+ <span class="date" title="Fri May 22 19:19:12 2009">May 22, 2009</span>
+ 
+<pre>
+Confirm the issue's sporadic appearances on 2.0.172.30.
+
+It was fine with 2.0.173.something.
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c162"
+ href="#c162">162</a>
+ by
+ <a style="white-space: nowrap" href="/u/RRoberson71/">RRoberson71</a></span>,
+ <span class="date" title="Fri May 22 22:49:13 2009">May 22, 2009</span>
+ 
+<pre>
+Happens frequently on 2.0.181.1.  Not a deal breaker, but definitely a PITA.
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c163"
+ href="#c163">163</a>
+ by
+ <a style="white-space: nowrap" href="/u/ra4king/">ra4king</a></span>,
+ <span class="date" title="Sat May 23 05:43:25 2009">May 23, 2009</span>
+ 
+<pre>
+Guys, I confirm that Google Chrome works perfectly in Windows 7. The taksbar always 
+shows in full screen mode. It must be a problem with Vista then.
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c164"
+ href="#c164">164</a>
+ by
+ <a style="white-space: nowrap" href="/u/boorachetino/">boorachetino</a></span>,
+ <span class="date" title="Sat May 23 07:06:15 2009">May 23, 2009</span>
+ 
+<pre>
+Windows 7 build 7127 x64, Chrome 2.0.181.1, the issue appears randomly, i can't 
+reproduce the situation it does, but it does appear.
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c165"
+ href="#c165">165</a>
+ by
+ <a style="white-space: nowrap" href="/u/pkasting@chromium.org/">pkasting@chromium.org</a></span>,
+ <span class="date" title="Sat May 23 15:36:43 2009">May 23, 2009</span>
+ 
+<pre>
+One last post to everyone commenting on this.
+
+Sadly, Windows has numerous bugs relating to this issue, and problems like &quot;sometimes 
+it works but other times it hides taskbars until I minimize and restore&quot; are examples 
+of running into problems with Windows.  There isn't anything we can do about this.
+
+The main problem here (that caused this to happen every single time on every machine) 
+has been fixed as of the most recent versions of Chrome.  If you are not using 
+version 2.0.172.28 or higher, please force an immediate update check via Tools-&gt;About 
+Google Chrome.
+
+No further work is planned because there are no problems known that are fixable on 
+the Chrome side.
+
+And now, removing email addresses so I can stop getting spammed about this.
+</pre>
+ 
+ 
+ <div class="updates">
+ <div class="round4"></div>
+ <div class="round2"></div>
+ <div class="round1"></div>
+ <div class="box-inner">
+ <b>Owner:</b> ---<br><b>Cc:</b> -thatan...@google.com -anan...@chromium.org -de...@chromium.org -a...@chromium.org<br>
+ </div>
+ <div class="round1"></div>
+ <div class="round2"></div>
+ <div class="round4"></div>
+ </div>
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c166"
+ href="#c166">166</a>
+ by
+ <a style="white-space: nowrap" href="/u/loyukfai/">loyukfai</a></span>,
+ <span class="date" title="Mon May 25 08:32:10 2009">May 25, 2009</span>
+ 
+<pre>
+I'm not sure what's the exact cause, but after updating a bunches of software last 
+week, including a &quot;downgrade&quot; of Chrome from 2.0.173.x to 2.0.172.30. The problem re-
+appeared.
+
+Maybe the dev build is doing better, but I'm not ready to try that at this moment.
+
+Cheers.
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c167"
+ href="#c167">167</a>
+ by
+ <a style="white-space: nowrap" href="/u/nikkitobaires/">nikkitobaires</a></span>,
+ <span class="date" title="Mon May 25 11:50:36 2009">May 25, 2009</span>
+ 
+<pre>
+Using Windows vista and google chrome 2.0.181.1 in every channel i cannot use the 
+windows taskbar. i have to minimize chrome in order to use it.
+please, try to fix this, since it´s really annoying!
+cheers from Argentina.
+
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c168"
+ href="#c168">168</a>
+ by
+ <a style="white-space: nowrap" href="/u/gfxfr.fr/">gfxfr.fr</a></span>,
+ <span class="date" title="Tue May 26 14:35:28 2009">May 26, 2009</span>
+ 
+<pre>
+I'm a bit disapointed :/
+This bug has been fixed in previous release (1.**) with a workaround (maximized
+windows is a bit smaller than full screen).
+Why they don't fix it again in 2.* like they did before? It's really anoying :(.
+
+Strange behaviour than  saying &quot;it's windows fault, bye&quot;...
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c169"
+ href="#c169">169</a>
+ by
+ <a style="white-space: nowrap" href="/u/RRoberson71/">RRoberson71</a></span>,
+ <span class="date" title="Tue May 26 17:54:50 2009">May 26, 2009</span>
+ 
+<pre>
+It's a Windows problem, not Chrome?  Give me a break.  If that were true, then why is 
+Chrome the only browser or app that I use that has this problem?  Using Windows 7 RC, 
+btw.
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c170"
+ href="#c170">170</a>
+ by
+ <a style="white-space: nowrap" href="/u/jordonwii/">jordonwii</a></span>,
+ <span class="date" title="Tue May 26 18:03:38 2009">May 26, 2009</span>
+ 
+<pre>
+I'm going to guess, and say that the Windows issue comes with doing things the way 
+Chrome does them.  That's why few other apps have this issue.
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c171"
+ href="#c171">171</a>
+ by
+ <a style="white-space: nowrap" href="/u/jonathanparkeremail/">jonathanparkeremail</a></span>,
+ <span class="date" title="Tue May 26 18:05:57 2009">May 26, 2009</span>
+ 
+<pre>
+That's correct. Chrome is unique as it has no chrome. That's why it's called chrome.
+Quote from wikipedia ( <a href="http://en.wikipedia.org/wiki/Chromium_(software)">http://en.wikipedia.org/wiki/Chromium_(software)</a> ):
+
+&quot;The name is derived from the graphical user interface frame, or &quot;chrome&quot;, of web 
+browsers.&quot;
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c172"
+ href="#c172">172</a>
+ by
+ <a style="white-space: nowrap" href="/u/suhayb.mohammed/">suhayb.mohammed</a></span>,
+ <span class="date" title="Sat May 30 06:44:14 2009">May 30, 2009</span>
+ 
+<pre>
+Seems to occur when I do the following:
+
+Launch Chrome
+Minimize, then maximize
+Wait for the taskbar to auto-hide
+
+After that, taskbar won't show.
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c173"
+ href="#c173">173</a>
+ by
+ <a style="white-space: nowrap" href="/u/scatterkeir/">scatterkeir</a></span>,
+ <span class="date" title="Sat May 30 06:58:48 2009">May 30, 2009</span>
+ 
+<pre>
+#172 suhayb.mohammed, that's exactly what I've noticed happening on XP Pro SP3.
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c174"
+ href="#c174">174</a>
+ by
+ <a style="white-space: nowrap" href="/u/udvardym/">udvardym</a></span>,
+ <span class="date" title="Sun May 31 06:52:23 2009">May 31, 2009</span>
+ 
+<pre>
+#172-173 Same under win7. One thing that solves the problem is to enter and exit full 
+screen mode (press F11 twice). After that, the problem does not occur again. (not even 
+after minimizing-maximizing)
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c175"
+ href="#c175">175</a>
+ by
+ <a style="white-space: nowrap" href="/u/progame/">progame</a></span>,
+ <span class="date" title="Sun May 31 13:00:41 2009">May 31, 2009</span>
+ 
+<pre>
+this issue has no CC or owner entry
+so i suggest opening a new issue about it and link to it here
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c176"
+ href="#c176">176</a>
+ by
+ <a style="white-space: nowrap" href="/u/ra4king/">ra4king</a></span>,
+ <span class="date" title="Sun May 31 19:50:33 2009">May 31, 2009</span>
+ 
+<pre>
+this is weird, you guys say that it appears in Windows 7 RC but I have not had any
+problem with Google Chrome.
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c177"
+ href="#c177">177</a>
+ by
+ <a style="white-space: nowrap" href="/u/jimbgreen/">jimbgreen</a></span>,
+ <span class="date" title="Tue Jun  2 08:23:02 2009">Jun 02, 2009</span>
+ 
+<pre>
+This just started popping up on dev vers 3.0.182.3
+Annoying enough to have to switch my default browser back to firefox.  
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c178"
+ href="#c178">178</a>
+ by
+ <a style="white-space: nowrap" href="/u/jimbgreen/">jimbgreen</a></span>,
+ <span class="date" title="Tue Jun  2 08:24:32 2009">Jun 02, 2009</span>
+ 
+<pre>
+Sorry, forgot to include OS in comment 177, Using Windows 7 RC1.  Sorry bout that.
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c179"
+ href="#c179">179</a>
+ by
+ <a style="white-space: nowrap" href="/u/ra4king/">ra4king</a></span>,
+ <span class="date" title="Tue Jun  2 16:50:48 2009">Jun 02, 2009</span>
+ 
+<pre>
+jimbgreen, im also using Google Chrome version 3.0.182.3 on Developer channel and using 
+Windows 7 RC and I'm having no problem. I have never had a problem with Google Chrome 
+on any channel and all versions on Windows 7 RC.
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c180"
+ href="#c180">180</a>
+ by
+ <a style="white-space: nowrap" href="/u/browntyler15/">browntyler15</a></span>,
+ <span class="date" title="Wed Jun  3 17:02:24 2009">Jun 03, 2009</span>
+ 
+<pre>
+Confirmed on my machine running Windows Vista Business and Chrome v. 2.0.172.28
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c181"
+ href="#c181">181</a>
+ by
+ <a style="white-space: nowrap" href="/u/chrisk1590/">chrisk1590</a></span>,
+ <span class="date" title="Wed Jun  3 19:27:10 2009">Jun 03, 2009</span>
+ 
+<pre>
+Confirmed with Chromium 3.0.184.0 (17577)
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c182"
+ href="#c182">182</a>
+ by
+ <a style="white-space: nowrap" href="/u/ajais6uf/">ajais6uf</a></span>,
+ <span class="date" title="Tue Jun  9 20:29:42 2009">Jun 09, 2009</span>
+ 
+<pre>
+Chrome 2 did'nt hinder the autohide function of Levono X61 with Vista.  Chrome 3 the 
+problem appears.  Any solutions.
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c183"
+ href="#c183">183</a>
+ by
+ <a style="white-space: nowrap" href="/u/antsison/">antsison</a></span>,
+ <span class="date" title="Sun Jun 14 23:38:45 2009">Jun 14, 2009</span>
+ 
+<pre>
+Had to disable autohide... this bug is annoying and nobody can seem to fix it.  Seems 
+simple, but I guess not.  Back to using Firefox as my main browser, but would love to 
+get back to Chrome as my primary once again.
+
+Bug is still around even on the Beta version.  Taskbar seems to go behind/under Chrome 
+browser. :(
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c184"
+ href="#c184">184</a>
+ by
+ <a style="white-space: nowrap" href="/u/gunitgenius/">gunitgenius</a></span>,
+ <span class="date" title="Mon Jun 15 05:12:59 2009">Jun 15, 2009</span>
+ 
+<pre>
+The Full-Screen(F11) work-around seems to be the best way to temporarily fix the issue,  
+and pressing F11 twice is not too much of a chore.
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c185"
+ href="#c185">185</a>
+ by
+ <a style="white-space: nowrap" href="/u/ra4king/">ra4king</a></span>,
+ <span class="date" title="Mon Jun 15 07:34:01 2009">Jun 15, 2009</span>
+ 
+<pre>
+guys it works well windows 7. i have not experienced a problem yet with my taskbar.
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c186"
+ href="#c186">186</a>
+ by
+ <a style="white-space: nowrap" href="/u/antsison/">antsison</a></span>,
+ <span class="date" title="Mon Jun 15 08:26:02 2009">Jun 15, 2009</span>
+ 
+<pre>
+Pressing th F11 twice will do for now... just annoying when it was working perfectly 
+for months, then out of the blue it doesn't.  Hopefully an update will be in place and 
+have a real fix on this bug.
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c187"
+ href="#c187">187</a>
+ by
+ <a style="white-space: nowrap" href="/u/RRoberson71/">RRoberson71</a></span>,
+ <span class="date" title="Mon Jun 15 22:47:29 2009">Jun 15, 2009</span>
+ 
+<pre>
+Since the developers apparently don't give a damn about this issue, I devised a 
+workaround using a free app called Autohotkey.  Using said app, I created a script that 
+launches Chrome, then automatically presses F11 twice.  If anyone is interested in 
+this, let me know and I'll post the script and details on how to configure it.
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c188"
+ href="#c188">188</a>
+ by
+ <a style="white-space: nowrap" href="/u/stijnsanders/">stijnsanders</a></span>,
+ <span class="date" title="Mon Jun 15 23:17:27 2009">Jun 15, 2009</span>
+ 
+<pre>
+Hey, watch your mouth! It's an open source project, so we are all the developers!
+That said, I friendly urge you to have a look at &quot;view/window/window_win.cc&quot;
+At line 378 (in WindowWin::SetFullscreen) there's a SetWindowPos call that may be the 
+real cause that your workaround works.
+
+Also I must agree with the commenter there (&quot;Better-looking methods welcome.&quot;), I've 
+had better results using SetWindowPlacement instead of SetWindowPos.
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c189"
+ href="#c189">189</a>
+ by
+ <a style="white-space: nowrap" href="/u/ra4king/">ra4king</a></span>,
+ <span class="date" title="Mon Jun 15 23:45:24 2009">Jun 15, 2009</span>
+ 
+<pre>
+stijnsanders, where can i find line 378?
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c190"
+ href="#c190">190</a>
+ by
+ <a style="white-space: nowrap" href="/u/stijnsanders/">stijnsanders</a></span>,
+ <span class="date" title="Mon Jun 15 23:48:58 2009">Jun 15, 2009</span>
+ 
+<pre>
+here:
+<a href="http://www.google.com/codesearch/p?hl=en&amp;sa=N&amp;cd=8&amp;ct=rc#h0RrPvyPu-">http://www.google.com/codesearch/p?hl=en&amp;sa=N&amp;cd=8&amp;ct=rc#h0RrPvyPu-</a>
+c/views/window/window_win.cc&amp;q=setfullscreen%20package:%22src.chromium.org/svn/trunk%22
+
+or here:
+<a href="http://src.chromium.org/viewvc/chrome/trunk/src/views/window/window_win.cc?view=markup">http://src.chromium.org/viewvc/chrome/trunk/src/views/window/window_win.cc?view=markup</a>
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c191"
+ href="#c191">191</a>
+ by
+ <a style="white-space: nowrap" href="/u/HrabaHospitalityConsulting/">HrabaHospitalityConsulting</a></span>,
+ <span class="date" title="Wed Jun 17 18:40:14 2009">Jun 17, 2009</span>
+ 
+<pre>
+Confirmed bug on Chrome 2.0.172.31, running on Vista 32-bit home basic Svc Pak 1
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c192"
+ href="#c192">192</a>
+ by
+ <a style="white-space: nowrap" href="/u/vikas.s.pandey/">vikas.s.pandey</a></span>,
+ <span class="date" title="Tue Jun 30 23:42:08 2009">Jun 30, 2009</span>
+ 
+<pre>
+Same problem here. Works fine with other browsers Firefox and IE. Some times taskbar 
+get focus from chrome as well. If chrome is restored click out side on the task bar 
+than maximize chrome now taskbar takes focus from chrome.
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c193"
+ href="#c193">193</a>
+ by
+ <a style="white-space: nowrap" href="/u/HBarca/">HBarca</a></span>,
+ <span class="date" title="Sat Jul  4 14:17:48 2009">Jul 04, 2009</span>
+ 
+<pre>
+Same prob here, very irritating.
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c194"
+ href="#c194">194</a>
+ by
+ <a style="white-space: nowrap" href="/u/bmadson/">bmadson</a></span>,
+ <span class="date" title="Mon Jul  6 06:20:14 2009">Jul 06, 2009</span>
+ 
+<pre>
+Bug confirmed on HP Pavillion dv6500 running both Vista Home Premium SP1 &amp; Win7 RC, and 
+HP Mini 1000 running WinXP Home SP3 &amp; Win7 RC.  Very annoying problem, but F11 trick 
+seems to work in the meantime.  Hope it get's fixed soon.  It's the only real problem I 
+have with Chrome, and the only problem that occasionally makes me consider not using 
+it.
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c195"
+ href="#c195">195</a>
+ by
+ <a style="white-space: nowrap" href="/u/kethcart/">kethcart</a></span>,
+ <span class="date" title="Wed Jul  8 19:47:17 2009">Jul 08, 2009</span>
+ 
+<pre>
+Confirmed with Windows 7 RC
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c196"
+ href="#c196">196</a>
+ by
+ <a style="white-space: nowrap" href="/u/diekampfer/">diekampfer</a></span>,
+ <span class="date" title="Mon Jul 13 09:51:55 2009">Jul 13, 2009</span>
+ 
+<pre>
+Confirmed with Windows 7 RC as well
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c197"
+ href="#c197">197</a>
+ by
+ <a style="white-space: nowrap" href="/u/jordonwii/">jordonwii</a></span>,
+ <span class="date" title="Mon Jul 13 10:42:02 2009">Jul 13, 2009</span>
+ 
+<pre>
+People, can we stop confirming this bug?? We already know it is occurring on every 
+version of Windows.  We don't need 90 emails sent out to tell us that again.
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c198"
+ href="#c198">198</a>
+ by
+ <a style="white-space: nowrap" href="/u/tomba4/">tomba4</a></span>,
+ <span class="date" title="Mon Jul 13 11:52:12 2009">Jul 13, 2009</span>
+ 
+<pre>
+...and the Chromium team don't give a shit anyway, since they said it's not their 
+problem and unsubscribed months ago. But hey, it's nice to be a part of an exotic 
+subculture like this one.
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c199"
+ href="#c199">199</a>
+ by
+ <a style="white-space: nowrap" href="/u/jordonwii/">jordonwii</a></span>,
+ <span class="date" title="Mon Jul 13 11:56:25 2009">Jul 13, 2009</span>
+ 
+<pre>
+I'm not sure whether it's a matter of &quot;not giving a ****&quot;, or a matter of simply being 
+unable to solve, and they don't need to be bothered with hearing people say &quot;confirmed 
+on this OS&quot;.
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c200"
+ href="#c200">200</a>
+ by
+ <a style="white-space: nowrap" href="/u/tomba4/">tomba4</a></span>,
+ <span class="date" title="Mon Jul 13 12:22:23 2009">Jul 13, 2009</span>
+ 
+<pre>
+I think it's both actually, but what they did was basically giving us a finger and 
+going their own way. Not very nice, especially since Chrome is like the only 
+application in the Universe that has that problem [*]. And new confirmations only show 
+that even on new systems the browser behaves badly.
+
+[*] Ok, not really, but there's exception to every rule.
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c201"
+ href="#c201">201</a>
+ by
+ <a style="white-space: nowrap" href="/u/stijnsanders/">stijnsanders</a></span>,
+ <span class="date" title="Mon Jul 13 12:29:24 2009">Jul 13, 2009</span>
+ 
+<pre>
+I guess what this &quot;exotic sub-culture&quot; needs is someone that digs into the source-code 
+and has a close look at any code that is involved in this issue. I had a go over at 
+comment 142, but I know only enough C to read and understand. I'm a novice at getting 
+the source to build and getting into something like a debugger-ide to get the fingers 
+dirty. (I've been doing Delphi most of my programmer-lifetime).
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c202"
+ href="#c202">202</a>
+ by
+ <a style="white-space: nowrap" href="/u/rawnnie/">rawnnie</a></span>,
+ <span class="date" title="Tue Jul 14 11:43:11 2009">Jul 14, 2009</span>
+ 
+<pre>
+I confirm it too. Using Chromium 3.x and the problem still happens on Windows 7. 
+Hitting F11 twice solves it, but its rather annoying. Someone please patch this, 
+thanks!
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c203"
+ href="#c203">203</a>
+ by
+ <a style="white-space: nowrap" href="/u/paulyf/">paulyf</a></span>,
+ <span class="date" title="Fri Jul 24 20:33:09 2009">Jul 24, 2009</span>
+ 
+<pre>
+Same problem in Windows 7 RC1 with Chrome 3.0.195.1 on a Dell Inspiron E1505.
+The problem is intermittent in Windows 7 RC on a custom Core 2 Quad build. The task bar 
+auto hides normally at first, but after a few minutes of use the problem occurs.
+
+This is really the only problem that I have with Chrome. It's the only reason that I 
+haven't switched 100% to Chrome yet. I'm surprised and disappointed that Google is so 
+slow in fixing this problem. Google, please get this problem fixed!
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c204"
+ href="#c204">204</a>
+ by
+ <a style="white-space: nowrap" href="/u/alex.angelico/">alex.angelico</a></span>,
+ <span class="date" title="Sun Aug  2 10:38:31 2009">Aug 02, 2009</span>
+ 
+<pre>
+Confirming issue in Windows 7 RC1 running Chrome 2.0.172.39 on an Inspiron 1720. 
+Presents consistently.
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c205"
+ href="#c205">205</a>
+ by
+ <a style="white-space: nowrap" href="/u/adshiel/">adshiel</a></span>,
+ <span class="date" title="Fri Aug 14 00:26:54 2009">Aug 14, 2009</span>
+ 
+<pre>
+Started using Chrome a little bit more but have to stop using as it is really bugging 
+me this has not been fixed.  I downloaded chrome the day it came out and the problem 
+was there then.  some sensible reason its not been fixed or is just to annoy windows 
+users?
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c206"
+ href="#c206">206</a>
+ by
+ <a style="white-space: nowrap" href="/u/tomba4/">tomba4</a></span>,
+ <span class="date" title="Fri Aug 14 00:41:35 2009">Aug 14, 2009</span>
+ 
+<pre>
+Probably the cost of hunting this down is too high and not many people use autohide 
+anyway (IMO). I don't know how it looks like in beta/dev channels, but in stable you 
+can live with this bug, especially since the workaround (2xF11) works.
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c207"
+ href="#c207">207</a>
+ by
+ <a style="white-space: nowrap" href="/u/glowhand/">glowhand</a></span>,
+ <span class="date" title="Fri Aug 21 12:21:24 2009">Aug 21, 2009</span>
+ 
+<pre>
+Confirmed. Bug exists in Windows 7, too.
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c208"
+ href="#c208">208</a>
+ by
+ <a style="white-space: nowrap" href="/u/HrabaHospitalityConsulting/">HrabaHospitalityConsulting</a></span>,
+ <span class="date" title="Fri Aug 21 15:27:39 2009">Aug 21, 2009</span>
+ 
+<pre>
+Is it okay to suggest that Chrome is an awful browser?  I would say 3/4 of the time
+tabs don't load.  Why?  What am I doing wrong?  I need the autohide taskbar thing
+fixed so I can easily start another browser when I get sick of Chrome.
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c209"
+ href="#c209">209</a>
+ by
+ <a style="white-space: nowrap" href="/u/ins0mniaque/">ins0mniaque</a></span>,
+ <span class="date" title="Fri Aug 28 10:11:43 2009">Aug 28, 2009</span>
+ 
+<pre>
+I found another way to easily reproduce the problem. It seems to happen when the 
+window gets restored to maximized from minimized without being the active window.
+
+Having your taskbar already on auto-hide, simply press &quot;Win-M&quot; (Minimize All), then 
+&quot;Win-Shift-M&quot; (Restore all). Chrome is now over the taskbar.
+
+I also use a program called Switcher (<a href="http://insentient.net/">http://insentient.net/</a>) which uses Aero to 
+implement a simili Exposé (from OS X). When I bring up Chrome from its minimized 
+state using Switcher, it also triggers the bug.
+
+On my 1280x800 screen, maximized Chrome has a window rect of (-8, -8)-(1288,808), 
+whether the bug occurs or not. A &quot;not over the taskbar&quot; window will have a client 
+rect of (8, 0)-(1288,806). When the bug occurs, the client rect is bumped to (8, 0)-
+(1288,808). (2 more pixels vertically).
+
+HTH,
+
+JP
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c210"
+ href="#c210">210</a>
+ by
+ <a style="white-space: nowrap" href="/u/antsison/">antsison</a></span>,
+ <span class="date" title="Sun Aug 30 11:44:43 2009">Aug 30, 2009</span>
+ 
+<pre>
+I reported the same problem... I had this program called Object Dock by Stardock which 
+pops up whenever I mouse over it's location. (In this case I placed it on the top 
+part).  For some reason it would interfere with Chrome.  I just placed the Object Dock 
+to the bottom of the screen, and now it works perfectly like before.
+
+The odd thing is, I have had this program before with Chrome and never ran into 
+problems.  
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c211"
+ href="#c211">211</a>
+ by
+ <a style="white-space: nowrap" href="/u/juhpetersen/">juhpetersen</a></span>,
+ <span class="date" title="Tue Sep  1 07:47:18 2009">Sep 01, 2009</span>
+ 
+<pre>
+Should this be marked windows specific?
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c212"
+ href="#c212">212</a>
+ by
+ <a style="white-space: nowrap" href="/u/nbigaouette/">nbigaouette</a></span>,
+ <span class="date" title="Tue Sep  1 07:57:34 2009">Sep 01, 2009</span>
+ 
+<pre>
+I have this issue in Linux (KDE 4.3.0) too.
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c213"
+ href="#c213">213</a>
+ by
+ <a style="white-space: nowrap" href="/u/jordonwii/">jordonwii</a></span>,
+ <span class="date" title="Tue Sep  1 12:07:56 2009">Sep 01, 2009</span>
+ 
+<pre>
+KDE 4.2.4 on Mandriva works fine for me.
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c214"
+ href="#c214">214</a>
+ by
+ <a style="white-space: nowrap" href="/u/songrit/">songrit</a></span>,
+ <span class="date" title="Sat Sep  5 18:28:54 2009">Sep 05, 2009</span>
+ 
+<pre>
+confirm this issue on Chrome 4.0.206.1 Windows 7
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c215"
+ href="#c215">215</a>
+ by
+ <a style="white-space: nowrap" href="/u/thekrimsonchin/">thekrimsonchin</a></span>,
+ <span class="date" title="Mon Sep 14 07:31:31 2009">Sep 14, 2009</span>
+ 
+<pre>
+I'm sorry if this is the wrong place, but I am finding another problem being caused by 
+the same thing in Chrome. I gave up on Autohiding my taskbar, but when I've got Chrome 
+open and the active window my screen never turns off, even though my power settings say 
+to turn off the monitor after 5 minutes. If another application is in the foreground 
+then the screen turns off fine. I assume that Windows is detecting Chrome as a full 
+screen application and preventing the screen from turning off (like when watching a 
+video). This is a really big problem...
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c216"
+ href="#c216">216</a>
+ by
+ <a style="white-space: nowrap" href="/u/cvdnthillart/">cvdnthillart</a></span>,
+ <span class="date" title="Sat Sep 19 00:28:21 2009">Sep 19, 2009</span>
+ 
+<pre>
+I have the same issue. Had it under Vista with Chrome 2.x and now have it Win7 with 
+Chrome 3.x. With Win7 the behaviour is more erratic. But after a while Chrome &quot;takes 
+over&quot; even blocking out other windows like MSN.
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c217"
+ href="#c217">217</a>
+ by
+ <a style="white-space: nowrap" href="/u/Stutes/">Stutes</a></span>,
+ <span class="date" title="Mon Oct 19 02:37:57 2009">Oct 19, 2009</span>
+ 
+<pre>
+I'm having a similar issue running Chrome 4.0.222.12 on Win 7 RTM.
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c218"
+ href="#c218">218</a>
+ by
+ <a style="white-space: nowrap" href="/u/milos.djuracka/">milos.djuracka</a></span>,
+ <span class="date" title="Fri Oct 23 03:50:41 2009">Oct 23, 2009</span>
+ 
+<pre>
+vista SP2 64 + chrome 3.0.195.27 issue confirmed
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c219"
+ href="#c219">219</a>
+ by
+ <a style="white-space: nowrap" href="/u/calador/">calador</a></span>,
+ <span class="date" title="Sat Oct 31 18:31:50 2009">Oct 31, 2009</span>
+ 
+<pre>
+Same issue in Windows 7 Professional, Chrome 3.0.195.27.
+
+The F11 twice trick works, but would prefer not resorting to that.
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c220"
+ href="#c220">220</a>
+ by
+ <a style="white-space: nowrap" href="/u/michael.reynolds/">michael.reynolds</a></span>,
+ <span class="date" title="Sun Nov  8 15:01:49 2009">Nov 08, 2009</span>
+ 
+<pre>
+This issue was incorrectly closed in March, as the issue is still not fixed. The 
+problem is not Windows. Otherwise, millions of other applications would exhibit the 
+same problem. A year later, and it is not fixed in any version of Chrome.
+
+Please verify bugs are actually fixed before marking them as such.
+
+Suggested fix for the users, since the developers are explicitly ignoring this issue 
+(Comment #165, &quot;And now, removing email addresses so I can stop getting spammed about 
+this&quot;): Uninstall Chrome and use any number of the other well developed browsers 
+whose developers actually listen to bug reports.
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c221"
+ href="#c221">221</a>
+ by
+ <a style="white-space: nowrap" href="/u/lawson.av/">lawson.av</a></span>,
+ <span class="date" title="Fri Nov 13 10:53:43 2009">Nov 13, 2009</span>
+ 
+<pre>
+Please fix this, I'm about to stop using Chrome as a result PURELY arising from this 
+issue.
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c222"
+ href="#c222">222</a>
+ by
+ <a style="white-space: nowrap" href="/u/nowinskp/">nowinskp</a></span>,
+ <span class="date" title="Sat Nov 14 05:33:51 2009">Nov 14, 2009</span>
+ 
+<pre>
+Confirmed issue in Windows 7 Ultimate, Chrome 4.0.245.0. This is absolutely annoying.
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c223"
+ href="#c223">223</a>
+ by
+ <a style="white-space: nowrap" href="/u/joelkreisel/">joelkreisel</a></span>,
+ <span class="date" title="Tue Nov 17 17:52:30 2009">Nov 17, 2009</span>
+ 
+<pre>
+This can be worked around by setting the Start bar to Always On Top *after* you start 
+Chrome. It's annoying, but it works.
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c224"
+ href="#c224">224</a>
+ by
+ <a style="white-space: nowrap" href="/u/semineo/">semineo</a></span>,
+ <span class="date" title="Sat Nov 21 12:43:23 2009">Nov 21, 2009</span>
+ 
+<pre>
+im having the same problem on a windows 7 netbook.  i need all the screen space i can 
+get and this is really annoying.  
+
+I have just searched on the issue and came here - it seems to have been going on an 
+awful long time... ?
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c225"
+ href="#c225">225</a>
+ by
+ <a style="white-space: nowrap" href="/u/loyukfai/">loyukfai</a></span>,
+ <span class="date" title="Tue Nov 24 20:54:01 2009">Nov 24, 2009</span>
+ 
+<pre>
+See comment #165 and #220.
+
+I'm still seeing the same problem. Maybe we should file a separate bug since the devs 
+have all bug gone on this one...?
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c226"
+ href="#c226">226</a>
+ by
+ <a style="white-space: nowrap" href="/u/oscar.loui/">oscar.loui</a></span>,
+ <span class="date" title="Fri Dec  4 17:36:17 2009">Dec 04, 2009</span>
+ 
+<pre>
+Confirmed, issue still exists with Windows 7 and latest Chrome build (3.0.195.33).  :(
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c227"
+ href="#c227">227</a>
+ by
+ <a style="white-space: nowrap" href="/u/pasang/">pasang</a></span>,
+ <span class="date" title="Fri Dec  4 21:23:07 2009">Dec 04, 2009</span>
+ 
+<pre>
+Confirmed on MSI Wind U100 running Windows 7 Ultimate.
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c228"
+ href="#c228">228</a>
+ by
+ <a style="white-space: nowrap" href="/u/loyukfai/">loyukfai</a></span>,
+ <span class="date" title="Sat Dec  5 10:00:52 2009">Dec 05, 2009</span>
+ 
+<pre>
+For those still seeing this issue, you may like to check out <a title="Chrome windows hide autohide taskbars when using UltraMon"  href="/p/chromium/issues/detail?id=9899">issue 9899</a>, <a title="Unable to view hidden Windows Vista Taskbar"  href="/p/chromium/issues/detail?id=12106">issue 12106</a>, 
+<a title="Maximized Mode on Win7 prevents access to taskbar if taskbar is autohide" class=closed_ref href="/p/chromium/issues/detail?id=28042"> issue 28042 </a>, and star it/them as needed.
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c229"
+ href="#c229">229</a>
+ by
+ <a style="white-space: nowrap" href="/u/ra4king/">ra4king</a></span>,
+ <span class="date" title="Sun Dec 20 13:06:30 2009">Dec 20, 2009</span>
+ 
+<pre>
+I think I may have found a solution. Try installing a theme from 
+<a href="https://tools.google.com/chrome/intl/en/themes/index.html">https://tools.google.com/chrome/intl/en/themes/index.html</a>
+
+I found out that themes stop the taskbar from hiding. When I uninstalled the theme. The 
+taskbar hid after minimizing and maximizing the window. When I install it, I never see 
+the problem.
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c230"
+ href="#c230">230</a>
+ by
+ <a style="white-space: nowrap" href="/u/NoelHibbard/">NoelHibbard</a></span>,
+ <span class="date" title="Thu Jan  7 09:02:28 2010">Jan 07, 2010</span>
+ 
+<pre>
+Thanks ra4king, I just applied a theme (grayscale) and I have done about 1.5 hours of 
+browsing without Chrome jumping ontop of my taskbar. I have been running multiple 
+windows with multiple tabs and have minimized and swapped tasks through out the session 
+and it is working perfect. BTW, I am running Chromium 35703 on Win7 x86 with Aero 
+enabled.
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c231"
+ href="#c231">231</a>
+ by
+ <a style="white-space: nowrap" href="/u/eugene.zar/">eugene.zar</a></span>,
+ <span class="date" title="Thu Jan  7 14:47:15 2010">Jan 07, 2010</span>
+ 
+<pre>
+Still an issue on Windows 7 as of 3.0.195.38. Sigh.
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c232"
+ href="#c232">232</a>
+ by
+ <a style="white-space: nowrap" href="/u/kris.olhovsky/">kris.olhovsky</a></span>,
+ <span class="date" title="Tue Jan 19 09:27:47 2010">Jan 19, 2010</span>
+ 
+<pre>
+Still an issue on Windows 7, both in regular and beta channel chrome builds.
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c233"
+ href="#c233">233</a>
+ by
+ <a style="white-space: nowrap" href="/u/kris.olhovsky/">kris.olhovsky</a></span>,
+ <span class="date" title="Fri Jan 22 06:38:57 2010">Jan 22, 2010</span>
+ 
+<pre>
+This is actually only an issue in Windows 7 if you place the taskbar on the left of the 
+screen, with auto-hide enabled. (This is my preferred position on a netbook.)
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c234"
+ href="#c234">234</a>
+ by
+ <a style="white-space: nowrap" href="/u/fwd079/">fwd079</a></span>,
+ <span class="date" title="Thu Jan 28 03:12:19 2010">Jan 28, 2010</span>
+ 
+<pre>
+nope, its the issue ALL over the place, I wonder why google can't fix a SIMPLE issue 
+like this one? :-|
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c235"
+ href="#c235">235</a>
+ by
+ <a style="white-space: nowrap" href="/u/typingcat/">typingcat</a></span>,
+ <span class="date" title="Sat Jan 30 06:48:30 2010">Jan 30, 2010</span>
+ 
+<pre>
+Please fix this, Google!
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c236"
+ href="#c236">236</a>
+ by
+ <a style="white-space: nowrap" href="/u/dvfincher/">dvfincher</a></span>,
+ <span class="date" title="Sat Jan 30 09:14:56 2010">Jan 30, 2010</span>
+ 
+<pre>
+This continues in Windows 7 and dramatically affects Chrome usability on my netbook.
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c237"
+ href="#c237">237</a>
+ by
+ <a style="white-space: nowrap" href="/u/penguinsfly777/">penguinsfly777</a></span>,
+ <span class="date" title="Wed Feb  3 20:45:25 2010">Feb 03, 2010</span>
+ 
+<pre>
+Please fix this
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c238"
+ href="#c238">238</a>
+ by
+ <a style="white-space: nowrap" href="/u/wookinphong/">wookinphong</a></span>,
+ <span class="date" title="Fri Feb  5 06:24:50 2010">Feb 05, 2010</span>
+ 
+<pre>
+to solve the autohide issue, you just need to install a theme on your chrome. That'll 
+fix it!
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c239"
+ href="#c239">239</a>
+ by
+ <a style="white-space: nowrap" href="/u/stormywhiteraven/">stormywhiteraven</a></span>,
+ <span class="date" title="Sun Feb  7 22:28:42 2010">Feb 07, 2010</span>
+ 
+<pre>
+Tried installing a thme on chrome.  Issue did not resolve itself...still having 
+problems.
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c240"
+ href="#c240">240</a>
+ by
+ <a style="white-space: nowrap" href="/u/cagatayyuksel/">cagatayyuksel</a></span>,
+ <span class="date" title="Mon Feb  8 16:16:53 2010">Feb 08, 2010</span>
+ 
+<pre>
+BUG FOR AGES.
+i have switched back the latest pre-alpha release of Opera because of this annoyance 
+and you know what? Same bug there! I think it could be about the tabs-on-titlebar UI 
+which Opera 10.50 adopted from Chrome.
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c241"
+ href="#c241">241</a>
+ by
+ <a style="white-space: nowrap" href="/u/tristancsmith/">tristancsmith</a></span>,
+ <span class="date" title="Mon Feb  8 21:43:42 2010">Feb 08, 2010</span>
+ 
+<pre>
+Tried latest dev channel version (5.0.317.2 dev).  Still has the issue.
+
+Tested it with and without themes.  No change.
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c242"
+ href="#c242">242</a>
+ by
+ <a style="white-space: nowrap" href="/u/redbeardmcgee/">redbeardmcgee</a></span>,
+ <span class="date" title="Fri Feb 12 09:48:58 2010">Feb 12, 2010</span>
+ 
+<pre>
+Windows 7 Ultimate 64-bit.  Same issue but I didn't notice it until using a laptop 
+where you have to autohide the taskbar to achieve somewhat adequate screen space.  I 
+can't beleive that Google hasn't fixed this in the over 500 days that have passed since 
+beta.
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c243"
+ href="#c243">243</a>
+ by
+ <a style="white-space: nowrap" href="/u/romainnavarro2/">romainnavarro2</a></span>,
+ <span class="date" title="Fri Feb 12 13:02:55 2010">Feb 12, 2010</span>
+ 
+<pre>
+try a theme without transparency in the title bar it solve it for me. (like Mac OS 
+theme it is the one I use).Effectively opera 10.5 beta have now the same issue
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c244"
+ href="#c244">244</a>
+ by
+ <a style="white-space: nowrap" href="/u/cappy.larou/">cappy.larou</a></span>,
+ <span class="date" title="Sun Feb 14 01:09:16 2010">Feb 14, 2010</span>
+ 
+<pre>
+yup, this is still a problem, and quite annoying.
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c245"
+ href="#c245">245</a>
+ by
+ <a style="white-space: nowrap" href="/u/cagatayyuksel/">cagatayyuksel</a></span>,
+ <span class="date" title="Sat Feb 20 13:13:05 2010">Feb 20, 2010</span>
+ 
+<pre>
+opera fixed this:
+<a href="http://my.opera.com/desktopteam/blog/2010/02/19/post-beta-fixes">http://my.opera.com/desktopteam/blog/2010/02/19/post-beta-fixes</a>
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c246"
+ href="#c246">246</a>
+ by
+ <a style="white-space: nowrap" href="/u/@UBBWRlxRARNMWAV%2FEg%3D%3D/">robinpel...@gmail.com</a></span>,
+ <span class="date" title="Sun Feb 21 06:17:50 2010">Feb 21, 2010</span>
+ 
+<pre>
+Alexander Kosenkov said in a discussion i saw....
+
+I think, I know the root cause. 
+Windows Taskbar (explorer.exe) has 'presentation mode'. For example, 
+if you run Full-screen PowePoint presentation, Taskbar will be hidden. 
+As far as I understand, Taskbar switches to that mode if some window 
+has width &amp; height of the screen and topleft position. 
+Possible soulutions (needs code changes): 
+1) Eaisest. Change windows size to 1 pixel less than the screen. This 
+will prevent Taskbar from going idle. 
+2) Right soultion. Find out how to tell Windows that our window is not 
+'fullscreen' but it is just maximized (pobably some Window attribute 
+should be set) 
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c247"
+ href="#c247">247</a>
+ by
+ <a style="white-space: nowrap" href="/u/@UBBWRlxRARNMWAV%2FEg%3D%3D/">robinpel...@gmail.com</a></span>,
+ <span class="date" title="Sun Feb 21 06:21:47 2010">Feb 21, 2010</span>
+ 
+<pre>
+<a href="http://stackoverflow.com/questions/137005/auto-hide-taskbar-not-appearing-when-my-">http://stackoverflow.com/questions/137005/auto-hide-taskbar-not-appearing-when-my-</a>
+application-is-maximized
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c248"
+ href="#c248">248</a>
+ by
+ <a style="white-space: nowrap" href="/u/hopeseekr/">hopeseekr</a></span>,
+ <span class="date" title="Mon Feb 22 05:10:31 2010">Feb 22, 2010</span>
+ 
+<pre>
+My problem is that Winamp will disappear.
+
+To replicate:
+ 1. Open Winamp and set in Always on Top mode,
+ 2. Maximize Chromium,
+
+Winamp will disappear behind Chromium.  Only happens when Chromium is maximized.
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c249"
+ href="#c249">249</a>
+ by
+ <a style="white-space: nowrap" href="/u/a.tzincoca/">a.tzincoca</a></span>,
+ <span class="date" title="Wed Feb 24 01:30:37 2010">Feb 24, 2010</span>
+ 
+<pre>
+This is even worse with a Tablet PC, please fix this Google.
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c250"
+ href="#c250">250</a>
+ by
+ <a style="white-space: nowrap" href="/u/charlieli2008/">charlieli2008</a></span>,
+ <span class="date" title="Wed Feb 24 04:20:47 2010">Feb 24, 2010</span>
+ 
+<pre>
+I use Windows 7. Same problem I can't get my taskbar appear when I max Google Chrome 
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c251"
+ href="#c251">251</a>
+ by
+ <a style="white-space: nowrap" href="/u/groovy354/">groovy354</a></span>,
+ <span class="date" title="Mon Mar  1 09:58:01 2010">Mar 01, 2010</span>
+ 
+<pre>
+Same here, 32 bit Vista ultimate, taskbar on top, won't show if autohide is enabled. 
+When will they repair it, anyway? It can't be really hard
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c252"
+ href="#c252">252</a>
+ by
+ <a style="white-space: nowrap" href="/u/Support.ObscureMS/">Support.ObscureMS</a></span>,
+ <span class="date" title="Sun Mar  7 19:00:55 2010">Mar 07, 2010</span>
+ 
+<pre>
+Confirmed on HP Vista 64bit ultimate edition.
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c253"
+ href="#c253">253</a>
+ by
+ <a style="white-space: nowrap" href="/u/fahmimustafa/">fahmimustafa</a></span>,
+ <span class="date" title="Wed Mar 10 19:01:11 2010">Mar 10, 2010</span>
+ 
+<pre>
+Confirm in window 7
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c254"
+ href="#c254">254</a>
+ by
+ <a style="white-space: nowrap" href="/u/fahmimustafa/">fahmimustafa</a></span>,
+ <span class="date" title="Wed Mar 10 19:09:07 2010">Mar 10, 2010</span>
+ 
+<pre>
+Confirm in window 7
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c255"
+ href="#c255">255</a>
+ by
+ <a style="white-space: nowrap" href="/u/josepem81/">josepem81</a></span>,
+ <span class="date" title="Thu Mar 11 01:35:32 2010">Mar 11, 2010</span>
+ 
+<pre>
+Same problem Windows 7 x64, it's really annoying :(
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c256"
+ href="#c256">256</a>
+ by
+ <a style="white-space: nowrap" href="/u/SBielat/">SBielat</a></span>,
+ <span class="date" title="Sun Mar 14 20:41:00 2010">Mar 14, 2010</span>
+ 
+<pre>
+wtf google, fix this already! win7 home premium x64, chrome 4.0.249.89 (38071)
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c257"
+ href="#c257">257</a>
+ by
+ <a style="white-space: nowrap" href="/u/david.svana/">david.svana</a></span>,
+ <span class="date" title="Wed Mar 24 17:12:21 2010">Mar 24, 2010</span>
+ 
+<pre>
+Same problem, still!! Why on earth hasn't this prevalent problem been fixed?
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c258"
+ href="#c258">258</a>
+ by
+ <a style="white-space: nowrap" href="/u/Arthur.Bogard/">Arthur.Bogard</a></span>,
+ <span class="date" title="Fri Mar 26 17:07:46 2010">Mar 26, 2010</span>
+ 
+<pre>
+Another confirm with Win7 Pro x64.  D/Led Chrome 1hr ago.
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c259"
+ href="#c259">259</a>
+ by
+ <a style="white-space: nowrap" href="/u/Jaykob86/">Jaykob86</a></span>,
+ <span class="date" title="Sat Mar 27 05:05:06 2010">Mar 27, 2010</span>
+ 
+<pre>
+Same problem, win7 pro x64, chrome 5.0.360.0 dev, this problem is really really 
+annoying. Please, try to fix it in close future... thanks
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c260"
+ href="#c260">260</a>
+ by
+ <a style="white-space: nowrap" href="/u/paulbee/">paulbee</a></span>,
+ <span class="date" title="Sun Mar 28 08:54:43 2010">Mar 28, 2010</span>
+ 
+<pre>
+Confirmed with Win7 Home Premium x64.  Chrome 4.1.249.1042 (42199).  I echo what a 
+previous user says; this is super-frustrating with a tablet, when there's not even a 
+Windows key to fall back on.
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c261"
+ href="#c261">261</a>
+ by
+ <a style="white-space: nowrap" href="/u/Lloyd.Banwart/">Lloyd.Banwart</a></span>,
+ <span class="date" title="Sun Mar 28 19:14:34 2010">Mar 28, 2010</span>
+ 
+<pre>
+Confirmed w/ a toshiba satellite on Windows 7 Pro
+
+Nearly 1.5 years on and still no solution to the problem. Come on Google. 
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c262"
+ href="#c262">262</a>
+ by
+ <a style="white-space: nowrap" href="/u/NoelHibbard/">NoelHibbard</a></span>,
+ <span class="date" title="Wed Mar 31 06:31:00 2010">Mar 31, 2010</span>
+ 
+<pre>
+I can't believe this problem still exists. Running a theme seamed to help but even that 
+doesn't seam to help anymore. For those on netbook without a windows key, you can hit 
+Ctrl+Esc to bring up the start menu.
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c263"
+ href="#c263">263</a>
+ by
+ <a style="white-space: nowrap" href="/u/dan.hubers/">dan.hubers</a></span>,
+ <span class="date" title="Wed Mar 31 11:49:30 2010">Mar 31, 2010</span>
+ 
+<pre>
+Seriously...1 and a half years.  Love chrome but this is really annoying!
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c264"
+ href="#c264">264</a>
+ by
+ <a style="white-space: nowrap" href="/u/bnosach/">bnosach</a></span>,
+ <span class="date" title="Wed Mar 31 13:51:45 2010">Mar 31, 2010</span>
+ 
+<pre>
+Confirmed on Lenovo, Win7 Ultimate 32-bit. This issue drives me nuts and even though 
+developers know that this is a legit concern (look at the number of comments here, for 
+example), they've not done anything to address it yet.
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c265"
+ href="#c265">265</a>
+ by
+ <a style="white-space: nowrap" href="/u/ermax18/">ermax18</a></span>,
+ <span class="date" title="Fri Apr  2 07:44:18 2010">Apr 02, 2010</span>
+ 
+<pre>
+F11, F11 works well.. I just wish I didn't have to do this 300 times a day. :)
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c266"
+ href="#c266">266</a>
+ by
+ <a style="white-space: nowrap" href="/u/CoreyADavis/">CoreyADavis</a></span>,
+ <span class="date" title="Sun Apr  4 13:23:02 2010">Apr 04, 2010</span>
+ 
+<pre>
+just installed chrome on 7 Home Premium and its doing the same thing for me, have to 
+either minimize chrome or hit the start button to get to the auto hid taskbar.  such a 
+pain in the butt.  but chrome is still running better than firefox did so i'm not 
+fussing to bad.
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c267"
+ href="#c267">267</a>
+ by
+ <a style="white-space: nowrap" href="/u/starside/">starside</a></span>,
+ <span class="date" title="Wed Apr  7 10:15:24 2010">Apr 07, 2010</span>
+ 
+<pre>
+Yep yep, still going on. This is why I stopped using chrome a while ago. Hitting F11 
+twice is a temporary fix, but I really can't believe google knew about this bug all 
+this time and *still* cannot fix things. This does not happen with any of my other 
+browsers (all the latest versions, of course).
+
+I'm very, very disappointed, especially considering the support team marked the issue 
+&quot;closed&quot; a year ago when it obviously was not.
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c268"
+ href="#c268">268</a>
+ by
+ <a style="white-space: nowrap" href="/u/rdehavenl/">rdehavenl</a></span>,
+ <span class="date" title="Wed Apr  7 14:23:23 2010">Apr 07, 2010</span>
+ 
+<pre>
+Just putting my vote in for PLEASE FIX...
+
+Just got a Netbook, and and Chrome is awesome for it... Auto-hide Win7 Taskbar is a 
+must.
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c269"
+ href="#c269">269</a>
+ by
+ <a style="white-space: nowrap" href="/u/mgags7/">mgags7</a></span>,
+ <span class="date" title="Sun Apr 11 10:22:26 2010">Apr 11, 2010</span>
+ 
+<pre>
+guys the desktop coral thing works great and takes 5 minutes....just go for that
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c270"
+ href="#c270">270</a>
+ by
+ <a style="white-space: nowrap" href="/u/tamalh/">tamalh</a></span>,
+ <span class="date" title="Tue Apr 13 15:56:43 2010">Apr 13, 2010</span>
+ 
+<pre>
+I am having similar problems. I really love the Chrome browser but I am accustomed to 
+auto-hide taskbar. Have been since Windows 95. I am currently using Vista. As reluctant 
+I am but this just might make me go back to Firefox. Please Google, fix this..quick!
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c271"
+ href="#c271">271</a>
+ by
+ <a style="white-space: nowrap" href="/u/@WRZSSlFSBBFEXwB1/">mrtra...@gmail.com</a></span>,
+ <span class="date" title="Fri Apr 16 11:46:34 2010">Apr 16, 2010</span>
+ 
+<pre>
+Confirming this issue. Vista Business 32bit Chrome 5.0.375.7 dev
+
+I didn't start noticing this issue until I installed a couple of plug-ins. I thought 
+that might have something to do with it until I came across this thread.
+
+Are there any plans to get this fixed soon?
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c272"
+ href="#c272">272</a>
+ by
+ <a style="white-space: nowrap" href="/u/MazurekStuff/">MazurekStuff</a></span>,
+ <span class="date" title="Sat Apr 17 20:55:47 2010">Apr 17, 2010</span>
+ 
+<pre>
+also having this problem...kind of annoying =)
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c273"
+ href="#c273">273</a>
+ by
+ <a style="white-space: nowrap" href="/u/djwillswift/">djwillswift</a></span>,
+ <span class="date" title="Sun Apr 18 00:24:27 2010">Apr 18, 2010</span>
+ 
+<pre>
+Comment #165, are you serious? Fixed as of version 2.something? I have version 
+4.1.249.1045 (42898) and it still constantly affects me. I would love to stay with 
+GC, but this is far too annoying. Maybe someday, when you grow up, you will be a real 
+developer, and you will take your product and it's users seriously. Until then, I'm 
+going back to FF. Sure, it may be more bloated and take twice as long to start up, 
+but at least the guys who develop FF don't think their browser is better and more 
+functional than the OS it's running on.
+
+Every other program plays nice with the Taskbar Autohide feature. Why can't you 
+comply with the MS standard? Even independent freeware developers seem to have no 
+trouble with this. It seems as though you think your programming is superior to that 
+of Microsoft, when clearly, it isn't. &quot;Rough around the edges&quot; would be a great 
+complement to your skills as a programmer, and even then, that's giving far more 
+credit than is due. Google HR needs to seriously reconsider their decision to employ 
+you, because you certainly aren't ready to roll with the big boys.
+
+This post is being written using Google Chrome, which is the last thing that I'm 
+going to do with it, other than uninstall it.
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c274"
+ href="#c274">274</a>
+ by
+ <a style="white-space: nowrap" href="/u/ermax18/">ermax18</a></span>,
+ <span class="date" title="Wed Apr 21 12:54:26 2010">Apr 21, 2010</span>
+ 
+<pre>
+I have been running 5.0.384.0 (45177) all day and so far so good.
+
+<a href="http://build.chromium.org/buildbot/continuous/LATEST/mini_installer.exe">http://build.chromium.org/buildbot/continuous/LATEST/mini_installer.exe</a>
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c275"
+ href="#c275">275</a>
+ by
+ <a style="white-space: nowrap" href="/u/appukuruvilla/">appukuruvilla</a></span>,
+ <span class="date" title="Fri Apr 23 21:00:53 2010">Apr 23, 2010</span>
+ 
+<pre>
+Anyone else think this issue is related to switching to presentation mode? I noticed I 
+only started having this problem after I gave a powerpoint presentation for class.
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c276"
+ href="#c276">276</a>
+ by
+ <a style="white-space: nowrap" href="/u/ermax18/">ermax18</a></span>,
+ <span class="date" title="Sun Apr 25 10:35:30 2010">Apr 25, 2010</span>
+ 
+<pre>
+Well I think it is safe to say this problem is fixed. For me anyways. I was having to 
+F11 F11 constantly up until build 45177. I have not had it mess up a single time since.
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c277"
+ href="#c277">277</a>
+ by
+ <a style="white-space: nowrap" href="/u/ermax18/">ermax18</a></span>,
+ <span class="date" title="Mon Apr 26 11:37:57 2010">Apr 26, 2010</span>
+ 
+<pre>
+I switched from Chromium back to Chrome Dev (5.0.375.17 (Official Build 45275) dev) and 
+the autohide problem is back. This is such a pain. There is this bug preventing me from 
+using Chrome and another bug preventing me from using Chromium. I wish they would merge 
+the autohide fix into the main build.
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c278"
+ href="#c278">278</a>
+ by
+ <a style="white-space: nowrap" href="/u/pkasting@chromium.org/">pkasting@chromium.org</a></span>,
+ <span class="date" title="Sun May  2 14:30:49 2010">May 02, 2010</span>
+ 
+<pre>
+We fixed another issue relating to autohide taskbars in <a href="/p/chromium/source/detail?r=44941">r44941</a>.  This is currently only 
+available in trunk builds, not in the Dev channel releases.  I will make sure this fix 
+gets merged to Chrome 5.  In the meantime, if you try a trunk (not Dev) build after 
+44941, please note whether your problems have been fixed or still persist.
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c279"
+ href="#c279">279</a>
+ by
+ <a style="white-space: nowrap" href="/u/pkasting@chromium.org/">pkasting@chromium.org</a></span>,
+ <span class="date" title="Mon May  3 12:42:58 2010">May 03, 2010</span>
+ 
+<pre>
+Update: This has now been merged onto the Chrome 5 branch.  It will not be in the next 
+beta channel release, but it will be in the final version of Chrome 5.
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c280"
+ href="#c280">280</a>
+ by
+ <a style="white-space: nowrap" href="/u/LazerFX/">LazerFX</a></span>,
+ <span class="date" title="Wed May 19 06:14:19 2010">May 19, 2010</span>
+ 
+<pre>
+Has this been dropped out of the Chrome dev channels?  It's not working for me (Win 7) 
+on Chrome dev 6.0.401.1?  Or is comment 278 still applicable?
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c281"
+ href="#c281">281</a>
+ by
+ <a style="white-space: nowrap" href="/u/tchaffee2006/">tchaffee2006</a></span>,
+ <span class="date" title="Fri May 21 06:20:59 2010">May 21, 2010</span>
+ 
+<pre>
+Google Chrome is the only application I have that is causing this problem.  It is 
+annoying enough for me to go back to using Firefox.
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+ 
+ <tr class="cursor_off">
+ <td class="vt issuecomment">
+ 
+ 
+ 
+ <span class="author">Comment <a name="c282"
+ href="#c282">282</a>
+ by
+ <a style="white-space: nowrap" href="/u/mrx33slk/">mrx33slk</a></span>,
+ <span class="date" title="Sat Jun  5 05:55:19 2010">Jun 05 (3 days ago)</span>
+ 
+<pre>
+Sadly this long standing issue and the way developers dealt with it show the kind of 
+respect that users should expect from the team. Such a shame about the great work 
+guys working at V8 and other places of the browser if such an obvious and hurting bug 
+in the eyes of the users remain ignored (it's about the main window of the 
+application screwing with the OS, not an obscure feature). This wouldn't happen in a 
+commercial company where respect for users do count.
+Opera 10.5 deals perfectly within the very same circumstance so it can be fixed.
+I am sure that Microsoft guys if asked will gladly provide the fix (anyone remembers 
+how they worked with Firefox team to help fix FF for Win7?). It's about asking and 
+getting a quick answer.
+It's just about that: do your users worth more than your ego?
+</pre>
+ 
+ 
+ </td>
+ </tr>
+ 
+ 
+
+ 
+
+
+
+ 
+ <tr>
+ <td class="vt issuecomment">
+ <span class="indicator">&#9658;</span> <a href="https://www.google.com/accounts/ServiceLogin?service=code&ltmpl=phosting&continue=http%3A%2F%2Fcode.google.com%2Fp%2Fchromium%2Fissues%2Fdetail%3Fid%3D20&amp;followup=http%3A%2F%2Fcode.google.com%2Fp%2Fchromium%2Fissues%2Fdetail%3Fid%3D20"
+ >Sign in</a> to add a comment
+ </td>
+ </tr>
+ 
+
+
+</tbody>
+</table>
+<br>
+<script type="text/javascript" src="http://www.gstatic.com/codesite/ph/9392543809124535420/js/dit_scripts_20081013.js"></script>
+
+
+
+
+
+ 
+
+
+</div> 
+<form name="delcom" action="delComment.do?q=&amp;can=2&amp;sort=&amp;colspec=ID+Stars+Pri+Area+Feature+Type+Status+Summary+Modified+Owner+Mstone+OS" method="POST">
+ <input type="hidden" name="sequence_num" value="">
+ <input type="hidden" name="mode" value="">
+ <input type="hidden" name="id" value="20">
+ <input type="hidden" name="token" value="">
+</form>
+<div id="helparea"></div>
+<script type="text/javascript">
+ _onload();
+ function delComment(sequence_num, delete_mode) {
+ var f = document.forms["delcom"];
+ f.sequence_num.value = sequence_num;
+ f.mode.value = delete_mode;
+ 
+ f.submit();
+ return false;
+ }
+ _floatMetadata();
+</script>
+<script type="text/javascript" src="http://kibbles.googlecode.com/files/kibbles-1.3.1.comp.js"></script>
+<script type="text/javascript">
+ _setupKibblesOnDetailPage(
+ 'http://code.google.com/p/chromium/issues/list?cursor\x3d20',
+ '/p/chromium/issues/entry',
+ '',
+ '',
+ '', 'chromium', 20,
+ false, false);
+</script>
+ 
+ 
+ <script type="text/javascript" src="http://www.gstatic.com/codesite/ph/9392543809124535420/js/core_scripts_20081103.js"></script>
+ <script type="text/javascript" src="/js/codesite_product_dictionary_ph.pack.04102009.js"></script>
+ </div>
+<div id="footer" dir="ltr">
+ 
+ <div class="text">
+ 
+ &copy;2010 Google -
+ <a href="/projecthosting/terms.html">Terms</a> -
+ <a href="http://www.google.com/privacy.html">Privacy</a> -
+ <a href="/p/support/">Project Hosting Help</a>
+ 
+ </div>
+</div>
+
+ <div class="hostedBy" style="margin-top: -20px;">
+ <span style="vertical-align: top;">Powered by <a href="http://code.google.com/projecthosting/">Google Project Hosting</a></span>
+ </div>
+ 
+ 
+
+
+ 
+ </body>
+</html>
+
