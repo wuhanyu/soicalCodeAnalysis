@@ -56,7 +56,6 @@ def processFile(filepath):
 			labeltext = page(item).text()
 			labeltext = labeltext.replace(' ', '')
 			result = result + ' ' + labeltext
-		result = result + bug_status
 		print result
 		#items = page('tr.cursor_off')
 			# print len(items)
