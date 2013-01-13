@@ -50,11 +50,13 @@ def processFile(filepath):
 		#print page('title').text()
 		bug_status = page('span[@title]').eq(0).text()
 		if (bug_status):
+			bug_status = bug_status.lower()
 			# statics for label
 			bug_status = bug_status.replace(' ', '')
 			result = bug_status
 			for item in page('a.label'):
 				labeltext = page(item).text()
+				labeltext = labeltext.lower()
 				labeltext = labeltext.replace(' ', '')
 				result = result + ' ' + labeltext
 			print result
