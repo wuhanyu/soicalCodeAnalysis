@@ -10,26 +10,27 @@ import sys
 from pyquery import PyQuery
 from dateutil.parser import parse
 
-reload(sys)
-sys.setdefaultencoding(sys.stdout.encoding)
-
 statisticsSet = {}
+PATH = './result/'
 
 def statistics(dict, key):
+	#python's dict doesnt differ the case
+	if (key): key = key.lower()
+	else: return
 	if (key in dict.keys()):
 		dict[key] = dict[key] + 1
 	else:
 		dict[key] = 1
-	return dict
 	
 def statisticsByName(name, key):
+	name = name.lower()
 	if (name not in statisticsSet.keys()):
 		statisticsSet[name] = {}	
 	statistics(statisticsSet[name], key)
 	
 def printStatistics(dict, name):
 	print '----%s----' % name
-	file_object = open(name + '.txt', 'w')
+	file_object = open(PATH + name + '.txt', 'w')
 	sum = 0
 	for item in dict:
 		sum = sum + dict[item]
@@ -70,7 +71,8 @@ def processFile(filepath):
 					# time = parse(timestr)
 					# print time - starttime
 
-list_dirs = os.walk("./test")
+#list_dirs = os.walk("./test")
+list_dirs = os.walk("D:/tom/bugs-html")
 for root, dirs, files in list_dirs:
 	print root
 	for f in files: 

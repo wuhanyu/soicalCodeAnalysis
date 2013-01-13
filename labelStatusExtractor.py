@@ -46,21 +46,23 @@ def processFile(filepath):
 	page = PyQuery(html)
 	title = page('title').text()
 	#remove invalid page
-	if (cmp(title, 'Project hosting on Google Code') != 0):
+	if (cmp(title, 'Project hosting on Google Code') != 0 and cmp(title, '500 Server Error') != 0):
 		#print page('title').text()
 		bug_status = page('span[@title]').eq(0).text()
-		# statics for label
-		bug_status = bug_status.replace(' ', '')
-		result = bug_status
-		for item in page('a.label'):
-			labeltext = page(item).text()
-			labeltext = labeltext.replace(' ', '')
-			result = result + ' ' + labeltext
-		print result
-		#items = page('tr.cursor_off')
-			# print len(items)
+		if (bug_status):
+			# statics for label
+			bug_status = bug_status.replace(' ', '')
+			result = bug_status
+			for item in page('a.label'):
+				labeltext = page(item).text()
+				labeltext = labeltext.replace(' ', '')
+				result = result + ' ' + labeltext
+			print result
+			#items = page('tr.cursor_off')
+				# print len(items)
 
-list_dirs = os.walk("./test")
+#list_dirs = os.walk("./test")
+list_dirs = os.walk("D:/tom/bugs-html")
 for root, dirs, files in list_dirs:
 	for f in files: 
 		processFile(root + "/" + f)
