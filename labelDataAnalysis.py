@@ -66,6 +66,12 @@ def getDevNum(num):
 	if (num > 10): return 'Dev>10'
 	elif (num > 5): return 'Dev>5'
 	else: return 'Dev=' + str(num)
+	
+def getDict(dict, key):
+	if (dict.has_key(key)):
+		return dict[key]
+	else:
+		return ''
 
 def processFile(filepath):
 	#print filepath
@@ -82,29 +88,28 @@ def processFile(filepath):
 			if (tmp):
 				reporter = page("div.author").eq(0).find('a').eq(0).text()
 				result = tmp[0]
-				# result = result + '\t' + reporter
+				result = result + '\t' + reporter
 				result = result + '\t' + getCommentNum(tmp[1])
-				result = result + 't' + getDevNum(tmp[2])
+				result = result + '\t' + getDevNum(tmp[2])
+				data = {}
 				for item in page('a.label'):
 					labeltext = page(item).text()
-					labeltext = labeltext.lower().replace(' ', '')
+					labeltext = labeltext.lower().replace(' ', '')					
 					if (labeltext.find('pri-') >= 0):
-						result = result + '\t' + labeltext
-
-					# elif (labeltext.find('feature-') >= 0):
-						# result = result + ' ' + 'feature'
-					# elif (labeltext.find('area-') >= 0):
-						# result = result + ' ' + 'area'
-					# elif (labeltext.find('os-') >= 0):
-						# result = result + '\t' + 'os'
-					# elif (labeltext.find('feature-') >= 0):
-						# result = result + ' ' + labeltext
-					if (labeltext.find('area-') >= 0):
-						result = result + ' ' + labeltext
-					# elif (labeltext.find('os-') >= 0):
-						result = result + ' ' + labeltext
+						data['pri'] = labeltext[4:len(labeltext)]
+					elif (labeltext.find('feature-') >= 0):
+						data['feature'] = labeltext[8:len(labeltext)]
+					elif (labeltext.find('area-') >= 0):
+						data['area'] = labeltext[5:len(labeltext)]
+					elif (labeltext.find('os-') >= 0):
+						data['os'] = labeltext[3:len(labeltext)]
 					elif (labeltext.find('mstone-') >= 0):
-						result = result + ' ' + labeltext
+						data['mstone'] = labeltext[7:len(labeltext)]
+				result = result + '\t' + getDict(data, 'pri')
+				result = result + '\t' + getDict(data, 'feature')
+				result = result + '\t' + getDict(data, 'area')
+				result = result + '\t' + getDict(data, 'os')
+				result = result + '\t' + getDict(data, 'mstone')
 				print result
 
 

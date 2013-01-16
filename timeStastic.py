@@ -14,13 +14,17 @@ from dateutil.relativedelta import *
 
 	
 def getDifTime(starttime, endtime):
-	dif = (endtime - starttime)
+	dif = relativedelta(endtime, starttime)
 	# if (dif.years > 0): return '>1Year'
 	# elif (dif.months > 5): return '>HalfYear'
 	# elif (dif.months > 2): return '>QuarterYear'
 	# elif (dif.months > 0): return '>1Month'
 	# elif (dif.days > 14): return '>2Week'
-	if (dif.days > 14): return None
+	if (dif.years > 0): return None
+	elif (dif.months > 5): return None
+	elif (dif.months > 2): return None
+	elif (dif.months > 0): return None
+	elif (dif.days > 14): return None
 	elif (dif.days > 6): return '>1Week'
 	elif (dif.days > 2): return '>2Day'
 	else: return '<=2Day'
@@ -77,34 +81,28 @@ def processFile(filepath):
 		#print page('title').text()
 		bug_status = page('span[@title]').eq(0).text()
 		if (bug_status and (cmp(bug_status.lower(),'verified') == 0 or cmp(bug_status.lower(),'fixed') == 0)):
-		# if (bug_status and (cmp(bug_status.lower(),'fixed') == 0)):
 			tmp = getTime(page)
 			if (tmp):
 				reporter = page("div.author").eq(0).find('a').eq(0).text()
 				result = tmp[0]
-				# result = result + '\t' + reporter
-				result = result + '\t' + getCommentNum(tmp[1])
-				result = result + 't' + getDevNum(tmp[2])
+				result = result + ' ' + reporter
+				result = result + ' ' + getCommentNum(tmp[1])
+				result = result + ' ' + getDevNum(tmp[2])
 				for item in page('a.label'):
 					labeltext = page(item).text()
 					labeltext = labeltext.lower().replace(' ', '')
 					if (labeltext.find('pri-') >= 0):
-						result = result + '\t' + labeltext
-
-					# elif (labeltext.find('feature-') >= 0):
-						# result = result + ' ' + 'feature'
-					# elif (labeltext.find('area-') >= 0):
-						# result = result + ' ' + 'area'
-					# elif (labeltext.find('os-') >= 0):
-						# result = result + '\t' + 'os'
+						result = result + ' ' + labeltext
 					# elif (labeltext.find('feature-') >= 0):
 						# result = result + ' ' + labeltext
-					if (labeltext.find('area-') >= 0):
-						result = result + ' ' + labeltext
+					# elif (labeltext.find('area-') >= 0):
+						# result = result + ' ' + labeltext
 					# elif (labeltext.find('os-') >= 0):
-						result = result + ' ' + labeltext
-					elif (labeltext.find('mstone-') >= 0):
-						result = result + ' ' + labeltext
+						# result = result + ' ' + labeltext
+					# elif (labeltext.find('mstone-') >= 0):
+						# result = result + ' ' + labeltext
+					# elif (labeltext.find('size-') >= 0):
+						# result = result + ' ' + labeltext
 				print result
 
 
