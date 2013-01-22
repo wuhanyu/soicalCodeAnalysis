@@ -15,15 +15,10 @@ from dateutil.relativedelta import *
 	
 def getDifTime(starttime, endtime):
 	dif = (endtime - starttime)
-	# if (dif.years > 0): return '>1Year'
-	# elif (dif.months > 5): return '>HalfYear'
-	# elif (dif.months > 2): return '>QuarterYear'
-	# elif (dif.months > 0): return '>1Month'
-	# elif (dif.days > 14): return '>2Week'
 	if (dif.days > 14): return None
-	# elif (dif.days > 6): return '>1Week'
-	elif (dif.days > 2): return '>2Day'
-	else: return '<=2Day'
+	elif (dif.days > 6): return '-1'
+	elif (dif.days > 2): return '0'
+	else: return '1'
 	
 def getTime(page):
 	items = page('tr.cursor_off')
@@ -47,25 +42,13 @@ def getTime(page):
 				time = parse(timestr)
 				
 				#to filter the time
-				if (getDifTime(starttime, time) != None):
-					return getDifTime(starttime, time), count, len(devSet.keys())
+				timestr = getDifTime(starttime, time)
+				if (timestr != None):
+					return timestr, count, len(devSet.keys())
 	return None
 	
 def getDevNum(page):
 	items = page('tr.cursor_off')
-	
-def getCommentNum(num):
-	if (num > 100): return 'Com>100'
-	elif (num > 50): return 'Com>50'
-	elif (num > 25): return 'Com>25'
-	elif (num > 10): return 'Com>10'
-	elif (num > 5): return 'Com>5'
-	else: return 'Com=' + str(num)
-	
-def getDevNum(num):
-	if (num > 10): return 'Dev>10'
-	elif (num > 5): return 'Dev>5'
-	else: return 'Dev=' + str(num)
 
 def processFile(filepath):
 	#print filepath
@@ -76,39 +59,38 @@ def processFile(filepath):
 	if (cmp(title, 'Project hosting on Google Code') != 0 and cmp(title, '500 Server Error') != 0):
 		#print page('title').text()
 		bug_status = page('span[@title]').eq(0).text()
-		if (bug_status and (cmp(bug_status.lower(),'verified') == 0 or cmp(bug_status.lower(),'fixed') == 0)):
-		# if (bug_status and (cmp(bug_status.lower(),'fixed') == 0)):
+		# if (bug_status and (cmp(bug_status.lower(),'verified') == 0 or cmp(bug_status.lower(),'fixed') == 0)):
+		if (bug_status and (cmp(bug_status.lower(),'fixed') == 0)):
 			tmp = getTime(page)
 			if (tmp):
 				reporter = page("div.author").eq(0).find('a').eq(0).text()
 				result = tmp[0]
-				# result = result + '\t' + reporter
-				result = result + '\t' + getCommentNum(tmp[1])
-				result = result + '\t' + getDevNum(tmp[2])
+				result = result + ' ' + '1:' + str(tmp[1])
+				result = result + ' ' + '2:' + str(tmp[2])
+				featureFlag = False
+				areaFlag = False
+				osFlag = False
 				for item in page('a.label'):
 					labeltext = page(item).text()
 					labeltext = labeltext.lower().replace(' ', '')
-					if (labeltext.find('pri-') >= 0):
-						result = result + '\t' + labeltext
-
-					# elif (labeltext.find('feature-') >= 0):
-						# result = result + ' ' + 'feature'
-					# elif (labeltext.find('area-') >= 0):
-						# result = result + ' ' + 'area'
-					# elif (labeltext.find('os-') >= 0):
-						# result = result + '\t' + 'os'
-					# elif (labeltext.find('feature-') >= 0):
-						# result = result + ' ' + labeltext
+					if (labeltext.find('pri-')>= 0):
+						result = result + ' ' + '3:' +labeltext[4:len(labeltext)]
+					elif (labeltext.find('feature-') >= 0):
+						featureFlag = True
 					elif (labeltext.find('area-') >= 0):
-						result = result + ' ' + labeltext
-					# elif (labeltext.find('os-') >= 0):
-						# result = result + ' ' + labeltext
-					elif (labeltext.find('mstone-') >= 0):
-						result = result + ' ' + labeltext
+						areaFlag = True
+					elif (labeltext.find('os-') >= 0):
+						osFlag = True
+				if (featureFlag):
+					result = result +  ' '  + '4:' + '1'
+				if (areaFlag):
+					result = result +  ' '  + '5:' + '1'
+				if (osFlag):
+					result = result +  ' '  + '6:' + '1'
 				print result
 
 
-# list_dirs = os.walk("./test")
+#list_dirs = os.walk("./test")
 list_dirs = os.walk("D:/tom/bugs-html")
 for root, dirs, files in list_dirs:
 	for f in files: 
