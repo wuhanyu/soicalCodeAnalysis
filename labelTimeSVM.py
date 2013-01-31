@@ -11,14 +11,29 @@ from pyquery import PyQuery
 from dateutil.parser import parse
 from dateutil.relativedelta import *
 
+featureSet = {}
+featureSum = {}
+featureCount = {}
+cateSet = {}
+BASE = 4
+INDEX = 0
+CUTOFF = 1
+WINDOW = 10
 
-	
 def getDifTime(starttime, endtime):
+	result = None
 	dif = (endtime - starttime)
-	if (dif.days > 14): return None
-	elif (dif.days > 6): return '-1'
-	elif (dif.days > 2): return '0'
-	else: return '1'
+	difdays = dif.days
+	return str(difdays), difdays
+	if (difdays > 2 and starttime.isoweekday() > endtime.isoweekday()): difdays = difdays - 2
+	if (difdays > 14): result = None
+	elif (difdays > 6): result = '3'
+	elif (difdays > 2): result = '2'
+	else: result = '1'
+	# elif (difdays > 6): result = '[1Week..2Week)'
+	# elif (difdays > 2): result = '(2days..6days]'
+	# else: result = '<2days'
+	return result, difdays
 	
 def getTime(page):
 	items = page('tr.cursor_off')
@@ -42,58 +57,104 @@ def getTime(page):
 				time = parse(timestr)
 				
 				#to filter the time
-				timestr = getDifTime(starttime, time)
+				timestr, difdays = getDifTime(starttime, time)
 				if (timestr != None):
-					return timestr, count, len(devSet.keys())
+					return timestr, count, len(devSet.keys()), difdays
 	return None
 	
+def getFeatureAvgTime(feature, c_difdays):
+	global INDEX, BASE, featureSet, featureSum, featureCount
+	result = -1
+	if (feature.find('-') >= 0):
+		cate = feature[0:feature.find('-')]
+	else:
+		cate = feature
+	# tmp = feature
+	# feature = cate
+	if (featureSet.has_key(feature)):
+		result = featureSum[feature] / featureCount[feature]
+		featureSum[feature] = featureSum[feature] + c_difdays
+		featureCount[feature] = featureCount[feature] + 1
+		
+	else:
+		if (not featureSet.has_key(cate)):
+			featureSet[cate] = BASE + INDEX
+			cateSet[BASE + INDEX] = cate
+			INDEX = INDEX + 1
+		featureSet[feature] = featureSet[cate]
+		# featureSet[feature] = BASE + INDEX	
+		# INDEX = INDEX + 1	
+		featureSum[feature] = c_difdays
+		featureCount[feature] = 1
+
+			
+	# featureSet[tmp] = featureSet[cate]
+	if (featureCount[feature] >= CUTOFF):
+		return result
+	else:
+		return -1
+		
 def getDevNum(page):
 	items = page('tr.cursor_off')
 
 def processFile(filepath):
-	#print filepath
+	global featureSet
 	html = open(filepath, 'r').read()
 	page = PyQuery(html)
 	title = page('title').text()
 	#remove invalid page
+	resultset = {}
 	if (cmp(title, 'Project hosting on Google Code') != 0 and cmp(title, '500 Server Error') != 0):
 		#print page('title').text()
 		bug_status = page('span[@title]').eq(0).text()
-		# if (bug_status and (cmp(bug_status.lower(),'verified') == 0 or cmp(bug_status.lower(),'fixed') == 0)):
-		if (bug_status and (cmp(bug_status.lower(),'fixed') == 0)):
+		if (bug_status and (cmp(bug_status.lower(),'verified') == 0 or cmp(bug_status.lower(),'fixed') == 0)):
+		# if (bug_status and (cmp(bug_status.lower(),'fixed') == 0)):
 			tmp = getTime(page)
 			if (tmp):
 				reporter = page("div.author").eq(0).find('a').eq(0).text()
+				reporter = 'reporter-' + reporter
 				result = tmp[0]
-				result = result + ' ' + '1:' + str(tmp[1])
-				result = result + ' ' + '2:' + str(tmp[2])
-				featureFlag = False
-				areaFlag = False
-				osFlag = False
+				resultset[1] = tmp[1]
+				resultset[2] = tmp[2]
+				difdays = tmp[3]
+				resultset[featureSet[reporter]] = getFeatureAvgTime(reporter, difdays)
 				for item in page('a.label'):
 					labeltext = page(item).text()
+	
 					labeltext = labeltext.lower().replace(' ', '')
 					if (labeltext.find('pri-')>= 0):
-						result = result + ' ' + '3:' +labeltext[4:len(labeltext)]
+						resultset[3] = labeltext[4:len(labeltext)]
+						resultset[featureSet[labeltext]] = getFeatureAvgTime(labeltext, difdays)
 					elif (labeltext.find('feature-') >= 0):
-						featureFlag = True
+						resultset[featureSet[labeltext]] = getFeatureAvgTime(labeltext, difdays)
 					elif (labeltext.find('area-') >= 0):
-						areaFlag = True
+						resultset[featureSet[labeltext]] = getFeatureAvgTime(labeltext, difdays)
 					elif (labeltext.find('os-') >= 0):
-						osFlag = True
-				if (featureFlag):
-					result = result +  ' '  + '4:' + '1'
-				if (areaFlag):
-					result = result +  ' '  + '5:' + '1'
-				if (osFlag):
-					result = result +  ' '  + '6:' + '1'
+						resultset[featureSet[labeltext]] = getFeatureAvgTime(labeltext, difdays)
+					elif (labeltext.find('mstone-') >= 0):
+						resultset[featureSet[labeltext]] = getFeatureAvgTime(labeltext, difdays)
+				for i in range(BASE, BASE + INDEX):
+					if (not resultset.has_key(i)):
+						resultset[i] = getFeatureAvgTime(cateSet[i] + '-NONE', difdays)			
+				for i in range(0, BASE + INDEX):
+					if (resultset.has_key(i) and resultset[i] >= 0):
+						result = result + ' ' + str(i) + ':' + str(resultset[i])
+				print cateSet
 				print result
 
 
-#list_dirs = os.walk("./test")
-list_dirs = os.walk("D:/tom/bugs-html")
+#list_dirs = os.walk("./test)
+if (len(sys.argv) < 2):
+	dirpath = 'D:/data/all'
+else:
+	dirpath = 'D:/data/' + sys.argv[1]
+list_dirs = os.walk(dirpath)
 for root, dirs, files in list_dirs:
-	for f in files: 
-		processFile(root + "/" + f)
+	for i in range(0, 50000):
+		filename = str(i) + '.html'
+		if (filename in files):
+			processFile(root + "/" + filename)
+	# for f in files: 
+		# processFile(root + "/" + f)
 
 #processFile('D:/tom/test/1.html')

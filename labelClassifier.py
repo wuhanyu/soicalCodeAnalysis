@@ -15,15 +15,15 @@ from dateutil.relativedelta import *
 gfilepath = ''
 	
 def getDifTime(starttime, endtime):
-	dif = relativedelta(endtime, starttime)
-	if (dif.years > 0): return None
-	elif (dif.months > 5): return None
-	elif (dif.months > 2): return None
-	elif (dif.months > 0): return None
-	elif (dif.days > 14): return None
-	elif (dif.days > 6): return 'gt1Week'
-	elif (dif.days > 2): return 'gt2Day'
-	else: return 'lte2Day'
+	result = None
+	dif = (endtime - starttime)
+	difdays = dif.days
+	if (difdays > 2 and starttime.isoweekday() > endtime.isoweekday()): difdays = difdays - 2
+	if (difdays > 14): result = None
+	elif (difdays > 6): result = '>1Week'
+	elif (difdays > 2): result = '>2Day'
+	else: result = '<=2Day'
+	return result
 	
 def getTime(page):
 	items = page('tr.cursor_off')
@@ -76,11 +76,12 @@ def processFile(file, root):
 	if (cmp(title, 'Project hosting on Google Code') != 0 and cmp(title, '500 Server Error') != 0):
 		#print page('title').text()
 		bug_status = page('span[@title]').eq(0).text()
-		# if (bug_status and (cmp(bug_status.lower(),'verified') == 0 or cmp(bug_status.lower(),'fixed') == 0)):
-		if (bug_status and (cmp(bug_status.lower(),'fixed') == 0)):
+		if (bug_status and (cmp(bug_status.lower(),'verified') == 0 or cmp(bug_status.lower(),'fixed') == 0)):
+		# if (bug_status and (cmp(bug_status.lower(),'fixed') == 0)):
 			tmp = getTime(page)
 			print tmp
 			if (tmp != None):
+				tmp = 'dataset'
 				if (not os.path.exists(root + '/' + tmp + '/')):
 					os.makedirs(root+ '/' + tmp + '/')
 				shutil.copyfile(root + '/' + file, root + '/' + tmp + '/' + file)  
